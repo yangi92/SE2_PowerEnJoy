@@ -1,7 +1,25 @@
 \documentclass[11pt]{article}
 \usepackage{mathpazo}
 \usepackage{graphicx}
+\usepackage{titlesec}
 \graphicspath {{Images/}}
+
+	\titleformat
+	{\section} % command
+	[display] % shape
+	{\bfseries\large} % format
+	{\ \thesection} % label
+	{0.5ex} % sep
+	{	
+    		\rule{\textwidth}{1pt}
+    		\vspace{1ex}
+    		\centering
+	} % before-code
+	[
+		\vspace{-0.5ex}%
+		\rule{\textwidth}{0.3pt}
+	] % after-code	
+
 
 \begin{document}
 		 
@@ -38,8 +56,29 @@
 	 \tableofcontents{}
 	 
 	 \newpage
+	 
 	 \section{\Large Introduction}
-	 	ciaociaociaociao
+	 
+	 \subsection{Purpose}
+		The aim of this document	is to give an overview of the 	requirements and specifications of system to be developed. 
+		The goal of the document is to describe in detail all functional and non-functional requirements of the system, analysing the needs of the customer and explaining common use case scenarios.
+		It will set a baseline for project planning and cost estimation, giving a detailed insight to all stakeholders and future people involved in the project.
+	 
+	 \subsection{System}
+	 
+	 \subsection{Scope}
+	 \subsection{Actors}
+	 \subsection{Goals}
+	 \subsection{Reference Documents}
+	 \subsection{Document overview}
+
+
+
+
+	 	 
+
+
+	 	
 	
 	 
      
