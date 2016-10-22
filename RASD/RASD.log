@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  20 OCT 2016 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 OCT 2016 10:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -200,14 +200,15 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 59.
  [3]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 80.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 95.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 80.
- [4] (./RASD.aux) ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 95.
+ [4] [5]
+(./RASD.aux) ) 
 Here is how much of TeX's memory you used:
  1966 strings out of 493014
  28336 string characters out of 6133351
@@ -215,16 +216,16 @@ Here is how much of TeX's memory you used:
  5475 multiletter control sequences out of 15000+600000
  21703 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,5n,28p,686b,175s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.
-enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on RASD.pdf (4 pages, 136947 bytes).
+ 38i,5n,28p,686b,177s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}<
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on RASD.pdf (5 pages, 139978 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 42 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

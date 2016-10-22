@@ -62,10 +62,10 @@
 		It will set a baseline for project planning and cost estimation, giving a detailed insight to all stakeholders and future people involved in the project.
 	 
 	 \subsection{System}
-	 The to be developed software system provides a complete support to the new PowerEnjoy car-sharing service. It will allow users to register ,log-in and use the car sharing service within the limits provided by the below specifications.
+	 The to be developed software system provides a complete support to the new PowerEnjoy car-sharing service. It will allow users to register ,log-in and use the car sharing service within the limits imposed by the below specifications.
 	 
-	 \subsection{Aim}
-	The new PowerEnjoy software system will allow visitors to register and retrieve all necessary information of common domain ( ToS , contact information...). \\Once the visitor has successfully registered to the system, he will be provided with a unique username-password combination. This enables an user to log into the system at any time , from any mobile device. \\Once logged in, the user can search within a certain distance for vehicles based on his/hers current location or based on an input address. 
+	 \subsection{Scope}
+	The new PowerEnjoy software system will allow visitors to register and retrieve all necessary information of common domain ( ToS , contact information...). \\Once the visitor has successfully registered to the system, he will be provided with a unique username-password combination. This enables an user to log into the system at any time , from any mobile device. \\Once logged in, the user can search within a certain distance for vehicles based on his/her current location or based on an input address. 
 	Eventually the user chooses to reserve an available vehicle, which can be picked-up within a time span of one hour.\\ 
 	Should the user not pick-up the car within the one hour availability limit, then the system will tag the vehicle as available and charge the user a fee of 1 Euro.\\
 	Should the user reach the car within the limit,he/she must be able to  interact with the system in order to unlock the vehicle and grant the user access to the car.
@@ -73,7 +73,22 @@
 	The system stops charging the user as soon as the car is parked in a safe area and the user exits the car. At this point the system will automatically lock the car.
 	Should the user stop in a non-safe area he/she won't be granted to end the transaction and will be charged until  he/she parks in a safe area.
 	The set of safe area parking spots is defined inside the system and must be available all the time to the user's knowledge through the on-board display.
+	
+	\subsection{Reference Documents}
+	TODO
+	
+	\subsection{Document overview}
+	\begin{enumerate}
+		\item \textbf{Introduction}: this section gives a general 	description of the software and its characteristics 
+		\item \textbf{Overall description}: this section gives a detailed overview of the document focusing on domain assumptions, requirements (functional and not) and the characteristics of different types of interacting users.
+		\item \textbf{Specifications}: todo!!!!!!
+	\end{enumerate}	
+	
 	 
+	\section{\Large Overall Description}
+	 
+	\subsection{User characteristics}
+	
 	 \subsection{Actors}
 	  
 	\begin{itemize}
@@ -82,10 +97,16 @@
   		\item \textit{Car}: is defined as the vehicle to be used by a registered user. A car must be able to communicate to with the system all the time. If a car is available (i.e currently not reserved by a registered user) then its current location must be stored in the system so to be shown on all users' devices. As soon as the engine ignition starts , the car must time the vehicle's usage in order to charge the user the right amount of money. Once the user has parked the car inside a safe area and has exited, the car informs the system about the fee to charge ,locks the doors automatically and finally informs the system that it is available again.
 	\end{itemize}
 	
-	 \subsection{Goals}
-	 \subsection{Reference Documents}
-	 \subsection{Document overview}
+	\subsection{Domain assumptions}
+	\subsection{Constraints}
+	\subsection{Functional Requirements}
 
+	\begin{itemize}
+	 \item{}	
+	\end{itemize}	
+	
+	\subsection{Non functional Requirements} 
+	 
 
 
 
