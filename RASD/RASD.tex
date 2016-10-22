@@ -2,7 +2,15 @@
 \usepackage{mathpazo}
 \usepackage{graphicx}
 \usepackage[explicit]{titlesec}
+\usepackage{hyperref}
 \graphicspath {{Images/}}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan
+}
+
 
 	\titleformat{\section}[display]
   {\normalfont\scshape\Huge}
@@ -64,8 +72,8 @@
 	 \subsection{System}
 	 The to be developed software system provides a complete support to the new PowerEnjoy car-sharing service. It will allow users to register ,log-in and use the car sharing service within the limits imposed by the below specifications.
 	 
-	 \subsection{Scope}
-	The new PowerEnjoy software system will allow visitors to register and retrieve all necessary information of common domain ( ToS , contact information...). \\Once the visitor has successfully registered to the system, he will be provided with a unique username-password combination. This enables an user to log into the system at any time , from any mobile device. \\Once logged in, the user can search within a certain distance for vehicles based on his/her current location or based on an input address. 
+	 \subsection{\label{scope:1}Scope}
+	The new PowerEnjoy software system will allow visitors to register and retrieve all necessary information of common domain ( ToS , contact information...). \\Once the visitor has successfully registered to the system and his/her driving license has been approved, he/she will be provided with a unique username-password combination. This enables an user to log into the system at any time , from any mobile device. \\Once logged in, the user can search within a certain distance for vehicles based on his/her current location or based on an input address. 
 	Eventually the user chooses to reserve an available vehicle, which can be picked-up within a time span of one hour.\\ 
 	Should the user not pick-up the car within the one hour availability limit, then the system will tag the vehicle as available and charge the user a fee of 1 Euro.\\
 	Should the user reach the car within the limit,he/she must be able to  interact with the system in order to unlock the vehicle and grant the user access to the car.
@@ -74,7 +82,32 @@
 	Should the user stop in a non-safe area he/she won't be granted to end the transaction and will be charged until  he/she parks in a safe area.
 	The set of safe area parking spots is defined inside the system and must be available all the time to the user's knowledge through the on-board display.
 	
+	\subsubsection{Goals}
+	The PowerEnjoy software system needs to be:
+	\begin{itemize}
+		\item \textbf{[G1] : Practical}\\It wants to give the users a better connectivity among places in the participant cities that common public transport often can't offer.
+		\item \textbf{[G2] : Convenient}\\The service need to be convenient: it's less expensive than taking a taxi. It's a eco-friendly solution : car-sharing reduces the number of vehicles circulating in the cities and doesn't pollute thanks to electric engines.
+		\item \textbf{[G3] : User friendly}\\ The system needs to be as user friendly as possible in order to be used easily by everyone through their own intuitive knowledge. 
+		\item \textbf{[G4] : Fast}\\ The system needs to be fast and responsive even during high peaks of activity.
+		\item \textbf{[G5] : Available}\\ The system needs to be available at every time and on the largest possible number of devices (mobile and not) with an internet connection.
+	\end{itemize}
+	
+	\subsubsection{Applications}
+	To achieve the above mentioned goals to following software tools need to be developed:
+	
+	\begin{itemize}
+	\item \textbf{Mobile Application}: to be developed for all major operating systems (iOS, Android , Windows Phone). The mobile software must allow the user to perform all the tasks in the \hyperref[scope:1]{\textit{Scope section (1.3)}}.
+	\item \textbf{Web Application}: must be compatible with all major browser applications. The user must be allowed to perform all tasks in  the \hyperref[scope:1]{\textit{Scope section (1.3)}}.
+	\item \textbf{ On board car application}: this application needs to handle user interaction such as displaying general car information (charge, fee, tire pressure...), letting the user validate his/her identity through a pin code and report about the status of the vehicle. 
+Furthermore it must control if the vehicle is parked in a safe area.
+	\item \textbf{ Back-End Application}: this application handles all search and reservation requests, payment transactions and car communications. It is also an essential tool for customer support operators.
+	
+	\end{itemize}
+		
+	
 	\subsection{Reference Documents}
+	TODO
+	\subsection{Glossary}
 	TODO
 	
 	\subsection{Document overview}
@@ -84,10 +117,8 @@
 		\item \textbf{Specifications}: todo!!!!!!
 	\end{enumerate}	
 	
-	 
+	 \newpage
 	\section{\Large Overall Description}
-	 
-	\subsection{User characteristics}
 	
 	 \subsection{Actors}
 	  
@@ -95,9 +126,19 @@
  	 	\item \textit{Visitor}: a visitor is defined as a person who is not logged into the system. A visitor can see only the log-in page with a registration form and some common information ,such as the company's customer office contact information and terms of service.
   		\item \textit{Registered User}: is defined as any person using the system who is also logged into the system. A registered user can perform any of the above mentioned actions.
   		\item \textit{Car}: is defined as the vehicle to be used by a registered user. A car must be able to communicate to with the system all the time. If a car is available (i.e currently not reserved by a registered user) then its current location must be stored in the system so to be shown on all users' devices. As soon as the engine ignition starts , the car must time the vehicle's usage in order to charge the user the right amount of money. Once the user has parked the car inside a safe area and has exited, the car informs the system about the fee to charge ,locks the doors automatically and finally informs the system that it is available again.
+  		
+	\end{itemize}
+	
+	\subsection{User characteristics}
+	There are no constraints about visitors : every person can access the main site and try to register.\\If a visitor wants to register there are some constraints to follow: 
+	\begin{itemize}
+		\item the user's has to be \textbf{at least 18} years old
+		\item the user must have a \textbf{valid} driving license ( *aggiungere link al glossario *)
+		\item the user must enter a valid payment method ( *aggiungere link al glossario *)
 	\end{itemize}
 	
 	\subsection{Domain assumptions}
+	
 	\subsection{Constraints}
 	\subsection{Functional Requirements}
 
@@ -106,6 +147,8 @@
 	\end{itemize}	
 	
 	\subsection{Non functional Requirements} 
+	
+	\subsection{Future implementation}
 	 
 
 
