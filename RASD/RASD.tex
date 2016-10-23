@@ -3,12 +3,13 @@
 \usepackage{graphicx}
 \usepackage[explicit]{titlesec}
 \usepackage{hyperref}
+\usepackage{xcolor}
 \graphicspath {{Images/}}
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
     filecolor=magenta,      
-    urlcolor=cyan
+    urlcolor=darkgray
 }
 
 
@@ -29,7 +30,7 @@
 \begin{document}
 		 
 	 \begin{center}
- 	 	\includegraphics[scale=0.5]{Images/PolimiLogo.png}
+ 	 	\includegraphics[scale=1.5]{Images/PolimiLogo.png}
 	 \end{center}
 
 	 \begin{center}
@@ -43,7 +44,10 @@
      \end{center}
      
      \begin{center}
- 	 	\includegraphics[scale=1]{Images/logoPowerEnjoy.png}\\
+		\noindent\rule{8cm}{0.8pt}
+		 \vspace{5mm}\\
+ 	 	 \includegraphics[scale=1]{Images/logoPowerEnjoy.png}\\
+		\noindent\rule{8cm}{0.8pt}
 	 \end{center}
 	 	\vspace{5mm}
 	
@@ -86,7 +90,7 @@
 	The PowerEnjoy software system needs to be:
 	\begin{itemize}
 		\item \textbf{[G1] : Practical}\\It wants to give the users a better connectivity among places in the participant cities that common public transport often can't offer.
-		\item \textbf{[G2] : Convenient}\\The service need to be convenient: it's less expensive than taking a taxi. It's a eco-friendly solution : car-sharing reduces the number of vehicles circulating in the cities and doesn't pollute thanks to electric engines.
+		\item \textbf{[G2] : Convenient}\\The service needs to be convenient: it's less expensive than taking a taxi. It's an eco-friendly solution : car-sharing reduces the number of vehicles circulating in the cities and doesn't pollute thanks to electric engines.
 		\item \textbf{[G3] : User friendly}\\ The system needs to be as user friendly as possible in order to be used easily by everyone through their own intuitive knowledge. 
 		\item \textbf{[G4] : Fast}\\ The system needs to be fast and responsive even during high peaks of activity.
 		\item \textbf{[G5] : Available}\\ The system needs to be available at every time and on the largest possible number of devices (mobile and not) with an internet connection.
@@ -106,7 +110,12 @@ Furthermore it must control if the vehicle is parked in a safe area.
 		
 	
 	\subsection{Reference Documents}
-	TODO
+	 \begin{itemize}
+	 	\item IEEE Std 830-1998: “IEEE Recommended Practice for Software Requirements Specifications”
+	 	\item Project description: “Assignments AA 2016-2017.pdf”
+	 	\item Alloy Language Reference : \url{http://alloy.mit.edu/alloy/documentation/book-chapters/alloy-language-reference.pdf}
+	 	\item UML Language Reference : \url{https://www.utdallas.edu/˜chung/Fujitsu/UML_2.0/Rumbaugh--UML_2.0_Reference_CD.pdf}
+	 \end{itemize}
 	\subsection{Glossary}
 	TODO
 	
@@ -119,14 +128,20 @@ Furthermore it must control if the vehicle is parked in a safe area.
 	
 	 \newpage
 	\section{\Large Overall Description}
-	
+	The overview section highlights all the main functionality and constraints of the PowerEnjoy software.  
+	\subsection{Software overview}
+	  \begin{center}
+ 	 	\includegraphics[scale=0.5]{Images/SoftwareDistribution.png}
+	 \end{center}
+	 
 	 \subsection{Actors}
 	  
 	\begin{itemize}
  	 	\item \textit{Visitor}: a visitor is defined as a person who is not logged into the system. A visitor can see only the log-in page with a registration form and some common information ,such as the company's customer office contact information and terms of service.
   		\item \textit{Registered User}: is defined as any person using the system who is also logged into the system. A registered user can perform any of the above mentioned actions.
   		\item \textit{Car}: is defined as the vehicle to be used by a registered user. A car must be able to communicate to with the system all the time. If a car is available (i.e currently not reserved by a registered user) then its current location must be stored in the system so to be shown on all users' devices. As soon as the engine ignition starts , the car must time the vehicle's usage in order to charge the user the right amount of money. Once the user has parked the car inside a safe area and has exited, the car informs the system about the fee to charge ,locks the doors automatically and finally informs the system that it is available again.
-  		
+  		\item \textit{Support operator}: The support operator is an employee who is trained and has a full grasp of the different software application .His job is to offer costumer support concerning software issues and help out in case of emergency.\\ Contrary to an user, he has access to the back-end software which enables him to overview the system status.
+  		 
 	\end{itemize}
 	
 	\subsection{User characteristics}
@@ -136,6 +151,7 @@ Furthermore it must control if the vehicle is parked in a safe area.
 		\item the user must have a \textbf{valid} driving license ( *aggiungere link al glossario *)
 		\item the user must enter a valid payment method ( *aggiungere link al glossario *)
 	\end{itemize}
+	
 	
 	\subsection{Domain assumptions}
 	
