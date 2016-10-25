@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 \usepackage{mathpazo}
 \usepackage{graphicx}
 \usepackage[explicit]{titlesec}
@@ -123,16 +123,17 @@ Furthermore it must control if the vehicle is parked in a safe area.
 	\begin{enumerate}
 		\item \textbf{Introduction}: this section gives a general 	description of the software and its characteristics 
 		\item \textbf{Overall description}: this section gives a detailed overview of the document focusing on domain assumptions, requirements (functional and not) and the characteristics of different types of interacting users.
-		\item \textbf{Specifications}: todo!!!!!!
+		\item \textbf{Specifications}: this section gives a deep insight about the system's main functionality, analyzing scenarios with their relative use-cases and includes an extensive alloy model. Event flows are model using sequence and state diagrams.
 	\end{enumerate}	
 	
-	 \newpage
+	\newpage
 	\section{\Large Overall Description}
 	The overview section highlights all the main functionality and constraints of the PowerEnjoy software.  
 	\subsection{Software overview}
 	  \begin{center}
  	 	\includegraphics[scale=0.5]{Images/SoftwareDistribution.png}
 	 \end{center}
+	 
 	 
 	 \subsection{Actors}
 	  
@@ -154,8 +155,58 @@ Furthermore it must control if the vehicle is parked in a safe area.
 	
 	
 	\subsection{Domain assumptions}
-	
+		\subsubsection{General Domain Assumptions}
+			We hold the assumption that the system will be deployed in large metropolitan cities with a maximum of 3M inhabitants.\\
+			We assume that the mean highest peak of activity is around dinner time on Fridays and Saturdays. We assume that during the peak the system will be used by around 50k people , 80\% of which gain access to the system through the Mobile Application, while the remaining 20\% through the Web Application.\\
+			We assume that the the fleet of vehicles will be proportional to the number of inhabitants, reaching a peek of 300 vehicles in the biggest area.\\
+		\subsubsection{User Assumptions}
+		We assume that all users are provided with an enabled internet connection equipped with GPS tracking which is the only way to search, reserve and unlock a car.
+		We assume that all active users carry their driving license with them and drive following the traffic code\footnote{\url {http://www.mit.gov.it/mit/site.php?p=normativa&o=vd&id=1&id_cat=&id_dett=0}}.
+		\subsubsection{Vehicle Assumptions}
+		* chiedere se e' bisogna inserire assunsiozioni sulla carica delle macchine etc...*		
+			
 	\subsection{Constraints}
+	
+	\subsubsection{Software Limitations}
+	The Mobile and Web Application can not exceed 50MB of RAM usage.\\
+	The On-Board application can not exceed 75MB of RAM usage.\\
+	The Back-End application cannot exceed 100GB of RAM usage.
+	\newpage
+	\subsubsection{Hardware limitations}
+	The Mobile Application must be available for the following mobile operating systems:
+	\begin{itemize}
+		\item iOS version 7.0 or higher.
+		\item Android version 4.0 or higher.
+		\item Windows Phone 8 or higher.
+	\end{itemize}
+	The applications must interface with Google Maps API \footnote{\url{https://developers.google.com/maps/documentation/javascript/}} and follow the design guidelines provided by each platform \footnote{\url{https://developer.android.com/design/index.html}} \footnote{\url{https://developer.apple.com/design/}}.\\
+	\newline
+	The Web Application must be developed in order to be correctly used by the following web browsers \footnote{\url{http://www.w3schools.com/browsers/default.asp}}:
+		\begin{itemize}
+		\item Mozilla Firefox
+		\item Google Chrome
+		\item Safari
+		\item Microsoft Edge
+		\item Opera
+	\end{itemize}
+	The on-board software system must be equipped with a GPS Module and interface Google Maps API. The following safety regulations must be followed:
+	\begin{itemize}
+		\item \textbf{Night mode}: an automatic night mode must be implemented. This will avoid that drivers get blinded by excessive brightness of the display.
+		\item \textbf{Safe - area parking recognition}: the system must recognize whether the vehicle is parked in a safe-area or not.
+		\item \textbf{Additional passenger recognition}: the system must recognize passenger. This feature is crucial for bonus credit distribution to the driver.
+	\end{itemize}
+	
+	\subsubsection{Concurrency}
+	The back-end application must be able to handle correctly multiple user requests without creating conflicts : if two users desire two reserve the same car simultaneously ,only one can be granted a reservation.
+	
+	\subsubsection{Regulatory Policies}
+	\begin{itemize}
+		\item \textbf{Privacy Policy}: Data should be collected and stored following the privacy policy guidelines provided by Mozilla Foundation \url{https://developer.mozilla.org/en-US/Marketplace/Publishing Policies_and_Guidelines/Privacy_policies}
+		\item Network connections must be encrypted.
+		\item Data storage on PowerEnjoy databases must be encrypted
+	\end{itemize}
+		
+
 	\subsection{Functional Requirements}
 
 	\begin{itemize}
@@ -163,8 +214,20 @@ Furthermore it must control if the vehicle is parked in a safe area.
 	\end{itemize}	
 	
 	\subsection{Non functional Requirements} 
-	
+		Some non functional requirements have been to be necessary in the to be developed system in order to provider a correct operation flow and an optimized UX.
+		\begin{itemize}
+			\item \textit{User friendliness}: the Mobile/Web as well as the On-Board Application must be easily handled by the average web user with basic web knowledge.
+			\item \textit{Performance}: to supply a suitable service the system must be responsive even at peak activity times. To achieve this client-server transaction must be reduced to a minimum.
+		 	\item \textit{Reliability}: the PowerEnjoy service must be active 24h/24h . Maintenance must be performed without compromising functionality. At all the time , a user must be able to be charged the owed fee.	
+		 	\item \textit{Data integrity and availability}: 
+		 	Data have to be always available and accessible.Data availability can be achieved by duplicating data on back-up servers. For instance the use of RAID, mirroring and backup could present a valid solution.
+
+		 	\item \textit{Maintainability}: the software should be implemented so as to be as modular as possible to allow future expansions and easy modifications.\\Google API are required but can be easily updated from time to time on all systems.
+		 	\item \textit{Security}: user accounts are provided with two factor authentication with a code sent to the user's mobile phone to add a secure connection method to the system. Sensible user information are stored using a hashing mechanism .\\User data input should be filtered to avoid malicious modifications ( i.e SQL Injections). \\All connections should be encrypted and run on a secure HTTPS protocol with valid certificates that uses the secure TSL protocol to avoid Man in the Middle Attacks.
+		\end{itemize}
+		
 	\subsection{Future implementation}
+	The system must be as modular as possible: future implementations can require a deployment in very large metropolitan cities that exceed by far the maximum amount of planned users.\\ An important thing to keep in mind is that the nature of vehicles could change in the distant future : not only car , but also electric powered motorcycles could be added to the PowerEnjoy vehicle fleet.This means that the on-board software should be as expandable as possible using for instance Hierarchy Design Patterns in the vehicle type definition.
 	 
 
 
