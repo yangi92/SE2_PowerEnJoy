@@ -1,5 +1,5 @@
 
-# <img src="/RASD/Images/logoPowerEnjoy.png" align="left" height="100px" /></br></br>
+# <img src="/RASD/Images/logoPowerEnjoy2.png" align="left" height="100px" /></br></br>
 
 
 ## Authors
