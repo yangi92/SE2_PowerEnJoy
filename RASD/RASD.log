@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  26 OCT 2016 14:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  26 OCT 2016 23:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -334,26 +334,28 @@ File: Images/PolimiLogo.png Graphic file (type png)
 Package pdftex.def Info: Images/PolimiLogo.png used on input line 34.
 (pdftex.def)             Requested size: 150.68257pt x 151.0439pt.
 
-<Images/logoPowerEnjoy.png, id=106, 192.2382pt x 45.2892pt>
-File: Images/logoPowerEnjoy.png Graphic file (type png)
+<Images/logoPowerEnjoy2.png, id=106, 192.2382pt x 45.2892pt>
+File: Images/logoPowerEnjoy2.png Graphic file (type png)
 
-<use Images/logoPowerEnjoy.png>
-Package pdftex.def Info: Images/logoPowerEnjoy.png used on input line 50.
+<use Images/logoPowerEnjoy2.png>
+Package pdftex.def Info: Images/logoPowerEnjoy2.png used on input line 50.
 (pdftex.def)             Requested size: 192.23772pt x 45.28908pt.
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Image
-s/PolimiLogo.png> <./Images/logoPowerEnjoy.png>] (./RASD.toc
+s/PolimiLogo.png> <./Images/logoPowerEnjoy2.png>] (./RASD.toc
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
 LaTeX Font Info:    Try loading font information for OML+zplm on input line 2.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Try loading font information for OMS+zplm on input line 2.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Try loading font information for OMX+zplm on input line 2.
@@ -461,7 +463,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 270.
  ) 
 Here is how much of TeX's memory you used:
  6793 strings out of 493014
- 100579 string characters out of 6133351
+ 100584 string characters out of 6133351
  192072 words of memory out of 5000000
  10185 multiletter control sequences out of 15000+600000
  27956 words of font info for 70 fonts, out of 8000000 for 9000
@@ -474,7 +476,7 @@ live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on RASD.pdf (13 pages, 358961 bytes).
+Output written on RASD.pdf (13 pages, 355551 bytes).
 PDF statistics:
  263 PDF objects out of 1000 (max. 8388607)
  233 compressed objects within 3 object streams
