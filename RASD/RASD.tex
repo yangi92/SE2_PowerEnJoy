@@ -4,6 +4,7 @@
 \usepackage[explicit]{titlesec}
 \usepackage{hyperref}
 \usepackage{xcolor}
+\usepackage[export]{adjustbox}
 \graphicspath {{Images/}}
 \hypersetup{
     colorlinks=true,
@@ -71,10 +72,13 @@
 	 \subsection{Purpose}
 		The aim of this document	is to give an overview of the 	requirements and specifications of system to be developed. 
 		The goal of the document is to describe in detail all functional and non-functional requirements of the system, analyzing the needs of the customer and explaining common use case scenarios.
-		It will set a baseline for project planning and cost estimation, giving a detailed insight to all stakeholders and future people involved in the project.
+		It will set a baseline for project planning and cost estimation, giving a detailed insight to all stakeholders which include the PowerEnjoy Board , Investors and finally engineers (present and future) involved  in development, testing and maintenance.
+		
 	 
 	 \subsection{System}
 	 The to be developed software system provides a complete support to the new PowerEnjoy car-sharing service. It will allow users to register ,log-in and use the car sharing service within the limits imposed by the below specifications.
+	 
+	
 	 
 	 \subsection{\label{scope:1}Scope}
 	The new PowerEnjoy software system will allow visitors to register and retrieve all necessary information of common domain ( ToS , contact information...). \\Once the visitor has successfully registered to the system and his/her driving license has been approved, he/she will be provided with a unique username-password combination. This enables an user to log into the system at any time , from any mobile device. \\Once logged in, the user can search within a certain distance for vehicles based on his/her current location or based on an input address. 
@@ -131,7 +135,7 @@ Furthermore it must control if the vehicle is parked in a safe area.
 	The overview section highlights all the main functionality and constraints of the PowerEnjoy software.  
 	\subsection{Software overview}
 	  \begin{center}
- 	 	\includegraphics[scale=0.5]{Images/SoftwareDistribution.png}
+ 	 	\includegraphics[width=0.9\textwidth ,height=0.9\textwidth ,center]{Images/SoftwareDistribution.png}
 	 \end{center}
 	 
 	 
@@ -208,10 +212,31 @@ Furthermore it must control if the vehicle is parked in a safe area.
 		
 
 	\subsection{Functional Requirements}
-
+	\textbf{1.Mobile and Web Application}
 	\begin{itemize}
-	 \item{}	
-	\end{itemize}	
+	 \item{\textbf{[R1.1]}}: Allow a guest to register entering all relevant personal data and a valid driving license whose validity will be check on the spot
+	 \item{\textbf{[R1.2]}}: Allow a registered user to log-in
+	 \item{\textbf{[R1.3]}}: Allow a registered user to update his personal information
+	 \item{\textbf{[R1.4]}}: Allow a registered user to search for an available vehicle given his position within a selected distance
+	 \item{\textbf{[R1.5]}}: Allow a registered user to search for an available vehicle given an input position within a selected distance
+	  \item{\textbf{[R1.6]}}: Allow a registered user reserve a selected vehicle.
+	 \item{\textbf{[R1.7]}}: Allow a registered user to check his payment history
+	 \item{\textbf{[R1.8]}}: Allow a registered user to recover his account log-in information in a secure way
+	 \item{\textbf{[R1.9]}}: Allow a registered user to search for an available vehicle given an input position.
+	 \item{\textbf{[R1.10]}}: Allow a registered user to unlock \emph{his/her} reserved car if the user is nearby.
+	 \item{\textbf{[R1.11]}}: **Chiedere per cancellazione prenotazioni**
+	 	\end{itemize}
+
+	\textbf{2.On-Board Application}
+	\begin{itemize}
+	 \item{\textbf{[R2.1]}}: Allow a registered user to correctly identify himself/herself by entering a user specific pin-code
+ 	 \item{\textbf{[R2.2]}}: Enable a registered user to keep track of the distance covered , time spent using the car ,the current owed fee and the remaining battery charge.
+ 	 \end{itemize}
+ 	 
+ 	 \textbf{3.Back-End Application}
+	\begin{itemize}
+	 \item{\textbf{[R3.1]}}: .
+ 	 \end{itemize}
 	
 	\subsection{Non functional Requirements} 
 		Some non functional requirements have been to be necessary in the to be developed system in order to provider a correct operation flow and an optimized UX.
@@ -227,7 +252,7 @@ Furthermore it must control if the vehicle is parked in a safe area.
 		\end{itemize}
 		
 	\subsection{Future implementation}
-	The system must be as modular as possible: future implementations can require a deployment in very large metropolitan cities that exceed by far the maximum amount of planned users.\\ An important thing to keep in mind is that the nature of vehicles could change in the distant future : not only car , but also electric powered motorcycles could be added to the PowerEnjoy vehicle fleet.This means that the on-board software should be as expandable as possible using for instance Hierarchy Design Patterns in the vehicle type definition.
+	The system must be as modular as possible: future implementations can require a deployment in very large metropolitan cities that exceed by far the maximum amount of planned users.\\ An important thing to keep in mind is that the nature of vehicles could change in the distant future : not only cars , but also electric powered motorcycles could be added to the PowerEnjoy vehicle fleet.This means that the on-board software should be as expandable as possible using for instance Hierarchy Design Patterns in the vehicle type definition.
 	 
 
 
