@@ -5,6 +5,7 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage[export]{adjustbox}
+\usepackage{placeins}
 \graphicspath {{Images/}}
 \hypersetup{
     colorlinks=true,
@@ -252,19 +253,84 @@ Furthermore it must control if the vehicle is parked in a safe area.
 		\end{itemize}
 		
 	\subsection{Future implementation}
-	The system must be as modular as possible: future implementations can require a deployment in very large metropolitan cities that exceed by far the maximum amount of planned users.\\ An important thing to keep in mind is that the nature of vehicles could change in the distant future : not only cars , but also electric powered motorcycles could be added to the PowerEnjoy vehicle fleet.This means that the on-board software should be as expandable as possible using for instance Hierarchy Design Patterns in the vehicle type definition.
+	The system must be as scalable as possible: future implementations can require a deployment in very large metropolitan cities that exceed by far the maximum amount of planned users.\\ An important thing to keep in mind is that the nature of vehicles could change in the distant future : not only cars , but also electric powered motorcycles could be added to the PowerEnjoy vehicle fleet.This means that the on-board software should be as expandable as possible using for instance Hierarchy Design Patterns in the vehicle type definition.
 	 
 
+\newpage
+\FloatBarrier
 
+\section{\Large Specific Requirements}
+\subsection{External Interface Requirements}
+ This section is dedicated to illustrate the mockups of the user interfaces.
+ \subsubsection{Mobile Application}
+ 	
+		\begin{figure}
+		 \vspace{-17cm}	
+		 \minipage{0.50\textwidth}
+		 \centering	
+		 \includegraphics[scale=0.25]{Images/Home.png}
+		 \caption{Home}
+		 \endminipage
+		 \minipage{0.50\textwidth}
+		 \centering
+ 	 	  \includegraphics[scale=0.25]{Images/Register.png}
+		  \caption{Sign Up}
+		  \endminipage
+ 	 	\end{figure}
+ 	 	
+ 	 	\begin{figure}
+		 \minipage{0.50\textwidth}
+		 \centering	
+		 \includegraphics[scale=0.25]{Images/SignIn.png}
+		 \caption{Sign In}
+		 \endminipage
+		 \minipage{0.50\textwidth}
+		 \centering
+ 	 	  \includegraphics[scale=0.25]{Images/RicercaMappa.png}
+		  \caption{Search}
+		  \endminipage
+ 	 	\end{figure}
 
+		\begin{figure}
+		 \minipage{0.50\textwidth}
+		 \centering	
+		 \includegraphics[scale=0.25]{Images/Param.png}
+		 \caption{Address input}
+		 \endminipage
+		 \minipage{0.50\textwidth}
+		 \centering
+ 	 	  \includegraphics[scale=0.25]{Images/SelCar.png}
+		  \caption{Car Selection}
+		  \endminipage
+ 	 	\end{figure}
+ 	 	
+ 	 	\begin{figure}
+		 \minipage{0.50\textwidth}
+		 \centering	
+		 \includegraphics[scale=0.25]{Images/Conferma.png}
+		 \caption{Confirm selection}
+		 \endminipage
+		 \minipage{0.50\textwidth}
+		 \centering
+ 	 	  \includegraphics[scale=0.25]{Images/TimeLeft.png}
+		  \caption{Time left to unlock}
+		  \endminipage
+ 	 	\end{figure}
+ 	 	
+ 	 	\begin{figure}
+		 \minipage{0.50\textwidth}
+		 \centering	
+		 \includegraphics[scale=0.25]{Images/Sblocca.png}
+		 \caption{Unlock car}
+		 \endminipage
+		 \minipage{0.50\textwidth}
+		 \centering
+ 	 	  \includegraphics[scale=0.25]{Images/Menu.png}
+		  \caption{Menu}
+		  \endminipage
+ 	 	\end{figure}
+ 	 	
+		
 	 	 
 
-
-	 	
-	
-	 
-     
-    
-     
-	
 \end{document}
