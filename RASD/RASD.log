@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 OCT 2016 13:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 OCT 2016 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -330,14 +330,14 @@ LaTeX Info: Redefining \nameref on input line 32.
 \openout3 = `RASD.out'.
 
 
-<Images/PolimiLogo.png, id=116, 100.4553pt x 100.6962pt>
+<Images/PolimiLogo.png, id=120, 100.4553pt x 100.6962pt>
 File: Images/PolimiLogo.png Graphic file (type png)
 
 <use Images/PolimiLogo.png>
 Package pdftex.def Info: Images/PolimiLogo.png used on input line 35.
 (pdftex.def)             Requested size: 150.68257pt x 151.0439pt.
 
-<Images/logoPowerEnjoy2.png, id=118, 192.2382pt x 45.2892pt>
+<Images/logoPowerEnjoy2.png, id=122, 192.2382pt x 45.2892pt>
 File: Images/logoPowerEnjoy2.png Graphic file (type png)
 
 <use Images/logoPowerEnjoy2.png>
@@ -417,7 +417,7 @@ Overfull \hbox (5.2628pt too wide) in paragraph at lines 130--131
 (func-tional
  []
 
-[6] <Images/SoftwareDistribution.png, id=190, 622.325pt x 531.9875pt>
+[6] <Images/SoftwareDistribution.png, id=195, 622.325pt x 531.9875pt>
 File: Images/SoftwareDistribution.png Graphic file (type png)
 
 <use Images/SoftwareDistribution.png>
@@ -453,88 +453,89 @@ Overfull \hbox (4.19987pt too wide) in paragraph at lines 209--210
 Policies _
  []
 
-[11] [12] [13] <Images/Home.png, id=242, 752.8125pt x 1339.0025pt>
+[11] [12] [13] <Images/Home.png, id=247, 752.8125pt x 1339.0025pt>
 File: Images/Home.png Graphic file (type png)
 
 <use Images/Home.png>
 Package pdftex.def Info: Images/Home.png used on input line 271.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
- <Images/Register.png, id=243, 752.8125pt x 1339.0025pt>
+ <Images/Register.png, id=248, 752.8125pt x 1339.0025pt>
 File: Images/Register.png Graphic file (type png)
 
 <use Images/Register.png>
 Package pdftex.def Info: Images/Register.png used on input line 276.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/SignIn.png, id=244, 752.8125pt x 1339.0025pt>
+<Images/SignIn.png, id=249, 752.8125pt x 1339.0025pt>
 File: Images/SignIn.png Graphic file (type png)
  <use Images/SignIn.png>
 Package pdftex.def Info: Images/SignIn.png used on input line 284.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/RicercaMappa.png, id=245, 752.8125pt x 1339.0025pt>
+<Images/RicercaMappa.png, id=250, 752.8125pt x 1339.0025pt>
 File: Images/RicercaMappa.png Graphic file (type png)
 
 <use Images/RicercaMappa.png>
 Package pdftex.def Info: Images/RicercaMappa.png used on input line 289.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/Param.png, id=246, 752.8125pt x 1339.0025pt>
+<Images/Param.png, id=251, 752.8125pt x 1339.0025pt>
 File: Images/Param.png Graphic file (type png)
  <use Images/Param.png>
 Package pdftex.def Info: Images/Param.png used on input line 297.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/SelCar.png, id=247, 752.8125pt x 1339.0025pt>
+<Images/SelCar.png, id=252, 752.8125pt x 1339.0025pt>
 File: Images/SelCar.png Graphic file (type png)
  <use Images/SelCar.png>
 Package pdftex.def Info: Images/SelCar.png used on input line 302.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/Conferma.png, id=248, 752.8125pt x 1339.0025pt>
+<Images/Conferma.png, id=253, 752.8125pt x 1339.0025pt>
 File: Images/Conferma.png Graphic file (type png)
 
 <use Images/Conferma.png>
 Package pdftex.def Info: Images/Conferma.png used on input line 310.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/TimeLeft.png, id=249, 752.8125pt x 1339.0025pt>
+<Images/TimeLeft.png, id=254, 752.8125pt x 1339.0025pt>
 File: Images/TimeLeft.png Graphic file (type png)
 
 <use Images/TimeLeft.png>
 Package pdftex.def Info: Images/TimeLeft.png used on input line 315.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/Sblocca.png, id=250, 752.8125pt x 1339.0025pt>
+<Images/Sblocca.png, id=255, 752.8125pt x 1339.0025pt>
 File: Images/Sblocca.png Graphic file (type png)
 
 <use Images/Sblocca.png>
 Package pdftex.def Info: Images/Sblocca.png used on input line 323.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
- <Images/Menu.png, id=251, 752.8125pt x 1339.0025pt>
+ <Images/Menu.png, id=256, 752.8125pt x 1339.0025pt>
 File: Images/Menu.png Graphic file (type png)
 
 <use Images/Menu.png>
 Package pdftex.def Info: Images/Menu.png used on input line 328.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 336.
  [14 <./Images/Home.png> <./Images/Register.png>] [15 <./Images/SignIn.png> <./
 Images/RicercaMappa.png>] [16 <./Images/Param.png> <./Images/SelCar.png>] [17 <
 ./Images/Conferma.png> <./Images/TimeLeft.png>] [18 <./Images/Sblocca.png> <./I
 mages/Menu.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 336.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
+ [19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
  (./RASD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 336.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 336.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
 Package rerunfilecheck Info: File `RASD.out' has not changed.
-(rerunfilecheck)             Checksum: 34209FB33380DBAD68ADCE244E43C645;1903.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 336.
+(rerunfilecheck)             Checksum: F377C06C1E932624BE38891DCA7A6C22;1978.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
  ) 
 Here is how much of TeX's memory you used:
- 6882 strings out of 493014
- 102156 string characters out of 6133351
+ 6885 strings out of 493014
+ 102203 string characters out of 6133351
  192153 words of memory out of 5000000
- 10242 multiletter control sequences out of 15000+600000
+ 10243 multiletter control sequences out of 15000+600000
  27956 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,9n,41p,683b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -545,10 +546,10 @@ live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on RASD.pdf (18 pages, 2554723 bytes).
+Output written on RASD.pdf (19 pages, 2555165 bytes).
 PDF statistics:
- 331 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 65 named destinations out of 1000 (max. 500000)
- 290 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 342 PDF objects out of 1000 (max. 8388607)
+ 286 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 298 words of extra memory for PDF output out of 10000 (max. 10000000)
 
