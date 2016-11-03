@@ -10,7 +10,7 @@
 More about contributors [here](https://github.com/yangi92/SE2_PowerEnJoy/graphs/contributors)
 
 ## About
-Software Engneering 2 Project.</br>
+Software Engineering 2 Project.</br>
 Instructor : **Prof. Di Nitto**</br>
 Accademic Year: 2016/2017 </br>
 Topic of the project : Software system development for the car-sharing service PowerEnjoy</br>
