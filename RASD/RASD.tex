@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+	\documentclass[12pt]{article}
 \usepackage{mathpazo}
 \usepackage{graphicx}
 \usepackage[explicit]{titlesec}
@@ -90,7 +90,15 @@
 	The system stops charging the user as soon as the car is parked in a safe area and the user exits the car. At this point the system will automatically lock the car.
 	Should the user stop in a non-safe area he/she won't be granted to end the transaction and will be charged until  he/she parks in a safe area.
 	The set of safe area parking spots is defined inside the system and must be available all the time to the user's knowledge through the on-board display.
-	
+	\newline
+	In addition to the functionality above, the system should incentivize the virtuous behaviours of the users with some bonuses:
+	\begin{itemize}
+	\item If the user shares a ride with at least two other passengers , the system will detect them and will apply a discount of 10\% the last ride.
+	\item If the user parks the car in a safe area and the battery charge level is more than 50\% , the system will apply a discount of 20\% on the last ride.
+	\item If the user parks the car in a safe area provided with a PowerEnjoy charging station and takes care of the recharing , the system will apply a discount of 30\% on the last ride.
+	\item If the user parks the car in a safe area with a battery charge level less than 20\% or the distance to the next power grid is greater than 3 KM, the system will add a fee of 30\% of the last ride to compensate for the cost required to re-charge the car on-site.
+	\item If the user enables money saving option,he/ she can input the final destination and the system provides information about the station where to leave the car to get a discount. This station is determined to ensure a uniform distribution od the cars in the city and depends both on the destination of the user and on the availability of power plugs at the selected station.
+	\end{itemize}
 	\subsubsection{Goals}
 	The PowerEnjoy software system needs to be:
 	\begin{itemize}
@@ -121,8 +129,40 @@ Furthermore it must control if the vehicle is parked in a safe area.
 	 	\item Alloy Language Reference : \url{http://alloy.mit.edu/alloy/documentation/book-chapters/alloy-language-reference.pdf}
 	 	\item UML Language Reference : \url{https://www.utdallas.edu/˜chung/Fujitsu/UML_2.0/Rumbaugh--UML_2.0_Reference_CD.pdf}
 	 \end{itemize}
-	\subsection{Glossary}
-	TODO
+	 
+	 
+	\subsection{\label{actors:3}Glossary}
+	
+	\subsubsection{Actors}
+		\begin{itemize}
+ 	 	\item \textit{Visitor}: a visitor is defined as a person who is not logged into the system.
+  		\item \textit{Registered User}: is defined as customer who is  logged into the system.
+  		
+  		\item \textit{Car}: is defined as the mean of transport to be used by a registered user.
+  		
+  		\item \textit{Support operator}: The support operator is an employee who is trained and has a full grasp of the different software application .
+
+	\end{itemize}
+	
+	\subsubsection{Other definitions}
+	\begin{itemize}
+	\item \textit{Valid Payment}: as payment we accept only Credit Cards (Visa, MasterCard and American Express).\\The payment method must be valid : the card must not be expired nor blocked. The validity will be checked immediately during registration phase.
+	\item \textit{Valid Drivers License}: the user must be provide a valid european drivers license. The license must be valid: it must not be expired or suspended. The validity will be checked immediately during registration phase. 
+	\item \textit{Safe Area} : a safe area is any part of the city where the user is allowed to park. Safe areas are pre-defined and installed into the cars' on board systems. If a user parks the car in an area which is \textit{not} safe , he/she will not be able to end the ride and will be charged until he/she parks in a safe area.
+	\item \textit{Money Saving Option}: when a user starts a ride he/she can enable this mode on the onboard display: he/ she can input the final destination and the system provides information about the station where to leave the car to get a discount.
+	\item \textit{Reserved Car}:  is a vehicle currently used by a user. Reserved cars are not visible as results of a search query.
+	\item \textit{Time left to unlock}: as soon as a user reserves a car, he/she has one hour to unlock it. The time left is displayed on top of the user's mobile/web application.
+	\item \textit{Charging Station}: all PowerEnjoy's cars are provided with an electric engine. A charging station is a location where the user can park and recharge the car. All charging stations are listed in the on- board system.
+	\item \textit{Battery level} : the current state of the battery charge is indicated by the battery level.
+	\item \textit{Passenger} : is a person ( not necessarily registred ) who shares a ride with a registred driver. A passenger cannot drive but his presence will be detected by the system. 
+	\item \textit{On-board application}: is the software installed on every car. The user can interact with it through a touch screen display.
+	\item \textit{Mobile application}: is the downloadable software that can be installed on major mobile devices.
+	\item \textit{Web application}: is the online software that is accessible through all common web browsers.
+	\item \textit{Back-End application}: is the part of the system that manages queries ,data and user-system interaction.
+	\item \textit{Ride}: a ride is a time span starting from the moment the user turns the car on and ends when the user parks it in a safe area after the car has automatically locked the doors.
+	\item \textit{Payment History} : a chronological list of all payments and rides made by a given user.
+	\item \textit{Available car} : a car that is not reserved or charging. These cars are shown as result of search queries and can be reserved by users.
+	\end{itemize}		
 	
 	\subsection{Document overview}
 	\begin{enumerate}
@@ -140,22 +180,19 @@ Furthermore it must control if the vehicle is parked in a safe area.
 	 \end{center}
 	 
 	 
-	 \subsection{Actors}
-	  
-	\begin{itemize}
- 	 	\item \textit{Visitor}: a visitor is defined as a person who is not logged into the system. A visitor can see only the log-in page with a registration form and some common information ,such as the company's customer office contact information and terms of service.
-  		\item \textit{Registered User}: is defined as any person using the system who is also logged into the system. A registered user can perform any of the above mentioned actions.
-  		\item \textit{Car}: is defined as the vehicle to be used by a registered user. A car must be able to communicate to with the system all the time. If a car is available (i.e currently not reserved by a registered user) then its current location must be stored in the system so to be shown on all users' devices. As soon as the engine ignition starts , the car must time the vehicle's usage in order to charge the user the right amount of money. Once the user has parked the car inside a safe area and has exited, the car informs the system about the fee to charge ,locks the doors automatically and finally informs the system that it is available again.
-  		\item \textit{Support operator}: The support operator is an employee who is trained and has a full grasp of the different software application .His job is to offer costumer support concerning software issues and help out in case of emergency.\\ Contrary to an user, he has access to the back-end software which enables him to overview the system status.
-  		 
-	\end{itemize}
-	
+	 	
 	\subsection{User characteristics}
-	There are no constraints about visitors : every person can access the main site and try to register.\\If a visitor wants to register there are some constraints to follow: 
+	Specifies the characteristics of the different actors mentioned in \hyperref[actors:3]{\textit{Actors section (1.5.1)}} 
 	\begin{itemize}
-		\item the user's has to be \textbf{at least 18} years old
+	\item \textbf{Visitor}: A visitor can see only the log-in page with a registration form and some common information ,such as the company's customer office contact information and terms of service. There are no constraints about visitors : every person can access the main site and try to register.
+	\item \textbf{User}: a want-to-be user must match the following requirements:
+	\begin{itemize}
+		\item the user has to be \textbf{at least 18} years old
 		\item the user must have a \textbf{valid} driving license ( *aggiungere link al glossario *)
 		\item the user must enter a valid payment method ( *aggiungere link al glossario *)
+	\end{itemize}
+	\item \textbf{Car}: is property of the PowerEnjoy Company. A car must be able to communicate to with the system all the time. If a car is available (i.e currently not reserved by a registered user) then its current location must be stored in the system so to be shown on all users' devices. As soon as the engine ignition starts , the car's system must time the vehicle's usage in order to charge the user the right amount of money. Once the user has parked the car inside a safe area and has exited, the car informs the system about the fee to charge ,locks the doors automatically and finally informs the system that it is available again.
+	\item \textbf{Support Operator}: his job is to offer costumer support concerning software issues and help out in case of emergency.\\ Contrary to a user, he has access to the back-end software which enables him to overview the system status.
 	\end{itemize}
 	
 	
