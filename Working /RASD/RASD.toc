@@ -12,8 +12,8 @@
 \contentsline {section}{\numberline {2}\relax \fontsize {17.28}{22}\selectfont Overall Description}{10}{section.2}
 \contentsline {subsection}{\numberline {2.1}Software overview}{10}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}User characteristics}{11}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Domain assumptions}{12}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}General Domain Assumptions}{12}{subsubsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3}Domain assumptions}{11}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}General Domain Assumptions}{11}{subsubsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.2}User Assumptions}{12}{subsubsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.3}Vehicle Assumptions}{12}{subsubsection.2.3.3}
 \contentsline {subsection}{\numberline {2.4}Constraints}{12}{subsection.2.4}
@@ -29,15 +29,15 @@
 \contentsline {subsubsection}{\numberline {3.1.1}Mobile Application}{17}{subsubsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.2}Web Application}{22}{subsubsection.3.1.2}
 \contentsline {subsubsection}{\numberline {3.1.3}On-Board Application (Touch)}{24}{subsubsection.3.1.3}
-\contentsline {subsection}{\numberline {3.2}Scenarios}{25}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Scanario 1:User sign-up}{25}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Scenario 2: Log in}{25}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}Scenario 3: Reserve a car}{25}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}Scenario 4: Unable to reach car in time}{25}{subsubsection.3.2.4}
-\contentsline {subsubsection}{\numberline {3.2.5}Scenario 5: Car problems}{25}{subsubsection.3.2.5}
-\contentsline {subsubsection}{\numberline {3.2.6}Scenario 6: Share ride with passengers}{25}{subsubsection.3.2.6}
-\contentsline {subsubsection}{\numberline {3.2.7}Scenario 7: Drive with Money Saving Option}{25}{subsubsection.3.2.7}
-\contentsline {subsubsection}{\numberline {3.2.8}Scenario 8: Normal car ride}{25}{subsubsection.3.2.8}
-\contentsline {subsubsection}{\numberline {3.2.9}Scenario 9: Out of safe area parking}{25}{subsubsection.3.2.9}
-\contentsline {subsubsection}{\numberline {3.2.10}Scenario 10: Bad parking position}{25}{subsubsection.3.2.10}
-\contentsline {subsubsection}{\numberline {3.2.11}Scenario 11: Charge car}{25}{subsubsection.3.2.11}
+\contentsline {subsection}{\numberline {3.2}Scenarios}{26}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Scenario 1:User sign-up}{26}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Scenario 2: Log in}{26}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Scenario 3: Reserve a car}{26}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Scenario 4: Unable to reach car in time}{26}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Scenario 5: Car problems}{26}{subsubsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.6}Scenario 6: Share ride with passengers}{26}{subsubsection.3.2.6}
+\contentsline {subsubsection}{\numberline {3.2.7}Scenario 7: Drive with Money Saving Option}{27}{subsubsection.3.2.7}
+\contentsline {subsubsection}{\numberline {3.2.8}Scenario 8: Leaving a car with battery level >50\%}{27}{subsubsection.3.2.8}
+\contentsline {subsubsection}{\numberline {3.2.9}Scenario 9: Charge car}{27}{subsubsection.3.2.9}
+\contentsline {subsubsection}{\numberline {3.2.10}Scenario 10: Out of safe area parking}{27}{subsubsection.3.2.10}
+\contentsline {subsubsection}{\numberline {3.2.11}Scenario 11: Bad parking position}{27}{subsubsection.3.2.11}
