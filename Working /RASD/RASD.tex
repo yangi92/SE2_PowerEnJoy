@@ -1,4 +1,4 @@
-	\documentclass[12pt]{article}
+\documentclass[12pt]{article}
 \usepackage{mathpazo}
 \usepackage{graphicx}
 \usepackage[explicit]{titlesec}
@@ -15,7 +15,7 @@
 }
 
 
-	\titleformat{\section}[display]
+\titleformat{\section}[display]
   {\normalfont\scshape\Huge}
   {\hspace*{-70pt}\thesection.~#1}
   {-15pt}
@@ -30,12 +30,15 @@
 
 
 \begin{document}
-		 
-	 \begin{center}
+	%----------------
+    %   TITLE PAGE
+    %----------------
+   
+	\begin{center}
  	 	\includegraphics[scale=1.5]{Images/PolimiLogo.png}
-	 \end{center}
+	\end{center}
 
-	 \begin{center}
+	\begin{center}
 	 	{\Huge Politecnico di Milano}\\
 	 	\vspace{5mm}
 		{\Large A.A 2016-2017} 
@@ -43,264 +46,530 @@
 		{\huge Requirements Analysis and Specifications Document}   
 		\vspace{5mm}\\
 		{\large Version 1.0}  
-     \end{center}
+    \end{center}
      
-     \begin{center}
+    \begin{center}
 		\noindent\rule{8cm}{0.8pt}
 		 \vspace{5mm}\\
  	 	 \includegraphics[scale=1]{Images/logoPowerEnjoy2.png}\\
 		\noindent\rule{8cm}{0.8pt}
-	 \end{center}
+	\end{center}
 	 	\vspace{5mm}
 	
-	 \begin{center}
+	\begin{center}
 	 	{\Large Instructor : Prof. Di Nitto}
-	 	\vspace{5mm}\\	 
+	 	 \vspace{5mm}\\	 
 	 	{\Large Authors:}\\
 	 	{\Large Amico Simone}\\
 	 	{\Large Chianella Claudia Beatrice}\\
 	 	{\Large Giovanakis Yannick}
-	 \end{center}
+	\end{center}
 	 
-	 \newpage
+	\newpage
+	
+	%------------------
+	%  CONTENTS TABLE
+	%------------------
+	
+	\tableofcontents{}
 	 
-	 \tableofcontents{}
+	\newpage
 	 
-	 \newpage
+	%-----------------
+	%  1.INTRODUCTION
+	%-----------------
+	\section{\Large Introduction}
 	 
-	 \section{\Large Introduction}
-	 
+	 %----------------
+	 % 1.1 PURPOSE
+	 %----------------
 	 \subsection{Purpose}
-		The aim of this document	is to give an overview of the 	requirements and specifications of system to be developed. 
-		The goal of the document is to describe in detail all functional and non-functional requirements of the system, analyzing the needs of the customer and explaining common use case scenarios.
-		It will set a baseline for project planning and cost estimation, giving a detailed insight to all stakeholders which include the PowerEnjoy Board , Investors and finally engineers (present and future) involved  in development, testing and maintenance.
+		The aim of this document	is to give an overview of the requirements and 			
+		specifications of system to be developed. 
+		The goal of the document is to describe in detail all functional and non-functional 
+		requirements of the system, analyzing the needs of the customer and explaining common 
+		use case scenarios.
+		It will set a baseline for project planning and cost estimation, giving a detailed 
+		insight to all stakeholders which include the PowerEnjoy Board , Investors and finally
+	    engineers (present and future) involved  in development, testing and maintenance.
 		
-	 
+	 %----------------
+	 % 1.2 SYSTEM
+	 %----------------
 	 \subsection{System}
-	 The to be developed software system provides a complete support to the new PowerEnjoy car-sharing service. It will allow users to register ,log-in and use the car sharing service within the limits imposed by the below specifications.
+	 	The to be developed software system provides a complete support to the new PowerEnjoy 	
+	 	car-sharing service. It will allow users to register ,log-in and use the car sharing 
+	 	service within the limits imposed by the below specifications.
 	 
 	
-	 
+	 %----------------
+	 % 1.3 SCOPE
+	 %----------------
 	 \subsection{\label{scope:1}Scope}
-	The new PowerEnjoy software system will allow visitors to register and retrieve all necessary information of common domain ( ToS , contact information...). \\Once the visitor has successfully registered to the system and his/her driving license has been approved, he/she will be provided with a unique username-password combination. This enables an user to log into the system at any time , from any mobile device. \\Once logged in, the user can search within a certain distance for vehicles based on his/her current location or based on an input address. 
-	Eventually the user chooses to reserve an available vehicle, which can be picked-up within a time span of one hour.\\ 
-	Should the user not pick-up the car within the one hour availability limit, then the system will tag the vehicle as available and charge the user a fee of 1 Euro.\\
-	Should the user reach the car within the limit,he/she must be able to  interact with the system in order to unlock the vehicle and grant the user access to the car.
-	As soon as the engine ignites,the system starts charging the user for a given amount of money per minute. The current charge will be notified through a display inside the car.\\
-	The system stops charging the user as soon as the car is parked in a safe area and the user exits the car. At this point the system will automatically lock the car.
-	Should the user stop in a non-safe area he/she won't be granted to end the transaction and will be charged until  he/she parks in a safe area.
-	The set of safe area parking spots is defined inside the system and must be available all the time to the user's knowledge through the on-board display.
-	\newline
-	In addition to the functionality above, the system should incentivize the virtuous behaviours of the users with some bonuses:
+		The new PowerEnjoy software system will allow visitors to register and retrieve all 
+		necessary information of common domain ( ToS , contact information...). \\Once the 
+		visitor has successfully registered to the system and his/her driving license has been 
+		approved, he/she will be provided with a unique username-password combination. This 
+		enables an user to log into the system at any time , from any mobile device. \\Once 
+		logged in, the user can search within a certain distance for vehicles based on his/her 
+		current location or based on an input address. 
+		Eventually the user chooses to reserve an available vehicle, which can be picked-up 
+		within a time span of one hour.\\ 
+		Should the user not pick-up the car within the one hour availability limit, then the 
+		system will tag the vehicle as available and charge the user a fee of 1 Euro.\\
+		Should the user reach the car within the limit,he/she must be able to  interact with 
+		the system in order to unlock the vehicle and grant the user access to the car.
+		As soon as the engine ignites,the system starts charging the user for a given amount of 
+		money per minute. The current charge will be notified through a display inside the car.	
+		\\
+		The system stops charging the user as soon as the car is parked in a safe area and the 
+		user exits the car. At this point the system will automatically lock the car.
+		Should the user stop in a non-safe area he/she won't be granted to end the transaction 	
+		and will be charged until  he/she parks in a safe area.
+		The set of safe area parking spots is defined inside the system and must be available 	
+		all the time to the user's knowledge through the on-board display.
+		\newline
+		In addition to the functionality above, the system should incentivize the virtuous 
+		behaviours of the users with some bonuses:
+
 	\begin{itemize}
-	\item If the user shares a ride with at least two other passengers , the system will detect them and will apply a discount of 10\% the last ride.
-	\item If the user parks the car in a safe area and the battery charge level is more than 50\% , the system will apply a discount of 20\% on the last ride.
-	\item If the user parks the car in a safe area provided with a PowerEnjoy charging station and takes care of the recharing , the system will apply a discount of 30\% on the last ride.
-	\item If the user parks the car in a safe area with a battery charge level less than 20\% or the distance to the next power grid is greater than 3 KM, the system will add a fee of 30\% of the last ride to compensate for the cost required to re-charge the car on-site.
-	\item If the user enables money saving option,he/ she can input the final destination and the system provides information about the station where to leave the car to get a discount. This station is determined to ensure a uniform distribution od the cars in the city and depends both on the destination of the user and on the availability of power plugs at the selected station.
+		\item If the user shares a ride with at least two other passengers , the system will 
+			  detect them and will apply a discount of 10\% the last ride.
+		\item If the user parks the car in a safe area and the battery charge level is more 
+			  than 50\% , the system will apply a discount of 20\% on the last ride.
+		\item If the user parks the car in a safe area provided with a PowerEnjoy charging 
+			  station and takes care of the recharing , the system will apply a discount of 30
+			  \% on the last ride.
+		\item If the user parks the car in a safe area with a battery charge level less than 	
+			  20\% or the distance to the next power grid is greater than 3 KM, the system will 
+			  add a fee of 30\% of the last ride to compensate for the cost required to re-
+			  charge the car on-site.
+		\item If the user enables money saving option,he/ she can input the final destination 	
+			  and the system provides information about the station where to leave the car to 
+			  get a discount. This station is determined to ensure a uniform distribution od 
+			  the cars in the city and depends both on the destination of the user and on the 
+			  availability of power plugs at the selected station.
 	\end{itemize}
+	
+	%--------------
+	% 1.3.1 GOALS
+	%--------------
 	\subsubsection{Goals}
-	The PowerEnjoy software system needs to be:
+		The PowerEnjoy software system needs to be:
 	\begin{itemize}
-		\item \textbf{[G1] : Practical}\\It wants to give the users a better connectivity among places in the participant cities that common public transport often can't offer.
-		\item \textbf{[G2] : Convenient}\\The service needs to be convenient: it's less expensive than taking a taxi. It's an eco-friendly solution : car-sharing reduces the number of vehicles circulating in the cities and doesn't pollute thanks to electric engines.
-		\item \textbf{[G3] : User friendly}\\ The system needs to be as user friendly as possible in order to be used easily by everyone through their own intuitive knowledge. 
-		\item \textbf{[G4] : Fast}\\ The system needs to be fast and responsive even during high peaks of activity.
-		\item \textbf{[G5] : Available}\\ The system needs to be available at every time and on the largest possible number of devices (mobile and not) with an internet connection.
+		\item \textbf{[G1] : Practical}\\It wants to give the users a better connectivity among 
+					 places in the participant cities that common public transport often can't 
+					 offer.
+		\item \textbf{[G2] : Convenient}\\The service needs to be convenient: it's less 
+					 expensive than taking a taxi. It's an eco-friendly solution : car-sharing 
+					 reduces the number of vehicles circulating in the cities and doesn't 
+					 pollute thanks to electric engines.
+		\item \textbf{[G3] : User friendly}\\ The system needs to be as user friendly as 
+				     possible in order to be used easily by everyone through their own 
+				     intuitive knowledge. 
+		\item \textbf{[G4] : Fast}\\ The system needs to be fast and responsive even during 
+					 high peaks of activity.
+		\item \textbf{[G5] : Available}\\ The system needs to be available at every time and on 
+					 the largest possible number of devices (mobile and not) with an internet 
+					 connection.
 	\end{itemize}
+	
+	%-------------------
+	% 1.3.2 APPLICATIONS
+	%-------------------
 	
 	\subsubsection{Applications}
-	To achieve the above mentioned goals to following software tools need to be developed:
+		To achieve the above mentioned goals to following software tools need to be developed:
 	
 	\begin{itemize}
-	\item \textbf{Mobile Application}: to be developed for all major operating systems (iOS, Android , Windows Phone). The mobile software must allow the user to perform all the tasks in the \hyperref[scope:1]{\textit{Scope section (1.3)}}.
-	\item \textbf{Web Application}: must be compatible with all major browser applications. The user must be allowed to perform all tasks in  the \hyperref[scope:1]{\textit{Scope section (1.3)}}.
-	\item \textbf{ On board car application}: this application needs to handle user interaction such as displaying general car information (charge, fee, tire pressure...), letting the user validate his/her identity through a pin code and report about the status of the vehicle. 
-Furthermore it must control if the vehicle is parked in a safe area.
-	\item \textbf{ Back-End Application}: this application handles all search and reservation requests, payment transactions and car communications. It is also an essential tool for customer support operators.
+		\item \textbf{Mobile Application}: to be developed for all major operating systems 
+					 (iOS, Android , Windows Phone). The mobile software must allow the user 
+					 to perform all the tasks in the \hyperref[scope:1]{\textit{Scope section 
+					 (1.3)}}.
+		\item \textbf{Web Application}: must be compatible with all major browser applications. 
+					 The user must be allowed to perform all tasks in  the \hyperref[scope:1]
+					 {\textit{Scope section (1.3)}}.
+		\item \textbf{ On board car application}: this application needs to handle user 
+					 interaction such as displaying general car information (charge, fee, tire 
+					 pressure...), letting the user validate his/her identity through a pin 
+					 code and report about the status of the vehicle. 
+					 Furthermore it must control if the vehicle is parked in a safe area.
+		\item \textbf{ Back-End Application}: this application handles all search and 
+					 reservation requests, payment transactions and car communications. It is 						 also an essential tool for customer support operators.
 	
 	\end{itemize}
 		
-	
+	%-----------------------
+	% 1.4 REFERNCE DOCUMENTS
+	%-----------------------
 	\subsection{Reference Documents}
-	 \begin{itemize}
-	 	\item IEEE Std 830-1998: “IEEE Recommended Practice for Software Requirements Specifications”
+	\begin{itemize}
+		\item IEEE Std 830-1998: “IEEE Recommended Practice for Software Requirements 	
+			  Specifications”
 	 	\item Project description: “Assignments AA 2016-2017.pdf”
-	 	\item Alloy Language Reference : \url{http://alloy.mit.edu/alloy/documentation/book-chapters/alloy-language-reference.pdf}
-	 	\item UML Language Reference : \url{https://www.utdallas.edu/˜chung/Fujitsu/UML_2.0/Rumbaugh--UML_2.0_Reference_CD.pdf}
-	 \end{itemize}
-	 
-	 
-	\subsection{\label{actors:3}Glossary}
-	
-	\subsubsection{Actors}
-		\begin{itemize}
- 	 	\item \textit{Visitor}: a visitor is defined as a person who is not logged into the system.
-  		\item \textit{Registered User}: is defined as customer who is  logged into the system.
-  		
-  		\item \textit{Car}: is defined as the mean of transport to be used by a registered user.
-  		
-  		\item \textit{Support operator}: The support operator is an employee who is trained and has a full grasp of the different software application .
-
+	 	\item Alloy Language Reference : \url{http://alloy.mit.edu/alloy/documentation/book-	
+	 		  chapters/alloy-language-reference.pdf}
+	 	\item UML Language Reference : \url{https://www.utdallas.edu/˜chung/Fujitsu/UML_2.0/
+	 		  Rumbaugh--UML_2.0_Reference_CD.pdf}
 	\end{itemize}
 	
-	\subsubsection{Other definitions}
-	\begin{itemize}
-	\item \textit{Valid Payment}: as payment we accept only Credit Cards (Visa, MasterCard and American Express).\\The payment method must be valid : the card must not be expired nor blocked. The validity will be checked immediately during registration phase.
-	\item \textit{Valid Drivers License}: the user must be provide a valid european drivers license. The license must be valid: it must not be expired or suspended. The validity will be checked immediately during registration phase. 
-	\item \textit{Safe Area} : a safe area is any part of the city where the user is allowed to park. Safe areas are pre-defined and installed into the cars' on board systems. If a user parks the car in an area which is \textit{not} safe , he/she will not be able to end the ride and will be charged until he/she parks in a safe area.
-	\item \textit{Money Saving Option}: when a user starts a ride he/she can enable this mode on the onboard display: he/ she can input the final destination and the system provides information about the station where to leave the car to get a discount.
-	\item \textit{Reserved Car}:  is a vehicle currently used by a user. Reserved cars are not visible as results of a search query.
-	\item \textit{Time left to unlock}: as soon as a user reserves a car, he/she has one hour to unlock it. The time left is displayed on top of the user's mobile/web application.
-	\item \textit{Charging Station}: all PowerEnjoy's cars are provided with an electric engine. A charging station is a location where the user can park and recharge the car. All charging stations are listed in the on- board system.
-	\item \textit{Battery level} : the current state of the battery charge is indicated by the battery level.
-	\item \textit{Passenger} : is a person ( not necessarily registred ) who shares a ride with a registred driver. A passenger cannot drive but his presence will be detected by the system. 
-	\item \textit{On-board application}: is the software installed on every car. The user can interact with it through a touch screen display.
-	\item \textit{Mobile application}: is the downloadable software that can be installed on major mobile devices.
-	\item \textit{Web application}: is the online software that is accessible through all common web browsers.
-	\item \textit{Back-End application}: is the part of the system that manages queries ,data and user-system interaction.
-	\item \textit{Ride}: a ride is a time span starting from the moment the user turns the car on and ends when the user parks it in a safe area after the car has automatically locked the doors.
-	\item \textit{Payment History} : a chronological list of all payments and rides made by a given user.
-	\item \textit{Available car} : a car that is not reserved or charging. These cars are shown as result of search queries and can be reserved by users.
+	%-----------------------
+	% 1.5 GLOASSARY
+	%-----------------------
+	 
+	\subsection{\label{actors:3}Glossary}
+	 
+	 %--------------
+	 % 1.5.1 ACTORS
+	 %--------------
+	 \subsubsection{Actors}
+     \begin{itemize}
+ 	 	\item \textit{Visitor}: a visitor is defined as a person who is not logged into the 	
+ 	 				 system.
+  		\item \textit{Registered User}: is defined as customer who is  logged into the system.
+  		
+  		\item \textit{Car}: is defined as the mean of transport to be used by a registered 
+  					 user.
+  		\item \textit{Support operator}: The support operator is an employee who is trained and 
+  					 has a full grasp of the different software application.
+	\end{itemize}
+	
+	 %------------------------
+	 % 1.5.2 OTHER DEFINITIONS
+	 %-----------------------
+	 \subsubsection{Other definitions}
+	 \begin{itemize}
+		\item \textit{Valid Payment}: as payment we accept only Credit Cards (Visa, MasterCard 
+			  and American Express).\\The payment method must be valid : the card must not be 
+			  expired nor blocked. The validity will be checked immediately during registration 
+			  phase.
+		\item \textit{Valid Drivers License}: the user must be provide a valid european drivers 
+			  license. The license must be valid: it must not be expired or suspended. The 
+			  validity will be checked immediately during registration phase. 
+		\item \textit{Safe Area} : a safe area is any part of the city where the user is 
+			  allowed to park. Safe areas are pre-defined and installed into the cars' on board 
+			  systems. If a user parks the car in an area which is \textit{not} safe , he/she 
+			  will not be able to end the ride and will be charged until he/she parks in a safe 
+			  area.
+		\item \textit{Money Saving Option}: when a user starts a ride he/she can enable this 
+			  mode on the onboard display: he/ she can input the final destination and the 
+			  system provides information about the station where to leave the car to get a 
+			  discount.
+		\item \textit{Reserved Car}:  is a vehicle currently used by a user. Reserved cars are 
+			  not visible as results of a search query.
+		\item \textit{Time left to unlock}: as soon as a user reserves a car, he/she has one 
+			  hour to unlock it. The time left is displayed on top of the user's mobile/web 
+			  application.
+		\item \textit{Charging Station}: all PowerEnjoy's cars are provided with an electric 
+			  engine. A charging station is a location where the user can park and recharge the 
+			  car. All charging stations are listed in the on- board system.
+		\item \textit{Battery level} : the current state of the battery charge is indicated by 
+			  the battery level.
+		\item \textit{Passenger} : is a person ( not necessarily registred ) who shares a ride 
+			  with a registred driver. A passenger cannot drive but his presence will be 	
+			  detected by the system. 
+		\item \textit{On-board application}: is the software installed on every car. The user 
+			  can interact with it through a touch screen display.
+		\item \textit{Mobile application}: is the downloadable software that can be installed 
+			  on major mobile devices.
+		\item \textit{Web application}: is the online software that is accessible through all 			 	  common web browsers.
+		\item \textit{Back-End application}: is the part of the system that manages queries 
+			  ,data and user-system interaction.
+		\item \textit{Ride}: a ride is a time span starting from the moment the user turns the 
+			  car on and ends when the user parks it in a safe area after the car has 
+			  automatically locked the doors.
+		\item \textit{Payment History} : a chronological list of all payments and rides made by 
+			  a given user.
+		\item \textit{Available car} : a car that is not reserved or charging. These cars are 
+			  shown as result of search queries and can be reserved by users.
 	\end{itemize}		
+	
+	
+	%-------------------
+	%	1.6 DOC OVERVIEW
+	%-------------------
 	
 	\subsection{Document overview}
 	\begin{enumerate}
-		\item \textbf{Introduction}: this section gives a general 	description of the software and its characteristics 
-		\item \textbf{Overall description}: this section gives a detailed overview of the document focusing on domain assumptions, requirements (functional and not) and the characteristics of different types of interacting users.
-		\item \textbf{Specifications}: this section gives a deep insight about the system's main functionality, analyzing scenarios with their relative use-cases and includes an extensive alloy model. Event flows are model using sequence and state diagrams.
+		\item \textbf{Introduction}: this section gives a general 	description of the 
+			  software and its characteristics 
+		\item \textbf{Overall description}: this section gives a detailed overview of the 
+			  document focusing on domain assumptions, requirements (functional and not) and 
+			  the characteristics of different types of interacting users.
+		\item \textbf{Specifications}: this section gives a deep insight about the system's 
+			  main functionality, analyzing scenarios with their relative use-cases and 
+			  includes an extensive alloy model. Event flows are model using sequence and state 			  diagrams.
 	\end{enumerate}	
-	
 	\newpage
-	\section{\Large Overall Description}
-	The overview section highlights all the main functionality and constraints of the PowerEnjoy software.  
+	
+
+  %-----------------------
+  %	2. DOCUMENT OVERVIEW
+  %----------------------- 
+  \section{\Large Overall Description}
+  	The overview section highlights all the main functionality and constraints of the 	
+	PowerEnjoy software.  
+	
+	%----------------------
+	% 2.1 SOFTWARE OVERVIEW
+	%----------------------
+	
 	\subsection{Software overview}
-	  \begin{center}
- 	 	\includegraphics[width=0.9\textwidth ,height=0.9\textwidth ,center]{Images/SoftwareDistribution.png}
+	 \begin{center}
+ 	 	\includegraphics[width=0.9\textwidth ,height=0.9\textwidth ,center]
+ 	 				    {Images/SoftwareDistribution.png}
 	 \end{center}
-	 
+	
+	
+	
+	%-------------------------
+	% 2.2 USER CHARACTERISTICS
+	%------------------------- 
 	 
 	 	
 	\subsection{User characteristics}
-	Specifies the characteristics of the different actors mentioned in \hyperref[actors:3]{\textit{Actors section (1.5.1)}} 
+		Specifies the characteristics of the different actors mentioned in \hyperref[actors:3]	
+		{\textit{Actors section (1.5.1)}} 
 	\begin{itemize}
-	\item \textbf{Visitor}: A visitor can see only the log-in page with a registration form and some common information ,such as the company's customer office contact information and terms of service. There are no constraints about visitors : every person can access the main site and try to register.
-	\item \textbf{User}: a want-to-be user must match the following requirements:
-	\begin{itemize}
-		\item the user has to be \textbf{at least 18} years old
-		\item the user must have a \textbf{valid} driving license ( *aggiungere link al glossario *)
-		\item the user must enter a valid payment method ( *aggiungere link al glossario *)
-	\end{itemize}
-	\item \textbf{Car}: is property of the PowerEnjoy Company. A car must be able to communicate to with the system all the time. If a car is available (i.e currently not reserved by a registered user) then its current location must be stored in the system so to be shown on all users' devices. As soon as the engine ignition starts , the car's system must time the vehicle's usage in order to charge the user the right amount of money. Once the user has parked the car inside a safe area and has exited, the car informs the system about the fee to charge ,locks the doors automatically and finally informs the system that it is available again.
-	\item \textbf{Support Operator}: his job is to offer costumer support concerning software issues and help out in case of emergency.\\ Contrary to a user, he has access to the back-end software which enables him to overview the system status.
+		\item \textbf{Visitor}: A visitor can see only the log-in page with a registration form 
+	     	  and some common information ,such as the company's customer office contact 
+	     	  information and terms of service. There are no constraints about visitors : every 
+	     	  person can access the main site and try to register.
+		\item \textbf{User}: a want-to-be user must match the following requirements:
+		\begin{itemize}
+				\item the user has to be \textbf{at least 18} years old
+				\item the user must have a \textbf{valid} driving license ( *aggiungere link 
+			   	 	  al glossario *)
+				\item the user must enter a valid payment method ( *aggiungere link al 	
+					   glossario *)
+	    \end{itemize}
+		\item \textbf{Car}: is property of the PowerEnjoy Company. A car must be able to 		
+				communicate to with the system all the time. If a car is available (i.e 		
+				currently not reserved by a registered user) then its current location must be 
+				stored in the system so to be shown on all users' devices. As soon as the 
+				engine ignition starts , the car's system must time the vehicle's usage in 
+				order to charge the user the right amount of money. Once the user has parked 
+				the car inside a safe area and has exited, the car informs the system about 
+				the fee to charge ,locks the doors automatically and finally informs the 
+				system that it is available again.
+		\item \textbf{Support Operator}: his job is to offer costumer support concerning 
+				software issues and help out in case of emergency.\\ Contrary to a user, he 
+				has access to the back-end software which enables him to overview the system 
+				status.
 	\end{itemize}
 	
+	%-------------------------
+	%	2.3 DOMAIN ASSUMPTIONS
+	%-------------------------
 	
 	\subsection{Domain assumptions}
+		
+		%-----------------------------------
+		%	2.3.1 GENERAL DOMAIN ASSUMPTIONS
+		%-----------------------------------
+		
 		\subsubsection{General Domain Assumptions}
-			We hold the assumption that the system will be deployed in large metropolitan cities with a maximum of 3M inhabitants.\\
-			We assume that the mean highest peak of activity is around dinner time on Fridays and Saturdays. We assume that during the peak the system will be used by around 50k people , 80\% of which gain access to the system through the Mobile Application, while the remaining 20\% through the Web Application.\\
-			We assume that the the fleet of vehicles will be proportional to the number of inhabitants, reaching a peek of 300 vehicles in the biggest area.\\
+			We hold the assumption that the system will be deployed in large metropolitan 
+			cities with a maximum of 3M inhabitants.\\
+			We assume that the mean highest peak of activity is around dinner time on Fridays 
+			and Saturdays. We assume that during the peak the system will be used by around 50k 
+			people , 80\% of which gain access to the system through the Mobile Application, 
+			while the remaining 20\% through the Web Application.\\
+			We assume that the the fleet of vehicles will be proportional to the number of 
+			inhabitants, reaching a peek of 300 vehicles in the biggest area.\\
+			
+		%---------------------------------
+		%	2.3.2 USER ASSUMPTIONS
+		%---------------------------------		
 		\subsubsection{User Assumptions}
-		We assume that all users are provided with an enabled internet connection equipped with GPS tracking which is the only way to search, reserve and unlock a car.
-		We assume that all active users carry their driving license with them and drive following the traffic code\footnote{\url {http://www.mit.gov.it/mit/site.php?p=normativa&o=vd&id=1&id_cat=&id_dett=0}}.
+			We assume that all users are provided with an enabled internet connection equipped 	
+			with GPS tracking which is the only way to search, reserve and unlock a car.
+			We assume that all active users carry their driving license with them and drive 
+			following the traffic code\footnote{\url {http://www.mit.gov.it/mit/site.php?
+			p=normativa&o=vd&id=1&id_cat=&id_dett=0}}.
+
+		%-------------------------------
+		%	2.3.3 VEHCILE ASSUMOPTIONS
+		%-------------------------------
 		\subsubsection{Vehicle Assumptions}
 		* chiedere se e' bisogna inserire assunsiozioni sulla carica delle macchine etc...*		
-			
+	
+	
+	%----------------------
+	%	2.4 CONSTRAINTS
+	%----------------------		
 	\subsection{Constraints}
 	
-	\subsubsection{Software Limitations}
-	The Mobile and Web Application can not exceed 50MB of RAM usage.\\
-	The On-Board application can not exceed 75MB of RAM usage.\\
-	The Back-End application cannot exceed 100GB of RAM usage.
-	\newpage
-	\subsubsection{Hardware limitations}
-	The Mobile Application must be available for the following mobile operating systems:
-	\begin{itemize}
-		\item iOS version 7.0 or higher.
-		\item Android version 4.0 or higher.
-		\item Windows Phone 8 or higher.
-	\end{itemize}
-	The applications must interface with Google Maps API \footnote{\url{https://developers.google.com/maps/documentation/javascript/}} and follow the design guidelines provided by each platform \footnote{\url{https://developer.android.com/design/index.html}} \footnote{\url{https://developer.apple.com/design/}}.\\
-	\newline
-	The Web Application must be developed in order to be correctly used by the following web browsers \footnote{\url{http://www.w3schools.com/browsers/default.asp}}:
+		%-----------------------------
+		%	2.4.1 SOFTWARE LIMITATIONS
+		%-----------------------------
+		\subsubsection{Software Limitations}
+			The Mobile and Web Application can not exceed 50MB of RAM usage.\\
+			The On-Board application can not exceed 75MB of RAM usage.\\
+			The Back-End application cannot exceed 100GB of RAM usage.
+		\newpage
+		%-----------------------------
+		%	2.4.2 HARDWARE LIMITATIONS
+		%-----------------------------
+		\subsubsection{Hardware limitations}
+		The Mobile Application must be available for the following mobile operating systems:
 		\begin{itemize}
-		\item Mozilla Firefox
-		\item Google Chrome
-		\item Safari
-		\item Microsoft Edge
-		\item Opera
-	\end{itemize}
-	The on-board software system must be equipped with a GPS Module and interface Google Maps API. The following safety regulations must be followed:
-	\begin{itemize}
-		\item \textbf{Night mode}: an automatic night mode must be implemented. This will avoid that drivers get blinded by excessive brightness of the display.
-		\item \textbf{Safe - area parking recognition}: the system must recognize whether the vehicle is parked in a safe-area or not.
-		\item \textbf{Additional passenger recognition}: the system must recognize passenger. This feature is crucial for bonus credit distribution to the driver.
-	\end{itemize}
+			\item iOS version 7.0 or higher.
+			\item Android version 4.0 or higher.
+			\item Windows Phone 8 or higher.
+		\end{itemize}
+		The applications must interface with Google Maps API \footnote{\url{https://	
+		developers.google.com/maps/documentation/javascript/}} and follow the design guidelines 
+		provided by each platform \footnote{\url{https://developer.android.com/design/
+		index.html}} \footnote{\url{https://developer.apple.com/design/}}.\\
+		\newline
+		The Web Application must be developed in order to be correctly used by the following 
+		web browsers \footnote{\url{http://www.w3schools.com/browsers/default.asp}}:
+		\begin{itemize}
+			\item Mozilla Firefox
+			\item Google Chrome
+			\item Safari
+			\item Microsoft Edge
+			\item Opera
+		\end{itemize}
+		The on-board software system must be equipped with a GPS Module and interface Google 
+		Maps API. The following safety regulations must be followed:
+		\begin{itemize}
+			\item \textbf{Night mode}: an automatic night mode must be implemented. This will 
+				  avoid that drivers get blinded by excessive brightness of the display.
+			\item \textbf{Safe - area parking recognition}: the system must recognize whether 
+				  the vehicle is parked in a safe-area or not.
+			\item \textbf{Additional passenger recognition}: the system must recognize 
+				  passenger. This feature is crucial for bonus credit distribution to the 	
+				  driver.
+		\end{itemize}
 	
-	\subsubsection{Concurrency}
-	The back-end application must be able to handle correctly multiple user requests without creating conflicts : if two users desire two reserve the same car simultaneously ,only one can be granted a reservation.
-	
-	\subsubsection{Regulatory Policies}
-	\begin{itemize}
-		\item \textbf{Privacy Policy}: Data should be collected and stored following the privacy policy guidelines provided by Mozilla Foundation \url{https://developer.mozilla.org/en-US/Marketplace/Publishing Policies_and_Guidelines/Privacy_policies}
-		\item Network connections must be encrypted.
-		\item Data storage on PowerEnjoy databases must be encrypted
-	\end{itemize}
+		%----------------------
+		%	2.4.3 CONCURRENCY
+		%----------------------
+		\subsubsection{Concurrency}
+		The back-end application must be able to handle correctly multiple user requests 
+		without creating conflicts : if two users desire two reserve the same car 
+		simultaneously ,only one can be granted a reservation.
 		
-
-	\subsection{Functional Requirements}
-	\textbf{1.Mobile and Web Application}
-	\begin{itemize}
-	 \item{\textbf{[R1.1]}}: Allow a guest to register entering all relevant personal data and a valid driving license whose validity will be check on the spot
-	 \item{\textbf{[R1.2]}}: Allow a registered user to log-in
-	 \item{\textbf{[R1.3]}}: Allow a registered user to update his personal information
-	 \item{\textbf{[R1.4]}}: Allow a registered user to search for an available vehicle given his position within a selected distance
-	 \item{\textbf{[R1.5]}}: Allow a registered user to search for an available vehicle given an input position within a selected distance
-	  \item{\textbf{[R1.6]}}: Allow a registered user reserve a selected vehicle.
-	 \item{\textbf{[R1.7]}}: Allow a registered user to check his payment history
-	 \item{\textbf{[R1.8]}}: Allow a registered user to recover his account log-in information in a secure way
-	 \item{\textbf{[R1.9]}}: Allow a registered user to search for an available vehicle given an input position.
-	 \item{\textbf{[R1.10]}}: Allow a registered user to unlock \emph{his/her} reserved car if the user is nearby.
-	 \item{\textbf{[R1.11]}}: **Chiedere per cancellazione prenotazioni**
-	 	\end{itemize}
-
-	\textbf{2.On-Board Application}
-	\begin{itemize}
-	 \item{\textbf{[R2.1]}}: Allow a registered user to correctly identify himself/herself by entering a user specific pin-code
- 	 \item{\textbf{[R2.2]}}: Enable a registered user to keep track of the distance covered , time spent using the car ,the current owed fee and the remaining battery charge.
- 	 \end{itemize}
- 	 
- 	 \textbf{3.Back-End Application}
-	\begin{itemize}
-	 \item{\textbf{[R3.1]}}: .
- 	 \end{itemize}
-	
-	\subsection{Non functional Requirements -> qua o in paragrafo 3?} 
-		Some non functional requirements have been to be necessary in the to be developed system in order to provider a correct operation flow and an optimized UX.
+		%----------------------------
+		%	2.4.4 REGULATORY POLICIES
+		%----------------------------
+		\subsubsection{Regulatory Policies}
 		\begin{itemize}
-			\item \textit{User friendliness}: the Mobile/Web as well as the On-Board Application must be easily handled by the average web user with basic web knowledge.
-			\item \textit{Performance}: to supply a suitable service the system must be responsive even at peak activity times. To achieve this client-server transaction must be reduced to a minimum.
-		 	\item \textit{Reliability}: the PowerEnjoy service must be active 24h/24h . Maintenance must be performed without compromising functionality. At all the time , a user must be able to be charged the owed fee.	
-		 	\item \textit{Data integrity and availability}: 
-		 	Data have to be always available and accessible.Data availability can be achieved by duplicating data on back-up servers. For instance the use of RAID, mirroring and backup could present a valid solution.
-
-		 	\item \textit{Maintainability}: the software should be implemented so as to be as modular as possible to allow future expansions and easy modifications.\\Google API are required but can be easily updated from time to time on all systems.
-		 	\item \textit{Security}: user accounts are provided with two factor authentication with a code sent to the user's mobile phone to add a secure connection method to the system. Sensible user information are stored using a hashing mechanism .\\User data input should be filtered to avoid malicious modifications ( i.e SQL Injections). \\All connections should be encrypted and run on a secure HTTPS protocol with valid certificates that uses the secure TSL protocol to avoid Man in the Middle Attacks.
+			\item \textbf{Privacy Policy}: Data should be collected and stored following the 
+			  privacy policy guidelines provided by Mozilla Foundation \url{https://
+			  developer.mozilla.org/en-US/Marketplace/Publishing Policies_and_Guidelines/
+			  Privacy_policies}
+			\item Network connections must be encrypted.
+			\item Data storage on PowerEnjoy databases must be encrypted
 		\end{itemize}
 		
+	  %------------------------------
+	  % 2.5 FUNCTIONAL REQUIREMENTS
+	  %------------------------------
+
+	  \subsection{Functional Requirements}
+	  \textbf{1.Mobile and Web Application}
+	  \begin{itemize}
+	 		\item{\textbf{[R1.1]}}: Allow a guest to register entering all relevant personal 
+	 			 data and a valid driving license whose validity will be check on the spot
+	 		\item{\textbf{[R1.2]}}: Allow a registered user to log-in
+	 		\item{\textbf{[R1.3]}}: Allow a registered user to update his personal information
+	 		\item{\textbf{[R1.4]}}: Allow a registered user to search for an available vehicle 
+	 			 given his position within a selected distance
+	 		\item{\textbf{[R1.5]}}: Allow a registered user to search for an available vehicle 	
+	 			 given an input position within a selected distance
+	  		\item{\textbf{[R1.6]}}: Allow a registered user reserve a selected vehicle.
+	 		\item{\textbf{[R1.7]}}: Allow a registered user to check his payment history
+	 		\item{\textbf{[R1.8]}}: Allow a registered user to recover his account log-in 	
+	 			 information in a secure way
+	 		\item{\textbf{[R1.9]}}: Allow a registered user to search for an available vehicle 	
+	 			 given an input position.
+	 		\item{\textbf{[R1.10]}}: Allow a registered user to unlock \emph{his/her} reserved 	
+	 			 car if the user is nearby.
+	 		\item{\textbf{[R1.11]}}: **Chiedere per cancellazione prenotazioni**
+	 	\end{itemize}
+
+		\textbf{2.On-Board Application}
+		\begin{itemize}
+	 		\item{\textbf{[R2.1]}}: Allow a registered user to correctly identify himself/
+	 			 herself 	by entering a user specific pin-code
+ 	 		\item{\textbf{[R2.2]}}: Enable a registered user to keep track of the distance 
+ 	 			 covered, time spent using the car ,the current owed fee and the remaining 	
+ 	 			 battery charge.
+ 	 	\end{itemize}
+ 	 
+ 	 	\textbf{3.Back-End Application}
+		\begin{itemize}
+	 		\item{\textbf{[R3.1]}}: .
+ 	 	\end{itemize}
+	
+	  %-----------------------------
+	  %  NON FUNCTIONAL REQUIREMENTS
+	  %-----------------------------
+	  \subsection{Non functional Requirements} 
+	  	Some non functional requirements have been to be necessary in the to be developed 
+	  	system in order to provider a correct operation flow and an optimized UX.
+		\begin{itemize}
+			\item \textit{User friendliness}: the Mobile/Web as well as the On-Board 
+				  Application must be easily handled by the average web user with basic web 	
+				  knowledge.
+			\item \textit{Performance}: to supply a suitable service the system must be 
+				  responsive even at peak activity times. To achieve this client-server 
+				  transaction must be reduced to a minimum.
+		 	\item \textit{Reliability}: the PowerEnjoy service must be active 24h/24h . 
+		 		  Maintenance must be performed without compromising functionality. At all the 
+		 		  time , a user must be able to be charged the owed fee.	
+		 	\item \textit{Data integrity and availability}: 
+	   		 	  Data have to be always available and accessible.Data availability can be 
+	   		 	  achieved by duplicating data on back-up servers. For instance the use of 
+	   		 	  RAID, mirroring and backup could present a valid solution.
+
+		 	\item \textit{Maintainability}: the software should be implemented so as to be as 
+		 		  modular as possible to allow future expansions and easy modifications\\
+		 		  Google API are required but can be easily updated from time to time on all 
+		 		  systems.
+		 	\item \textit{Security}: user accounts are provided with two factor authentication 
+		 		  with a code sent to the user's mobile phone to add a secure connection 
+		 		  method to the system. Sensible user information are stored using a hashing 
+		 		  mechanism .\\User data input should be filtered to avoid malicious 
+		 		  modifications ( i.e SQL Injections). \\All connections should be encrypted 
+		 		  and run on a secure HTTPS protocol with valid certificates that uses the 
+		 		  secure TSL protocol to avoid Man in the Middle Attacks.
+		\end{itemize}
+		
+	%--------------------------
+	% 2.6 FUTURE IMPLEMENTATION
+	%--------------------------
 	\subsection{Future implementation}
-	The system must be as scalable as possible: future implementations can require a deployment in very large metropolitan cities that exceed by far the maximum amount of planned users.\\ An important thing to keep in mind is that the nature of vehicles could change in the distant future : not only cars , but also electric powered motorcycles could be added to the PowerEnjoy vehicle fleet.This means that the on-board software should be as expandable as possible using for instance Hierarchy Design Patterns in the vehicle type definition.
+		The system must be as scalable as possible: future implementations can require a 
+		deployment in very large metropolitan cities that exceed by far the maximum amount of 
+		planned users.\\ An important thing to keep in mind is that the nature of vehicles 
+		could change in the distant future : not only cars , but also electric powered 
+		motorcycles could be added to the PowerEnjoy vehicle fleet.This means that the on-board 
+		software should be as expandable as possible using for instance Hierarchy Design 
+		Patterns in the vehicle type definition.
 	 
 
-\newpage
-\FloatBarrier
+	\newpage
 
-\section{\Large Specific Requirements}
-\subsection{External Interface Requirements}
- This section is dedicated to illustrate the mockups of the user interfaces.
- \FloatBarrier
- \subsubsection{Mobile Application}
+ %-------------------------
+ % 3. SPECIFIC REQUIREMENTS
+ %-------------------------
+ 	\section{\Large Specific Requirements}
+	
+		%-------------------
+		%	3.1 EX INTERFACE
+		%-------------------
+		\subsection{External Interface Requirements}
+ 			This section is dedicated to illustrate the mockups of the user interfaces.
+ 			\FloatBarrier
+ 		
+ 		%-------------------
+		%	3.1.1 MOBILE
+		%-------------------
+ 		\subsubsection{Mobile Application}
  	
 		\begin{figure}
 		 \vspace{-17cm}	
@@ -367,9 +636,12 @@ Furthermore it must control if the vehicle is parked in a safe area.
 		  \caption{Menu}
 		  \endminipage
  	 	\end{figure}
- 	 	
- 	 \FloatBarrier
- 	 \subsubsection{Web Application}
+ 	 
+ 		%-------------------
+		%	3.1.2 WEB 
+		%-------------------	 
+ 	 	\FloatBarrier
+ 	 	\subsubsection{Web Application}
  	  	\begin{figure}
 		\centering	
 		\vspace{-14cm}		 
@@ -385,12 +657,16 @@ Furthermore it must control if the vehicle is parked in a safe area.
  	 	 \includegraphics[scale=0.28]{Images/webApp/MainSearchCar.png}
 		 \caption{Main page with car selection}
  	 	 \centering
- 	 	 \includegraphics[scale=0.28]{Images/webApp/MainMenu.png}
+ 	 	\includegraphics[scale=0.28]{Images/webApp/MainMenu.png}
 		 \caption{Main page with account info bar}
 		\end{figure}
 		
-	 \FloatBarrier
- 	 \subsubsection{On-Board Application (Touch)}
+		
+		%-------------------
+		%	3.1.3 ONBOARD
+		%-------------------
+	 	\FloatBarrier
+ 	 	\subsubsection{On-Board Application (Touch)}
  	 	 \begin{figure}
 		 \centering	
 		\vspace{-17cm}		 
@@ -400,22 +676,36 @@ Furthermore it must control if the vehicle is parked in a safe area.
  	 	  \includegraphics[scale=0.6]{Images/onBoard/Pin.png}
 		  \caption{Pin request}
  	 	\end{figure}
- 	 	 
  	 	\begin{figure}
 		 \centering	
-		 \includegraphics[scale=0.6]{Images/onBoard/Main.png}
+		 \includegraphics[scale=0.]{Images/onBoard/Main.png}
 		 \caption{Main screen}
  	 	\end{figure}
  	 	
- 	   \FloatBarrier
+ 	 	
+ 	 	
+ 	 	 \FloatBarrier
  	 	\subsection{Scenarios}
- 	
+ 		
  	 	
- 	 	
- 	 
+ 	 	\subsubsection{Scanario 1:User sign-up}
+ 	 	\textbf{Scenario 1} Mariangiongiangela is baking a "Panettorrondoro" but is missing a 			crucial ingredient : the famous "pappafico spaziale". Unfortunately there is a public 
+ 	 	strike going on and the nearest supermarket is too far away. She is about to call a 
+ 	 	Taxi but then rembers that her ex boyfriend who cheated on her was a Taxi driver.  She 
+ 	 	then remembers about the PowerEnjoy ad she saw yesterday: once the app is donwloaded 
+ 	 	she opens the app and enters her personal information including a payment method and 
+ 	 	her driver's license.
 
- 	 	
-		
-	 	 
+
+\subsubsection{Scenario 2: Log in}
+\subsubsection{Scenario 3: Reserve a car}
+\subsubsection{Scenario 4: Unable to reach car in time}
+\subsubsection{Scenario 5: Car problems}
+\subsubsection{Scenario 6: Share ride with passengers}
+\subsubsection{Scenario 7: Drive with Money Saving Option}
+\subsubsection{Scenario 8: Normal car ride}
+\subsubsection{Scenario 9: Out of safe area parking}
+\subsubsection{Scenario 10: Bad parking position}
+\subsubsection{Scenario 11: Charge car}
 
 \end{document}
