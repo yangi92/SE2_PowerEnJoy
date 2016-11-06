@@ -1,0 +1,43 @@
+\contentsline {section}{\numberline {1}\relax \fontsize {17.28}{22}\selectfont Introduction}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Purpose}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}System}{4}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Scope}{4}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}Goals}{6}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2}Applications}{6}{subsubsection.1.3.2}
+\contentsline {subsection}{\numberline {1.4}Reference Documents}{7}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Glossary}{7}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Actors}{7}{subsubsection.1.5.1}
+\contentsline {subsubsection}{\numberline {1.5.2}Other definitions}{8}{subsubsection.1.5.2}
+\contentsline {subsection}{\numberline {1.6}Document overview}{9}{subsection.1.6}
+\contentsline {section}{\numberline {2}\relax \fontsize {17.28}{22}\selectfont Overall Description}{10}{section.2}
+\contentsline {subsection}{\numberline {2.1}Software overview}{10}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}User characteristics}{11}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Domain assumptions}{11}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}General Domain Assumptions}{11}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}User Assumptions}{12}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Vehicle Assumptions}{12}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Constraints}{12}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Software Limitations}{12}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Hardware limitations}{13}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Concurrency}{14}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Regulatory Policies}{14}{subsubsection.2.4.4}
+\contentsline {subsection}{\numberline {2.5}Functional Requirements}{14}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Non functional Requirements}{15}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Future implementation}{16}{subsection.2.7}
+\contentsline {section}{\numberline {3}\relax \fontsize {17.28}{22}\selectfont Specific Requirements}{17}{section.3}
+\contentsline {subsection}{\numberline {3.1}External Interface Requirements}{17}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Mobile Application}{17}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Web Application}{22}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}On-Board Application (Touch)}{24}{subsubsection.3.1.3}
+\contentsline {subsection}{\numberline {3.2}Scenarios}{26}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Scenario 1:User sign-up}{26}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Scenario 2: Log in}{26}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Scenario 3: Reserve a car}{26}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Scenario 4: Unable to reach car in time}{27}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Scenario 5: Car problems}{27}{subsubsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.6}Scenario 6: Share ride with passengers}{27}{subsubsection.3.2.6}
+\contentsline {subsubsection}{\numberline {3.2.7}Scenario 7: Drive with Money Saving Option}{27}{subsubsection.3.2.7}
+\contentsline {subsubsection}{\numberline {3.2.8}Scenario 8: Leaving a car with battery level >50\%}{27}{subsubsection.3.2.8}
+\contentsline {subsubsection}{\numberline {3.2.9}Scenario 9: Charge car}{27}{subsubsection.3.2.9}
+\contentsline {subsubsection}{\numberline {3.2.10}Scenario 10: Out of safe area parking}{28}{subsubsection.3.2.10}
+\contentsline {subsubsection}{\numberline {3.2.11}Scenario 11: Bad parking position}{28}{subsubsection.3.2.11}
