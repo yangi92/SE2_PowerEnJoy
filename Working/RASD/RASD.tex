@@ -1,6 +1,5 @@
 \documentclass[12pt]{article}
 \usepackage{mathpazo}
-\usepackage{import}
 \usepackage{graphicx}
 \usepackage[explicit]{titlesec}
 \usepackage{hyperref}
@@ -88,7 +87,7 @@
 	 %----------------
 	 \subsection{Purpose}
 		The aim of this document	is to give an overview of the requirements and 			
-		specifications of system to be developed. 
+		specifications of the system to be developed. 
 		The goal of the document is to describe in detail all functional and non-functional 
 		requirements of the system, analyzing the needs of the customer and explaining common 
 		use case scenarios.
@@ -111,23 +110,23 @@
 	 \subsection{\label{scope:1}Scope}
 		The new PowerEnjoy software system will allow visitors to register and retrieve all 
 		necessary information of common domain ( ToS , contact information...). \\Once the 
-		visitor has successfully registered to the system and his/her driving license has been 
+		visitor has successfully registered into the system and his/her driving license has been 
 		approved, he/she will be provided with a unique username-password combination. This 
-		enables an user to log into the system at any time , from any mobile device. \\Once 
+		enables a user to log into the system at any time , from any mobile device. \\Once 
 		logged in, the user can search within a certain distance for vehicles based on his/her 
 		current location or based on an input address. 
 		Eventually the user chooses to reserve an available vehicle, which can be picked-up 
 		within a time span of one hour.\\ 
-		Should the user not pick-up the car within the one hour availability limit, then the 
-		system will tag the vehicle as available and charge the user a fee of 1 Euro.\\
-		Should the user reach the car within the limit,he/she must be able to  interact with 
+		If the user doesn't pick-up the car within the one hour availability limit, then the 
+		system will tag the vehicle as available and charge the user a fee of 1 Euro. \\
+		If the user reach the car within the limit,he/she must be able to  interact with 
 		the system in order to unlock the vehicle and grant the user access to the car.
 		As soon as the engine ignites,the system starts charging the user for a given amount of 
 		money per minute. The current charge will be notified through a display inside the car.	
 		\\
 		The system stops charging the user as soon as the car is parked in a safe area and the 
 		user exits the car. At this point the system will automatically lock the car.
-		Should the user stop in a non-safe area he/she won't be granted to end the transaction 	
+		If the user stops in a non-safe area he/she won't be granted to end the transaction 	
 		and will be charged until  he/she parks in a safe area.
 		The set of safe area parking spots is defined inside the system and must be available 	
 		all the time to the user's knowledge through the on-board display.
@@ -182,14 +181,14 @@
 	%-------------------
 	
 	\subsubsection{Applications}
-		To achieve the above mentioned goals to following software tools need to be developed:
+		To achieve the above mentioned goals the following software tools need to be developed:
 	
 	\begin{itemize}
 		\item \textbf{Mobile Application}: to be developed for all major operating systems 
 					 (iOS, Android , Windows Phone). The mobile software must allow the user 
 					 to perform all the tasks in the \hyperref[scope:1]{\textit{Scope section 
 					 (1.3)}}.
-		\item \textbf{Web Application}: must be compatible with all major browser applications. 
+		\item \textbf{Web Application}: must be compatible with all major browser applications (Chrome, Firefox, Safari, Edge, Opera). 
 					 The user must be allowed to perform all tasks in  the \hyperref[scope:1]
 					 {\textit{Scope section (1.3)}}.
 		\item \textbf{ On board car application}: this application needs to handle user 
@@ -483,7 +482,7 @@
 	 			 given his position within a selected distance
 	 		\item{\textbf{[R1.5]}}: Allow a registered user to search for an available vehicle 	
 	 			 given an input position within a selected distance
-	  		\item{\textbf{[R1.6]}}: Allow a registered user reserve a selected vehicle.
+	  		\item{\textbf{[R1.6]}}: Allow a registered user to reserve a selected vehicle.
 	 		\item{\textbf{[R1.7]}}: Allow a registered user to check his payment history
 	 		\item{\textbf{[R1.8]}}: Allow a registered user to recover his account log-in 	
 	 			 information in a secure way
@@ -707,12 +706,12 @@
  	 	rush hour. She decides to download the PowerEnjoy application. Once the download is 
  	 	completed she fill out the necessary registration informations providing a valid 
  	 	license and payment method and is ready to go and enjoy the evening with her friends.
- 	 	
+
 		\subsubsection{Scenario 2: Log in}
 		Angelo woke up late for his exam and has to hurry up. The bus stop is too far away 
 		from his University so he has to find an alternative. So he logs into the system to
 		look immediately for a car.
-				
+		
 		\subsubsection{Scenario 3: Reserve a car}
 		Francesca has to take the train. The station is far away so she has to drive but she
 		doesn't want to leave her car parked in an expensive car lot. She decides to search 
@@ -720,7 +719,7 @@
 		 
 		\subsubsection{Scenario 4: Unable to reach car in time}
 		Giacomo wants to meet his friends at the cinema. He reserves a car near him but as he 
-		steps out of his front door he meets an old friends who offers him a lift.Giacomo
+		steps out of his front door he meets an old friend who offers him a lift.Giacomo
 		never reaches the car he reserved so he has to pay a fee of 1 Euro for not unlocking
 		the car within one hour.
 		
@@ -734,7 +733,7 @@
 		if she takes two passengers with her.
 		
 		\subsubsection{Scenario 7: Drive with Money Saving Option}
-		Flavio wants to attend his brothers football match. He decides to use the money saving 
+		Flavio wants to attend his brother football match. He decides to use the money saving 
 		option which automatically shows him the optimal parking solution closest to his destination.
 		In return he gets a discount on his ride's fee.
 		
@@ -744,12 +743,12 @@
 		a battery level over 50\% so he's entitled to get a discount of 20\% on his fee.
 		
 		\subsubsection{Scenario 9: Charge car}
-		Daniele is driving a PowerEnjoy car to get to football stadium. Near the stadium there is a 
+		Daniele is driving a PowerEnjoy car to get to the football stadium. Near the stadium there is a 
 		PowerEnjoy charging station. He decides to park the car there and to plug it into the 
 		charging station : as a reward PowerEnjoy applies a discount of 30\% on his fee.
 		
 		\subsubsection{Scenario 10: Out of safe area parking}
-		Andrea has to meet his girlfriends parents in the suburbs. He decides to take a PowerEnjoy
+		Andrea has to meet his girlfriend's parents in the suburbs. He decides to take a PowerEnjoy
 		and park on a private driveway. Unfortunately the parking spot is marked as \emph{unsafe} so 	
 		the onboard  display notifies him about the situation. This way Andrea parks the car in an
 		accessible position for everyone.
@@ -760,5 +759,6 @@
 		has to take care of this situation , so Alessandro is charged with an additional 30\% on his
 		ride's fee.
 		
-	
+		
+
 \end{document}
