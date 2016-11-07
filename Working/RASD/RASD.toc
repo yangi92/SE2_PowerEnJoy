@@ -31,26 +31,13 @@
 \contentsline {subsubsection}{\numberline {3.1.3}On-Board Application (Touch)}{24}{subsubsection.3.1.3}
 \contentsline {subsection}{\numberline {3.2}Scenarios}{26}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Scenario 1:User sign-up}{26}{subsubsection.3.2.1}
-<<<<<<< HEAD
 \contentsline {subsubsection}{\numberline {3.2.2}Scenario 2: Log in}{27}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}Scenario 3: Reserve a car}{27}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}Scenario 4: Unable to reach car in time}{27}{subsubsection.3.2.4}
-\contentsline {subsubsection}{\numberline {3.2.5}Scenario 5: Car problems}{27}{subsubsection.3.2.5}
-\contentsline {subsubsection}{\numberline {3.2.6}Scenario 6: Share ride with passengers}{27}{subsubsection.3.2.6}
-\contentsline {subsubsection}{\numberline {3.2.7}Scenario 7: Drive with Money Saving Option}{27}{subsubsection.3.2.7}
-\contentsline {subsubsection}{\numberline {3.2.8}Scenario 8: Leaving a car with battery level >50\%}{28}{subsubsection.3.2.8}
-\contentsline {subsubsection}{\numberline {3.2.9}Scenario 9: Charge car}{28}{subsubsection.3.2.9}
-\contentsline {subsubsection}{\numberline {3.2.10}Scenario 10: Out of safe area parking}{28}{subsubsection.3.2.10}
-\contentsline {subsubsection}{\numberline {3.2.11}Scenario 11: Bad parking position}{28}{subsubsection.3.2.11}
-=======
-\contentsline {subsubsection}{\numberline {3.2.2}Scenario 2: Log in}{26}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}Scenario 3: Reserve a car}{26}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}Scenario 4: Unable to reach car in time}{26}{subsubsection.3.2.4}
-\contentsline {subsubsection}{\numberline {3.2.5}Scenario 5: Car problems}{26}{subsubsection.3.2.5}
-\contentsline {subsubsection}{\numberline {3.2.6}Scenario 6: Share ride with passengers}{26}{subsubsection.3.2.6}
-\contentsline {subsubsection}{\numberline {3.2.7}Scenario 7: Drive with Money Saving Option}{27}{subsubsection.3.2.7}
-\contentsline {subsubsection}{\numberline {3.2.8}Scenario 8: Leaving a car with battery level >50\%}{27}{subsubsection.3.2.8}
-\contentsline {subsubsection}{\numberline {3.2.9}Scenario 9: Charge car}{27}{subsubsection.3.2.9}
-\contentsline {subsubsection}{\numberline {3.2.10}Scenario 10: Out of safe area parking}{27}{subsubsection.3.2.10}
-\contentsline {subsubsection}{\numberline {3.2.11}Scenario 11: Bad parking position}{27}{subsubsection.3.2.11}
->>>>>>> 36c59dd3fa0236b4735485273edf87dacd8eb769
+\contentsline {subsubsection}{\numberline {3.2.3}Scenario 3: Reserve a car}{28}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Scenario 4: Unable to reach car in time}{29}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Scenario 5: Car problems}{30}{subsubsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.6}Scenario 6: Share ride with passengers}{31}{subsubsection.3.2.6}
+\contentsline {subsubsection}{\numberline {3.2.7}Scenario 7: Drive with Money Saving Option}{32}{subsubsection.3.2.7}
+\contentsline {subsubsection}{\numberline {3.2.8}Scenario 8: Leaving a car with battery level at >50\% or more}{32}{subsubsection.3.2.8}
+\contentsline {subsubsection}{\numberline {3.2.9}Scenario 9: Charge car}{32}{subsubsection.3.2.9}
+\contentsline {subsubsection}{\numberline {3.2.10}Scenario 10: Out of safe area parking}{32}{subsubsection.3.2.10}
+\contentsline {subsubsection}{\numberline {3.2.11}Scenario 11: Bad parking position}{32}{subsubsection.3.2.11}

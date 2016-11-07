@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+Actor            & User                                                                                                                                                                                                 \\ \hline
+Goal             & Pay a 1Euro fee and list car as available again                                                                                                                                                      \\ \hline
+Input Condition  & \begin{tabular}[c]{@{}c@{}}User has booked a car.\\ User has not unlocked the car yet.\end{tabular}                                                                                                  \\ \hline
+Event Flow       & \begin{tabular}[c]{@{}c@{}}1.User has reserved a car\\ 2.The user doesn't unlock the car within 1 Hour\\ 3.Back-end charges user 1Euro fee.\\ 4.Back-end lists car status as available.\end{tabular} \\ \hline
+Output Condition & \begin{tabular}[c]{@{}c@{}}The car is now available again and the user\\  has been charged 1 Euro.\end{tabular}                                                                                      \\ \hline
+Exception        & -                                                                                                                                                                                                    \\ \hline
+\end{tabular}
+}
+\caption{Unable to reach car in time}
+\label{tab:unable}
+\end{table}

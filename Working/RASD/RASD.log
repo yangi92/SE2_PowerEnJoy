@@ -1,16 +1,14 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  6 NOV 2016 19:57
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.6)  6 NOV 2016 19:52
->>>>>>> 36c59dd3fa0236b4735485273edf87dacd8eb769
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  7 NOV 2016 00:53
 entering extended mode
-**./RASD.tex
-(RASD.tex
-LaTeX2e <2016/03/31> patch level 3
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**RASD.tex
+(./RASD.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -25,35 +23,35 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\mathpazo.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 96.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
@@ -61,7 +59,7 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box26
 \beforetitleunit=\skip43
@@ -73,14 +71,14 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidthlast=\dimen108
 \titlewidthfirst=\dimen109
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
-Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -98,7 +96,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -116,58 +114,58 @@ Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen110
 \Hy@linkcounter=\count88
 \Hy@pagecounter=\count89
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
-File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count90
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4486.
-Package hyperref Info: Link nesting OFF on input line 4491.
-Package hyperref Info: Hyper index ON on input line 4494.
-Package hyperref Info: Plain pages OFF on input line 4501.
-Package hyperref Info: Backreferencing OFF on input line 4506.
+Package hyperref Info: Hyper figures OFF on input line 4446.
+Package hyperref Info: Link nesting OFF on input line 4451.
+Package hyperref Info: Hyper index ON on input line 4454.
+Package hyperref Info: Plain pages OFF on input line 4461.
+Package hyperref Info: Backreferencing OFF on input line 4466.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4735.
+Package hyperref Info: Bookmarks ON on input line 4691.
 \c@Hy@tempcnt=\count91
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5088.
+LaTeX Info: Redefining \url on input line 5044.
 \XeTeXLinkMargin=\dimen111
 \Fld@menulength=\count92
 \Field@Width=\dimen112
 \Fld@charsize=\dimen113
-Package hyperref Info: Hyper figures OFF on input line 6342.
-Package hyperref Info: Link nesting OFF on input line 6347.
-Package hyperref Info: Hyper index ON on input line 6350.
-Package hyperref Info: backreferencing OFF on input line 6357.
-Package hyperref Info: Link coloring OFF on input line 6362.
-Package hyperref Info: Link coloring with OCG OFF on input line 6367.
-Package hyperref Info: PDF/A mode OFF on input line 6372.
-LaTeX Info: Redefining \ref on input line 6412.
-LaTeX Info: Redefining \pageref on input line 6416.
+Package hyperref Info: Hyper figures OFF on input line 6298.
+Package hyperref Info: Link nesting OFF on input line 6303.
+Package hyperref Info: Hyper index ON on input line 6306.
+Package hyperref Info: backreferencing OFF on input line 6313.
+Package hyperref Info: Link coloring OFF on input line 6318.
+Package hyperref Info: Link coloring with OCG OFF on input line 6323.
+Package hyperref Info: PDF/A mode OFF on input line 6328.
+LaTeX Info: Redefining \ref on input line 6368.
+LaTeX Info: Redefining \pageref on input line 6372.
 \Hy@abspage=\count93
 \c@Item=\count94
 \c@Hfootnote=\count95
@@ -175,22 +173,22 @@ LaTeX Info: Redefining \pageref on input line 6416.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
 \Fld@listcount=\count96
 \c@bookmark@seq@number=\count97
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip45
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -204,28 +202,28 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+(/usr/local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks16
 \XKV@tempa@toks=\toks17
 )
 \XKV@depth=\count98
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/trimclip.sty
 Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box27
 )
@@ -235,7 +233,7 @@ Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \tc@ury=\dimen117
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen118
@@ -243,28 +241,28 @@ File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 \adjbox@Depth=\dimen120
 \adjbox@Totalheight=\dimen121
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
 \c@checkoddpage=\count99
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box28
 \sift@deathcycles=\count100
 \@vwid@loff=\dimen122
 \@vwid@roff=\dimen123
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\placeins\placeins.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen124
 \captionmargin@=\dimen125
@@ -280,35 +278,37 @@ Package caption Info: hyperref package is loaded.
 \c@subfigure=\count102
 \c@subtable=\count103
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 17.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/import/import.sty
+Package: import 2009/03/23  v 5.1
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 18.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\ttlkeys.def"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/ttlkeys.def
 File: ttlkeys.def 2016/03/15
-) (RASD.aux)
+) (./RASD.aux)
 \openout1 = `RASD.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 34.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 35.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 \big@size=\dimen131
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
 \scratchdimen=\dimen132
@@ -321,78 +321,82 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 \MPnumerator=\count108
 \makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks19
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring ON on input line 34.
+Package hyperref Info: Link coloring ON on input line 35.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count110
 )
-LaTeX Info: Redefining \ref on input line 34.
-LaTeX Info: Redefining \pageref on input line 34.
-LaTeX Info: Redefining \nameref on input line 34.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
+
+(./RASD.out) (./RASD.out)
 \@outlinefile=\write3
 \openout3 = `RASD.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-<Images/PolimiLogo.png, id=3, 100.4553pt x 100.6962pt>
+<Images/PolimiLogo.png, id=176, 100.4553pt x 100.6962pt>
 File: Images/PolimiLogo.png Graphic file (type png)
 
 <use Images/PolimiLogo.png>
-Package pdftex.def Info: Images/PolimiLogo.png used on input line 40.
+Package pdftex.def Info: Images/PolimiLogo.png used on input line 42.
 (pdftex.def)             Requested size: 150.68257pt x 151.0439pt.
 
-<Images/logoPowerEnjoy2.png, id=5, 192.2382pt x 45.2892pt>
+<Images/logoPowerEnjoy2.png, id=178, 192.2382pt x 45.2892pt>
 File: Images/logoPowerEnjoy2.png Graphic file (type png)
 
 <use Images/logoPowerEnjoy2.png>
-Package pdftex.def Info: Images/logoPowerEnjoy2.png used on input line 56.
+Package pdftex.def Info: Images/logoPowerEnjoy2.png used on input line 58.
 (pdftex.def)             Requested size: 192.23772pt x 45.28908pt.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images/PolimiLogo.png> 
-<./Images/logoPowerEnjoy2.png>] (RASD.toc
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Image
+s/PolimiLogo.png> <./Images/logoPowerEnjoy2.png>] (./RASD.toc
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
 LaTeX Font Info:    Try loading font information for OML+zplm on input line 2.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Try loading font information for OMS+zplm on input line 2.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Try loading font information for OMX+zplm on input line 2.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Try loading font information for OT1+zplm on input line 2.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 ) [2])
 \tf@toc=\write4
@@ -400,17 +404,18 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
  [3]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 88.
- [4]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 138.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 90.
 
+[4]
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 140.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsppl.fd"
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 138.
- [5] [6]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
+ [5]
+[6]
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ú in font pplr7t!
@@ -424,149 +429,149 @@ Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ù in font pplr7t!
 
-Overfull \hbox (39.77629pt too wide) in paragraph at lines 212--214
+Overfull \hbox (39.77629pt too wide) in paragraph at lines 214--216
 []\OT1/ppl/m/n/12 Alloy Lan-guage Ref-er-ence : [][]$\OT1/cmtt/m/n/12 http : / 
 / alloy . mit . edu / alloy / documentation /
  []
 
 Missing character: There is no À in font cmtt12!
 
-Overfull \hbox (32.07687pt too wide) in paragraph at lines 214--216
+Overfull \hbox (32.07687pt too wide) in paragraph at lines 216--218
 []\OT1/ppl/m/n/12 UML Lan-guage Ref-er-ence : [][]$\OT1/cmtt/m/n/12 https : / /
- www . utdallas . edu / chung / Fujitsu /
+ www . utdallas . edu / ^^[chung / Fujitsu /
  []
 
 [7] [8]
-Overfull \hbox (5.2628pt too wide) in paragraph at lines 298--301
+Overfull \hbox (5.2628pt too wide) in paragraph at lines 300--303
 \OT1/ppl/m/n/12 doc-u-ment fo-cus-ing on do-main as-sump-tions, re-quire-ments 
 (func-tional
  []
 
-[9] <Images/SoftwareDistribution.png, id=146, 622.325pt x 531.9875pt>
+[9] <Images/SoftwareDistribution.png, id=278, 622.325pt x 531.9875pt>
 File: Images/SoftwareDistribution.png Graphic file (type png)
 
 <use Images/SoftwareDistribution.png>
-Package pdftex.def Info: Images/SoftwareDistribution.png used on input line 323
+Package pdftex.def Info: Images/SoftwareDistribution.png used on input line 325
 .
 (pdftex.def)             Requested size: 350.99704pt x 351.00731pt.
  [10 <./Images/SoftwareDistribution.png>]
-Overfull \hbox (7.66356pt too wide) in paragraph at lines 374--382
+Overfull \hbox (7.66356pt too wide) in paragraph at lines 376--384
 \OT1/ppl/m/n/12 We hold the as-sump-tion that the sys-tem will be de-ployed in 
 large metropoli-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--382
+Underfull \hbox (badness 10000) in paragraph at lines 376--384
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 391--391
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 [][][][][]$\OT1/cmtt/m/n/10 http : / / www . mit . gov . it / mit / site . php 
 ? p = normativa & o = vd & id = 1 & id _ cat = &id _
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 423--430
+Underfull \hbox (badness 10000) in paragraph at lines 425--432
 
  []
 
 [13]
-Overfull \hbox (4.19987pt too wide) in paragraph at lines 462--466
+Overfull \hbox (4.19987pt too wide) in paragraph at lines 464--468
 \OT1/cmtt/m/n/12 developer . mozilla . org / en-[]US / Marketplace / Publishing
 Policies _
  []
 
-[14] [15] [16] <Images/mobileApp/Home.png, id=202, 752.8125pt x 1339.0025pt>
+[14] [15] [16] <Images/mobileApp/Home.png, id=335, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Home.png Graphic file (type png)
 
 <use Images/mobileApp/Home.png>
-Package pdftex.def Info: Images/mobileApp/Home.png used on input line 579.
+Package pdftex.def Info: Images/mobileApp/Home.png used on input line 581.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/Register.png, id=203, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Register.png, id=336, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Register.png Graphic file (type png)
 
 <use Images/mobileApp/Register.png>
-Package pdftex.def Info: Images/mobileApp/Register.png used on input line 584.
+Package pdftex.def Info: Images/mobileApp/Register.png used on input line 586.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [17 <./Images/mobileApp/Home.png> <./Images/mobileApp/Register.png>]
-<Images/mobileApp/SignIn.png, id=211, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/SignIn.png, id=344, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/SignIn.png Graphic file (type png)
 
 <use Images/mobileApp/SignIn.png>
-Package pdftex.def Info: Images/mobileApp/SignIn.png used on input line 593.
+Package pdftex.def Info: Images/mobileApp/SignIn.png used on input line 595.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/RicercaMappa.png, id=212, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/RicercaMappa.png, id=345, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/RicercaMappa.png Graphic file (type png)
 
 <use Images/mobileApp/RicercaMappa.png>
-Package pdftex.def Info: Images/mobileApp/RicercaMappa.png used on input line 5
-98.
+Package pdftex.def Info: Images/mobileApp/RicercaMappa.png used on input line 6
+00.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [18 <./Images/mobileApp/SignIn.png> <./Images/mobileApp/RicercaMappa.png>]
-<Images/mobileApp/Param.png, id=220, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Param.png, id=353, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Param.png Graphic file (type png)
 
 <use Images/mobileApp/Param.png>
-Package pdftex.def Info: Images/mobileApp/Param.png used on input line 606.
+Package pdftex.def Info: Images/mobileApp/Param.png used on input line 608.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/SelCar.png, id=221, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/SelCar.png, id=354, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/SelCar.png Graphic file (type png)
 
 <use Images/mobileApp/SelCar.png>
-Package pdftex.def Info: Images/mobileApp/SelCar.png used on input line 611.
+Package pdftex.def Info: Images/mobileApp/SelCar.png used on input line 613.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [19 <./Images/mobileApp/Param.png> <./Images/mobileApp/SelCar.png>]
-<Images/mobileApp/Conferma.png, id=230, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Conferma.png, id=363, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Conferma.png Graphic file (type png)
 
 <use Images/mobileApp/Conferma.png>
-Package pdftex.def Info: Images/mobileApp/Conferma.png used on input line 620.
+Package pdftex.def Info: Images/mobileApp/Conferma.png used on input line 622.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/TimeLeft.png, id=231, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/TimeLeft.png, id=364, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/TimeLeft.png Graphic file (type png)
 
 <use Images/mobileApp/TimeLeft.png>
-Package pdftex.def Info: Images/mobileApp/TimeLeft.png used on input line 625.
+Package pdftex.def Info: Images/mobileApp/TimeLeft.png used on input line 627.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [20 <./Images/mobileApp/Conferma.png> <./Images/mobileApp/TimeLeft.png>]
-<Images/mobileApp/Sblocca.png, id=239, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Sblocca.png, id=372, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Sblocca.png Graphic file (type png)
 
 <use Images/mobileApp/Sblocca.png>
-Package pdftex.def Info: Images/mobileApp/Sblocca.png used on input line 634.
+Package pdftex.def Info: Images/mobileApp/Sblocca.png used on input line 636.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/Menu.png, id=240, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Menu.png, id=373, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Menu.png Graphic file (type png)
 
 <use Images/mobileApp/Menu.png>
-Package pdftex.def Info: Images/mobileApp/Menu.png used on input line 639.
+Package pdftex.def Info: Images/mobileApp/Menu.png used on input line 641.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [21 <./Images/mobileApp/Sblocca.png> <./Images/mobileApp/Menu.png>]
-<Images/webApp/Homepage.png, id=248, 1451.4225pt x 816.04875pt>
+<Images/webApp/Homepage.png, id=381, 1451.4225pt x 816.04875pt>
 File: Images/webApp/Homepage.png Graphic file (type png)
 
 <use Images/webApp/Homepage.png>
-Package pdftex.def Info: Images/webApp/Homepage.png used on input line 652.
+Package pdftex.def Info: Images/webApp/Homepage.png used on input line 654.
 (pdftex.def)             Requested size: 406.39554pt x 228.4921pt.
 
-Overfull \hbox (16.39554pt too wide) in paragraph at lines 652--653
+Overfull \hbox (16.39554pt too wide) in paragraph at lines 654--655
  [][] 
  []
 
-<Images/webApp/MainSearch.png, id=249, 1451.4225pt x 816.04875pt>
+<Images/webApp/MainSearch.png, id=382, 1451.4225pt x 816.04875pt>
 File: Images/webApp/MainSearch.png Graphic file (type png)
 
 <use Images/webApp/MainSearch.png>
-Package pdftex.def Info: Images/webApp/MainSearch.png used on input line 655.
+Package pdftex.def Info: Images/webApp/MainSearch.png used on input line 657.
 (pdftex.def)             Requested size: 406.39554pt x 228.4921pt.
 
-Overfull \hbox (16.39554pt too wide) in paragraph at lines 655--656
+Overfull \hbox (16.39554pt too wide) in paragraph at lines 657--658
  [][] 
  []
 
@@ -577,102 +582,86 @@ Overfull \hbox (16.39554pt too wide) in paragraph at lines 655--656
 
 
  <./Images/webApp/Homepage.png> <./Images/webApp/MainSearch.png>]
-<Images/webApp/MainSearchCar.png, id=257, 1453.43pt x 814.04124pt>
+<Images/webApp/MainSearchCar.png, id=390, 1453.43pt x 814.04124pt>
 File: Images/webApp/MainSearchCar.png Graphic file (type png)
 
 <use Images/webApp/MainSearchCar.png>
-Package pdftex.def Info: Images/webApp/MainSearchCar.png used on input line 662
+Package pdftex.def Info: Images/webApp/MainSearchCar.png used on input line 664
 .
 (pdftex.def)             Requested size: 406.95763pt x 227.93pt.
 
-Overfull \hbox (16.95763pt too wide) in paragraph at lines 662--663
+Overfull \hbox (16.95763pt too wide) in paragraph at lines 664--665
  [][] 
  []
 
-<Images/webApp/MainMenu.png, id=258, 1453.43pt x 816.04875pt>
+<Images/webApp/MainMenu.png, id=391, 1453.43pt x 816.04875pt>
 File: Images/webApp/MainMenu.png Graphic file (type png)
 
 <use Images/webApp/MainMenu.png>
-Package pdftex.def Info: Images/webApp/MainMenu.png used on input line 665.
+Package pdftex.def Info: Images/webApp/MainMenu.png used on input line 667.
 (pdftex.def)             Requested size: 406.95763pt x 228.4921pt.
 
-Overfull \hbox (16.95763pt too wide) in paragraph at lines 665--666
+Overfull \hbox (16.95763pt too wide) in paragraph at lines 667--668
  [][] 
  []
 
 [23 <./Images/webApp/MainSearchCar.png> <./Images/webApp/MainMenu.png>]
-<Images/onBoard/Welcome.png, id=266, 602.25pt x 351.3125pt>
+<Images/onBoard/Welcome.png, id=399, 602.25pt x 351.3125pt>
 File: Images/onBoard/Welcome.png Graphic file (type png)
 
 <use Images/onBoard/Welcome.png>
-Package pdftex.def Info: Images/onBoard/Welcome.png used on input line 680.
+Package pdftex.def Info: Images/onBoard/Welcome.png used on input line 682.
 (pdftex.def)             Requested size: 361.35278pt x 210.78911pt.
 
-<Images/onBoard/Pin.png, id=267, 602.25pt x 351.3125pt>
+<Images/onBoard/Pin.png, id=400, 602.25pt x 351.3125pt>
 File: Images/onBoard/Pin.png Graphic file (type png)
 
 <use Images/onBoard/Pin.png>
-Package pdftex.def Info: Images/onBoard/Pin.png used on input line 683.
+Package pdftex.def Info: Images/onBoard/Pin.png used on input line 685.
 (pdftex.def)             Requested size: 361.35278pt x 210.78911pt.
  [24
 
 
- <./Images/onBoard/Welcome.png> <./Images/onBoard/Pin.png>] <Images/onBoard/Mai
-n.png, id=275, 602.25pt x 351.3125pt>
+ <./Images/onBoard/Welcome.png> <./Images/onBoard/Pin.png>] <Images/onBoard/Des
+tination.png, id=408, 602.25pt x 351.3125pt>
+File: Images/onBoard/Destination.png Graphic file (type png)
+
+<use Images/onBoard/Destination.png>
+Package pdftex.def Info: Images/onBoard/Destination.png used on input line 691.
+
+(pdftex.def)             Requested size: 361.35278pt x 210.78911pt.
+
+<Images/onBoard/Main.png, id=409, 602.25pt x 351.3125pt>
 File: Images/onBoard/Main.png Graphic file (type png)
 
 <use Images/onBoard/Main.png>
-Package pdftex.def Info: Images/onBoard/Main.png used on input line 689.
+Package pdftex.def Info: Images/onBoard/Main.png used on input line 694.
 (pdftex.def)             Requested size: 361.35278pt x 210.78911pt.
-<<<<<<< HEAD
- [25 <./Images/onBoard/Main.png>]
-(./Tables/UseCase1.tex) [26
-=======
- [25 <./Images/onBoard/Main.png>] [26
+ [25 <./Images/onBoard/Destination.png> <./Images/onBoard/Main.png>] (./Tables/
+UseCase1.tex) [26
 
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 764.
- [27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 764.
-
-(RASD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 764.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 764.
-
->>>>>>> 36c59dd3fa0236b4735485273edf87dacd8eb769
-
-Package rerunfilecheck Warning: File `RASD.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-<<<<<<< HEAD
-] [27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 766.
- [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 766.
+] (./Tables/UseCase2.tex)
+[27] (./Tables/UseCase3.tex) [28] (./Tables/UseCase4.tex) [29]
+(./Tables/UseCase5.tex) [30] (./Tables/UseCase6.tex) [31]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 789.
+ [32]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 789.
  (./RASD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 766.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 766.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 789.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 789.
 Package rerunfilecheck Info: File `RASD.out' has not changed.
-(rerunfilecheck)             Checksum: 6BA87FCBF134A4AC1554D285B7297DE4;3229.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 766.
-=======
-Package rerunfilecheck Info: Checksums for `RASD.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  9FB4687FC9AA36B8F94858B12100246D;3272.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 764.
->>>>>>> 36c59dd3fa0236b4735485273edf87dacd8eb769
+(rerunfilecheck)             Checksum: 07944568944A2FDC154833E6F1909FDA;3240.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 789.
  ) 
 Here is how much of TeX's memory you used:
- 8024 strings out of 493334
- 122490 string characters out of 3139249
- 215267 words of memory out of 3000000
- 11333 multiletter control sequences out of 15000+200000
- 29696 words of font info for 73 fonts, out of 3000000 for 9000
+ 8115 strings out of 493014
+ 125106 string characters out of 6133351
+ 214462 words of memory out of 5000000
+ 11395 multiletter control sequences out of 15000+600000
+ 29696 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
-<<<<<<< HEAD
- 59i,15n,94p,304b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,15n,94p,359b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
@@ -680,19 +669,10 @@ live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on RASD.pdf (28 pages, 4535743 bytes).
-=======
- 59i,9n,94p,250b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/
-uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on RASD.pdf (27 pages, 4564661 bytes).
->>>>>>> 36c59dd3fa0236b4735485273edf87dacd8eb769
+Output written on RASD.pdf (32 pages, 4690696 bytes).
 PDF statistics:
- 332 PDF objects out of 1000 (max. 8388607)
- 89 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 500 PDF objects out of 1000 (max. 8388607)
+ 413 compressed objects within 5 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 450 words of extra memory for PDF output out of 10000 (max. 10000000)
 
