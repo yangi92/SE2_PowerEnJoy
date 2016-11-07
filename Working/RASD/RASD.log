@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  7 NOV 2016 00:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  7 NOV 2016 10:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -358,14 +358,14 @@ LaTeX Info: Redefining \nameref on input line 35.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-<Images/PolimiLogo.png, id=176, 100.4553pt x 100.6962pt>
+<Images/PolimiLogo.png, id=180, 100.4553pt x 100.6962pt>
 File: Images/PolimiLogo.png Graphic file (type png)
 
 <use Images/PolimiLogo.png>
 Package pdftex.def Info: Images/PolimiLogo.png used on input line 42.
 (pdftex.def)             Requested size: 150.68257pt x 151.0439pt.
 
-<Images/logoPowerEnjoy2.png, id=178, 192.2382pt x 45.2892pt>
+<Images/logoPowerEnjoy2.png, id=182, 192.2382pt x 45.2892pt>
 File: Images/logoPowerEnjoy2.png Graphic file (type png)
 
 <use Images/logoPowerEnjoy2.png>
@@ -398,24 +398,31 @@ LaTeX Font Info:    Try loading font information for OT1+zplm on input line 2.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-) [2])
+) [2]
+LaTeX Font Info:    Try loading font information for OML+ppl on input line 40.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlppl.fd
+File: omlppl.fd 
+)
+LaTeX Font Info:    Font shape `OML/ppl/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 40.
+)
 \tf@toc=\write4
 \openout4 = `RASD.toc'.
 
  [3]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 90.
-
-[4]
+ [4]
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 140.
 
- (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
- [5]
-[6]
+ [5] [6]
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no œ in font pplr7t!
@@ -447,7 +454,7 @@ Overfull \hbox (5.2628pt too wide) in paragraph at lines 300--303
 (func-tional
  []
 
-[9] <Images/SoftwareDistribution.png, id=278, 622.325pt x 531.9875pt>
+[9] <Images/SoftwareDistribution.png, id=283, 622.325pt x 531.9875pt>
 File: Images/SoftwareDistribution.png Graphic file (type png)
 
 <use Images/SoftwareDistribution.png>
@@ -482,28 +489,28 @@ Overfull \hbox (4.19987pt too wide) in paragraph at lines 464--468
 Policies _
  []
 
-[14] [15] [16] <Images/mobileApp/Home.png, id=335, 752.8125pt x 1339.0025pt>
+[14] [15] [16] <Images/mobileApp/Home.png, id=340, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Home.png Graphic file (type png)
 
 <use Images/mobileApp/Home.png>
 Package pdftex.def Info: Images/mobileApp/Home.png used on input line 581.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/Register.png, id=336, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Register.png, id=341, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Register.png Graphic file (type png)
 
 <use Images/mobileApp/Register.png>
 Package pdftex.def Info: Images/mobileApp/Register.png used on input line 586.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [17 <./Images/mobileApp/Home.png> <./Images/mobileApp/Register.png>]
-<Images/mobileApp/SignIn.png, id=344, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/SignIn.png, id=349, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/SignIn.png Graphic file (type png)
 
 <use Images/mobileApp/SignIn.png>
 Package pdftex.def Info: Images/mobileApp/SignIn.png used on input line 595.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/RicercaMappa.png, id=345, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/RicercaMappa.png, id=350, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/RicercaMappa.png Graphic file (type png)
 
 <use Images/mobileApp/RicercaMappa.png>
@@ -511,49 +518,49 @@ Package pdftex.def Info: Images/mobileApp/RicercaMappa.png used on input line 6
 00.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [18 <./Images/mobileApp/SignIn.png> <./Images/mobileApp/RicercaMappa.png>]
-<Images/mobileApp/Param.png, id=353, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Param.png, id=358, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Param.png Graphic file (type png)
 
 <use Images/mobileApp/Param.png>
 Package pdftex.def Info: Images/mobileApp/Param.png used on input line 608.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/SelCar.png, id=354, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/SelCar.png, id=359, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/SelCar.png Graphic file (type png)
 
 <use Images/mobileApp/SelCar.png>
 Package pdftex.def Info: Images/mobileApp/SelCar.png used on input line 613.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [19 <./Images/mobileApp/Param.png> <./Images/mobileApp/SelCar.png>]
-<Images/mobileApp/Conferma.png, id=363, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Conferma.png, id=368, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Conferma.png Graphic file (type png)
 
 <use Images/mobileApp/Conferma.png>
 Package pdftex.def Info: Images/mobileApp/Conferma.png used on input line 622.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/TimeLeft.png, id=364, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/TimeLeft.png, id=369, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/TimeLeft.png Graphic file (type png)
 
 <use Images/mobileApp/TimeLeft.png>
 Package pdftex.def Info: Images/mobileApp/TimeLeft.png used on input line 627.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [20 <./Images/mobileApp/Conferma.png> <./Images/mobileApp/TimeLeft.png>]
-<Images/mobileApp/Sblocca.png, id=372, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Sblocca.png, id=377, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Sblocca.png Graphic file (type png)
 
 <use Images/mobileApp/Sblocca.png>
 Package pdftex.def Info: Images/mobileApp/Sblocca.png used on input line 636.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/Menu.png, id=373, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Menu.png, id=378, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Menu.png Graphic file (type png)
 
 <use Images/mobileApp/Menu.png>
 Package pdftex.def Info: Images/mobileApp/Menu.png used on input line 641.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [21 <./Images/mobileApp/Sblocca.png> <./Images/mobileApp/Menu.png>]
-<Images/webApp/Homepage.png, id=381, 1451.4225pt x 816.04875pt>
+<Images/webApp/Homepage.png, id=386, 1451.4225pt x 816.04875pt>
 File: Images/webApp/Homepage.png Graphic file (type png)
 
 <use Images/webApp/Homepage.png>
@@ -564,7 +571,7 @@ Overfull \hbox (16.39554pt too wide) in paragraph at lines 654--655
  [][] 
  []
 
-<Images/webApp/MainSearch.png, id=382, 1451.4225pt x 816.04875pt>
+<Images/webApp/MainSearch.png, id=387, 1451.4225pt x 816.04875pt>
 File: Images/webApp/MainSearch.png Graphic file (type png)
 
 <use Images/webApp/MainSearch.png>
@@ -582,7 +589,7 @@ Overfull \hbox (16.39554pt too wide) in paragraph at lines 657--658
 
 
  <./Images/webApp/Homepage.png> <./Images/webApp/MainSearch.png>]
-<Images/webApp/MainSearchCar.png, id=390, 1453.43pt x 814.04124pt>
+<Images/webApp/MainSearchCar.png, id=395, 1453.43pt x 814.04124pt>
 File: Images/webApp/MainSearchCar.png Graphic file (type png)
 
 <use Images/webApp/MainSearchCar.png>
@@ -594,7 +601,7 @@ Overfull \hbox (16.95763pt too wide) in paragraph at lines 664--665
  [][] 
  []
 
-<Images/webApp/MainMenu.png, id=391, 1453.43pt x 816.04875pt>
+<Images/webApp/MainMenu.png, id=396, 1453.43pt x 816.04875pt>
 File: Images/webApp/MainMenu.png Graphic file (type png)
 
 <use Images/webApp/MainMenu.png>
@@ -606,14 +613,14 @@ Overfull \hbox (16.95763pt too wide) in paragraph at lines 667--668
  []
 
 [23 <./Images/webApp/MainSearchCar.png> <./Images/webApp/MainMenu.png>]
-<Images/onBoard/Welcome.png, id=399, 602.25pt x 351.3125pt>
+<Images/onBoard/Welcome.png, id=404, 602.25pt x 351.3125pt>
 File: Images/onBoard/Welcome.png Graphic file (type png)
 
 <use Images/onBoard/Welcome.png>
 Package pdftex.def Info: Images/onBoard/Welcome.png used on input line 682.
 (pdftex.def)             Requested size: 361.35278pt x 210.78911pt.
 
-<Images/onBoard/Pin.png, id=400, 602.25pt x 351.3125pt>
+<Images/onBoard/Pin.png, id=405, 602.25pt x 351.3125pt>
 File: Images/onBoard/Pin.png Graphic file (type png)
 
 <use Images/onBoard/Pin.png>
@@ -623,7 +630,7 @@ Package pdftex.def Info: Images/onBoard/Pin.png used on input line 685.
 
 
  <./Images/onBoard/Welcome.png> <./Images/onBoard/Pin.png>] <Images/onBoard/Des
-tination.png, id=408, 602.25pt x 351.3125pt>
+tination.png, id=413, 602.25pt x 351.3125pt>
 File: Images/onBoard/Destination.png Graphic file (type png)
 
 <use Images/onBoard/Destination.png>
@@ -631,7 +638,7 @@ Package pdftex.def Info: Images/onBoard/Destination.png used on input line 691.
 
 (pdftex.def)             Requested size: 361.35278pt x 210.78911pt.
 
-<Images/onBoard/Main.png, id=409, 602.25pt x 351.3125pt>
+<Images/onBoard/Main.png, id=414, 602.25pt x 351.3125pt>
 File: Images/onBoard/Main.png Graphic file (type png)
 
 <use Images/onBoard/Main.png>
@@ -644,35 +651,53 @@ UseCase1.tex) [26
 ] (./Tables/UseCase2.tex)
 [27] (./Tables/UseCase3.tex) [28] (./Tables/UseCase4.tex) [29]
 (./Tables/UseCase5.tex) [30] (./Tables/UseCase6.tex) [31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 789.
- [32]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 789.
+(./Tables/UseCase7.tex) [32]
+
+LaTeX Font Warning: Font shape `OML/ppl/bx/n' undefined
+(Font)              using `OML/ppl/m/it' instead
+(Font)              for symbol `textgreater' on input line 768.
+
+LaTeX Font Info:    Font shape `OML/ppl/m/it' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 768.
+(./Tables/UseCase8.tex) [33] (./Tables/UseCase9.tex) [34]
+(./Tables/UseCase10.tex
+Overfull \hbox (2.16788pt too wide) in paragraph at lines 4--13
+ [][] 
+ []
+
+) [35] (./Tables/UseCase11.tex) [36] (./Tables/UseCase12.tex) [37]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 811.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 811.
  (./RASD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 789.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 789.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 811.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 811.
 Package rerunfilecheck Info: File `RASD.out' has not changed.
-(rerunfilecheck)             Checksum: 07944568944A2FDC154833E6F1909FDA;3240.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 789.
+(rerunfilecheck)             Checksum: 3A1267A7F6D3495EFEFEDAE89BB57072;3329.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 811.
  ) 
 Here is how much of TeX's memory you used:
- 8115 strings out of 493014
- 125106 string characters out of 6133351
- 214462 words of memory out of 5000000
- 11395 multiletter control sequences out of 15000+600000
- 29696 words of font info for 73 fonts, out of 8000000 for 9000
+ 8174 strings out of 493014
+ 126025 string characters out of 6133351
+ 214773 words of memory out of 5000000
+ 11420 multiletter control sequences out of 15000+600000
+ 30054 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,15n,94p,359b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,15n,94p,422b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on RASD.pdf (32 pages, 4690696 bytes).
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on RASD.pdf (37 pages, 4720458 bytes).
 PDF statistics:
- 500 PDF objects out of 1000 (max. 8388607)
- 413 compressed objects within 5 object streams
- 100 named destinations out of 1000 (max. 500000)
- 450 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 540 PDF objects out of 1000 (max. 8388607)
+ 447 compressed objects within 5 object streams
+ 112 named destinations out of 1000 (max. 500000)
+ 458 words of extra memory for PDF output out of 10000 (max. 10000000)
 

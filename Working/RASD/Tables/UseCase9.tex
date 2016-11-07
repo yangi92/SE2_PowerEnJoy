@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Actor            & User,Car                                                                                                                                                                                                                                                              \\ \hline
+Goal             & Reward customer with 30\% discount.                                                                                                                                                                                                                                   \\ \hline
+Input Condition  & \begin{tabular}[c]{@{}c@{}}User has reserved a car.\\ User has unlocked the car.\end{tabular}                                                                                                                                                                         \\ \hline
+Event Flow       & \begin{tabular}[c]{@{}c@{}}1.User drives car to a Charging Station.\\ 2.User correctly parks car and gets off.\\ 3.User plugs the car into the power grid\\ 4.The car's battery level starts to charge\\ 5.Back-end applies 30\% discount on \\ the fee.\end{tabular} \\ \hline
+Output Condition & Car is charging.                                                                                                                                                                                                                                                      \\ \hline
+Exception        & \begin{tabular}[c]{@{}c@{}}Car is plugged in incorrectly.\\ Plug or power grid is out of service.\end{tabular}                                                                                                                                                        \\ \hline
+\end{tabular}
+\caption{Car charging}
+\label{tab:charging}
+\end{table}
