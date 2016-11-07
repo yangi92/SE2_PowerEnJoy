@@ -710,10 +710,15 @@
  	 	rush hour. She decides to download the PowerEnjoy application. Once the download is 
  	 	completed she fill out the necessary registration informations providing a valid 
  	 	license and payment method and is ready to go and enjoy the evening with her friends.
-
  	 	\FloatBarrier
 		\import{Tables/}{UseCase1.tex} 	 	
 		\newpage
+		\setcounter{figure}{0}    
+		\begin{figure}[htbp]
+		 \caption{User registration sequence diagram}
+		\includegraphics[scale=0.49]{Images/SequenceDiagram/UserRegistration.png}
+ 	 	\end{figure}
+ 	 	\clearpage
  	 	
 		\subsubsection{Scenario 2: Log in}
 		Angelo woke up late for his exam and has to hurry up. The bus stop is too far away 
@@ -723,6 +728,11 @@
 		\FloatBarrier
 		\import{Tables/}{UseCase2.tex}
 		\newpage
+		\begin{figure}[htbp]
+		 \caption{User login sequence diagram}
+		\includegraphics[scale=0.49]{Images/SequenceDiagram/UserLogin.png}
+ 	 	\end{figure}
+ 	 	\clearpage
 		
 		\subsubsection{Scenario 3: Reserve a car}
 		Francesca has to take the train. The station is far away so she has to drive but she
@@ -732,6 +742,11 @@
 		\FloatBarrier
 		\import{Tables/}{UseCase3.tex}
 		\newpage
+		\begin{figure}[htbp]
+		 \caption{Car reservation sequence diagram}
+		\includegraphics[scale=0.49]{Images/SequenceDiagram/CarReservation.png}
+ 	 	\end{figure}
+ 	 	\clearpage
 		 
 		\subsubsection{Scenario 4: Unable to reach car in time}
 		Giacomo wants to meet his friends at the cinema. He reserves a car near him but as he 
@@ -741,13 +756,22 @@
 		\FloatBarrier
 		\import{Tables/}{UseCase4.tex}
 		\newpage
+		\begin{figure}[htbp]
+		 \caption{Car reservation sequence diagram}
+		\includegraphics[scale=0.49]{Images/SequenceDiagram/Unable.png}
+ 	 	\end{figure}
+ 	 	\clearpage
 		
 		\subsubsection{Scenario 5: Car problems}
 		Gianni reserved a car but once he reached it he notices that the car has a flat
 		tire. So he calls the Support Operator for help.
 		\FloatBarrier
 		\import{Tables/}{UseCase5.tex}
-		\newpage
+		\begin{figure}[htbp]
+		 \caption{Car reservation sequence diagram}
+		\includegraphics[scale=0.49]{Images/SequenceDiagram/Report.png}
+ 	 	\end{figure}
+ 	 	\clearpage
 		
 		\subsubsection{Scenario 6: Share ride with passengers}
 		Lucia's parents are in town and she has to pick them up a the airport. She reserves
@@ -756,6 +780,11 @@
 		\FloatBarrier
 		\import{Tables/}{UseCase6.tex}
 		\newpage
+		\begin{figure}[htbp]
+		 \caption{Car reservation sequence diagram}
+		\includegraphics[scale=0.49]{Images/SequenceDiagram/ShareRide.png}
+ 	 	\end{figure}
+ 	 	\clearpage
 		
 		\subsubsection{Scenario 7: Drive with Money Saving Option}
 		Flavio wants to attend his brother football match. He decides to use the money saving 
@@ -764,6 +793,11 @@
 		\FloatBarrier
 		\import{Tables/}{UseCase7.tex}
 		\newpage
+		\begin{figure}[htbp]
+		 \caption{Car reservation sequence diagram}
+		\includegraphics[scale=0.49]{Images/SequenceDiagram/MSO.png}
+ 	 	\end{figure}
+ 	 	\clearpage
 		
 		\subsubsection{Scenario 8: Leaving a car with battery level at \textgreater 50\%}
 		After a long day working , Edoardo is tired but has to visit his ill mother who lives not too
@@ -780,6 +814,7 @@
 		\FloatBarrier
 		\import{Tables/}{UseCase9.tex}
 		\newpage
+		
 		
 		\subsubsection{Scenario 10: Out of safe area parking}
 		Andrea has to meet his girlfriend's parents in the suburbs. He decides to take a PowerEnjoy
@@ -807,5 +842,5 @@
 		\newpage
 		
 		
-
+		
 \end{document}
