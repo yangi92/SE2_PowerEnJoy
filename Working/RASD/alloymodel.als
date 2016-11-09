@@ -1,4 +1,5 @@
 module PowerEnjoy
+open util/boolean
 
 /**Classes**/
 
@@ -8,8 +9,11 @@ one sig Company {
 		cars : set Car,
 		chargingStations : set ChargingStation,
 		users : set User,
-		supportOperators : set SupportOperator
+		supportOperators : set SupportOperator,
+		safeAreas : set Position
 }
+
+sig Position{}
 
 sig ChargingStation {
 		capacity: set Plug,
@@ -23,7 +27,8 @@ sig Plug{}
 sig Guest  extends Person {}
 
 sig User extends Person {
-	  status : one Bool,
+	  username : one String,
+	  statusConnected : one Bool,
 	  requests : set Request,
 	  usingCar : lone Car
 }
@@ -37,8 +42,12 @@ sig Car {
 		status : one CarStatus,
 		inCharge : one Bool,
 		isLocked : one Bool,
-		userDriver : lone User
-}{inCharge = True implies (status != CarInUse and isLocked = True)}
+		position : one Position,
+		userDriver : lone User,
+		company : one Company,
+		batteryLevel : one Int,
+}{(inCharge = True implies (status != CarInUse and isLocked = True))
+	and isLocked = True implies status != CarInUse}
 
 abstract sig CarStatus{}
 
@@ -64,8 +73,10 @@ sig ChangePersonalInformation extends Request {}
 
 abstract sig Ride {
 		driver: one User,
+		car : one Car,
 		passengers : some Person,
-		safeMode : one Bool
+		safeMode : one Bool,
+		actualFee : one Int
 }{driver != none}
 
 sig NormalRide extends Ride {} {#passengers <2 }
@@ -74,15 +85,37 @@ sig SafeModeRide extends Ride {} {safeMode = True}
 
 /** Facts **/
 
+fact userIsUnique {
+		all u : User, u' : User | u != u' and u.username != u'.username
+}
+
+fact userDontUseSameCar {
+		all u: User, u': User | u != u' and u.usingCar != none and u.usingCar != u'.usingCar 
+}
+
 fact allusersFit {
 		all r: Ride | #r.passengers <= 4
 }
 
 fact rideHasReasonToExist {
-		no r: Ride | r.user != none
+		no r: Ride | (r.driver != none or r.car != none)
 }
 
 /** Functions **/
+	sig totalDiscount { 
+		value : Int 
+}
+
+/**fun applyDiscounts [r : Ride] : Ride {
+		#r.passengers >= 2 => (totalDiscount.value = mul[10,div[r.actualFee,100]]) 
+		r.car.batteryLevel >= 50 => (totalDiscount.value = plus[totalDiscount.value, mul[20, div[r.actualFee,100]]]) 
+		r.car.inCharge = True => (totalDiscount.value = plus[totalDiscount.value, mul[30, div[r.actualFee,100]]]) 
+		r.car.batteryLevel < 20 => (totalDiscount.value = sub[totalDiscount.value, mul[30, div[r.actualFee,100]]]) 
+		r.car.actualFee = sub[r.car.actualFee, totalDiscount.value]
+		totalDiscount = 0
+		this
+} CHIEDERE ALLA PROF **/
+		
 
 /** Predicates **/
 
@@ -106,12 +139,20 @@ pred isCarReserved [c : Car] {
 		some s: CarReserved | c.status in s
 }
 
+pred carCanPark [c: Car] {
+		c.position in c.company.safeAreas
+}
+
+pred isUserConnected [u: User] {
+		u.statusConnected = True
+}
+
 pred isSupportOperatorAvailable [o : SupportOperator] {
 		o.isAvailable = True
 }
 
 pred isSupportOperatorBusy [o : SupportOperator] {
-		o.isAvailanble = False
+		o.isAvailable = False
 }
 
 pred isSupportOperatorWorking [o : SupportOperator]{
@@ -125,6 +166,16 @@ pred isActive [ u: User]{
 pred isRequestApproved [r: Request]{
 		r.status = True
 }
+
+pred showGeneral {
+		#NormalRide = 1
+		#SharedRide = 1
+		#User = 5
+		#Car > #User
+		#Company = 1
+}
+
+run showGeneral for 5
 
 
 
