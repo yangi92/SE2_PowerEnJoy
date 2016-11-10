@@ -13,7 +13,9 @@ one sig Company {
 		safeAreas : set Position
 }
 
-sig Position{}
+sig Position{
+		lat : Int,
+		long : Int}
 
 sig ChargingStation {
 		capacity: set Plug,
@@ -29,7 +31,7 @@ sig Guest  extends Person {}
 sig User extends Person {
 	  username : one String,
 	  statusConnected : one Bool,
-	  requests : set Request,
+	  /**requests : set Request**/,
 	  usingCar : lone Car
 }
 
@@ -58,7 +60,7 @@ lone sig CarInUse extends CarStatus {}
 
 /** Request **/
 
-abstract sig Request {
+/**abstract sig Request {
 		status: one Bool
 }
 
@@ -67,7 +69,7 @@ sig UnlockRequest extends Request {}
 sig LockRequest extends Request {}
 sig LoginRequest extends Request {}
 sig SignUpRequest extends Request {}
-sig ChangePersonalInformation extends Request {}
+sig ChangePersonalInformation extends Request {} **/
 
 /** Ride **/
 
@@ -77,7 +79,7 @@ abstract sig Ride {
 		passengers : some Person,
 		safeMode : one Bool,
 		actualFee : one Int
-}{driver != none}
+}
 
 sig NormalRide extends Ride {} {#passengers <2 }
 sig SharedRide extends Ride {} {#passengers >=2}
@@ -93,6 +95,10 @@ fact userDontUseSameCar {
 		all u: User, u': User | u != u' and u.usingCar != none and u.usingCar != u'.usingCar 
 }
 
+fact usersDontHaveMoreCars {
+		all c: Car, c' : Car | c != c' and c.userDriver != none and c.userDriver != c'.userDriver
+}
+
 fact allusersFit {
 		all r: Ride | #r.passengers <= 4
 }
@@ -102,21 +108,7 @@ fact rideHasReasonToExist {
 }
 
 /** Functions **/
-	sig totalDiscount { 
-		value : Int 
-}
-
-/**fun applyDiscounts [r : Ride] : Ride {
-		#r.passengers >= 2 => (totalDiscount.value = mul[10,div[r.actualFee,100]]) 
-		r.car.batteryLevel >= 50 => (totalDiscount.value = plus[totalDiscount.value, mul[20, div[r.actualFee,100]]]) 
-		r.car.inCharge = True => (totalDiscount.value = plus[totalDiscount.value, mul[30, div[r.actualFee,100]]]) 
-		r.car.batteryLevel < 20 => (totalDiscount.value = sub[totalDiscount.value, mul[30, div[r.actualFee,100]]]) 
-		r.car.actualFee = sub[r.car.actualFee, totalDiscount.value]
-		totalDiscount = 0
-		this
-} CHIEDERE ALLA PROF **/
 		
-
 /** Predicates **/
 
 pred isCarAvailable [c : Car] {
@@ -160,19 +152,23 @@ pred isSupportOperatorWorking [o : SupportOperator]{
 }
 
 pred isActive [ u: User]{
-		u.status = True
+		u.statusConnected = True
 }
 
-pred isRequestApproved [r: Request]{
+/**pred isRequestApproved [r: Request]{
 		r.status = True
-}
+}**/
 
 pred showGeneral {
-		#NormalRide = 1
-		#SharedRide = 1
+		#Position = 50
+		#Guest = 1
+		#ChargingStation = 3
+		#Plug = 10
 		#User = 5
-		#Car > #User
+		#Car = 15
 		#Company = 1
+		#SupportOperator = 2
+
 }
 
 run showGeneral for 5
