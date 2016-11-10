@@ -18,7 +18,7 @@ More detail about the project [here](https://github.com/yangi92/SE2_PowerEnJoy/b
 
 ## RASD Document
 The **Requirements And Specifications Document** gives an overview about the main goals of this project focusing on what the costumer wants, how he wants it to be done and how we intend to develop this project highlighting its functionalities and limits. </br>
-RASD File  [here](https://github.com/yangi92/SE2_PowerEnJoy/blob/master/Working/RASD/RASD.pdf)
+* [RASD File](https://github.com/yangi92/SE2_PowerEnJoy/blob/master/Working/RASD/RASD.pdf)
 * [IEEE Recommended Practice for Software Requirements Specifications](http://www.math.uaa.alaska.edu/~afkjm/cs401/IEEE830.pdf)
 
 
