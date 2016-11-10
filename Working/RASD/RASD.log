@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  10 NOV 2016 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  10 NOV 2016 13:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -358,14 +358,14 @@ LaTeX Info: Redefining \nameref on input line 35.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-<Images/PolimiLogo.png, id=180, 100.4553pt x 100.6962pt>
+<Images/PolimiLogo.png, id=188, 100.4553pt x 100.6962pt>
 File: Images/PolimiLogo.png Graphic file (type png)
 
 <use Images/PolimiLogo.png>
 Package pdftex.def Info: Images/PolimiLogo.png used on input line 42.
 (pdftex.def)             Requested size: 150.68257pt x 151.0439pt.
 
-<Images/logoPowerEnjoy2.png, id=182, 192.2382pt x 45.2892pt>
+<Images/logoPowerEnjoy2.png, id=190, 192.2382pt x 45.2892pt>
 File: Images/logoPowerEnjoy2.png Graphic file (type png)
 
 <use Images/logoPowerEnjoy2.png>
@@ -454,7 +454,7 @@ Overfull \hbox (5.2628pt too wide) in paragraph at lines 300--303
 (func-tional
  []
 
-[9] <Images/SoftwareDistribution.png, id=283, 622.325pt x 531.9875pt>
+[9] <Images/SoftwareDistribution.png, id=293, 622.325pt x 531.9875pt>
 File: Images/SoftwareDistribution.png Graphic file (type png)
 
 <use Images/SoftwareDistribution.png>
@@ -489,28 +489,28 @@ Overfull \hbox (4.19987pt too wide) in paragraph at lines 464--468
 Policies _
  []
 
-[14] [15] [16] <Images/mobileApp/Home.png, id=340, 752.8125pt x 1339.0025pt>
+[14] [15] [16] <Images/mobileApp/Home.png, id=350, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Home.png Graphic file (type png)
 
 <use Images/mobileApp/Home.png>
 Package pdftex.def Info: Images/mobileApp/Home.png used on input line 581.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/Register.png, id=341, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Register.png, id=351, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Register.png Graphic file (type png)
 
 <use Images/mobileApp/Register.png>
 Package pdftex.def Info: Images/mobileApp/Register.png used on input line 586.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [17 <./Images/mobileApp/Home.png> <./Images/mobileApp/Register.png>]
-<Images/mobileApp/SignIn.png, id=349, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/SignIn.png, id=359, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/SignIn.png Graphic file (type png)
 
 <use Images/mobileApp/SignIn.png>
 Package pdftex.def Info: Images/mobileApp/SignIn.png used on input line 595.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/RicercaMappa.png, id=350, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/RicercaMappa.png, id=360, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/RicercaMappa.png Graphic file (type png)
 
 <use Images/mobileApp/RicercaMappa.png>
@@ -518,49 +518,49 @@ Package pdftex.def Info: Images/mobileApp/RicercaMappa.png used on input line 6
 00.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [18 <./Images/mobileApp/SignIn.png> <./Images/mobileApp/RicercaMappa.png>]
-<Images/mobileApp/Param.png, id=358, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Param.png, id=368, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Param.png Graphic file (type png)
 
 <use Images/mobileApp/Param.png>
 Package pdftex.def Info: Images/mobileApp/Param.png used on input line 608.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/SelCar.png, id=359, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/SelCar.png, id=369, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/SelCar.png Graphic file (type png)
 
 <use Images/mobileApp/SelCar.png>
 Package pdftex.def Info: Images/mobileApp/SelCar.png used on input line 613.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [19 <./Images/mobileApp/Param.png> <./Images/mobileApp/SelCar.png>]
-<Images/mobileApp/Conferma.png, id=368, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Conferma.png, id=378, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Conferma.png Graphic file (type png)
 
 <use Images/mobileApp/Conferma.png>
 Package pdftex.def Info: Images/mobileApp/Conferma.png used on input line 622.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/TimeLeft.png, id=369, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/TimeLeft.png, id=379, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/TimeLeft.png Graphic file (type png)
 
 <use Images/mobileApp/TimeLeft.png>
 Package pdftex.def Info: Images/mobileApp/TimeLeft.png used on input line 627.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [20 <./Images/mobileApp/Conferma.png> <./Images/mobileApp/TimeLeft.png>]
-<Images/mobileApp/Sblocca.png, id=377, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Sblocca.png, id=387, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Sblocca.png Graphic file (type png)
 
 <use Images/mobileApp/Sblocca.png>
 Package pdftex.def Info: Images/mobileApp/Sblocca.png used on input line 636.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
 
-<Images/mobileApp/Menu.png, id=378, 752.8125pt x 1339.0025pt>
+<Images/mobileApp/Menu.png, id=388, 752.8125pt x 1339.0025pt>
 File: Images/mobileApp/Menu.png Graphic file (type png)
 
 <use Images/mobileApp/Menu.png>
 Package pdftex.def Info: Images/mobileApp/Menu.png used on input line 641.
 (pdftex.def)             Requested size: 188.20265pt x 334.7498pt.
  [21 <./Images/mobileApp/Sblocca.png> <./Images/mobileApp/Menu.png>]
-<Images/webApp/Homepage.png, id=386, 1451.4225pt x 816.04875pt>
+<Images/webApp/Homepage.png, id=396, 1451.4225pt x 816.04875pt>
 File: Images/webApp/Homepage.png Graphic file (type png)
 
 <use Images/webApp/Homepage.png>
@@ -571,7 +571,7 @@ Overfull \hbox (16.39554pt too wide) in paragraph at lines 654--655
  [][] 
  []
 
-<Images/webApp/MainSearch.png, id=387, 1451.4225pt x 816.04875pt>
+<Images/webApp/MainSearch.png, id=397, 1451.4225pt x 816.04875pt>
 File: Images/webApp/MainSearch.png Graphic file (type png)
 
 <use Images/webApp/MainSearch.png>
@@ -589,7 +589,7 @@ Overfull \hbox (16.39554pt too wide) in paragraph at lines 657--658
 
 
  <./Images/webApp/Homepage.png> <./Images/webApp/MainSearch.png>]
-<Images/webApp/MainSearchCar.png, id=395, 1453.43pt x 814.04124pt>
+<Images/webApp/MainSearchCar.png, id=405, 1453.43pt x 814.04124pt>
 File: Images/webApp/MainSearchCar.png Graphic file (type png)
 
 <use Images/webApp/MainSearchCar.png>
@@ -601,7 +601,7 @@ Overfull \hbox (16.95763pt too wide) in paragraph at lines 664--665
  [][] 
  []
 
-<Images/webApp/MainMenu.png, id=396, 1453.43pt x 816.04875pt>
+<Images/webApp/MainMenu.png, id=406, 1453.43pt x 816.04875pt>
 File: Images/webApp/MainMenu.png Graphic file (type png)
 
 <use Images/webApp/MainMenu.png>
@@ -613,14 +613,14 @@ Overfull \hbox (16.95763pt too wide) in paragraph at lines 667--668
  []
 
 [23 <./Images/webApp/MainSearchCar.png> <./Images/webApp/MainMenu.png>]
-<Images/onBoard/Welcome.png, id=404, 602.25pt x 351.3125pt>
+<Images/onBoard/Welcome.png, id=414, 602.25pt x 351.3125pt>
 File: Images/onBoard/Welcome.png Graphic file (type png)
 
 <use Images/onBoard/Welcome.png>
 Package pdftex.def Info: Images/onBoard/Welcome.png used on input line 682.
 (pdftex.def)             Requested size: 361.35278pt x 210.78911pt.
 
-<Images/onBoard/Pin.png, id=405, 602.25pt x 351.3125pt>
+<Images/onBoard/Pin.png, id=415, 602.25pt x 351.3125pt>
 File: Images/onBoard/Pin.png Graphic file (type png)
 
 <use Images/onBoard/Pin.png>
@@ -630,7 +630,7 @@ Package pdftex.def Info: Images/onBoard/Pin.png used on input line 685.
 
 
  <./Images/onBoard/Welcome.png> <./Images/onBoard/Pin.png>] <Images/onBoard/Des
-tination.png, id=413, 602.25pt x 351.3125pt>
+tination.png, id=423, 602.25pt x 351.3125pt>
 File: Images/onBoard/Destination.png Graphic file (type png)
 
 <use Images/onBoard/Destination.png>
@@ -638,7 +638,7 @@ Package pdftex.def Info: Images/onBoard/Destination.png used on input line 691.
 
 (pdftex.def)             Requested size: 361.35278pt x 210.78911pt.
 
-<Images/onBoard/Main.png, id=414, 602.25pt x 351.3125pt>
+<Images/onBoard/Main.png, id=424, 602.25pt x 351.3125pt>
 File: Images/onBoard/Main.png Graphic file (type png)
 
 <use Images/onBoard/Main.png>
@@ -649,7 +649,7 @@ UseCase1.tex) [26
 
 
 ]
-<Images/SequenceDiagram/UserRegistration.png, id=428, 829.0975pt x 1105.12875pt
+<Images/SequenceDiagram/UserRegistration.png, id=438, 829.0975pt x 1105.12875pt
 >
 File: Images/SequenceDiagram/UserRegistration.png Graphic file (type png)
  <use Images/SequenceDiagram/UserRegistration.png>
@@ -667,7 +667,7 @@ LaTeX Warning: Float too large for page by 17.51782pt on input line 720.
 [27 <./Images/SequenceDiagram/UserRegistration.png>] (./Tables/UseCase2.tex)
 [28
 
-] <Images/SequenceDiagram/UserLogin.png, id=440, 829.0975pt x 1105.12875pt>
+] <Images/SequenceDiagram/UserLogin.png, id=451, 829.0975pt x 1105.12875pt>
 File: Images/SequenceDiagram/UserLogin.png Graphic file (type png)
 
 <use Images/SequenceDiagram/UserLogin.png>
@@ -685,7 +685,7 @@ LaTeX Warning: Float too large for page by 17.51782pt on input line 734.
 [29 <./Images/SequenceDiagram/UserLogin.png>] (./Tables/UseCase3.tex) [30
 
 ]
-<Images/SequenceDiagram/CarReservation.png, id=453, 829.0975pt x 1105.12875pt>
+<Images/SequenceDiagram/CarReservation.png, id=463, 829.0975pt x 1105.12875pt>
 File: Images/SequenceDiagram/CarReservation.png Graphic file (type png)
 
 <use Images/SequenceDiagram/CarReservation.png>
@@ -703,7 +703,7 @@ LaTeX Warning: Float too large for page by 17.51782pt on input line 748.
 [31 <./Images/SequenceDiagram/CarReservation.png>] (./Tables/UseCase4.tex)
 [32
 
-] <Images/SequenceDiagram/Unable.png, id=466, 746.79pt x 856.19875pt>
+] <Images/SequenceDiagram/Unable.png, id=476, 746.79pt x 856.19875pt>
 File: Images/SequenceDiagram/Unable.png Graphic file (type png)
 
 <use Images/SequenceDiagram/Unable.png>
@@ -711,7 +711,7 @@ Package pdftex.def Info: Images/SequenceDiagram/Unable.png used on input line 7
 61.
 (pdftex.def)             Requested size: 365.9303pt x 419.54106pt.
  [33 <./Images/SequenceDiagram/Unable.png>] (./Tables/UseCase5.tex)
-<Images/SequenceDiagram/Report.png, id=473, 746.79pt x 486.81876pt>
+<Images/SequenceDiagram/Report.png, id=483, 746.79pt x 486.81876pt>
 File: Images/SequenceDiagram/Report.png Graphic file (type png)
 
 <use Images/SequenceDiagram/Report.png>
@@ -723,7 +723,7 @@ Package pdftex.def Info: Images/SequenceDiagram/Report.png used on input line 7
 ] [35 <./Images/SequenceDiagram/Report.png>] (./Tables/UseCase6.tex) [36
 
 ]
-<Images/SequenceDiagram/ShareRide.png, id=490, 1017.8025pt x 1069.9975pt>
+<Images/SequenceDiagram/ShareRide.png, id=500, 1017.8025pt x 1069.9975pt>
 File: Images/SequenceDiagram/ShareRide.png Graphic file (type png)
 
 <use Images/SequenceDiagram/ShareRide.png>
@@ -741,7 +741,7 @@ LaTeX Warning: Float too large for page by 0.30334pt on input line 786.
 [37 <./Images/SequenceDiagram/ShareRide.png>] (./Tables/UseCase7.tex) [38
 
 ]
-<Images/SequenceDiagram/MSO.png, id=503, 764.8575pt x 837.1275pt>
+<Images/SequenceDiagram/MSO.png, id=513, 764.8575pt x 837.1275pt>
 File: Images/SequenceDiagram/MSO.png Graphic file (type png)
 
 <use Images/SequenceDiagram/MSO.png>
@@ -759,7 +759,7 @@ LaTeX Font Info:    Font shape `OML/ppl/m/it' in size <12> not available
 (./Tables/UseCase8.tex) [40
 
 ]
-<Images/SequenceDiagram/Battery.png, id=515, 972.63374pt x 1083.04625pt>
+<Images/SequenceDiagram/Battery.png, id=525, 972.63374pt x 1083.04625pt>
 File: Images/SequenceDiagram/Battery.png Graphic file (type png)
 
 <use Images/SequenceDiagram/Battery.png>
@@ -777,7 +777,7 @@ LaTeX Warning: Float too large for page by 6.6973pt on input line 812.
 [41 <./Images/SequenceDiagram/Battery.png>] (./Tables/UseCase9.tex) [42
 
 ]
-<Images/SequenceDiagram/Charge.png, id=527, 861.2175pt x 1078.0275pt>
+<Images/SequenceDiagram/Charge.png, id=537, 861.2175pt x 1078.0275pt>
 File: Images/SequenceDiagram/Charge.png Graphic file (type png)
 
 <use Images/SequenceDiagram/Charge.png>
@@ -799,7 +799,7 @@ Overfull \hbox (2.16788pt too wide) in paragraph at lines 4--13
 
 ) [44
 
-] <Images/SequenceDiagram/OutSafe.png, id=540, 861.2175pt x 1057.9525pt>
+] <Images/SequenceDiagram/OutSafe.png, id=550, 861.2175pt x 1057.9525pt>
 File: Images/SequenceDiagram/OutSafe.png Graphic file (type png)
 
 <use Images/SequenceDiagram/OutSafe.png>
@@ -814,7 +814,7 @@ Overfull \hbox (32.00026pt too wide) in paragraph at lines 839--840
 [45 <./Images/SequenceDiagram/OutSafe.png>] (./Tables/UseCase11.tex) [46
 
 ]
-<Images/SequenceDiagram/AdditionalFee.png, id=552, 861.2175pt x 1053.9375pt>
+<Images/SequenceDiagram/AdditionalFee.png, id=562, 861.2175pt x 1053.9375pt>
 File: Images/SequenceDiagram/AdditionalFee.png Graphic file (type png)
 
 <use Images/SequenceDiagram/AdditionalFee.png>
@@ -829,7 +829,7 @@ Overfull \hbox (32.00026pt too wide) in paragraph at lines 853--854
 [47 <./Images/SequenceDiagram/AdditionalFee.png>] (./Tables/UseCase12.tex)
 [48
 
-] <Images/SequenceDiagram/Modify.png, id=564, 676.5275pt x 732.7375pt>
+] <Images/SequenceDiagram/Modify.png, id=574, 676.5275pt x 732.7375pt>
 File: Images/SequenceDiagram/Modify.png Graphic file (type png)
 
 <use Images/SequenceDiagram/Modify.png>
@@ -837,45 +837,55 @@ Package pdftex.def Info: Images/SequenceDiagram/Modify.png used on input line 8
 66.
 (pdftex.def)             Requested size: 345.02444pt x 373.69118pt.
  [49 <./Images/SequenceDiagram/Modify.png>] <Images/ClassDiagram/General.png, i
-d=572, 810.02625pt x 849.1725pt>
+d=582, 810.02625pt x 849.1725pt>
 File: Images/ClassDiagram/General.png Graphic file (type png)
 
 <use Images/ClassDiagram/General.png>
-Package pdftex.def Info: Images/ClassDiagram/General.png used on input line 876
+Package pdftex.def Info: Images/ClassDiagram/General.png used on input line 881
 .
-(pdftex.def)             Requested size: 413.10791pt x 433.07225pt.
+(pdftex.def)             Requested size: 396.91634pt x 416.09816pt.
 
-Overfull \hbox (23.10791pt too wide) in paragraph at lines 876--877
+Overfull \hbox (6.91634pt too wide) in paragraph at lines 881--882
  [] 
  []
 
 [50
 
-] [51 <./Images/ClassDiagram/General.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 882.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 882.
+ <./Images/ClassDiagram/General.png>]
+<Images/StateChart/Login.png, id=590, 452.69125pt x 458.71375pt>
+File: Images/StateChart/Login.png Graphic file (type png)
+
+<use Images/StateChart/Login.png>
+Package pdftex.def Info: Images/StateChart/Login.png used on input line 896.
+(pdftex.def)             Requested size: 271.61684pt x 275.23038pt.
+
+<Images/StateChart/Bonus.png, id=591, 564.1075pt x 431.6125pt>
+File: Images/StateChart/Bonus.png Graphic file (type png)
+
+<use Images/StateChart/Bonus.png>
+Package pdftex.def Info: Images/StateChart/Bonus.png used on input line 901.
+(pdftex.def)             Requested size: 338.4671pt x 258.96948pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 906.
+ [51
+
+ <./Images/StateChart/Login.png>] [52 <./Images/StateChart/Bonus.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 906.
  (./RASD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 882.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 882.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 906.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 906.
+Package rerunfilecheck Info: File `RASD.out' has not changed.
+(rerunfilecheck)             Checksum: 7C3255FEF7C7A35C54AF87602A674C0E;3460.
 
-
-Package rerunfilecheck Warning: File `RASD.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `RASD.out':
-(rerunfilecheck)             Before: 4C8ADE39C531B3F7E995009CD997B402;3335
-(rerunfilecheck)             After:  A0789E00632D9DCC6FA97959FC3FB979;3398.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 882.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 906.
  ) 
 Here is how much of TeX's memory you used:
- 8269 strings out of 493014
- 128637 string characters out of 6133351
+ 8286 strings out of 493014
+ 129014 string characters out of 6133351
  214773 words of memory out of 5000000
- 11472 multiletter control sequences out of 15000+600000
+ 11482 multiletter control sequences out of 15000+600000
  30054 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,15n,94p,422b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -887,10 +897,10 @@ ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texli
 ve/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-
 dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on RASD.pdf (51 pages, 5080614 bytes).
+Output written on RASD.pdf (52 pages, 5111386 bytes).
 PDF statistics:
- 644 PDF objects out of 1000 (max. 8388607)
- 510 compressed objects within 6 object streams
- 140 named destinations out of 1000 (max. 500000)
- 523 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 663 PDF objects out of 1000 (max. 8388607)
+ 524 compressed objects within 6 object streams
+ 144 named destinations out of 1000 (max. 500000)
+ 549 words of extra memory for PDF output out of 10000 (max. 10000000)
 
