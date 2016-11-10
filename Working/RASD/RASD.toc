@@ -42,3 +42,4 @@
 \contentsline {subsubsection}{\numberline {3.2.10}Scenario 10: Out of safe area parking}{44}{subsubsection.3.2.10}
 \contentsline {subsubsection}{\numberline {3.2.11}Scenario 11: Additional fee charged}{46}{subsubsection.3.2.11}
 \contentsline {subsubsection}{\numberline {3.2.12}Scenario 12: User information update}{48}{subsubsection.3.2.12}
+\contentsline {subsection}{\numberline {3.3}Class Diagram}{50}{subsection.3.3}
