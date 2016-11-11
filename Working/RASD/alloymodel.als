@@ -5,24 +5,13 @@ open util/boolean
 
 abstract sig Person {}
 
-one sig Company {
-		cars : set Car,
-		chargingStations : set ChargingStation,
-		users : set User,
-		supportOperators : set SupportOperator,
-		safeAreas : set Position
-}
-
-sig Position{
-		lat : Int,
-		long : Int}
 
 sig ChargingStation {
-		capacity: set Plug,
+	
 		chargingCars : set Car
-}{#chargingCars <= #capacity}
+}
 
-sig Plug{}
+
 
 /**Actors**/
 
@@ -31,7 +20,7 @@ sig Guest  extends Person {}
 sig User extends Person {
 	  username : one String,
 	  statusConnected : one Bool,
-	  /**requests : set Request**/,
+	  requests : set Request,
 	  usingCar : lone Car
 }
 
@@ -43,13 +32,12 @@ sig SupportOperator extends Person {
 sig Car {
 		status : one CarStatus,
 		inCharge : one Bool,
-		isLocked : one Bool,
-		position : one Position,
+	
+	
 		userDriver : lone User,
-		company : one Company,
-		batteryLevel : one Int,
-}{(inCharge = True implies (status != CarInUse and isLocked = True))
-	and isLocked = True implies status != CarInUse}
+	
+	
+}
 
 abstract sig CarStatus{}
 
@@ -57,10 +45,11 @@ lone sig CarAvailable extends CarStatus {}
 lone sig CarNotAvailable extends CarStatus {}
 lone sig CarReserved extends CarStatus {}
 lone sig CarInUse extends CarStatus {}
+lone sig CarLocked extends CarStatus{}
 
 /** Request **/
 
-/**abstract sig Request {
+abstract sig Request {
 		status: one Bool
 }
 
@@ -69,7 +58,7 @@ sig UnlockRequest extends Request {}
 sig LockRequest extends Request {}
 sig LoginRequest extends Request {}
 sig SignUpRequest extends Request {}
-sig ChangePersonalInformation extends Request {} **/
+sig ChangePersonalInformation extends Request {}
 
 /** Ride **/
 
@@ -79,7 +68,7 @@ abstract sig Ride {
 		passengers : some Person,
 		safeMode : one Bool,
 		actualFee : one Int
-}
+}{driver != none}
 
 sig NormalRide extends Ride {} {#passengers <2 }
 sig SharedRide extends Ride {} {#passengers >=2}
@@ -95,10 +84,6 @@ fact userDontUseSameCar {
 		all u: User, u': User | u != u' and u.usingCar != none and u.usingCar != u'.usingCar 
 }
 
-fact usersDontHaveMoreCars {
-		all c: Car, c' : Car | c != c' and c.userDriver != none and c.userDriver != c'.userDriver
-}
-
 fact allusersFit {
 		all r: Ride | #r.passengers <= 4
 }
@@ -108,15 +93,17 @@ fact rideHasReasonToExist {
 }
 
 /** Functions **/
-		
+
+
+
+
 /** Predicates **/
 
 pred isCarAvailable [c : Car] {
-		some s: CarAvailable | c.status in s
-}
+		some s: CarAvailable | c.status in s and c.status != CarLocked}
 
 pred isCarInCharge [c: Car] {
-		c.inCharge = True
+		some c.inCharge implies c.status=CarNotAvailable
 }
 
 pred isCarNotAvailable [c : Car] {
@@ -124,16 +111,13 @@ pred isCarNotAvailable [c : Car] {
 }
 
 pred isCarInUse [c : Car] {
-		some s: CarInUse | c.status in s
+		some s: CarInUse| c.status in s
 }
 
 pred isCarReserved [c : Car] {
 		some s: CarReserved | c.status in s
 }
 
-pred carCanPark [c: Car] {
-		c.position in c.company.safeAreas
-}
 
 pred isUserConnected [u: User] {
 		u.statusConnected = True
@@ -152,26 +136,18 @@ pred isSupportOperatorWorking [o : SupportOperator]{
 }
 
 pred isActive [ u: User]{
-		u.statusConnected = True
+		u.status = True
 }
 
-/**pred isRequestApproved [r: Request]{
+pred isRequestApproved [r: Request]{
 		r.status = True
-}**/
-
-pred showGeneral {
-		#Position = 50
-		#Guest = 1
-		#ChargingStation = 3
-		#Plug = 10
-		#User = 5
-		#Car = 15
-		#Company = 1
-		#SupportOperator = 2
-
 }
 
-run showGeneral for 5
+pred show {
+		
+}
+
+run show for 5 but 3 User, 5 Car
 
 
 
