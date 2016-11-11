@@ -1,29 +1,25 @@
 module PowerEnjoy
+open util/boolean
 
 /**Classes**/
 
 abstract sig Person {}
 
-one sig Company {
-		cars : set Car,
-		chargingStations : set ChargingStation,
-		users : set User,
-		supportOperators : set SupportOperator
-}
 
 sig ChargingStation {
-		capacity: set Plug,
+	
 		chargingCars : set Car
-}{#chargingCars <= #capacity}
+}
 
-sig Plug{}
+
 
 /**Actors**/
 
 sig Guest  extends Person {}
 
 sig User extends Person {
-	  status : one Bool,
+	  username : one String,
+	  statusConnected : one Bool,
 	  requests : set Request,
 	  usingCar : lone Car
 }
@@ -36,9 +32,12 @@ sig SupportOperator extends Person {
 sig Car {
 		status : one CarStatus,
 		inCharge : one Bool,
-		isLocked : one Bool,
-		userDriver : lone User
-}{inCharge = True implies (status != CarInUse and isLocked = True)}
+	
+	
+		userDriver : lone User,
+	
+	
+}
 
 abstract sig CarStatus{}
 
@@ -46,6 +45,7 @@ lone sig CarAvailable extends CarStatus {}
 lone sig CarNotAvailable extends CarStatus {}
 lone sig CarReserved extends CarStatus {}
 lone sig CarInUse extends CarStatus {}
+lone sig CarLocked extends CarStatus{}
 
 /** Request **/
 
@@ -64,8 +64,10 @@ sig ChangePersonalInformation extends Request {}
 
 abstract sig Ride {
 		driver: one User,
+		car : one Car,
 		passengers : some Person,
-		safeMode : one Bool
+		safeMode : one Bool,
+		actualFee : one Int
 }{driver != none}
 
 sig NormalRide extends Ride {} {#passengers <2 }
@@ -74,24 +76,34 @@ sig SafeModeRide extends Ride {} {safeMode = True}
 
 /** Facts **/
 
+fact userIsUnique {
+		all u : User, u' : User | u != u' and u.username != u'.username
+}
+
+fact userDontUseSameCar {
+		all u: User, u': User | u != u' and u.usingCar != none and u.usingCar != u'.usingCar 
+}
+
 fact allusersFit {
 		all r: Ride | #r.passengers <= 4
 }
 
 fact rideHasReasonToExist {
-		no r: Ride | r.user != none
+		no r: Ride | (r.driver != none or r.car != none)
 }
 
 /** Functions **/
 
+
+
+
 /** Predicates **/
 
 pred isCarAvailable [c : Car] {
-		some s: CarAvailable | c.status in s
-}
+		some s: CarAvailable | c.status in s and c.status != CarLocked}
 
 pred isCarInCharge [c: Car] {
-		c.inCharge = True
+		some c.inCharge implies c.status=CarNotAvailable
 }
 
 pred isCarNotAvailable [c : Car] {
@@ -99,11 +111,16 @@ pred isCarNotAvailable [c : Car] {
 }
 
 pred isCarInUse [c : Car] {
-		some s: CarInUse | c.status in s
+		some s: CarInUse| c.status in s
 }
 
 pred isCarReserved [c : Car] {
 		some s: CarReserved | c.status in s
+}
+
+
+pred isUserConnected [u: User] {
+		u.statusConnected = True
 }
 
 pred isSupportOperatorAvailable [o : SupportOperator] {
@@ -111,7 +128,7 @@ pred isSupportOperatorAvailable [o : SupportOperator] {
 }
 
 pred isSupportOperatorBusy [o : SupportOperator] {
-		o.isAvailanble = False
+		o.isAvailable = False
 }
 
 pred isSupportOperatorWorking [o : SupportOperator]{
@@ -125,6 +142,12 @@ pred isActive [ u: User]{
 pred isRequestApproved [r: Request]{
 		r.status = True
 }
+
+pred show {
+		
+}
+
+run show for 5 but 3 User, 5 Car
 
 
 
