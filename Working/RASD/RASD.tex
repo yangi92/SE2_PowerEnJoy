@@ -905,7 +905,7 @@
  	 	\end{figure}
  	 	\clearpage
  	 	\newpage
- 	 \section{Alloy}
+ 	 \subsection{Alloy}
  	 \FloatBarrier
  	 \lstinputlisting[language=alloy]{PowerEnjoy.als}
  	 \newpage
@@ -916,5 +916,9 @@
  	 	\includegraphics[scale=0.45]{Images/ALLOY1.png}
  	 \end{figure}
  	 \end{landscape}
+ 	 \newpage
+ 	 The alloy model simulates a common scenario : some user's are involved in rides which means that they 
+ 	 are drivers of a car that has to be booked. Some other user is doing a search which lists only 	
+ 	 available cars. A user doing in a search can't be inactive nor active (driving). Every ride has an associated fee . We chose to implement a Money Saving Option discount as example of the different discounts that can gained by users. Finally some cars are located in charging station , which are composed of plugs. Obviously a car can only be connected to only one plug at the time and if in a charging station it must be in 'charging' status.
 		
 \end{document}
