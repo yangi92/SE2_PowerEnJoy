@@ -3,12 +3,14 @@
 \usepackage{graphicx}
 \usepackage[explicit]{titlesec}
 \usepackage{hyperref}
-\usepackage{xcolor}
 \usepackage[export]{adjustbox}
 \usepackage{placeins}
 \usepackage{subcaption}
 \usepackage{import}
-
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listings}
+\usepackage{alloy-style}
+\usepackage{lscape}
 \graphicspath {{Images/}}
 \hypersetup{
     colorlinks=true,
@@ -901,6 +903,18 @@
  	 	  \includegraphics[scale=0.6]{Images/StateChart/Bonus.png}
  	 	  \caption{Ride state chart}
  	 	\end{figure}
- 	 
+ 	 	\clearpage
+ 	 	\newpage
+ 	 \section{Alloy}
+ 	 \FloatBarrier
+ 	 \lstinputlisting[language=alloy]{PowerEnjoy.als}
+ 	 \newpage
+	\begin{landscape} 	 
+ 	 \FloatBarrier 
+ 	 \begin{figure}
+ 	 \centering
+ 	 	\includegraphics[scale=0.45]{Images/ALLOY1.png}
+ 	 \end{figure}
+ 	 \end{landscape}
 		
 \end{document}

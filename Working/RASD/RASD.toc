@@ -44,3 +44,4 @@
 \contentsline {subsubsection}{\numberline {3.2.12}Scenario 12: User information update}{48}{subsubsection.3.2.12}
 \contentsline {subsection}{\numberline {3.3}Class Diagram}{50}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}State charts}{51}{subsection.3.4}
+\contentsline {section}{\numberline {4}Alloy}{53}{section.4}
