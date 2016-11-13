@@ -136,7 +136,7 @@
 		all the time to the user's knowledge through the on-board display.
 		\newline
 		In addition to the functionality above, the system should incentivize the virtuous 
-		behaviours of the users with some bonuses:
+		behaviours of the users with some bonuses:\footnote{Bonuses are not combinabale. Only the highest bonus will be awarded}
 
 	\begin{itemize}
 		\item If the user shares a ride with at least two other passengers , the system will 
@@ -305,7 +305,8 @@
 		\item \textbf{Specifications}: this section gives a deep insight about the system's 
 			  main functionality, analyzing scenarios with their relative use-cases and 
 			  includes an extensive alloy model. Event flows are model using sequence and state 
-			  diagrams.
+			  diagrams . An Alloy model will be provided and discussed and finally the non functional requirements will be discussed.
+			  \item \textbf{Appendices} : this section talks about the tools used for the creation of this documents and the time spent working.
 	\end{enumerate}	
 	\newpage
 	
@@ -322,10 +323,15 @@
 	%----------------------
 	
 	\subsection{Software overview}
-	 \begin{center}
- 	 	\includegraphics[width=0.9\textwidth ,height=0.9\textwidth ,center]
- 	 				    {Images/SoftwareDistribution.png}
-	 \end{center}
+	 The system-to-be is going to be composed of 4 main applications:
+	 \begin{itemize}
+	 \item Web Application
+	 \item Mobile Application
+	 \item On-board Application 
+	 \end{itemize}
+	 \begin{itemize}
+	 \item Back-End Application
+	 \end{itemize}
 	
 	
 	
@@ -347,7 +353,8 @@
 				\item the user has to be \textbf{at least 18} years old
 				\item the user must have a \textbf{valid} driving license \footnote{\label{note1} For 
 			    more check out the \hyperref[actors:3]{\textit{Glossary}}}
-				\item the user must enter a \textbf{valid} payment method 
+				\item the user must enter a \textbf{valid} payment method \footnote{\label{note1} For 
+			    more check out the \hyperref[actors:3]{\textit{Glossary}}}
 	    \end{itemize}
 		\item \textbf{Car}: is property of the PowerEnjoy Company. A car must be able to 		
 				communicate to with the system all the time. If a car is available (i.e 		
@@ -394,11 +401,6 @@
 			following the traffic code\footnote{\url {http://www.mit.gov.it/mit/site.php?
 			p=normativa&o=vd&id=1&id_cat=&id_dett=0}}.
 
-		%-------------------------------
-		%	2.3.3 VEHCILE ASSUMOPTIONS
-		%-------------------------------
-		\subsubsection{Vehicle Assumptions}
-		* chiedere se e' bisogna inserire assunsiozioni sulla carica delle macchine etc...*		
 	
 	
 	%----------------------
@@ -413,7 +415,6 @@
 			The Mobile and Web Application can not exceed 50MB of RAM usage.\\
 			The On-Board application can not exceed 75MB of RAM usage.\\
 			The Back-End application cannot exceed 100GB of RAM usage.
-		\newpage
 		%-----------------------------
 		%	2.4.2 HARDWARE LIMITATIONS
 		%-----------------------------
@@ -474,76 +475,19 @@
 	  %------------------------------
 	  % 2.5 FUNCTIONAL REQUIREMENTS
 	  %------------------------------
-
-	  \subsection{Functional Requirements}
-	  \textbf{1.Mobile and Web Application}
-	  \begin{itemize}
-	 		\item{\textbf{[R1.1]}}: Allow a guest to register entering all relevant personal 
-	 			 data and a valid driving license whose validity will be check on the spot
-	 		\item{\textbf{[R1.2]}}: Allow a registered user to log-in
-	 		\item{\textbf{[R1.3]}}: Allow a registered user to update his personal information
-	 		\item{\textbf{[R1.4]}}: Allow a registered user to search for an available vehicle 
-	 			 given his position within a selected distance
-	 		\item{\textbf{[R1.5]}}: Allow a registered user to search for an available vehicle 	
-	 			 given an input position within a selected distance
-	  		\item{\textbf{[R1.6]}}: Allow a registered user to reserve a selected vehicle.
-	 		\item{\textbf{[R1.7]}}: Allow a registered user to check his payment history
-	 		\item{\textbf{[R1.8]}}: Allow a registered user to recover his account log-in 	
-	 			 information in a secure way
-	 		\item{\textbf{[R1.9]}}: Allow a registered user to search for an available vehicle 	
-	 			 given an input position.
-	 		\item{\textbf{[R1.10]}}: Allow a registered user to unlock \emph{his/her} reserved 	
-	 			 car if the user is nearby.
-	 		\item{\textbf{[R1.11]}}: **Chiedere per cancellazione prenotazioni**
-	 	\end{itemize}
-
-		\textbf{2.On-Board Application}
-		\begin{itemize}
-	 		\item{\textbf{[R2.1]}}: Allow a registered user to correctly identify himself/
-	 			 herself 	by entering a user specific pin-code
- 	 		\item{\textbf{[R2.2]}}: Enable a registered user to keep track of the distance 
- 	 			 covered, time spent using the car ,the current owed fee and the remaining 	
- 	 			 battery charge.
- 	 	\end{itemize}
+		\subsection{Main functions}
+		A more detailed view about functions and requirements can be found in section 3.
+		\hyperref[req:3]	 {\textit{Functional requirements(3.2)}} 
+		\begin{enumerate}
+		\item \textit{Web and Mobile Application}: both user applications must provide form for user registration and log - in. A user must be able to review his payment history and if necessary update his personal information.
+		The main functionality are available car research and car reservation. If a car has been reserved it must be unlockable from the application.
+		\item \textit{On-board Application}: must be installed on all cars. It must allow a driver to chose his/her destination and eventually enable the money saving option. The on-board display provides all necessary data to inform the user about the current fee and if the car is located in a safe area. Lastly ,the on-board system must allow the user to end his ride via on-board display.
+		\item \textit{Back-End application} : must provide interfaces for registration and login processes checking also if the user input is valid. It must handle correctly search requests and handle the automatic car locking process. Lastly, it must correctly calculate and charge fees based on discounts or penalites.
+		\end{enumerate}
+		
  	 
- 	 	\textbf{3.Back-End Application}
-		\begin{itemize}
-	 		\item{\textbf{[R3.1]}}: .
- 	 	\end{itemize}
 	
-	  %-----------------------------
-	  %  NON FUNCTIONAL REQUIREMENTS
-	  %-----------------------------
-	  \subsection{Non functional Requirements} 
-	  	Some non functional requirements have been to be necessary in the to be developed 
-	  	system in order to provider a correct operation flow and an optimized UX.
-		\begin{itemize}
-			\item \textit{User friendliness}: the Mobile/Web as well as the On-Board 
-				  Application must be easily handled by the average web user with basic web 	
-				  knowledge.
-			\item \textit{Performance}: to supply a suitable service the system must be 
-				  responsive even at peak activity times. To achieve this client-server 
-				  transaction must be reduced to a minimum.
-		 	\item \textit{Reliability}: the PowerEnjoy service must be active 24h/24h . 
-		 		  Maintenance must be performed without compromising functionality. At all the 
-		 		  time , a user must be able to be charged the owed fee.	
-		 	\item \textit{Data integrity and availability}: 
-	   		 	  Data have to be always available and accessible.Data availability can be 
-	   		 	  achieved by duplicating data on back-up servers. For instance the use of 
-	   		 	  RAID, mirroring and backup could present a valid solution.
-
-		 	\item \textit{Maintainability}: the software should be implemented so as to be as 
-		 		  modular as possible to allow future expansions and easy modifications\\
-		 		  Google API are required but can be easily updated from time to time on all 
-		 		  systems.
-		 	\item \textit{Security}: user accounts are provided with two factor authentication 
-		 		  with a code sent to the user's mobile phone to add a secure connection 
-		 		  method to the system. Sensible user information are stored using a hashing 
-		 		  mechanism .\\User data input should be filtered to avoid malicious 
-		 		  modifications ( i.e SQL Injections). \\All connections should be encrypted 
-		 		  and run on a secure HTTPS protocol with valid certificates that uses the 
-		 		  secure TSL protocol to avoid Man in the Middle Attacks.
-		\end{itemize}
+	
 		
 	%--------------------------
 	% 2.6 FUTURE IMPLEMENTATION
@@ -556,8 +500,6 @@
 		motorcycles could be added to the PowerEnjoy vehicle fleet.This means that the on-
 		board software should be as expandable as possible using for instance Hierarchy Design 
 		Patterns in the vehicle type definition.
-	 
-
 	\newpage
 
  %-------------------------
@@ -586,7 +528,7 @@
 		 \minipage{0.50\textwidth}
 		 \centering
  	 	  \includegraphics[scale=0.25]{Images/mobileApp/Register.png}
-		  \caption{Time left to unlock}
+		  \caption{User sign in}
 		  \endminipage
  	 	\end{figure}
  	 	\clearpage
@@ -698,13 +640,63 @@
  	 	\end{figure}
  	 	\clearpage
  	 	
- 	 	
+ 	 	\newpage
+ 	 
+	\subsection{\label{actors:3}Specific Requirements}
+
+	  \textbf{1.Mobile and Web Application}
+	  \begin{itemize}
+	 		\item{\textbf{[R1.1]}}: Allow a guest to register entering all relevant personal 
+	 			 data and a valid driving license whose validity will be check on the spot
+	 		\item{\textbf{[R1.2]}}: Allow a registered user to log-in
+	 		\item{\textbf{[R1.3]}}: Allow a registered user to update his personal information
+	 		\item{\textbf{[R1.4]}}: Allow a registered user to search for an available vehicle 
+	 			 given his position within a selected distance
+	 		\item{\textbf{[R1.5]}}: Allow a registered user to search for an available vehicle 	
+	 			 given an input position within a selected distance
+	  		\item{\textbf{[R1.6]}}: Allow a registered user to reserve a selected vehicle.
+	 		\item{\textbf{[R1.7]}}: Allow a registered user to check his payment history
+	 		\item{\textbf{[R1.8]}}: Allow a registered user to recover his account log-in 	
+	 			 information in a secure way
+	 		\item{\textbf{[R1.9]}}: Allow a registered user to search for an available vehicle 	
+	 			 given an input position and a radius.
+	 		\item{\textbf{[R1.10]}}: Allow a registered user to unlock \emph{his/her} reserved 	
+	 			 car if the user is nearby.
+	 	\end{itemize}
+
+		\textbf{2.On-Board Application}
+		\begin{itemize}
+ 	 		\item{\textbf{[R2.1]}}: Enable a registered user to keep track of the distance 
+ 	 			 covered, time spent using the car ,the current owed fee and the remaining 	
+ 	 			 battery charge.
+			\item{\textbf{[R2.3]}}: Provide a method to enable the money saving option.
+ 	 		\item{\textbf{[R2.3]}}: Enable the driver to end the ride if the car is parked in 
+ 	 			a safe area.
+ 	 	\end{itemize}
+ 	 	\newpage
+ 	 	\textbf{3.Back-End System}
+		\begin{itemize}
+ 	 		\item{\textbf{[R3.1]}}:The back-end must provide an interface for the registration of users.
+ 	 		\item{\textbf{[R3.2]}}:The back-end must be able to check payment methods and driver's licenes on the spot.
+ 	 		\item{\textbf{[R3.3]}}:The back-end must provide a password recovery system.
+ 	 		\item{\textbf{[R3.4]}}:The back-end must handle all search requests correctly.
+ 	 		\item{\textbf{[R3.5]}}:The back-end must calculate the current amount to pay.
+ 	 		\item{\textbf{[R3.6]}}:The back-end must handle discounts/penalties and recalculate the fee accordingly.
+ 	 		\item{\textbf{[R3.7]}}:The back-end must handle car status changes.
+ 	 		\item{\textbf{[R3.8]}}:The back-end must provide an interface to allow a support operator to perform
+all basics CRUD operations
+ 	 	\end{itemize}
  	 	%------------------
  	 	% 3.2 SCENARIO
  	 	%------------------
  	 	\newpage
  	 	\subsection{Scenarios}
- 	 	
+ 	 	\FloatBarrier
+ 	 	\begin{figure}[htbp]
+		\includegraphics[scale=0.3]{Images/UML/GeneralCase.png}
+		 \caption{General use case scenrio}
+ 	 	\end{figure}
+ 	 	\newpage
  	 	\subsubsection{Scenario 1:User sign-up}
  	 	Maria is going out with friends for dinner .She doesn't own a 
  	 	car but has to travel to the other side of the city. She knows that a taxi ride  
@@ -908,7 +900,10 @@
  	 \subsection{Alloy}
  	 \FloatBarrier
  	 \lstinputlisting[language=alloy]{PowerEnjoy.als}
- 	 \newpage
+ 	  \newpage
+ 	 The alloy model simulates a common scenario : some user's are involved in rides which means that they 
+ 	 are drivers of a car that has to be booked. Some other user is doing a search which lists only 	
+ 	 available cars. A user doing in a search can't be inactive nor active (driving). Every ride has an associated fee . We chose to implement a Money Saving Option discount as example of the different discounts that can gained by users. Finally some cars are located in charging station , which are composed of plugs. Obviously a car can only be connected to only one plug at the time and if in a charging station it must be in 'charging' status.
 	\begin{landscape} 	 
  	 \FloatBarrier 
  	 \begin{figure}
@@ -916,9 +911,58 @@
  	 	\includegraphics[scale=0.45]{Images/ALLOY1.png}
  	 \end{figure}
  	 \end{landscape}
- 	 \newpage
- 	 The alloy model simulates a common scenario : some user's are involved in rides which means that they 
- 	 are drivers of a car that has to be booked. Some other user is doing a search which lists only 	
- 	 available cars. A user doing in a search can't be inactive nor active (driving). Every ride has an associated fee . We chose to implement a Money Saving Option discount as example of the different discounts that can gained by users. Finally some cars are located in charging station , which are composed of plugs. Obviously a car can only be connected to only one plug at the time and if in a charging station it must be in 'charging' status.
+ 	
+		\newpage
+	%-----------------------------
+	  %  NON FUNCTIONAL REQUIREMENTS
+	  %-----------------------------
+	  \subsection{Non functional Requirements} 
+	  	Some non functional requirements have been to be necessary in the to be developed 
+	  	system in order to provider a correct operation flow and an optimized UX.
+		\begin{itemize}
+			\item \textit{User friendliness}: the Mobile/Web as well as the On-Board 
+				  Application must be easily handled by the average web user with basic web 	
+				  knowledge.
+			\item \textit{Performance}: to supply a suitable service the system must be 
+				  responsive even at peak activity times. To achieve this client-server 
+				  transaction must be reduced to a minimum.
+		 	\item \textit{Reliability}: the PowerEnjoy service must be active 24h/24h . 
+		 		  Maintenance must be performed without compromising functionality. At all the 
+		 		  time , a user must be able to be charged the owed fee.	
+		 	\item \textit{Data integrity and availability}: 
+	   		 	  Data have to be always available and accessible.Data availability can be 
+	   		 	  achieved by duplicating data on back-up servers. For instance the use of 
+	   		 	  RAID, mirroring and backup could present a valid solution.
+
+		 	\item \textit{Maintainability}: the software should be implemented so as to be as 
+		 		  modular as possible to allow future expansions and easy modifications\\
+		 		  Google API are required but can be easily updated from time to time on all 
+		 		  systems.
+		 	\item \textit{Security}: user accounts are provided with two factor authentication 
+		 		  with a code sent to the user's mobile phone to add a secure connection 
+		 		  method to the system. Sensible user information are stored using a hashing 
+		 		  mechanism .\\User data input should be filtered to avoid malicious 
+		 		  modifications ( i.e SQL Injections). \\All connections should be encrypted 
+		 		  and run on a secure HTTPS protocol with valid certificates that uses the 
+		 		  secure TSL protocol to avoid Man in the Middle Attacks.
+		\end{itemize}
+		\newpage
+		\section{Appendices}
+		\subsection{Tools}
+		The following tools where used in the creation of this document:
+		\begin{itemize}
+		\item \emph{TexMaker 4.5} as Editor
+		\item \emph{Alloy 4.2} for Alloy Modelling
+		\item \emph{Git} for version control
+		\item \emph{Sketch \& Photoshop} for Mockups
+		\item \emph{StarUML} for UML Diagrams
+		\end{itemize}
 		
+		
+		\subsection{Hours of work}
+		\begin{itemize}
+		\item Simone Amico ~ 35 h
+		\item Chianella Beatrice ~ 35 h
+		\item Giovanakis Yannick ~ 35 h
+		\end{itemize}
 \end{document}
