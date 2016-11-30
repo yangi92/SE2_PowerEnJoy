@@ -1,1 +1,81 @@
-This document...
+\subsection{Purpose}
+The presented document is the Software Design document (SDD) for the PowerEnJoy platform project. The main purpose of this document is to be a guideline for the concrete implementation of the platform, provide developers with high level descriptions of the main algorithms, describe the architectural styles and patter, and generally establish the design standards for the development
+phase.\\
+This document is intended for stakeholders, software engineers, and programmers and must be used as reference throughout the whole development of the system. The secondary audience for this document includes system maintainers and developers who wish to integrate the platform’s services within
+their own software. The design choices listed here must be respected throughout the whole development of the platform and any other further expansion of the codebase.
+\subsection{Scope}
+The descriptions listed in this document define the design language that must
+be used by design stakeholders, and implement the “Design leads to code” philosophy.
+These design standards represent constraints to the development of
+the codebase, with all unspecified design decisions left to the developers.
+Key reasons for the design language described in this document are:
+\begin{enumerate}
+\item To facilitate the development, integration, expansion and maintenance of
+the platform.
+\item To define a business identity (kept consistent in UX and marketing design).
+\item To implement the requirements listed in the RASD of the project in a consistent
+way.
+\end{enumerate}
+
+
+\subsection{Definitions,Acronyms,Abbreviations}
+Throughout this document, the following definitions will be applied without
+further explanations:
+\begin{itemize}
+\item \textbf{Platform}: the set of software applications and hardware infrastructure that are part of the PowerEnjoy service. The platform includes:
+	\begin{itemize}
+	\item Back-End Server application
+	\item Web Application
+	\item Mobile Application
+	\item On-board Display
+	\item MySQL Database
+	\end{itemize}
+	Other third party software may be necessary to interface different components 	
+	or support the listed applications.
+\item \textbf{System}: any individual component of the platform.
+\item \textbf{Back-End}:the software run on the back-end server of the platform which is used to handle the communication between the user applications. The
+term also addresses all the necessary software components that are needed
+to store data, perform calculations and manage the hardware (e.g. an operating
+system).
+\item \textbf{User Application}: set of applications that are used by a user which are the Mobile Application ,Web application and On-Board display application.
+\footnote{For more informations check Section 2.4.2 on the \emph{RASD}} 
+\item \textbf{User}: any person registered and authorized to use the above mentioned systems.
+\end{itemize}
+In addition this document will contain the following acronyms:
+\begin{itemize}
+\item \textbf{RASD}: Requirements and Analysis Specifications Document
+\item \textbf{DD}: Design Document
+\item \textbf{DBMS} : Data Base Management Systems
+\item \textbf{UX}: User Experience
+\item \textbf{API}: Application Programming Interface 
+\item E TANTI ALTRI
+\end{itemize}
+
+
+\subsection{Reference Documents}
+\begin{itemize}
+		\item IEEE 1016-2009: "Software design description"
+		\item Project description: “Assignments AA 2016-2017.pdf”
+	
+	 	\item UML Language Reference : \url{https://www.utdallas.edu/˜chung/Fujitsu/UML_2.0/Rumbaugh--UML_2.0_Reference_CD.pdf}
+	 	\item JAVA/GLASSFISH/RESTFUL/GOOGLEMAPS API..
+	\end{itemize}
+	
+
+\subsection{Document Structure}
+The presented DD is divided in sections and structured as follows:
+\begin{itemize}
+\item Section 1 - Introduction: contains support information to better understand
+the presented document.
+\item Section 2 - Architectural design: contains a description of the architectural
+styles and patterns selected for the platform, which serve as an
+implementation guideline for developers.
+\item Section 3 - Algorithms design: contains a high-level description of the
+core algorithms of the back-end.
+\item Section 4 - User interface design: contains a description and a conceptual
+preview of the user interface and UX.
+\item Section 5 - Requirements traceability: links the decisions described in
+this document to the requirements specified in the RASD.
+\item Section 6 - Effort spent: contains a summary of the hours spent
+in producing the document.
+\end{itemize}
