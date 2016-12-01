@@ -13,7 +13,12 @@
 \contentsline {subsection}{\numberline {2.6}Selected architectural styles and patterns}{12}{subsection.2.6}
 \contentsline {subsection}{\numberline {2.7}Other design decisions}{13}{subsection.2.7}
 \contentsline {section}{\numberline {3}Algorithm Design}{14}{section.3}
-\contentsline {section}{\numberline {4}User Interface Design}{15}{section.4}
-\contentsline {section}{\numberline {5}Requierements Traceability}{16}{section.5}
-\contentsline {section}{\numberline {6}Effort Spent}{17}{section.6}
-\contentsline {section}{\numberline {7}References}{18}{section.7}
+\contentsline {subsection}{\numberline {3.1}Search and Reserve Car Manager}{14}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Ride and Park Car Manager}{14}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Low Level Algorithm Description}{15}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Search and Reserve Car Manager}{15}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Ride and Park Car Manager}{15}{subsubsection.3.3.2}
+\contentsline {section}{\numberline {4}User Interface Design}{16}{section.4}
+\contentsline {section}{\numberline {5}Requierements Traceability}{17}{section.5}
+\contentsline {section}{\numberline {6}Effort Spent}{18}{section.6}
+\contentsline {section}{\numberline {7}References}{19}{section.7}

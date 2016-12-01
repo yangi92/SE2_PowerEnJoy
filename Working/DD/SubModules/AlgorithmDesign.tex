@@ -1,0 +1,28 @@
+\subsection{Search and Reserve Car Manager}
+The Search and Reserve Car Manager provides all the methods to manage and dispatch the incoming search and reserve requests.\\
+\begin{itemize}
+\item \textbf{showAvailableCars(Address):} searches into the database for the available cars within 5km from the Address and show them to the user on the map.
+
+\item \textbf{reserveCar(Car):} marks the car as reserved, starts the timer and shows it to the user in the application with the shortest path to reach the car.
+
+\item \textbf{unlockCar(Car, Position):} if the user is near the car, unlocks it and stops the timer.
+\end{itemize}
+\subsection{Ride and Park Car Manager}
+The Ride and Park Manager provides all the methods to manage ride requests.\\
+\begin{itemize}
+\item \textbf{startRide(PinCode, MoneySavingOption, Destination):} if the PinCode correspond to the one assigned to the user, starts the timer of the ride, shows it on the on-Board application screen along with the other informations such as charge level, gps, etc. If the flag MoneySavingOption is true, then searches and shows to the user the path to the best place where to park in order to save money.
+
+\item \textbf{parkCar(Car):} If the car position is not in the parking area shows an error message and doesn't let the user to end the ride. If the car position is in the parking area, retrieves and saves informations about the presence of other people in the car from the sensors and tells the user that he/she can park there.
+
+\item \textbf{lockCar(Ride):}Waits until all the doors are closed. Stops the timer. If there were at least two passengers, adds the relative discount. If the battery level is over a certain level adds the relative discount. If the battery level is under a certain level adds the relative fee. If the position of the Car is too far away from the nearest power grid adds the relative fee. If the car is plugged in a power grid adds the relative discount. Calculates the final fee that the user has to pay and charges it to him/her. Finally marks the car as available.
+\end{itemize}
+
+\subsection{Low Level Algorithm Description}
+\subsubsection{Search and Reserve Car Manager}
+\subsubsection{Ride and Park Car Manager}
+
+
+
+
+
+
