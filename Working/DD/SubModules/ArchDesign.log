@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 DEC 2016 15:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 DEC 2016 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -315,8 +315,6 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no / in font nullfont!
 Missing character: There is no A in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -510,8 +508,6 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no / in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 1--4
 []
@@ -651,9 +647,9 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no / in font nullfont!
 ! Undefined control sequence.
+<recently read> \subsubsection 
+                               
 l.7 \subsubsection
                   {RESTful API}
 The control sequence at the end of the top line
@@ -853,8 +849,6 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no / in font nullfont!
 Missing character: There is no R in font nullfont!
 Missing character: There is no E in font nullfont!
 Missing character: There is no S in font nullfont!
@@ -3102,7 +3096,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no m in font nullfont!
 ! Undefined control sequence.
 l.35 \includegraphics
-                     [scale=0.4]{Images/ComponentDiagram/ComponentDiagram.png}
+                     [scale=0.35]{Images/ComponentDiagram/ComponentDiagram.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3118,7 +3112,8 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no 4 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 5 in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -3413,10 +3408,10 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 12 strings out of 493014
- 204 string characters out of 6133351
+ 13 strings out of 493014
+ 217 string characters out of 6133351
  54601 words of memory out of 5000000
- 3652 multiletter control sequences out of 15000+600000
+ 3653 multiletter control sequences out of 15000+600000
  3986 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  19i,4n,14p,415b,111s stack positions out of 5000i,500n,10000p,200000b,80000s
