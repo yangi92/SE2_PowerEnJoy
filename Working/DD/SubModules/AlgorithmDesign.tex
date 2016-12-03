@@ -19,7 +19,46 @@ The Ride and Park Manager provides all the methods to manage ride requests.\\
 
 \subsection{Low Level Algorithm Description}
 \subsubsection{Search and Reserve Car Manager}
+\begin{itemize}
+\item \textbf{showAvailableCars(Address)}
+\item \textbf{reserveCar(Car)}
+\item \textbf {unlockCar(Car, Position)}
+\end{itemize}
 \subsubsection{Ride and Park Car Manager}
+\begin{itemize}
+\item \textbf{startRide(PinCode, MoneySavingOption, Destination)}
+\texttt{if (User.pinCode == PinCode)
+Timer t = new Timer() ; t.start();\\
+if (MoneySavingOption.status == True)\\
+Path possiblePath = GoogleMaps.getPath(Position,Destination);\\
+}
+
+\item \textbf{parkCar(Car)}
+\texttt{if (Car.position is not in parkingArea ){\\ 
+Car.status = unlock;\\
+else if (Car.position is in parkingArea)\\
+numeberPassenger = Car.passenger;\\
+Car.status = lock;\\
+ }
+ 
+\item \textbf{lockCar(Car,Ride)}
+\texttt{Timer t;
+if (Car.doors is not close)\\
+Ride.status = notFinished\\
+else if (Car.doors is closed)\\
+Ride.status = finished;\\
+t.stop();\\
+if (numberPassenger >=2)\\
+totalFee = Ride.fee - 0,10*Ride.fee;\\
+if (Car.batteryLevel> 0,5)\\
+totalFee = Ride.fee - 0,2*Ride.fee;\\
+if (Car.isInCharge == true)\\
+totalFee = Ride.fee - 0,3*Ride.fee;\\
+if (Car.position is not in powerGrid or Car.batteryLeve>0,2)
+totalFee = Ride.fee + 0,3*Ride.fee;\\
+Car.status = available;
+}
+\end{itemize}
 
 
 
