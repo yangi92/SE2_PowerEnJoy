@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.12)  3 DEC 2016 12:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.12)  3 DEC 2016 14:58
 entering extended mode
 **./DD.tex
 (DD.tex
@@ -493,15 +493,9 @@ Overfull \hbox (37.2491pt too wide) in paragraph at lines 29--35
  []
 
 
-Overfull \hbox (102.49992pt too wide) in paragraph at lines 29--35
-\OT1/cmtt/m/n/12 == PinCode) Timer t = new Timer() ; t.start(); if (MoneySaving
-Option.status
- []
+Overfull \hbox (16.04988pt too wide) in paragraph at lines 29--35
+\OT1/cmtt/m/n/12 Path possiblePath = GoogleMaps.getPath(Position,Destination); 
 
-
-Overfull \hbox (71.62491pt too wide) in paragraph at lines 29--35
-\OT1/cmtt/m/n/12 == True) Path possiblePath = GoogleMaps.getPath(Position,Desti
-nation);
  []
 
 
@@ -551,22 +545,28 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
 ### semi simple group (level 1) entered at line 28 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9184 strings out of 493334
- 138615 string characters out of 3139239
+ 9186 strings out of 493334
+ 138653 string characters out of 3139239
  235926 words of memory out of 3000000
  12526 multiletter control sequences out of 15000+200000
  26342 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,8n,94p,635b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/p
-alatino/uplri8a.pfb>
-Output written on DD.pdf (19 pages, 328813 bytes).
+pdfTeX warning (dest): name{subsubsection.2.2.2} has been refer
+enced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.2.2.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pal
+atino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.
+pfb>
+Output written on DD.pdf (19 pages, 329040 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
  203 words of extra memory for PDF output out of 10000 (max. 10000000)
 
