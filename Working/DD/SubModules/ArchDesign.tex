@@ -11,12 +11,25 @@ RESTful API are an optimal solution for an application that must handle a vast n
 \subsubsection{User manager}
 This component handles user data, registration and authentication.The user manager has direct access to the DBMS and receives read and write requests from the RESTful API.
 \subsubsection{Notification manager}
-This module is responsible for implementing the push notification service towards
+This component is responsible for implementing the push notification service towards
 the user-side applications.
 It is necessary to have this type of module running in the back-end because
 there are cases in which a communication must happen between the clients and
 the back-end, but no direct request is made to the RESTful API by the clients:
 for example when the reserved car is nearby, the system must send the user a 'ready to unlock' notification.
+\subsubsection{Vehicle manager}
+The car manager component's job is to manage all the vehicles throughout the city.It can access the DBMS to query vehicle information but stores essential vehicle information locally such as location ,battery level and number of seats. When the search manager gets triggered it forwards requests to the vehicle manager to get all 
+available car in compliance to the user input.
+\subsubsection{Search manager}
+The search manager component handles all incoming search requests forwarded by the user applications and interfaced through the RESTful API. The main functionality is to handle the user input and query the vehicle manager accordingly, returning the desired output to the user.\\In the event of a booking request the search manager forwards the demand to the Ride Manager.
+\subsubsection{Ride Manager}
+The Ride manager component examines all incoming reservation request and creates \textit{Ride objects} according to the user selection and user data.The ride manager
+is connected to the following components:
+\begin{itemize}
+\item \textit{Vehicle manager}: need to communicate and receive communications about car status changes in terms of availability, battery level and location.
+\item \textit{Notification manager}: need to inform the user about remaining time to unlock the car or send the user 'ready to unlock ' notifications. Moreover it sends messages to the on-board display to inform the user about the response to a \textit{end ride request}.
+\item \textit{DBMS}: need to update the user reservation and payment history once a ride has been marked as completed.  
+\end{itemize}
 \subsection{Deployment View}
 \newpage
 \subsection{Runtime View}
