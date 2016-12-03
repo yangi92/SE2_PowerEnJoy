@@ -2,6 +2,12 @@
 # Folder view configuration files
 .DS_Store
 Desktop.ini
+DD.aux
+DD.log
+DD.pdf
+DD.synctex.gz
+DD.toc
+
 
 # Thumbnail cache files
 ._*
