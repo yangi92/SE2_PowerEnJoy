@@ -1,3 +1,5 @@
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
 \subsection{Search and Reserve Car Manager}
 The Search and Reserve Car Manager provides all the methods to manage and dispatch the incoming search and reserve requests.\\
 \begin{itemize}
@@ -18,50 +20,90 @@ The Ride and Park Manager provides all the methods to manage ride requests.\\
 \end{itemize}
 
 \subsection{Low Level Algorithm Description}
-\iffalse 
 \subsubsection{Search and Reserve Car Manager}
 \begin{itemize}
-\item \textbf{showAvailableCars(Address)}
-\item \textbf{reserveCar(Car)}
-\item \textbf {unlockCar(Car, Position)}
+\item \textbf{showAvailableCars(Position address)}\{\\
+\texttt{List<Car> nearCars = new ArrayList<Car>; \\
+for(Car c in CarFactory.availableCars)\\
+\tab if(distance(c.position, address)<=5)\\
+\tab \tab nearCars.add(c);\\
+Console.showList(nearCars);\\
+\}\\
+}
+
+
+
+\item \textbf{reserveCar(Car car. User user)}\{\\
+\texttt{car.status = reserved;\\
+Timer t = new Timer();\\
+t.start();\\
+Path path = GoogleMaps.getPath(user.position,car.position);\\
+Console.showInfo(path,timer);\\
+\}\\
+}
+\item \textbf {unlockCar(Car car, User user)}\{\\
+\texttt{if (distance(user.position,car.position)<0.002); //2 meters\\
+\tab car.unLock();\\
+else \\
+\tab Console.showMessage("You are not near the car!");\\
+\}\\
+}
 \end{itemize}
 
 \subsubsection{Ride and Park Car Manager}
 \begin{itemize}
-\item \textbf{startRide(PinCode, MoneySavingOption, Destination)}
-\texttt{if (User.pinCode == PinCode)
-Timer t = new Timer() ; t.start();\\
-if (MoneySavingOption.status == True)\\
-Path possiblePath = GoogleMaps.getPath(Position,Destination);\\
+\item \textbf{startRide(Car car, User user, int pinCode, MoneySavingOption mso, Position destination)}\{\\
+\texttt{if (user.pinCode == pinCode)\{\\
+\tab Timer t = new Timer(); \\ 
+\tab t.start();\\
+\tab if (mso.status == True)\{\\
+\tab \tab Path path = GoogleMaps.getPath(car.position,destination);\\
+\tab \tab Ride ride = new Ride(car,user,path,timer);\\
+\tab \tab \}\\
+\tab else\\
+\tab \tab Ride ride = new Ride(car,user,timer);\\
+\tab \}\\
+else\{\\
+\tab Console.showMessage("Error, PinCode not valid!");\\
+\tab return null;\\
+\tab \}\\
+return ride;\\
+\}\\
 }
 
-\item \textbf{parkCar(Car)}
-\texttt{if (Car.position is not in parkingArea ){\\ 
-Car.status = unlock;\\
-else if (Car.position is in parkingArea)\\
-numeberPassenger = Car.passenger;\\
-Car.status = lock;\\
+\item \textbf{parkCar(Car car, Ride ride)}\{\\
+\texttt{while (car.position is not in parkingArea )\\ 
+\tab Console.showMessage("You are not in a Parking Area.");\\
+if (car.position is in parkingArea)\{\\
+\tab ride.numberPassenger = car.passenger;\\
+\tab car.status = lock;\\
+\tab\}\\
+\}
  }
  
-\item \textbf{lockCar(Car,Ride)}
-\texttt{Timer t;
-if (Car.doors is not close)\\
-Ride.status = notFinished\\
-else if (Car.doors is closed)\\
-Ride.status = finished;\\
-t.stop();\\
-if (numberPassenger >=2)\\
-totalFee = Ride.fee - 0,10*Ride.fee;\\
-if (Car.batteryLevel> 0,5)\\
-totalFee = Ride.fee - 0,2*Ride.fee;\\
-if (Car.isInCharge == true)\\
-totalFee = Ride.fee - 0,3*Ride.fee;\\
-if (Car.position is not in powerGrid or Car.batteryLeve>0,2)
-totalFee = Ride.fee + 0,3*Ride.fee;\\
-Car.status = available;
+\item \textbf{lockCar(Car car,Ride ride)}\{\\
+\texttt{if (car.doors is not close)\{\\
+\tab ride.status = notFinished\\
+\tab return false;\\
+\tab \}\\
+ride.status = finished;\\
+ride.timer.stop();\\
+car.lock();\\
+float fee = ride.calculateFee();\\
+if (ride.numberPassenger >=2)\\
+\tab totalFee = ride.fee - 0,1*ride.fee;\\
+if (car.batteryLevel> 0,5)\\
+\tab totalFee = ride.fee - 0,2*ride.fee;\\
+if (car.isInCharge == true)\\
+\tab totalFee = ride.fee - 0,3*ride.fee;\\
+if (car.position is not in powerGrid or car.batteryLevel>0,2)\\
+\tab totalFee = ride.fee + 0,3*ride.fee;\\
+car.status = available;\\
+ride.fee = totalFee;\\
+return true;\\
+\}\\
 }
 \end{itemize}
-\fi
 
 
 
