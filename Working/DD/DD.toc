@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 \contentsline {section}{\numberline {1}Introduction}{4}{section.1}
 \contentsline {subsection}{\numberline {1.1}Purpose}{4}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Scope}{4}{subsection.1.2}
@@ -14,29 +13,17 @@
 \contentsline {subsubsection}{\numberline {2.2.4}Vehicle manager}{8}{subsubsection.2.2.4}
 \contentsline {subsubsection}{\numberline {2.2.5}Search manager}{8}{subsubsection.2.2.5}
 \contentsline {subsubsection}{\numberline {2.2.6}Ride Manager}{8}{subsubsection.2.2.6}
-=======
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}Purpose}{3}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Scope}{3}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Definitions,Acronyms,Abbreviations}{4}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Reference Documents}{5}{subsection.1.4}
-\contentsline {subsection}{\numberline {1.5}Document Structure}{5}{subsection.1.5}
-\contentsline {section}{\numberline {2}Architectural Design}{6}{section.2}
-\contentsline {subsection}{\numberline {2.1}Overview}{7}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Component View}{8}{subsection.2.2}
->>>>>>> 0ead96d237bee78775dd902dae715b706ddbc65a
-\contentsline {subsection}{\numberline {2.3}Deployment View}{9}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Runtime View}{10}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Component Interfaces}{11}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Selected architectural styles and patterns}{12}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Other design decisions}{13}{subsection.2.7}
-\contentsline {section}{\numberline {3}Algorithm Design}{14}{section.3}
-\contentsline {subsection}{\numberline {3.1}Search and Reserve Car Manager}{14}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Ride and Park Car Manager}{14}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Low Level Algorithm Description}{15}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Search and Reserve Car Manager}{15}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Ride and Park Car Manager}{15}{subsubsection.3.3.2}
-\contentsline {section}{\numberline {4}User Interface Design}{16}{section.4}
-\contentsline {section}{\numberline {5}Requierements Traceability}{17}{section.5}
-\contentsline {section}{\numberline {6}Effort Spent}{18}{section.6}
-\contentsline {section}{\numberline {7}References}{19}{section.7}
+\contentsline {subsubsection}{\numberline {2.2.7}Component diagram}{9}{subsubsection.2.2.7}
+\contentsline {subsection}{\numberline {2.3}Deployment View}{11}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Runtime View}{12}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Component Interfaces}{13}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Selected architectural styles and patterns}{14}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Other design decisions}{15}{subsection.2.7}
+\contentsline {section}{\numberline {3}Algorithm Design}{16}{section.3}
+\contentsline {subsection}{\numberline {3.1}Search and Reserve Car Manager}{16}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Ride and Park Car Manager}{16}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Low Level Algorithm Description}{17}{subsection.3.3}
+\contentsline {section}{\numberline {4}User Interface Design}{18}{section.4}
+\contentsline {section}{\numberline {5}Requierements Traceability}{19}{section.5}
+\contentsline {section}{\numberline {6}Effort Spent}{20}{section.6}
+\contentsline {section}{\numberline {7}References}{21}{section.7}
