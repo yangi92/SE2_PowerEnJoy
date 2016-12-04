@@ -1,0 +1,114 @@
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\subsection{Search and Reserve Car Manager}
+The Search and Reserve Car Manager provides all the methods to manage and dispatch the incoming search and reserve requests.\\
+\begin{itemize}
+\item \textbf{showAvailableCars(Position address):} searches into the database for the available cars within 5km from the Address and show them to the user on the map.
+
+\item \textbf{reserveCar(Car car, User user):} marks the car as reserved, starts the timer and shows it to the user in the application with the shortest path to reach the car.
+
+\item \textbf{unlockCar(Car car, User user):} if the user is near the car, unlocks it and stops the timer.
+\end{itemize}
+
+\subsection{Ride and Park Car Manager}
+The Ride and Park Manager provides all the methods to manage ride requests.\\
+\begin{itemize}
+\item \textbf{startRide(Car car, User user, int pinCode, MoneySavingOption mos, Position destination):} if the PinCode correspond to the one assigned to the user, starts the timer of the ride, shows it on the on-Board application screen along with the other informations such as charge level, gps, etc. If the flag MoneySavingOption is true, then searches and shows to the user the path to the best place where to park in order to save money.
+
+\item \textbf{parkCar(Car car, Ride ride):} If the car position is not in the parking area shows an error message and doesn't let the user to end the ride. If the car position is in the parking area, retrieves and saves informations about the presence of other people in the car from the sensors and tells the user that he/she can park there.
+
+\item \textbf{lockCar(Car car, Ride ride):}Waits until all the doors are closed. Stops the timer. If there were at least two passengers, adds the relative discount. If the battery level is over a certain level adds the relative discount. If the battery level is under a certain level adds the relative fee. If the position of the Car is too far away from the nearest power grid adds the relative fee. If the car is plugged in a power grid adds the relative discount. Calculates the final fee that the user has to pay and charges it to him/her. Finally marks the car as available.
+\end{itemize}
+
+\subsection{Low Level Algorithm Description}
+\subsubsection{Search and Reserve Car Manager}
+
+\begin{lstlisting}
+showAvailableCars(Position address){
+	List<Car> nearCars = new ArrayList<Car>;
+	for(Car c in CarFactory.availableCars)
+		if(distance(c.position, address)<=5)
+			nearCars.add(c);
+	Console.showList(nearCars);
+}
+
+
+reserveCar(Car car, User user){
+	car.status = reserved;
+	Timer t = new Timer();
+	t.start();
+	Path path = GoogleMaps.getPath(user.position,car.position);
+	Console.showInfo(path,timer);
+}
+
+
+unlockCar(Car car, User user){
+	if (distance(user.position,car.position)<0.002); //2 meters
+		car.unLock();
+	else
+		Console.showMessage("You are not near the car!");
+}
+\end{lstlisting}
+
+
+\subsubsection{Ride and Park Car Manager}
+\begin{lstlisting}
+startRide(Car car, User user, int pinCode, MoneySavingOption mso, Position destination){
+	if (user.pinCode == pinCode){
+		Timer t = new Timer();
+		t.start();
+		if (mso.status == True){
+			Path path = GoogleMaps.getPath(car.position,destination);
+			Ride ride = new Ride(car,user,path,timer);
+		}
+		else
+			Ride ride = new Ride(car,user,timer);
+	}
+	else{
+		Console.showMessage("Error, PinCode not valid!");
+		return null;
+	}
+	return ride;
+}
+
+
+parkCar(Car car, Ride ride){
+	while (car.position is not in parkingArea ){ 
+		Console.showMessage("You are not in a Parking Area.");\\
+		ride.status= notFinished;\\
+	}
+	if (car.position is in parkingArea){
+	ride.numberPassenger = car.passenger;
+	car.status = lock;
+	}
+}
+
+ 
+lockCar(Car car,Ride ride){
+	if (car.doors is not close){
+		ride.status = notFinished
+		return false;
+	}
+	ride.status = finished;
+	ride.timer.stop();
+	car.lock();
+	float fee = ride.calculateFee();
+	if (ride.numberPassenger >=2)
+		totalFee = ride.fee - 0,1*ride.fee;
+	if (car.batteryLevel> 0,5)
+		totalFee = ride.fee - 0,2*ride.fee;
+	if (car.isInCharge == true)
+		totalFee = ride.fee - 0,3*ride.fee;
+	if (car.position is not in powerGrid or car.batteryLevel<0,2)
+		totalFee = ride.fee + 0,3*ride.fee;
+	car.status = available;
+	ride.fee = totalFee;
+	return true;
+}
+
+\end{lstlisting}
+
+
+
+
+
