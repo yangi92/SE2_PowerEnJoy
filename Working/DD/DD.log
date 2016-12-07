@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 DEC 2016 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  7 DEC 2016 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -312,28 +312,40 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 19.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count112
+\rotFPtop=\skip46
+\rotFPbot=\skip47
+\rot@float@box=\box31
+\rot@mess@toks=\toks19
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 20.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/ttlkeys.def
 File: ttlkeys.def 2016/03/15
 ) (./DD.aux)
 \openout1 = `DD.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 37.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
@@ -342,17 +354,17 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
+\scratchcounter=\count113
 \scratchdimen=\dimen136
-\scratchbox=\box31
-\nofMPsegments=\count113
-\nofMParguments=\count114
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count115
+\scratchbox=\box32
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count116
 \MPscratchDim=\dimen137
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
-\everyMPtoPDFconversion=\toks20
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks21
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -368,8 +380,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 36.
+\AtBeginShipoutBox=\box33
+Package hyperref Info: Link coloring ON on input line 37.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -377,11 +389,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count118
+\c@section@level=\count119
 )
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 
 (./DD.out) (./DD.out)
 \@outlinefile=\write3
@@ -389,20 +401,21 @@ LaTeX Info: Redefining \nameref on input line 36.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count119
+\c@lstlisting=\count120
  <Images/PolimiLogo.png, id=116, 100.4553pt x 100.6962pt>
 File: Images/PolimiLogo.png Graphic file (type png)
 
 <use Images/PolimiLogo.png>
-Package pdftex.def Info: Images/PolimiLogo.png used on input line 43.
+Package pdftex.def Info: Images/PolimiLogo.png used on input line 44.
 (pdftex.def)             Requested size: 150.68257pt x 151.0439pt.
 
 <Images/logoPowerEnjoy2.png, id=118, 192.2382pt x 45.2892pt>
 File: Images/logoPowerEnjoy2.png Graphic file (type png)
 
 <use Images/logoPowerEnjoy2.png>
-Package pdftex.def Info: Images/logoPowerEnjoy2.png used on input line 59.
+Package pdftex.def Info: Images/logoPowerEnjoy2.png used on input line 60.
 (pdftex.def)             Requested size: 192.23772pt x 45.28908pt.
  [1
 
@@ -550,37 +563,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-
-LaTeX Warning: Hyper reference `sec:DMV' on page 9 undefined on input line 65.
-
-[9]
-<Images/ComponentDiagram/ComponentDiagram.png, id=203, 1094.0875pt x 1416.29124
+[9] [10]
+<Images/ComponentDiagram/ComponentDiagram.png, id=210, 1094.0875pt x 1416.29124
 pt>
 File: Images/ComponentDiagram/ComponentDiagram.png Graphic file (type png)
  <use Images/ComponentDiagram/ComponentDiagram.png>
 Package pdftex.def Info: Images/ComponentDiagram/ComponentDiagram.png used on i
-nput line 83.
-(pdftex.def)             Requested size: 382.93636pt x 495.70937pt.
- [10] [11 <./Images/ComponentDiagram/ComponentDiagram.png>] [12]
-Overfull \hbox (0.84709pt too wide) in paragraph at lines 94--96
+nput line 84.
+(pdftex.def)             Requested size: 404.80603pt x 524.01956pt.
+
+Overfull \hbox (14.80603pt too wide) in paragraph at lines 84--85
+ [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 23.26953pt on input line 86.
+
+[11 <./Images/ComponentDiagram/ComponentDiagram.png>]
+<Images/ClassDiagram/BackEnd.png, id=217, 1508.63625pt x 1190.4475pt>
+File: Images/ClassDiagram/BackEnd.png Graphic file (type png)
+
+<use Images/ClassDiagram/BackEnd.png>
+Package pdftex.def Info: Images/ClassDiagram/BackEnd.png used on input line 91.
+
+(pdftex.def)             Requested size: 603.44382pt x 476.17056pt.
+
+Overfull \hbox (54.94382pt too wide) in paragraph at lines 91--92
+[][] 
+ []
+
+[12 <./Images/ClassDiagram/BackEnd.png>] [13
+
+
+
+
+]
+Overfull \hbox (0.84709pt too wide) in paragraph at lines 104--106
 \OT1/ppl/m/n/12 The REST-ful API is a gate-way com-mu-ni-ca-tor be-tween client
 s and the back-
  []
 
-[13] [14]
+[14] [15]
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
- <Images/ER/ER.png, id=228, 759.83875pt x 896.34875pt>
+ <Images/ER/ER.png, id=237, 759.83875pt x 896.34875pt>
 File: Images/ER/ER.png Graphic file (type png)
 
 <use Images/ER/ER.png>
-Package pdftex.def Info: Images/ER/ER.png used on input line 116.
+Package pdftex.def Info: Images/ER/ER.png used on input line 126.
 (pdftex.def)             Requested size: 265.94754pt x 313.72676pt.
- [15 <./Images/ER/ER.png>] [16] [17])
+ [16 <./Images/ER/ER.png>] [17] [18])
 (./SubModules/AlgorithmDesign.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
@@ -603,32 +639,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[18]) [19] [20] [21] [22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
- [23]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
+[19]) [20] [21] [22] [23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 139.
+ [24]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
  (./DD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 138.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 139.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 139.
 Package rerunfilecheck Info: File `DD.out' has not changed.
-(rerunfilecheck)             Checksum: BE821A5281BE22532A7416CAB476D4FB;1855.
+(rerunfilecheck)             Checksum: 0CBAE79160EF0539729509926F41649D;1846.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
  ) 
 Here is how much of TeX's memory you used:
- 9208 strings out of 493014
- 140224 string characters out of 6133351
- 235701 words of memory out of 5000000
- 12542 multiletter control sequences out of 15000+600000
+ 9327 strings out of 493014
+ 141911 string characters out of 6133351
+ 237539 words of memory out of 5000000
+ 12649 multiletter control sequences out of 15000+600000
  27575 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,8n,94p,633b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,9n,94p,633b,438s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
@@ -636,10 +669,10 @@ live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on DD.pdf (23 pages, 424482 bytes).
+Output written on DD.pdf (24 pages, 529541 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
- 263 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
- 245 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 314 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 250 words of extra memory for PDF output out of 10000 (max. 10000000)
 

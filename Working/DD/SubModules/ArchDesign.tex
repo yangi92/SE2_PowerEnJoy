@@ -43,7 +43,7 @@ The car manager component's job is to manage all the vehicles throughout the cit
 are managed through the Position manager.
 
 \item \textbf{Position manager}\\
-Keeps track of car positions around the city. When the Search manager gets triggered it forwards requests to the vehicle manager to get all available cars in compliance to the user input. It updates car positions through the vehicle manager at the end of each ride through the Vehicle manager. Moreover it handles the fair car distribution scenario when triggered by the on-board display. 
+Keeps track of car positions around the city. When the Search manager gets triggered it forwards requests to the Position manager to get all available cars in compliance to the user input. It updates car positions through the vehicle manager at the end of each ride through the Vehicle manager. Moreover it handles the fair car distribution scenario when triggered by the on-board display. 
 
 \item \textbf{Search manager}\\
 The search manager component handles all incoming search requests forwarded by the user applications and interfaced through the RESTful API. The main functionality is to handle the user input and query the vehicle manager accordingly, returning the desired output to the user.\\In the event of a booking request the search manager forwards the demand to the Ride Manager.
@@ -75,14 +75,24 @@ the REST API using platform specific API for REST HTTP calls.
 
 \subsubsection{On-Board Client}
 The on-board client needs to provide navigation functionality without interacting with the PowerEnjoy Server but directly through GoogleMaps API. At the beginning of each ride an authentication via PinCode is requested and verified server side.\\Safe Areas are stored locally on the client and updated only when the changes on the DB occur.On the other hand charging stations need to be updated in real-time as it can happen that charging stations are currently out of capacity.
+\clearpage
 
+\FloatBarrier
+\begin{figure}
+\subsubsection{Diagrams}
+\centering
+\includegraphics[scale=0.37]{Images/ComponentDiagram/ComponentDiagram.png}
+\caption{Component Diagram}
+\end{figure}
+\FloatBarrier
+\clearpage
+\FloatBarrier
+\begin{sidewaysfigure}
+\includegraphics[scale=0.4]{Images/ClassDiagram/BackEnd.png}
+\caption{Back-End Class Diagram}
+\end{sidewaysfigure}
+\FloatBarrier
 
-
-\subsubsection{Component diagram}
-\begin{center}
-\includegraphics[scale=0.35]{Images/ComponentDiagram/ComponentDiagram.png}
-\end{center}
-\newpage
 
 \subsection{Deployment View}
 
