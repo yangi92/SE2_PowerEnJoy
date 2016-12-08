@@ -12,17 +12,17 @@
 \contentsline {subsubsection}{\numberline {2.2.3}On-Board Client}{10}{subsubsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.4}Diagrams}{11}{subsubsection.2.2.4}
 \contentsline {subsection}{\numberline {2.3}Deployment View}{15}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Runtime View}{17}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Component Interfaces}{18}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Selected architectural styles and patterns}{19}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Data Management view}{20}{subsection.2.7}
-\contentsline {subsubsection}{\numberline {2.7.1}Storing policy}{20}{subsubsection.2.7.1}
-\contentsline {subsubsection}{\numberline {2.7.2}Entity-Relation Diagram}{20}{subsubsection.2.7.2}
-\contentsline {section}{\numberline {3}Algorithm Design}{23}{section.3}
-\contentsline {subsection}{\numberline {3.1}Search and Reserve Car Manager}{23}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Ride and Park Car Manager}{23}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Low Level Algorithm Description}{24}{subsection.3.3}
-\contentsline {section}{\numberline {4}User Interface Design}{25}{section.4}
-\contentsline {section}{\numberline {5}Requirements Traceability}{26}{section.5}
-\contentsline {section}{\numberline {6}Effort Spent}{27}{section.6}
-\contentsline {section}{\numberline {7}References}{28}{section.7}
+\contentsline {subsection}{\numberline {2.4}Runtime View}{18}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Component Interfaces}{19}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Selected architectural styles and patterns}{21}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Data Management view}{22}{subsection.2.7}
+\contentsline {subsubsection}{\numberline {2.7.1}Storing policy}{22}{subsubsection.2.7.1}
+\contentsline {subsubsection}{\numberline {2.7.2}Entity-Relation Diagram}{22}{subsubsection.2.7.2}
+\contentsline {section}{\numberline {3}Algorithm Design}{25}{section.3}
+\contentsline {subsection}{\numberline {3.1}Search and Reserve Car Manager}{25}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Ride and Park Car Manager}{25}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Low Level Algorithm Description}{26}{subsection.3.3}
+\contentsline {section}{\numberline {4}User Interface Design}{27}{section.4}
+\contentsline {section}{\numberline {5}Requirements Traceability}{28}{section.5}
+\contentsline {section}{\numberline {6}Effort Spent}{29}{section.6}
+\contentsline {section}{\numberline {7}References}{30}{section.7}

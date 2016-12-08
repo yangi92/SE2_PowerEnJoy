@@ -118,11 +118,13 @@ with the following components:
 \item \textbf{Primary RDBMS Server}: server dedicated to run the DBMS software on account of the main server  and to manage the communication with the secondary storage node. This node is connected to the main server, from which it receives requests, and the storage nodes (either primary or secondary - the connection is transparent to the node and is hot-swappable in the event of a failure).
 \item \textbf{Secondary RDBMS Server}:server dedicated to run the DBMS software and
 manage the backup requests from the primary DBMS server. The node is connected to the secondary storage and to the primary DBMS server, for the reasons described above.
-\item \textbf{Server}: a typical rack of servers dedicated to run the main back-end application.
+\item \textbf{Server}: a typical rack of servers dedicated to run the main back-end application.The rack is composed by independent nodes managed by usual
+load balancing technology and is able to be fully functional under average load of the system.The redundancy of the rack has the dual function of improving fault tolerance and performance under above-average load conditions.\\
+This node is connected to the web server, through which the communication
+to and from the users happens, and to the DBMS server (either
+primary or secondary - the connection is transparent to the node and is
+hot-swappable in the event of a failure).
 \item \textbf{Web Server}:server dedicated to run the web server software and manage the load balancing towards the main server array. It is isolated by firewalls to  minimize the risk of unauthorized access to the main back-end components (especially to the storage nodes).
-\item \textbf{User Application}:
-\item \textbf{On-Board Display}:
-
 \end{enumerate}
 
 \FloatBarrier
@@ -139,11 +141,35 @@ manage the backup requests from the primary DBMS server. The node is connected t
 \newpage
 
 
+
+%---------------------
+% COMPONENT INTERFACES
+%---------------------
+
 \subsection{Component Interfaces}
 \label{sec:CInter}
+This section provides a description of the interfaces between the main components
+of the system.
+\\[0.2in]
+\textbf{Server interaction}\\
+\begin{itemize}
+\item \textbf{Back-End application $\rightarrow$ Database}\\
+The \emph{back-end application} uses SQL language to query the \emph{database}. Queries from Java 
+are supported by the \emph{Java Database Connectivity (JDBC) API} \footnote{\url{http://www.oracle.com/technetwork/java/javase/jdbc/index.html}}.JDBC comes extremely handy thanks to it powerful \emph{"Write once, Run Everywhere "}feature.
+\item \textbf{Back-End application $\rightarrow$ Web-Server}\\
 
+\item \textbf{Web Server $\rightarrow$ Client Application}\\
+The connection between the \emph{web-server} and the \emph{Client application} is managed by the internet network based on a HTTPS protocol and supported by the RESTful API service.To add further security to the data flow an intermediate Firewall is deployed.
+\item \textbf{Web Server $\rightarrow$ On-Board Application}\\
+The connection between the \emph{web server} and the \emph{On-board application} is managed by the internet network based on a HTTPS protocol and supported by the RESTful API service.To add further security to the data flow an intermediate Firewall is deployed.
+\end{itemize}
 \textbf{RESTful API}\\The RESTful API is a gateway communicator between clients and the back-end system: it's a stateless service which provides methods for data submission or requests returning the requested computations as a result.\\
-RESTful API are an optimal solution for an application that must handle a vast number of users on a different number of platforms as it allows to guarantee the same user experience on all platforms. Furthermore the architectural properties positively affected by the constraints of the REST architectural include many important quality requirements such as performance, scalability and reliability.
+RESTful API are an optimal solution for an application that must handle a vast number of users on a different number of platforms as it allows to guarantee the same user experience on all platforms. Furthermore the architectural properties positively affected by the constraints of the REST architectural include many important quality requirements such as performance, scalability and reliability.\\[0.2in]
+\textbf{Server oriented architecture}
+\\[0.2in]
+\textbf{Publish /subscriber}
+\\[0.2in]
+
 \newpage
 \subsection{Selected architectural styles and patterns}
 \newpage
