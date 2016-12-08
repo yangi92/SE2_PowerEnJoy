@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  7 DEC 2016 17:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  8 DEC 2016 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4890,39 +4890,63 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 76--78
 []
  []
 
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \clearpage
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 ! Undefined control sequence.
-l.79 \subsubsection
-                   {Component diagram}
+l.80 \FloatBarrier
+                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no C in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no d in font nullfont!
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 \begin{figure}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.82 \subsubsection
+                   {Diagrams}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no m in font nullfont!
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 79--80
-[] 
- []
-
+Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.81 \includegraphics
-                     [scale=0.35]{Images/ComponentDiagram/ComponentDiagram.png}
+l.84 \includegraphics
+                     [scale=0.37]{Images/ComponentDiagram/ComponentDiagram.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4939,7 +4963,7 @@ Missing character: There is no = in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 3 in font nullfont!
-Missing character: There is no 5 in font nullfont!
+Missing character: There is no 7 in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -4986,6 +5010,61 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \caption
+             {Component Diagram}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 \end{figure}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.87 \FloatBarrier
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 82--88
+[]
+ []
+
+
 ! LaTeX Error: The font size command \normalsize is not defined:
                there is probably something wrong with the class file.
 
@@ -4993,21 +5072,99 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.83 \clearpage
+l.88 \clearpage
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2
+
+]
 ! Undefined control sequence.
-l.84 \subsubsection
-                   {Back-End Class Diagram}
+l.89 \FloatBarrier
+                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Environment sidewaysfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \begin{sidewaysfigure}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.91 \includegraphics
+                     [scale=0.4]{Images/ClassDiagram/BackEnd.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 \caption
+             {Back-End Class Diagram}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no B in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -5029,8 +5186,30 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no m in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{sidewaysfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 \end{sidewaysfigure}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 ! Undefined control sequence.
-l.85 \FloatBarrier
+l.94 \FloatBarrier
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.95 \FloatBarrier
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5039,21 +5218,21 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: Environment landscape undefined.
+! LaTeX Error: Environment figure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.86 \begin{landscape}
-                      
+l.96 \begin{figure}
+                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.87 \includegraphics
-                     [scale=0.35]{Images/ClassDiagram/BackEnd.png}
+l.98 \includegraphics
+                     [scale=0.35]{Images/ClassDiagram/User.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5092,58 +5271,78 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no / in font nullfont!
-Missing character: There is no B in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no E in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
+Missing character: There is no U in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 84--88
-[]
- []
-
-
-! LaTeX Error: \begin{document} ended by \end{center}.
+! LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.88 \end{center}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+l.99 \caption
+             {User Application Class Diagram}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
+Missing character: There is no U in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
 
-! LaTeX Error: \begin{document} ended by \end{landscape}.
+! LaTeX Error: \begin{document} ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 \end{landscape}
-                    
+l.100 \end{figure}
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.89 \end{landscape}
-                    
-Things are pretty mixed up, but I think the worst is over.
 
 ! Undefined control sequence.
-l.90 \FloatBarrier
-                  
+l.101 \FloatBarrier
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.102 \FloatBarrier
+                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5151,25 +5350,132 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
+! LaTeX Error: Environment figure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 \newpage
-             
+l.103 \begin{figure}
+                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[2
-
-]
 ! Undefined control sequence.
-l.94 \subsection
-                {Deployment View}
+l.105 \includegraphics
+                      [scale=0.35]{Images/ClassDiagram/Display.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 \caption
+              {On-board Class Diagram}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no O in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 \end{figure}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.108 \FloatBarrier
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 91--109
+[]
+ []
+
+! Undefined control sequence.
+l.110 \subsection
+                 {Deployment View}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5191,13 +5497,119 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no w in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 94--95
-[]
- []
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \begin{figure}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.96 \subsection
-                {Runtime View}
+l.112 \includegraphics
+                      [scale=0.35]{Images/DeploymentDiagram/Deploy.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 \caption
+              {Deployment Diagram}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114 \end{figure}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.115 \subsection
+                 {Runtime View}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5216,7 +5628,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no w in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 96--97
+Overfull \hbox (20.0pt too wide) in paragraph at lines 110--116
 []
  []
 
@@ -5228,16 +5640,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.97 \newpage
-             
+l.116 \newpage
+              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[3]
+[3
+
+]
 ! Undefined control sequence.
-l.98 \subsection
-                {Component Interfaces}
+l.117 \subsection
+                 {Component Interfaces}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5264,7 +5678,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 98--100
+Overfull \hbox (20.0pt too wide) in paragraph at lines 117--119
 []
  []
 
@@ -5790,12 +6204,12 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (63.66643pt too wide) in paragraph at lines 101--103
+Overfull \hbox (63.66643pt too wide) in paragraph at lines 120--122
 []\OT1/cmr/bx/n/10 RESTful
  []
 
 
-Overfull \hbox (20.91655pt too wide) in paragraph at lines 101--103
+Overfull \hbox (20.91655pt too wide) in paragraph at lines 120--122
 \OT1/cmr/bx/n/10 API 
  []
 
@@ -5807,7 +6221,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 \newpage
+l.122 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5817,7 +6231,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 <write> \newlabel{sec:CInter}{{}{\thepage 
                                           }}
-l.103 \newpage
+l.122 \newpage
               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5828,7 +6242,7 @@ and I'll forget about whatever was undefined.
 \newlabel{sec:CInter}{{}{}}
 ]
 ! Undefined control sequence.
-l.104 \subsection
+l.123 \subsection
                  {Selected architectural styles and patterns}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5875,7 +6289,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 104--105
+Overfull \hbox (20.0pt too wide) in paragraph at lines 123--124
 []
  []
 
@@ -5887,7 +6301,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.105 \newpage
+l.124 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5895,7 +6309,7 @@ or  <return>  to continue without it.
 
 [5]
 ! Undefined control sequence.
-l.110 \subsection
+l.129 \subsection
                  {Data Management view}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5974,7 +6388,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.113 \subsubsection
+l.132 \subsubsection
                     {Storing policy}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6405,17 +6819,17 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 110--120
+Overfull \hbox (20.0pt too wide) in paragraph at lines 129--139
 []
  []
 
 
-Overfull \hbox (23.9054pt too wide) in paragraph at lines 110--120
+Overfull \hbox (23.9054pt too wide) in paragraph at lines 129--139
 \OT1/cmr/m/it/10 Rides
  []
 
 ! Undefined control sequence.
-l.121 \subsubsection
+l.140 \subsubsection
                     {Entity-Relation Diagram}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6446,12 +6860,12 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no m in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 121--122
+Overfull \hbox (20.0pt too wide) in paragraph at lines 140--141
 [] 
  []
 
 ! Undefined control sequence.
-l.123 \includegraphics
+l.142 \includegraphics
                       [scale=0.35]{Images/ER/ER.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6770,22 +7184,22 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (30.42203pt too wide) in paragraph at lines 127--129
+Overfull \hbox (30.42203pt too wide) in paragraph at lines 146--148
 \OT1/cmr/m/it/10 Person
  []
 
 
-Overfull \hbox (28.622pt too wide) in paragraph at lines 127--129
+Overfull \hbox (28.622pt too wide) in paragraph at lines 146--148
 \OT1/cmr/m/it/10 Codice
  []
 
 
-Overfull \hbox (20.32764pt too wide) in paragraph at lines 127--129
+Overfull \hbox (20.32764pt too wide) in paragraph at lines 146--148
 \OT1/cmr/m/it/10 Fisi-
  []
 
 
-Overfull \hbox (16.35542pt too wide) in paragraph at lines 127--129
+Overfull \hbox (16.35542pt too wide) in paragraph at lines 146--148
 \OT1/cmr/m/it/10 cale
  []
 
@@ -6843,22 +7257,22 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (38.33304pt too wide) in paragraph at lines 129--130
+Overfull \hbox (38.33304pt too wide) in paragraph at lines 148--149
 \OT1/cmr/m/it/10 Operator
  []
 
 
-Overfull \hbox (27.47205pt too wide) in paragraph at lines 129--130
+Overfull \hbox (27.47205pt too wide) in paragraph at lines 148--149
 \OT1/cmr/m/it/10 Salary
  []
 
 
-Overfull \hbox (11.40547pt too wide) in paragraph at lines 129--130
+Overfull \hbox (11.40547pt too wide) in paragraph at lines 148--149
 \OT1/cmr/m/it/10 ID
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 129--130
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 0$
  []
 
@@ -7121,87 +7535,87 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ) in font nullfont!
 
-Overfull \hbox (20.33875pt too wide) in paragraph at lines 130--131
+Overfull \hbox (20.33875pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 User
  []
 
 
-Overfull \hbox (21.46652pt too wide) in paragraph at lines 130--131
+Overfull \hbox (21.46652pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 pass-
  []
 
 
-Overfull \hbox (20.57208pt too wide) in paragraph at lines 130--131
+Overfull \hbox (20.57208pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 word
  []
 
 
-Overfull \hbox (9.19994pt too wide) in paragraph at lines 130--131
+Overfull \hbox (9.19994pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 li-
  []
 
 
-Overfull \hbox (22.99982pt too wide) in paragraph at lines 130--131
+Overfull \hbox (22.99982pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 cense
  []
 
 
-Overfull \hbox (22.74431pt too wide) in paragraph at lines 130--131
+Overfull \hbox (22.74431pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 num-
  []
 
 
-Overfull \hbox (12.90543pt too wide) in paragraph at lines 130--131
+Overfull \hbox (12.90543pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 ber
  []
 
 
-Overfull \hbox (18.1443pt too wide) in paragraph at lines 130--131
+Overfull \hbox (18.1443pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 pay-
  []
 
 
-Overfull \hbox (21.72208pt too wide) in paragraph at lines 130--131
+Overfull \hbox (21.72208pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 ment
  []
 
 
-Overfull \hbox (22.74431pt too wide) in paragraph at lines 130--131
+Overfull \hbox (22.74431pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 num-
  []
 
 
-Overfull \hbox (12.90543pt too wide) in paragraph at lines 130--131
+Overfull \hbox (12.90543pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 ber
  []
 
 
-Overfull \hbox (19.04988pt too wide) in paragraph at lines 130--131
+Overfull \hbox (19.04988pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 Pin-
  []
 
 
-Overfull \hbox (21.4665pt too wide) in paragraph at lines 130--131
+Overfull \hbox (21.4665pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 Code
  []
 
 
-Overfull \hbox (10.73326pt too wide) in paragraph at lines 130--131
+Overfull \hbox (10.73326pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 is-
  []
 
 
-Overfull \hbox (14.05547pt too wide) in paragraph at lines 130--131
+Overfull \hbox (14.05547pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/it/10 sue
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 130--131
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/n/10 0$
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 130--131
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 149--150
 \OT1/cmr/m/n/10 0$ 
  []
 
@@ -7374,32 +7788,32 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (28.6331pt too wide) in paragraph at lines 131--132
+Overfull \hbox (28.6331pt too wide) in paragraph at lines 150--151
 \OT1/cmr/m/it/10 Report
  []
 
 
-Overfull \hbox (11.40547pt too wide) in paragraph at lines 131--132
+Overfull \hbox (11.40547pt too wide) in paragraph at lines 150--151
 \OT1/cmr/m/it/10 ID
  []
 
 
-Overfull \hbox (13.79991pt too wide) in paragraph at lines 131--132
+Overfull \hbox (13.79991pt too wide) in paragraph at lines 150--151
 \OT1/cmr/m/it/10 ha-
  []
 
 
-Overfull \hbox (15.61101pt too wide) in paragraph at lines 131--132
+Overfull \hbox (15.61101pt too wide) in paragraph at lines 150--151
 \OT1/cmr/m/it/10 sIs-
  []
 
 
-Overfull \hbox (14.05547pt too wide) in paragraph at lines 131--132
+Overfull \hbox (14.05547pt too wide) in paragraph at lines 150--151
 \OT1/cmr/m/it/10 sue
  []
 
 
-Overfull \hbox (10.00003pt too wide) in paragraph at lines 131--132
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 150--151
 \OT1/cmr/m/n/10 0$$1$ 
  []
 
@@ -7562,37 +7976,37 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (31.19978pt too wide) in paragraph at lines 132--134
+Overfull \hbox (31.19978pt too wide) in paragraph at lines 151--153
 \OT1/cmr/m/it/10 Vehicle
  []
 
 
-Overfull \hbox (12.91656pt too wide) in paragraph at lines 132--134
+Overfull \hbox (12.91656pt too wide) in paragraph at lines 151--153
 \OT1/cmr/m/it/10 Li-
  []
 
 
-Overfull \hbox (22.99982pt too wide) in paragraph at lines 132--134
+Overfull \hbox (22.99982pt too wide) in paragraph at lines 151--153
 \OT1/cmr/m/it/10 cense
  []
 
 
-Overfull \hbox (22.37207pt too wide) in paragraph at lines 132--134
+Overfull \hbox (22.37207pt too wide) in paragraph at lines 151--153
 \OT1/cmr/m/it/10 Plate
  []
 
 
-Overfull \hbox (26.58871pt too wide) in paragraph at lines 132--134
+Overfull \hbox (26.58871pt too wide) in paragraph at lines 151--153
 \OT1/cmr/m/it/10 Brand
  []
 
 
-Overfull \hbox (25.83316pt too wide) in paragraph at lines 132--134
+Overfull \hbox (25.83316pt too wide) in paragraph at lines 151--153
 \OT1/cmr/m/it/10 Model
  []
 
 
-Overfull \hbox (16.48322pt too wide) in paragraph at lines 132--134
+Overfull \hbox (16.48322pt too wide) in paragraph at lines 151--153
 \OT1/cmr/m/it/10 Car
  []
 
@@ -7759,57 +8173,57 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (16.48322pt too wide) in paragraph at lines 134--135
+Overfull \hbox (16.48322pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/it/10 Car
  []
 
 
-Overfull \hbox (16.09988pt too wide) in paragraph at lines 134--135
+Overfull \hbox (16.09988pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/it/10 sta-
  []
 
 
-Overfull \hbox (12.7777pt too wide) in paragraph at lines 134--135
+Overfull \hbox (12.7777pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/it/10 tus
  []
 
 
-Overfull \hbox (23.9054pt too wide) in paragraph at lines 134--135
+Overfull \hbox (23.9054pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/it/10 Rides
  []
 
 
-Overfull \hbox (26.70534pt too wide) in paragraph at lines 134--135
+Overfull \hbox (26.70534pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/it/10 charg-
  []
 
 
-Overfull \hbox (13.2888pt too wide) in paragraph at lines 134--135
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/it/10 ing
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 134--135
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/n/10 0$
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 134--135
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/n/10 0$
  []
 
 
-Overfull \hbox (26.70534pt too wide) in paragraph at lines 134--135
+Overfull \hbox (26.70534pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/it/10 charg-
  []
 
 
-Overfull \hbox (16.86655pt too wide) in paragraph at lines 134--135
+Overfull \hbox (16.86655pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/it/10 ing-
  []
 
 
-Overfull \hbox (17.55959pt too wide) in paragraph at lines 134--135
+Overfull \hbox (17.55959pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/it/10 Car 
  []
 
@@ -7878,42 +8292,42 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (38.97194pt too wide) in paragraph at lines 135--136
+Overfull \hbox (38.97194pt too wide) in paragraph at lines 154--155
 \OT1/cmr/m/it/10 Charging
  []
 
 
-Overfull \hbox (17.63321pt too wide) in paragraph at lines 135--136
+Overfull \hbox (17.63321pt too wide) in paragraph at lines 154--155
 \OT1/cmr/m/it/10 Sta-
  []
 
 
-Overfull \hbox (17.12212pt too wide) in paragraph at lines 135--136
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 154--155
 \OT1/cmr/m/it/10 tion
  []
 
 
-Overfull \hbox (11.40547pt too wide) in paragraph at lines 135--136
+Overfull \hbox (11.40547pt too wide) in paragraph at lines 154--155
 \OT1/cmr/m/it/10 ID
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 135--136
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 154--155
 \OT1/cmr/m/n/10 0$
  []
 
 
-Overfull \hbox (26.70534pt too wide) in paragraph at lines 135--136
+Overfull \hbox (26.70534pt too wide) in paragraph at lines 154--155
 \OT1/cmr/m/it/10 charg-
  []
 
 
-Overfull \hbox (16.86655pt too wide) in paragraph at lines 135--136
+Overfull \hbox (16.86655pt too wide) in paragraph at lines 154--155
 \OT1/cmr/m/it/10 ing-
  []
 
 
-Overfull \hbox (21.3929pt too wide) in paragraph at lines 135--136
+Overfull \hbox (21.3929pt too wide) in paragraph at lines 154--155
 \OT1/cmr/m/it/10 Cars 
  []
 
@@ -8205,77 +8619,77 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (19.81653pt too wide) in paragraph at lines 136--138
+Overfull \hbox (19.81653pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/it/10 Ride
  []
 
 
-Overfull \hbox (31.222pt too wide) in paragraph at lines 136--138
+Overfull \hbox (31.222pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/it/10 RideID
  []
 
 
-Overfull \hbox (19.56099pt too wide) in paragraph at lines 136--138
+Overfull \hbox (19.56099pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/it/10 Pas-
  []
 
 
-Overfull \hbox (17.88876pt too wide) in paragraph at lines 136--138
+Overfull \hbox (17.88876pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/it/10 sen-
  []
 
 
-Overfull \hbox (13.41655pt too wide) in paragraph at lines 136--138
+Overfull \hbox (13.41655pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/it/10 ger
  []
 
 
-Overfull \hbox (15.61102pt too wide) in paragraph at lines 136--138
+Overfull \hbox (15.61102pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/it/10 No.
  []
 
 
-Overfull \hbox (20.32764pt too wide) in paragraph at lines 136--138
+Overfull \hbox (20.32764pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/it/10 Pay-
  []
 
 
-Overfull \hbox (21.72208pt too wide) in paragraph at lines 136--138
+Overfull \hbox (21.72208pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/it/10 ment
  []
 
 
-Overfull \hbox (28.49423pt too wide) in paragraph at lines 136--138
+Overfull \hbox (28.49423pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/it/10 Trans-
  []
 
 
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 136--138
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/it/10 ac-
  []
 
 
-Overfull \hbox (17.12212pt too wide) in paragraph at lines 136--138
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/it/10 tion
  []
 
 
-Overfull \hbox (11.40547pt too wide) in paragraph at lines 136--138
+Overfull \hbox (11.40547pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/it/10 ID
  []
 
 
-Overfull \hbox (34.77756pt too wide) in paragraph at lines 136--138
+Overfull \hbox (34.77756pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/it/10 Amount
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 136--138
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/n/10 1$
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 136--138
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 155--157
 \OT1/cmr/m/n/10 0$
  []
 
@@ -8287,7 +8701,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139 \newpage
+l.158 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -8297,7 +8711,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 <write> \newlabel{sec:DMV}{{}{\thepage 
                                        }}
-l.139 \newpage
+l.158 \newpage
               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -8314,10 +8728,10 @@ and I'll forget about whatever was undefined.
 
  
 Here is how much of TeX's memory you used:
- 22 strings out of 493014
- 303 string characters out of 6133351
+ 24 strings out of 493014
+ 328 string characters out of 6133351
  57601 words of memory out of 5000000
- 3661 multiletter control sequences out of 15000+600000
+ 3663 multiletter control sequences out of 15000+600000
  4294 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  24i,5n,14p,495b,153s stack positions out of 5000i,500n,10000p,200000b,80000s

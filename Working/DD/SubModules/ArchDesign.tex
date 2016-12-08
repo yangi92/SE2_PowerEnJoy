@@ -92,12 +92,53 @@ The on-board client needs to provide navigation functionality without interactin
 \caption{Back-End Class Diagram}
 \end{sidewaysfigure}
 \FloatBarrier
-
+\FloatBarrier
+\begin{figure}
+\hspace{-15mm}
+\includegraphics[scale=0.35]{Images/ClassDiagram/User.png}
+\caption{User Application Class Diagram}
+\end{figure}
+\FloatBarrier
+\FloatBarrier
+\begin{figure}
+\hspace{-15mm}
+\includegraphics[scale=0.35]{Images/ClassDiagram/Display.png}
+\caption{On-board Class Diagram}
+\end{figure}
+\FloatBarrier
+\newpage
 
 \subsection{Deployment View}
+The following section contains a schema of the hardware infrastructure.
+It was decided to omit the representation of the purely network-related hardware (routers, switches, etc.).
+The chosen architecture is a typical web-based client-server architecture,
+with the following components:
+\begin{enumerate}
+\item \textbf{Primary and BackUp Storage}: the Primary DB is a long term storage system on which the operational database is saved. This node provides the highest Read/Write speeds and is used in normal operational regime.The BackUP DB is a long term storage system with high reliability property. It is mainly used to store data backups and becomes fully operational in the event of total failure of the Primary RDBMS or DBMS nodes.
+\item \textbf{Primary RDBMS Server}: server dedicated to run the DBMS software on account of the main server  and to manage the communication with the secondary storage node. This node is connected to the main server, from which it receives requests, and the storage nodes (either primary or secondary - the connection is transparent to the node and is hot-swappable in the event of a failure).
+\item \textbf{Secondary RDBMS Server}:server dedicated to run the DBMS software and
+manage the backup requests from the primary DBMS server. The node is connected to the secondary storage and to the primary DBMS server, for the reasons described above.
+\item \textbf{Server}: a typical rack of servers dedicated to run the main back-end application.
+\item \textbf{Web Server}:server dedicated to run the web server software and manage the load balancing towards the main server array. It is isolated by firewalls to  minimize the risk of unauthorized access to the main back-end components (especially to the storage nodes).
+\item \textbf{User Application}:
+\item \textbf{On-Board Display}:
+
+\end{enumerate}
+
+\FloatBarrier
+\begin{figure}
+\centering
+\hspace{-5mm}
+\includegraphics[scale=0.38]{Images/DeployDiagram/Deploy2.png}
+\caption{Deployment Diagram}
+\end{figure}
+\FloatBarrier
+
 
 \subsection{Runtime View}
 \newpage
+
+
 \subsection{Component Interfaces}
 \label{sec:CInter}
 
