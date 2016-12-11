@@ -77,28 +77,15 @@ the REST API using platform specific API for REST HTTP calls.
 The on-board client needs to provide navigation functionality without interacting with the PowerEnjoy Server but directly through GoogleMaps API. At the beginning of each ride an authentication via PinCode is requested and verified server side.\\Safe Areas are stored locally on the client and updated only when the changes on the DB occur.On the other hand charging stations need to be updated in real-time as it can happen that charging stations are currently out of capacity.
 \clearpage
 
+
 \FloatBarrier
 \begin{figure}
 \subsubsection{Diagrams}
-\centering
-\includegraphics[scale=0.37]{Images/ComponentDiagram/ComponentDiagram.png}
-\caption{Component Diagram}
-\end{figure}
-\FloatBarrier
-\clearpage
-\FloatBarrier
-\begin{sidewaysfigure}
-\includegraphics[scale=0.4]{Images/ClassDiagram/BackEnd.png}
-\caption{Back-End Class Diagram}
-\end{sidewaysfigure}
-\FloatBarrier
-\FloatBarrier
-\begin{figure}
-\hspace{-15mm}
 \includegraphics[scale=0.35]{Images/ClassDiagram/User.png}
 \caption{User Application Class Diagram}
 \end{figure}
 \FloatBarrier
+
 \FloatBarrier
 \begin{figure}
 \hspace{-15mm}
@@ -106,9 +93,18 @@ The on-board client needs to provide navigation functionality without interactin
 \caption{On-board Class Diagram}
 \end{figure}
 \FloatBarrier
+
+
+\FloatBarrier
+\begin{sidewaysfigure}
+\includegraphics[scale=0.35]{Images/ClassDiagram/BackEnd2.png}
+\caption{Back-End Class Diagram}
+\end{sidewaysfigure}
+\FloatBarrier
 \newpage
 
 \subsection{Deployment View}
+\label{deploy}
 The following section contains a schema of the hardware infrastructure.
 It was decided to omit the representation of the purely network-related hardware (routers, switches, etc.).
 The chosen architecture is a typical web-based client-server architecture,
@@ -118,26 +114,71 @@ with the following components:
 \item \textbf{Primary RDBMS Server}: server dedicated to run the DBMS software on account of the main server  and to manage the communication with the secondary storage node. This node is connected to the main server, from which it receives requests, and the storage nodes (either primary or secondary - the connection is transparent to the node and is hot-swappable in the event of a failure).
 \item \textbf{Secondary RDBMS Server}:server dedicated to run the DBMS software and
 manage the backup requests from the primary DBMS server. The node is connected to the secondary storage and to the primary DBMS server, for the reasons described above.
-\item \textbf{Server}: a typical rack of servers dedicated to run the main back-end application.The rack is composed by independent nodes managed by usual
+\item \textbf{Main Server}: a typical rack of servers dedicated to run the main back-end application.The rack is composed by independent nodes managed by usual
 load balancing technology and is able to be fully functional under average load of the system.The redundancy of the rack has the dual function of improving fault tolerance and performance under above-average load conditions.\\
-This node is connected to the web server, through which the communication
-to and from the users happens, and to the DBMS server (either
-primary or secondary - the connection is transparent to the node and is
-hot-swappable in the event of a failure).
-\item \textbf{Web Server}:server dedicated to run the web server software and manage the load balancing towards the main server array. It is isolated by firewalls to  minimize the risk of unauthorized access to the main back-end components (especially to the storage nodes).
 \end{enumerate}
 
 \FloatBarrier
 \begin{figure}
 \centering
 \hspace{-5mm}
-\includegraphics[scale=0.38]{Images/DeployDiagram/Deploy2.png}
+\includegraphics[scale=0.38]{Images/DeployDiagram/Deploy3.png}
 \caption{Deployment Diagram}
 \end{figure}
 \FloatBarrier
 
+%---------------------
+% RUNTIME VIEW
+%---------------------
 
 \subsection{Runtime View}
+\subsubsection{Server View}
+This section focuses on the Runtime View of the system.
+While the system is up and running, the \emph{Server} receives many \emph{HTTP requests}
+from different clients that are handled by a \emph{Load Balancing} component that
+distributes the calls evenly to every real machine client.
+Every search request is not stored in the DB but is stored locally for processing purposes. Ride request on the other hand are stored on the MySQL databases as it is necessary to keep track of user rides. 
+From the internal point of view of the Back-End application, user requests (search, ride or data request) are at first parsed by the Request Manager and the dispatched to Java object that is in charge of computing the result of that request.
+\subsubsection{Client View}
+From the client point of view, when a User opens his application, the client starts a first "handshake" to check for basic authentication data and if it's successful, the client can proceed with requests.
+The flow of a request start from a User Interface component (like a button) and is finally handled by the class that implements the HTTP interface.\\
+When a User enters a car a similar process is used but a User pin code has to be entered for authentication purposes.\\
+\newpage
+\FloatBarrier
+\begin{figure}
+\subsubsection{Diagrams}
+\centering
+\includegraphics[scale=0.4]{Images/Sequence/seq1.png}
+\caption{Data modification sequence diagram}
+\end{figure}
+\FloatBarrier
+\clearpage
+\FloatBarrier
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{Images/Sequence/seq2.png}
+\caption{Search action sequence diagram}
+\end{figure}
+\FloatBarrier
+\clearpage
+\FloatBarrier
+\begin{sidewaysfigure}
+\centering
+\includegraphics[scale=0.4]{Images/Sequence/seq3.png}
+\caption{Search action sequence diagram}
+\end{sidewaysfigure}
+\FloatBarrier
+\FloatBarrier
+\begin{sidewaysfigure}
+\centering
+\includegraphics[scale=0.4]{Images/Sequence/Seq4.png}
+\caption{Search action sequence diagram}
+\end{sidewaysfigure}
+\FloatBarrier
+
+
+
+
 \newpage
 
 
@@ -156,26 +197,62 @@ of the system.
 \item \textbf{Back-End application $\rightarrow$ Database}\\
 The \emph{back-end application} uses SQL language to query the \emph{database}. Queries from Java 
 are supported by the \emph{Java Database Connectivity (JDBC) API} \footnote{\url{http://www.oracle.com/technetwork/java/javase/jdbc/index.html}}.JDBC comes extremely handy thanks to it powerful \emph{"Write once, Run Everywhere "}feature.
-\item \textbf{Back-End application $\rightarrow$ Web-Server}\\
-
-\item \textbf{Web Server $\rightarrow$ Client Application}\\
-The connection between the \emph{web-server} and the \emph{Client application} is managed by the internet network based on a HTTPS protocol and supported by the RESTful API service.To add further security to the data flow an intermediate Firewall is deployed.
-\item \textbf{Web Server $\rightarrow$ On-Board Application}\\
-The connection between the \emph{web server} and the \emph{On-board application} is managed by the internet network based on a HTTPS protocol and supported by the RESTful API service.To add further security to the data flow an intermediate Firewall is deployed.
+\item \textbf{Back-End$\rightarrow$ Client Application}\\
+The connection between the \emph{Back-End} and the \emph{Client application} is managed by the internet network based on a HTTPS protocol and supported by the RESTful API service.To add further security to the data flow an intermediate Firewall is deployed.
+\item \textbf{Back-End $\rightarrow$ On-Board Application}\\
+The connection between the \emph{Back-End} and the \emph{On-board application} is managed by the internet network based on a HTTPS protocol and supported by the RESTful API service.To add further security to the data flow an intermediate Firewall is deployed.
 \end{itemize}
 \textbf{RESTful API}\\The RESTful API is a gateway communicator between clients and the back-end system: it's a stateless service which provides methods for data submission or requests returning the requested computations as a result.\\
 RESTful API are an optimal solution for an application that must handle a vast number of users on a different number of platforms as it allows to guarantee the same user experience on all platforms. Furthermore the architectural properties positively affected by the constraints of the REST architectural include many important quality requirements such as performance, scalability and reliability.\\[0.2in]
-\textbf{Server oriented architecture}
-\\[0.2in]
-\textbf{Publish /subscriber}
-\\[0.2in]
-
-\newpage
+\textbf{JDBC}\\
+JDBC is a Java API that manages the access of a generic client to a database. In
+our platform, it acts as interface between the \emph{back-end application} and the
+DBMS component (on both the primary and secondary nodes).
 \subsection{Selected architectural styles and patterns}
+This section highlights both hardware and software selected styles and design
+patterns.The following patterns are meant to be guidelines for developers and may not reflect entirely the actual pattern adopted as different choices can be made during development phase.\\
+\subsubsection{Software patterns}
+The overall software system must follow the \emph{Object Oriented Paradigm}.
+In particular, developers should follow the principles of \emph{encapsulation, composition, inheritance, delegation and polymorphism}.\\
+Developers should promote code reuse and should try to solve programming
+problems using common OO Design Patterns\footnote{\emph{Design Patterns: Elements of Reusable Object-Oriented Software by Erich
+Gamma, Richard Helm, Ralph Johnson, John Vlissides}}
+Code produced by developers, must be fully commented and documented in
+order to promote simple refactoring and maintenance.\\
+Some patterns used in the description of the architecture are considered essential:
+\begin{itemize}
+\item \textbf{Publish/Subscribe}:The publish/subscribe design pattern is used to interface the Ride Manager with the Notification manager, where the latter is the
+subscriber and must react to events suitably generated by the former, which is
+the publisher.
+\item \textbf{Push}: Push technology is an implementation of the publish/subscribe design pattern, which is widely used in modern mobile applications to manage notification services.\\
+In our platform, requests are generated by the Notification manager and
+picked up by the user-side mobile applications, which react to them by displaying
+the suitable notifications on the users’ devices.
+\end{itemize}
+\subsubsection{Hardware patterns}
+As outlined in the \emph{deployment view} \ref{deploy} the platform is obviously designed as a client-server architecture, in which the back-end nodes are the server and the various users' devices are the clients.\\
+The system is based on a \emph{three tier architecture}:
+\begin{itemize}
+\item \textbf{First Tier}: composed of client devices (user application and on-board application).
+\item \textbf{Second Tier}:composed of a rack of servers.
+\item \textbf{Third Tier}: composed of database servers controlled by load balancing and storage units.
+\end{itemize}
+We chose to deploy each logical layer on a physical tier :
+\begin{itemize}
+\item \textbf{Presentation Layer}: is the layer responsible for displaying data to
+the users and for transmitting input data to the business logic layer.\\
+The presentation layer is deployed in the First Tier.
+\item \textbf{Logic Layer}:This layer is responsible for receiving data
+from the presentation layer, for computing and transmitting a response(using also data provided by the data store layer) to the presentation
+layer.This layer implements most of the business logic and is deployed in the
+second tier.
+\item \textbf{Data Storage Layer}:This layer is responsible for storing all the data meaningful to the system. This layer is deployed in the third tier.
+\end{itemize}
+
 \newpage
 
 %----------------%
-% DATA VIEW %
+% DATA VIEW      %
 %----------------%
 \subsection{Data Management view}
 \label{sec:DMV}
