@@ -1,90 +1,76 @@
 \subsection{Mobile and Web application}
+Interaction between client-server requires always the notification messenger which is omitted.\\
 \begin{itemize}
 	\item{\textbf{[R1.1]}}: Allow a guest to register entering all relevant personal data and a valid driving license whose validity will be check on the spot.
 	\begin{itemize}
-	\item User Manager\\
+	\item SignUpAction()
 	\end{itemize}
 	\item{\textbf{[R1.2]}}: Allow a registered user to log-in.
 	\begin{itemize}
-	\item User Manager\\
+	\item SignInAction()
 	\end{itemize}
 	\item{\textbf{[R1.3]}}: Allow a registered user to update his personal information.
 	\begin{itemize}
-	\item User Manager\\
+	\item SettingAction()
 	\end{itemize}
 	\item{\textbf{[R1.4]}}: Allow a registered user to search for an available vehicle given his position within a selected distance.
 	\begin{itemize}
-	\item User Manager
-	\item Vehicle Manager
-	\item Search Manager\\
+	\item SearchAction()
 	\end{itemize}
 	\item{\textbf{[R1.5]}}: Allow a registered user to search for an available vehicle given an input position within a selected distance.
 	\begin{itemize}
-	\item User Manager
-	\item Vehicle Manager
-	\item Search Manager\\
+	\item SearchAction()
 	\end{itemize}
 	\item{\textbf{[R1.6]}}: Allow a registered user to reserve a selected vehicle.
 	\begin{itemize}
-	\item User Manager
-	\item Vehicle Manager
-	\item Search Manager
-	\item Notification Manager\\
+	\item ReserveAction()
 	\end{itemize}
 	\item{\textbf{[R1.7]}}: Allow a registered user to check his payment history.
 	\begin{itemize}
-	\item User Manager
-	\item DBMS\\
+	\item SettingAction()
 	\end{itemize}
 	\item{\textbf{[R1.8]}}: Allow a registered user to recover his account log-in information in a secure way.
 	\begin{itemize}
-	\item User Manager
-	\item DBMS\\
+	\item SettingAction()
 	\end{itemize}
 	\item{\textbf{[R1.9]}}: Allow a registered user to search for an available vehicle given an input position and a radius.
 	\begin{itemize}
-	\item User Manager
-	\item Vehicle Manager
-	\item Search Manager\\
+	\item SettingAction()
 	\end{itemize}
 	\item{\textbf{[R1.10]}}: Allow a registered user to unlock \emph{his/her} reserved car if the user is nearby.
 	\begin{itemize}
-	\item User Manager
-	\item Vehicle Manager
-	\item Search Manager
-	\item DBMS\\
+	\item UnLockAction()
 	\end{itemize}
 \end{itemize}
 
 \subsection{On-Board Application}
+Interaction between client-server requires always the notification messenger which is omitted.\\
 \begin{itemize}
 	\item{\textbf{[R2.1]}}: Enable a registered user to keep track of the distance covered, time spent using the car ,the current owed fee and the remaining battery charge.
 	\begin{itemize}
-	\item User Manager
-	\item Vehicle Manager\\
+	\item MainAction -> showStats()
 	\end{itemize}
 	\item{\textbf{[R2.3]}}: Provide a method to enable the money saving option.
 	\begin{itemize}
-	\item Vehicle Manager
-	\item Ride Manager\\
+	\item MainAction
+	\item NavigationData
 	\end{itemize}
 	\item{\textbf{[R2.3]}}: Enable the driver to end the ride if the car is parked in a safe area.
 	\begin{itemize}
-	\item Vehicle Manager
-	\item Ride Manager
-	\item Park Manager\\
+	\item EndAction()
 	\end{itemize}
  \end{itemize}
 
 \subsection{Back-End System}
+All client-side request are filtered by the \emph{request manager} which dispatches each request to the corresponding class.\\
 \begin{itemize}
-	\item {\textbf{[R3.1]}}: The back-end must provide an interface for 	the registration of users.
+	\item {\textbf{[R3.1]}}: The back-end must provide an interface for the registration of users.
 	\begin{itemize}
 	\item User Manager
 	\item DBMS\\
 	\end{itemize}
 
-	\item {\textbf{[R3.2]}}: The back-end must be able to check payment 	methods and driver’s licenes on the spot.
+	\item {\textbf{[R3.2]}}: The back-end must be able to check payment methods and driver’s licenes on the spot.
 	\begin{itemize}
 	\item User Manager\\
 	\end{itemize}
@@ -98,8 +84,8 @@
 	\begin{itemize}
 	\item Search Manager
 	\item User Manager
-	\item Vehicle Manager
-	\item DBMS\\
+	\item Position Manager
+	\item Request Manager
 	\end{itemize}
 	
 	\item {\textbf{[R3.5]}}: The back-end must calculate the current amount to pay.
@@ -114,8 +100,8 @@
 
 	\item {\textbf{[R3.7]}}: The back-end must handle car status changes.
 	\begin{itemize}
+	\item Position Manager
 	\item Vehicle Manager
-	\item DBMS\\
 	\end{itemize}
 	
 	\item {\textbf{[R3.8]}}: The back-end must provide an interface to allow a support operator to perform all basics CRUD operations.

@@ -1,95 +1,196 @@
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 
-\subsection{Search and Reserve Car Manager}
-The Search and Reserve Car Manager provides all the methods to manage and dispatch the incoming search and reserve requests.\\
+\subsection{Car Search}
+The Search and Position Manager provide all the methods to handle incoming search queries. The incoming HTTPS request is dispatched by 
+the request manager which has to decide the manager it needs to forward the request.\\
 \begin{itemize}
-\item \textbf{showAvailableCars(Position address):} searches into the database for the available cars within 5km from the Address and show them to the user on the map.
+\item \textbf{carSearch(SearchData)}: the user is asked to input a desired location and radius within which the search takes place.The resulting data will be collected inside a \emph{Search Data object} which will be forwarded inside a \emph{SearchAction} to the \emph{Back-End} through the \emph{carSearch()} method.
 
-\item \textbf{reserveCar(Car car, User user):} marks the car as reserved, starts the timer and shows it to the user in the application with the shortest path to reach the car.
-
-\item \textbf{unlockCar(Car car, User user):} if the user is near the car, unlocks it and stops the timer.
+\item \textbf{getAvailableVehicles()}: after the \emph{back-end} identifies correctly the request through the \emph{request manager}, the \emph{Search Manager}
+extracts the data inside the request and queries the \emph{Position Manager} for the available cars.\\
+Through the \emph{Notification Manager} the available car positions will be send back to the \emph{client-side} who will then take car to display the results.
 \end{itemize}
 
-\subsection{Ride and Park Car Manager}
-The Ride and Park Manager provides all the methods to manage ride requests.\\
+\subsection{Car Reservation}
+After a \emph{Search} has been made the \emph{User} selects the \emph{vehicle} he desires to reserve. The \emph{selected car} will be encapsulated inside a \emph{Ride Action object} which will be send to the \emph{back-end}.Once the \emph{Ride request} has been dispatched correctly  the \emph{Ride Manager} creates a \emph{Ride Object} and starts the \emph{Timer}.\\The \emph{Ride Manager} listens in the background to check to \emph{user position}. Once the user is near the desired car , a \emph{unlock-notification} will be send to the \emph{user-client}.
+
 \begin{itemize}
-\item \textbf{startRide(Car car, User user, int pinCode, MoneySavingOption mos, Position destination):} if the PinCode correspond to the one assigned to the user, starts the timer of the ride, shows it on the on-Board application screen along with the other informations such as charge level, gps, etc. If the flag MoneySavingOption is true, then searches and shows to the user the path to the best place where to park in order to save money.
+\item \textbf{reserveCar(Car car)}: encapsulates the relevant \emph{car data} inside a \emph{RideAction} and forwards it to the \emph{back-end}.
 
-\item \textbf{parkCar(Car car, Ride ride):} If the car position is not in the parking area shows an error message and doesn't let the user to end the ride. If the car position is in the parking area, retrieves and saves informations about the presence of other people in the car from the sensors and tells the user that he/she can park there.
+\item \textbf{unlockCar()}: once a notification has been received \emph{client-side} , this method trigged through an UI Component (like a button) unlocks the car and stops the timer.
+\end{itemize}
 
-\item \textbf{lockCar(Car car, Ride ride):}Waits until all the doors are closed. Stops the timer. If there were at least two passengers, adds the relative discount. If the battery level is over a certain level adds the relative discount. If the battery level is under a certain level adds the relative fee. If the position of the Car is too far away from the nearest power grid adds the relative fee. If the car is plugged in a power grid adds the relative discount. Calculates the final fee that the user has to pay and charges it to him/her. Finally marks the car as available.
+\subsection{Ride \& Park}
+The ride and park action are handled mainly by the \emph{Ride Manager}.The following actions can be performed only after a successful \emph{unlock-action}\\
+\begin{itemize}
+\item \textbf{authenticate(User user, int pinCode)} : the \emph{On-Board application}requires to input the user code to begin the ride.If the \emph{PinCode} corresponds to the one assigned to the User,the authentication process is completed and the user can start to use the \emph{on-board application}.
+
+\item \textbf{startRide(NavigationData,Route)}:once the user has selected one of the \emph{routes} suggested by the system through \emph{Google Maps API} queries, a
+\emph{RideData Object}is created to keep track of time, distance, battery level and bonuses. During the route selection process the \emph{Money Saving Option} can be enable through the toggle of an UI Component Button.Car sensors check for passengers in car which will be added as \emph{statistic} and later considered during bonus assignment.
+
+\item \textbf{parkCar()}: if the car is \emph{standing still} and in \emph{parking modus} , the \emph{on-board display} allows to \emph{end the ride} via an UI Component (like a button).\\
+Pressing the button triggers the \emph{parkCar()}method which will send a request to the \emph{back-end application} to check if the car is parked in a \emph{Safe Area}.
+
+\item \textbf{lockCar(RideData rideData)}:once the \emph{parkCar()} method has successfully 
+send a positive response to the \emph{on-board application} the system waits for the user to leave the car and close the doors.\\
+If the car is empty and the doors are closed a signal-message is send to the \emph{back-end application} to \emph{lock the doors} and \emph{update the car status}.\\Subsequently the \emph{RideData} will be forwarded to the \emph{back-end application} that updates the \emph{Ride object} with the final data and calculates the bonuses and final fee.
 \end{itemize}
 
 \subsection{Low Level Algorithm Description}
-\subsubsection{Search and Reserve Car Manager}
+\subsubsection{Search}
 
 \begin{lstlisting}
-showAvailableCars(Position address){
-	List<Car> nearCars = new ArrayList<Car>;
-	for(Car c in CarFactory.availableCars)
-		if(distance(c.position, address)<=5)
-			nearCars.add(c);
-	Console.showList(nearCars);
+
+/* performed inside the Search Manager */
+getAvailableCars(SearchData data){
+	List<VehicleManager> nearbyCars = new ArrayList<VehicleManager>;
+	Position p = data.getPosition();
+	Radius r= data.getRadius();
+	nearbyCars=queryPosManger(p,r);
+	notificationMangager.send(data.getUserDevice);
+
+}
+
+/* performed by the Position Manager */
+getAvailableCarList(Position p,Radius r){
+	List<VehicleManager> nearbyCars= new ArrayList<VehicleManager>;	
+	for(VehicleManager v: Vehicles){
+		if (distance(v.position,p)<r)
+		nerabyCars.add(v);
+	}
+}
+
+/* performed client-side after receiving the notification */
+...
+navigationAction.displayMap(cars)
+...
+
+displayMap(List<VehicleManager> cars){
+	Map map = GoogleMaps.getMap();
+	map.render();
+	for(VehicleManager c: cars){
+		Position p=c.getPosition();
+		mapIndicator = new MapIndicator(p);
+		mapIndicator.render();
+	}
 }
 
 
-reserveCar(Car car, User user){
-	car.status = reserved;
-	Timer t = new Timer();
-	t.start();
-	Path path = GoogleMaps.getPath(user.position,car.position);
-	Console.showInfo(path,timer);
+ 
+
+\end{lstlisting}
+
+\subsubsection{Reserve}
+\begin{lstlisting}
+
+/* performed client-side */
+reserveCar(Car car){
+ 	action=new RideAction(encapusulateCarData(car));
+ 	sendRequest(action);
 }
 
 
-unlockCar(Car car, User user){
-	if (distance(user.position,car.position)<0.002); //2 meters
-		car.unLock();
-	else
-		Console.showMessage("You are not near the car!");
+/* performed server-side inside the Ride Manager*/
+
+createRide(RideData data){
+	if(data.isConsistent()){
+		ride= new Ride();
+		/* all ride data added battery status,position,car...*/
+		posManager.updateStatus(data.getCar(),newBusyCarStatus));
+		ride.startTimer();
+		notificationManager.send(Message,data.getUserDevice());	
+	}
+	else notificationManager.send(Message,data.getUserDevice());
+}
+
+
+
+\end{lstlisting}
+\subsubsection{Unlock}
+\begin{lstlisting}
+
+/* Server-Side inside Ride Manager*/
+checkIfReadyToUnlock(Ride r, User u){
+	while(!(isTimeUp())){
+	  if(distance(ride.getCar().getPosition(),u.currentPosition())<0.002){
+			notificationManager.send(new UnlockAction(...),u.getDevice);
+		}
+	}
 }
 \end{lstlisting}
 
 
-\subsubsection{Ride and Park Car Manager}
+\subsubsection{Authenticate \& StarRide}
 \begin{lstlisting}
-startRide(Car car, User user, int pinCode, MoneySavingOption mso, Position destination){
-	if (user.pinCode == pinCode){
-		Timer t = new Timer();
-		t.start();
-		if (mso.status == True){
-			Path path = GoogleMaps.getPath(car.position,destination);
-			Ride ride = new Ride(car,user,path,timer);
-		}
-		else
-			Ride ride = new Ride(car,user,timer);
+/* On-board authentication request */
+
+authenticate(User u,int pinCode){
+	request =new AuthenticationRequest(pinCode,u);
+	request.encode();
+	sendRequest(u.getDevice, request);
+	reponse= getInputStream();
+	if(response.valid()){
+	 notificationManager(display(response.message));	
+	 updateCarStatus(new DrivingCarStatus);
 	}
 	else{
-		Console.showMessage("Error, PinCode not valid!");
-		return null;
+	   notificationManager(display(response.message));
 	}
-	return ride;
+	
 }
 
-
-parkCar(Car car, Ride ride){
-	while (car.position is not in parkingArea ){ 
-		Console.showMessage("You are not in a Parking Area.");\\
-		ride.status= notFinished;\\
-	}
-	if (car.position is in parkingArea){
-	ride.numberPassenger = car.passenger;
-	car.status = lock;
-	}
+startRide(Position destination, Preferences pref){
+	List<Route> routes = new ArrayList<>();
+	if(pref.getMSOFlag()){
+		destination = getNewMSOPosition(destination));	
+	}	
+	routes.add(GoogleMaps.getPathes(destination,carPosition));
+	displayMap();
+	displayRoutes(routes);
 }
 
+/* The getMSOPostion method is inside navigationAction class and forwards data to the back-end.
+ */
  
-lockCar(Car car,Ride ride){
-	if (car.doors is not close){
-		ride.status = notFinished
-		return false;
+ getMSOPosition(Position destination){
+	sendMSORequest(destination);
+	/* the back-end checks within the database for the closest charging station and return the position to the on-board application */
+	reponse=getInputStream();
+	return response.getNewDestination(); 
+ }
+
+\end{lstlisting}
+
+\subsubsection{Park \& Lock}
+\begin{lstlisting}
+
+/* on-board side*/
+parkCar(){
+	sendParkingRequest(rideData);
+	response=getInputStream();
+	if(response.isPositive());
+		{
+		  notificationManager.display(Message);
+		  	 updateCarStatus(new ParkedCarStatus);
+		}
+	else{
+		notificationManager.display(Message);
 	}
-	ride.status = finished;
+}
+
+/*Server-side inside the Ride Manager class*/
+
+checkSafeArea(RideData r){
+	 position=r.getCurrentPostion();
+	 if(isSafAreaPostion(position);
+	 /* create response object */
+	 notificationManager.send(response,r.getCarDevice());
+}
+
+/* Car locking is done server-side.As soon as the sensors detect an empty car in parked status ,the lockCar mehtod gets triggered server-side. */
+
+lockCar(RideData r){
+	ride.status = end;
 	ride.timer.stop();
 	car.lock();
 	float fee = ride.calculateFee();
