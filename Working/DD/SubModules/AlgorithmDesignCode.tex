@@ -22,91 +22,91 @@ The Ride and Park Manager provides all the methods to manage ride requests.\\
 
 \subsection{Low Level Algorithm Description}
 \subsubsection{Search and Reserve Car Manager}
-\begin{itemize}
-\item \textbf{showAvailableCars(Position address)}\{\\
-\texttt{List<Car> nearCars = new ArrayList<Car>; \\
-for(Car c in CarFactory.availableCars)\\
-\tab if(distance(c.position, address)<=5)\\
-\tab \tab nearCars.add(c);\\
-Console.showList(nearCars);\\
-\}\\
+
+\begin{lstlisting}
+showAvailableCars(Position address){
+	List<Car> nearCars = new ArrayList<Car>;
+	for(Car c in CarFactory.availableCars)
+		if(distance(c.position, address)<=5)
+			nearCars.add(c);
+	Console.showList(nearCars);
 }
 
 
+reserveCar(Car car, User user){
+	car.status = reserved;
+	Timer t = new Timer();
+	t.start();
+	Path path = GoogleMaps.getPath(user.position,car.position);
+	Console.showInfo(path,timer);
+}
 
-\item \textbf{reserveCar(Car car, User user)}\{\\
-\texttt{car.status = reserved;\\
-Timer t = new Timer();\\
-t.start();\\
-Path path = GoogleMaps.getPath(user.position,car.position);\\
-Console.showInfo(path,timer);\\
-\}\\
+
+unlockCar(Car car, User user){
+	if (distance(user.position,car.position)<0.002); //2 meters
+		car.unLock();
+	else
+		Console.showMessage("You are not near the car!");
 }
-\item \textbf {unlockCar(Car car, User user)}\{\\
-\texttt{if (distance(user.position,car.position)<0.002); //2 meters\\
-\tab car.unLock();\\
-else \\
-\tab Console.showMessage("You are not near the car!");\\
-\}\\
-}
-\end{itemize}
+\end{lstlisting}
+
 
 \subsubsection{Ride and Park Car Manager}
-\begin{itemize}
-\item \textbf{startRide(Car car, User user, int pinCode, MoneySavingOption mso, Position destination)}\{\\
-\texttt{if (user.pinCode == pinCode)\{\\
-\tab Timer t = new Timer(); \\ 
-\tab t.start();\\
-\tab if (mso.status == True)\{\\
-\tab \tab Path path = GoogleMaps.getPath(car.position,destination);\\
-\tab \tab Ride ride = new Ride(car,user,path,timer);\\
-\tab \tab \}\\
-\tab else\\
-\tab \tab Ride ride = new Ride(car,user,timer);\\
-\tab \}\\
-else\{\\
-\tab Console.showMessage("Error, PinCode not valid!");\\
-\tab return null;\\
-\tab \}\\
-return ride;\\
-\}\\
+\begin{lstlisting}
+startRide(Car car, User user, int pinCode, MoneySavingOption mso, Position destination){
+	if (user.pinCode == pinCode){
+		Timer t = new Timer();
+		t.start();
+		if (mso.status == True){
+			Path path = GoogleMaps.getPath(car.position,destination);
+			Ride ride = new Ride(car,user,path,timer);
+		}
+		else
+			Ride ride = new Ride(car,user,timer);
+	}
+	else{
+		Console.showMessage("Error, PinCode not valid!");
+		return null;
+	}
+	return ride;
 }
 
-\item \textbf{parkCar(Car car, Ride ride)}\{\\
-\texttt{while (car.position is not in parkingArea )\{\\ 
-\tab Console.showMessage("You are not in a Parking Area.");\\
-\tab ride.status= notFinished;\\
-\tab \}\\
-if (car.position is in parkingArea)\{\\
-\tab ride.numberPassenger = car.passenger;\\
-\tab car.status = lock;\\
-\tab\}\\
-\}
- }
- 
-\item \textbf{lockCar(Car car,Ride ride)}\{\\
-\texttt{if (car.doors is not close)\{\\
-\tab ride.status = notFinished\\
-\tab return false;\\
-\tab \}\\
-ride.status = finished;\\
-ride.timer.stop();\\
-car.lock();\\
-float fee = ride.calculateFee();\\
-if (ride.numberPassenger >=2)\\
-\tab totalFee = ride.fee - 0,1*ride.fee;\\
-if (car.batteryLevel> 0,5)\\
-\tab totalFee = ride.fee - 0,2*ride.fee;\\
-if (car.isInCharge == true)\\
-\tab totalFee = ride.fee - 0,3*ride.fee;\\
-if (car.position is not in powerGrid or car.batteryLevel<0,2)\\
-\tab totalFee = ride.fee + 0,3*ride.fee;\\
-car.status = available;\\
-ride.fee = totalFee;\\
-return true;\\
-\}\\
+
+parkCar(Car car, Ride ride){
+	while (car.position is not in parkingArea ){ 
+		Console.showMessage("You are not in a Parking Area.");\\
+		ride.status= notFinished;\\
+	}
+	if (car.position is in parkingArea){
+	ride.numberPassenger = car.passenger;
+	car.status = lock;
+	}
 }
-\end{itemize}
+
+ 
+lockCar(Car car,Ride ride){
+	if (car.doors is not close){
+		ride.status = notFinished
+		return false;
+	}
+	ride.status = finished;
+	ride.timer.stop();
+	car.lock();
+	float fee = ride.calculateFee();
+	if (ride.numberPassenger >=2)
+		totalFee = ride.fee - 0,1*ride.fee;
+	if (car.batteryLevel> 0,5)
+		totalFee = ride.fee - 0,2*ride.fee;
+	if (car.isInCharge == true)
+		totalFee = ride.fee - 0,3*ride.fee;
+	if (car.position is not in powerGrid or car.batteryLevel<0,2)
+		totalFee = ride.fee + 0,3*ride.fee;
+	car.status = available;
+	ride.fee = totalFee;
+	return true;
+}
+
+\end{lstlisting}
 
 
 
