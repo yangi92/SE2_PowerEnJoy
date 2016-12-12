@@ -21,5 +21,9 @@ The **Requirements And Specifications Document** gives an overview about the mai
 * [RASD File](https://github.com/yangi92/SE2_PowerEnJoy/blob/master/Releases/RASD.pdf)
 * [IEEE Recommended Practice for Software Requirements Specifications](http://www.math.uaa.alaska.edu/~afkjm/cs401/IEEE830.pdf)
 
+## DD Document
+The **Design Document** gives an overview about the architectural choices made to satisfy all functional and non functional requirements along with a high level description of some of the main algorithms.</br>
+* [DD File](https://github.com/yangi92/SE2_PowerEnJoy/blob/master/Releases/DD.pdf)
+
 
 
