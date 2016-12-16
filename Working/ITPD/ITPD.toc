@@ -1,0 +1,4 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}Appendices}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}References}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Effort Spent}{3}{subsection.2.2}
