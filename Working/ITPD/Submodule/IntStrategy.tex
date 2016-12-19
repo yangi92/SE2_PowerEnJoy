@@ -5,4 +5,63 @@ The \textbf{Integration tests} are meant to be developed and conducted only afte
 \subsection{Elements to be Integrated}
 From what we can infer from the previous documents , the to-be tested platform
 used the \textbf{client-server paradigm} as its main architecture with the addition of intra module communication , especially in the \textbf{back-end system} where the \textit{business logic} lies, and direct communication happening back and forth on separate channels between the \textbf{back-end} and the \textbf{client-side applications.} \\
+The following components described in \emph{section 2} of the \emph{Design Document} need to be tested:
+\begin{itemize}
+\item \textbf{Server Components}:
+\begin{itemize}
+\item Ride Manager
+\item Notification Manager
+\item User Manager
+\item Search Manager
+\item Position Manager
+\item Database Interface
+\end{itemize}
+\item \textbf{Mobile \& Web Application}
+\begin{itemize}
+\item SignIn Action
+\item SignUp Action
+\item Main Action
+\end{itemize}
+\item \textbf{On-Board Application}
+\begin{itemize}
+\item SignIn Action
+\item Navigation Action
+\item EndRide Action
+\end{itemize}
+\end{itemize}
+
+The client-side applications communicate with the \emph{back-end system} through the \textbf{RESTful API} and the \textbf{Notification Manager}. To simply test planning, from now on \emph{Mobile \& Web components} and \emph{On-Board components} are grouped together in a single entity called \textbf{client-side components}.With this considerations in mind , integration test need to be performed on the following pairs:
+\begin{itemize}
+\item Client-side components $\rightarrow$ RESTful API
+\item RESTful APi $\rightarrow$ User Manager
+\item RESTful API $\rightarrow$ Search Manager
+\item RESTful API $\rightarrow$ Position Manager
+\item RESTful API $\rightarrow$ Ride Manager
+\item Position Manager $\rightarrow$ Vehicle Manager
+\item User Manager $\rightarrow$ DBMS 
+\item Ride Manager $\rightarrow$ DBMS
+\item Vehicle Manager $\rightarrow$ DBMS
+\item Search Manager $\rightarrow$ Notification Manager
+\item Ride Manager $\rightarrow$ Notification Manager
+\item Notification Manager $\rightarrow$ Client-side components
+\item \textbf{STATION MANAGER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}
+\end{itemize}
+
+\subsection{Integration Testing Strategy}
+The \emph{PowerEnjoy System} is composed of many components which are subject to a lot of interactions : the system , as already shown in the Design Document, is thus quiet \textbf{complex}. Structural testing strategies , such as top-down or bottom-up, are \emph{simpler} whereas more complex strategies provide better process visibility in cases like ours.\\
+The strategy we adopted is the \textbf{functional grouping strategy} , a highly \emph{modular} strategy allows the \emph{separate} development of the various parts of the system.\\
+Moreover the integration test should be performed mostly on \emph{actual code} in order to reduce the number of \emph{stubs and mocks} and reduce the use of \emph{dummy code}.
+
+\subsection{Integration Sequence}
+The \textbf{Integration Test} is meant to be performed in the following order in compliance to the aforementioned  strategy:
+\begin{enumerate}
+\item Server application components
+\item Client applications components
+\item Client-Server
+\end{enumerate}
+
+
+
+
+
 
