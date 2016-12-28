@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 DEC 2016 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  28 DEC 2016 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -404,14 +404,14 @@ Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count120
 
-<Images/PolimiLogo.png, id=64, 100.4553pt x 100.6962pt>
+<Images/PolimiLogo.png, id=136, 100.4553pt x 100.6962pt>
 File: Images/PolimiLogo.png Graphic file (type png)
 
 <use Images/PolimiLogo.png>
 Package pdftex.def Info: Images/PolimiLogo.png used on input line 46.
 (pdftex.def)             Requested size: 150.68257pt x 151.0439pt.
 
-<Images/logoPowerEnjoy2.png, id=66, 192.2382pt x 45.2892pt>
+<Images/logoPowerEnjoy2.png, id=138, 192.2382pt x 45.2892pt>
 File: Images/logoPowerEnjoy2.png Graphic file (type png)
 
 <use Images/logoPowerEnjoy2.png>
@@ -442,11 +442,11 @@ LaTeX Font Info:    Try loading font information for OT1+zplm on input line 2.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-))
+) [2])
 \tf@toc=\write4
 \openout4 = `ITPD.toc'.
 
- [2]
+ [3]
 (./Submodule/Intro.tex
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
@@ -457,62 +457,88 @@ File: omsppl.fd
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
- [3]) [4]
+ [4]) [5]
 (./Submodule/IntStrategy.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
-[5]
+[6]
 Overfull \hbox (16.76768pt too wide) in paragraph at lines 33--34
 []\OT1/ppl/m/n/12 The client-side ap-pli-ca-tions com-mu-ni-cate with the \OT1/
 ppl/m/it/12 back-end sys-tem \OT1/ppl/m/n/12 through
  []
 
-[6])
-Overfull \hbox (48.64131pt too wide) in paragraph at lines 102--102
+[7] [8] <Images/Diagram2.png, id=217, 1013.7875pt x 1165.35374pt>
+File: Images/Diagram2.png Graphic file (type png)
+
+<use Images/Diagram2.png>
+Package pdftex.def Info: Images/Diagram2.png used on input line 71.
+(pdftex.def)             Requested size: 456.20016pt x 524.40434pt.
+
+Overfull \hbox (66.20016pt too wide) in paragraph at lines 71--72
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 0.40433pt on input line 72.
+
+[9 <./Images/Diagram2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+[10
+
+
+])
+Overfull \hbox (48.64131pt too wide) in paragraph at lines 103--103
 || \OT1/ppl/m/sc/24.88 3. In-di-vid-ual Steps and Test Description| 
  []
 
+(./Submodule/IntSteps.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
-Overfull \hbox (7.34077pt too wide) in paragraph at lines 107--107
+ []
+
+) [11]
+Overfull \hbox (7.34077pt too wide) in paragraph at lines 111--111
 || \OT1/ppl/m/sc/24.88 4. Tool and Test Equip-ment Required| 
  []
 
-
-Overfull \hbox (62.35098pt too wide) in paragraph at lines 112--112
+(./Submodule/IntTools.tex [12])
+Overfull \hbox (62.35098pt too wide) in paragraph at lines 118--118
 || \OT1/ppl/m/sc/24.88 5. Pro-gram Stubs and Data Test Required| 
  []
 
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 142.
+[13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 142.
  (./ITPD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 136.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 136.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 142.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 142.
 Package rerunfilecheck Info: File `ITPD.out' has not changed.
-(rerunfilecheck)             Checksum: C31027E298FAF968BFA888A483E2185E;977.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
+(rerunfilecheck)             Checksum: 11D8967662FCB1C3EEF346185CF491A6;2283.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  ) 
 Here is how much of TeX's memory you used:
- 9221 strings out of 493014
- 140122 string characters out of 6133351
- 236433 words of memory out of 5000000
- 12583 multiletter control sequences out of 15000+600000
+ 9305 strings out of 493014
+ 141401 string characters out of 6133351
+ 238307 words of memory out of 5000000
+ 12634 multiletter control sequences out of 15000+600000
  21121 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,6n,94p,485b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,10n,94p,491b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on ITPD.pdf (8 pages, 309008 bytes).
+Output written on ITPD.pdf (13 pages, 353086 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 290 PDF objects out of 1000 (max. 8388607)
+ 261 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 280 words of extra memory for PDF output out of 10000 (max. 10000000)
 
