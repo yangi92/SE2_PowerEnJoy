@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  28 DEC 2016 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 JAN 2017 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -328,7 +328,41 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 20.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/ttlkeys.def
 File: ttlkeys.def 2016/03/15
-) (./ITPD.aux)
+) (./ITPD.aux
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+)
 \openout1 = `ITPD.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -501,44 +535,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-) [11]
+[11] [12
+
+] [13
+
+] [14
+
+]) [15
+
+]
 Overfull \hbox (7.34077pt too wide) in paragraph at lines 111--111
 || \OT1/ppl/m/sc/24.88 4. Tool and Test Equip-ment Required| 
  []
 
-(./Submodule/IntTools.tex [12])
+(./Submodule/IntTools.tex [16])
 Overfull \hbox (62.35098pt too wide) in paragraph at lines 118--118
 || \OT1/ppl/m/sc/24.88 5. Pro-gram Stubs and Data Test Required| 
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 142.
-[13]
+[17]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 142.
  (./ITPD.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 142.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 142.
 Package rerunfilecheck Info: File `ITPD.out' has not changed.
 (rerunfilecheck)             Checksum: 11D8967662FCB1C3EEF346185CF491A6;2283.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  ) 
 Here is how much of TeX's memory you used:
- 9305 strings out of 493014
- 141401 string characters out of 6133351
- 238307 words of memory out of 5000000
- 12634 multiletter control sequences out of 15000+600000
+ 9322 strings out of 493014
+ 141625 string characters out of 6133351
+ 238432 words of memory out of 5000000
+ 12635 multiletter control sequences out of 15000+600000
  21121 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,10n,94p,491b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,15n,94p,491b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on ITPD.pdf (13 pages, 353086 bytes).
+Output written on ITPD.pdf (17 pages, 359902 bytes).
 PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
+ 321 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
  280 words of extra memory for PDF output out of 10000 (max. 10000000)
 

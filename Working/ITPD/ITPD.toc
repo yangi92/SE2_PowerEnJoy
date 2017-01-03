@@ -12,22 +12,22 @@
 \contentsline {section}{\numberline {3}Individual Steps and Test Description}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Integration test case I1}{11}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Integration test case I2}{11}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Integration test case I3}{11}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Integration test case I4}{11}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Integration test case I5}{11}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Integration test case I6}{11}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Integration test case I7}{11}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}Integration test case I8}{11}{subsection.3.8}
-\contentsline {subsection}{\numberline {3.9}Integration test case I9}{11}{subsection.3.9}
-\contentsline {subsection}{\numberline {3.10}Integration test case I10}{11}{subsection.3.10}
-\contentsline {subsection}{\numberline {3.11}Integration test case I11}{11}{subsection.3.11}
-\contentsline {section}{\numberline {4}Tool and Test Equipment Required}{12}{section.4}
-\contentsline {subsection}{\numberline {4.1}Test Equipment}{12}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Test Tools}{12}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Mockito}{12}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Arquillian}{12}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Manual Testing}{13}{subsubsection.4.2.3}
-\contentsline {section}{\numberline {5}Program Stubs and Data Test Required}{13}{section.5}
-\contentsline {section}{\numberline {6}Appendices}{13}{section.6}
-\contentsline {subsection}{\numberline {6.1}References}{13}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Effort Spent}{13}{subsection.6.2}
+\contentsline {subsection}{\numberline {3.3}Integration test case I3}{12}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Integration test case I4}{12}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Integration test case I5}{12}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Integration test case I6}{13}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Integration test case I7}{13}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Integration test case I8}{14}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}Integration test case I9}{14}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}Integration test case I10}{14}{subsection.3.10}
+\contentsline {subsection}{\numberline {3.11}Integration test case I11}{15}{subsection.3.11}
+\contentsline {section}{\numberline {4}Tool and Test Equipment Required}{16}{section.4}
+\contentsline {subsection}{\numberline {4.1}Test Equipment}{16}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Test Tools}{16}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Mockito}{16}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Arquillian}{16}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Manual Testing}{17}{subsubsection.4.2.3}
+\contentsline {section}{\numberline {5}Program Stubs and Data Test Required}{17}{section.5}
+\contentsline {section}{\numberline {6}Appendices}{17}{section.6}
+\contentsline {subsection}{\numberline {6.1}References}{17}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Effort Spent}{17}{subsection.6.2}

@@ -2,32 +2,215 @@ For each of the integrations tests mentioned in section \ref{sub:IntSeq}, one or
 \subsection{Integration test case I1}
 \label{sub:IT1}
 
+\begin{table}[h]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Test Case ID} & I1T1 \\ \hline
+\textbf{Test Item} & Request Manager $\rightarrow$ Search Manager \\ \hline
+\textbf{Input Specification} & \begin{tabular}[c]{@{}c@{}}Create a Request Manager that provides a Request\\  to be managed by the Search Manager\end{tabular} \\ \hline
+\textbf{Output Specification} & \begin{tabular}[c]{@{}c@{}}Check that the correct methods are called and that\\  the received object by the Search Manager is consistent.\end{tabular} \\ \hline
+\textbf{Environmental Needs} & A running Server \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+
+
 \subsection{Integration test case I2}
 \label{sub:IT2}
 
+\begin{table}[h]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Test Case ID} & I2T1 \\ \hline
+\textbf{Test Item} & Request Manager $\rightarrow$ Ride Manager \\ \hline
+\textbf{Input Specification} & \begin{tabular}[c]{@{}c@{}}Create a Request Manager that provides a Request\\  to be managed by the Ride Manager\end{tabular} \\ \hline
+\textbf{Output Specification} & \begin{tabular}[c]{@{}c@{}}Check that the correct methods are called and that\\  the received object by the Ride Manager is consistent.\end{tabular} \\ \hline
+\textbf{Environmental Needs} & A running Server \\ \hline
+\end{tabular}%
+}
+\end{table}
+\clearpage
+
 \subsection{Integration test case I3}
 \label{sub:IT3}
+\begin{table}[ht]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Test Case ID} & I3T1 \\ \hline
+\textbf{Test Item} & Request Manager $\rightarrow$ User Manager \\ \hline
+\textbf{Input Specification} & \begin{tabular}[c]{@{}c@{}}Create a Request Manager that provides a request\\  to be managed by the User Manager\end{tabular} \\ \hline
+\textbf{Output Specification} & \begin{tabular}[c]{@{}c@{}}Check that the correct methods are called and that\\  the received object by the User Manager is consistent.\end{tabular} \\ \hline
+\textbf{Environmental Needs} & A running Server \\ \hline
+\end{tabular}%
+}
+\end{table}
 
 \subsection{Integration test case I4}
 \label{sub:IT4}
+\begin{table}[h]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Test Case ID} & I4T1 \\ \hline
+\textbf{Test Item} & Search Manager $\rightarrow$ Position Manager \\ \hline
+\textbf{Input Specification} & \begin{tabular}[c]{@{}c@{}}Correctly create a Search Request with \\ valid parameters to query the Position Manager\end{tabular} \\ \hline
+\textbf{Output Specification} & \begin{tabular}[c]{@{}c@{}}Check that the correct methods are called and that\\  the received object by the Position Manager is consistent.\end{tabular} \\ \hline
+\textbf{Environmental Needs} & A running Server and Test Data \\ \hline
+\end{tabular}%
+}
+\end{table}
 
 \subsection{Integration test case I5}
 \label{sub:IT5}
-
+\begin{table}[h]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Test Case ID} & I5T1 \\ \hline
+\textbf{Test Item} & Position Manager $\rightarrow$ Vehicle Manager \\ \hline
+\textbf{Input Specification} & \begin{tabular}[c]{@{}c@{}}Correctly create test vehicle data with relative\\  vehicle managers.\end{tabular} \\ \hline
+\textbf{Output Specification} & \begin{tabular}[c]{@{}c@{}}Correctly gather all relevant data from all vehicle\\ managers inside the Position Manager\end{tabular} \\ \hline
+\textbf{Environmental Needs} & A running Server and Test Data \\ \hline
+\end{tabular}%
+}
+\end{table}
+\clearpage
 \subsection{Integration test case I6}
 \label{sub:IT6}
+
+\begin{table}[h]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Test Case ID} & I6T1 \\ \hline
+\textbf{Test Item} & Database Interface $\rightarrow$ DBMS \\ \hline
+\textbf{Input Specification} & Typical SQL Query \\ \hline
+\textbf{Output Specification} & Output is consistent with the query \\ \hline
+\textbf{Environmental Needs} & \begin{tabular}[c]{@{}c@{}}A running Server , a running \\ Database and Test Data\end{tabular} \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+
+\begin{table}[h]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Test Case ID} & I6T2 \\ \hline
+\textbf{Test Item} & Database Interface $\rightarrow$ DBMS \\ \hline
+\textbf{Input Specification} & Typical SQL Query \\ \hline
+\textbf{Output Specification} & Database tables are updated as expected \\ \hline
+\textbf{Environmental Needs} & \begin{tabular}[c]{@{}c@{}}A running Server , a running \\ Database and Test Data\end{tabular} \\ \hline
+\end{tabular}%
+}
+\end{table}
 
 \subsection{Integration test case I7}
 \label{sub:IT7}
 
+\begin{table}[h]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Test Case ID} & I7T1 \\ \hline
+\textbf{Test Item} & RESTful API $\rightarrow$ Request Manager \\ \hline
+\textbf{Input Specification} & \begin{tabular}[c]{@{}c@{}}Create a RESTful API interface that\\ redirects the request to the Request Manager\end{tabular} \\ \hline
+\textbf{Output Specification} & Check that the forwarded request is consistent \\ \hline
+\textbf{Environmental Needs} & A running Server  and Test Data \\ \hline
+\end{tabular}%
+}
+\end{table}
+\clearpage
+
 \subsection{Integration test case I8}
 \label{sub:IT8}
+\begin{table}[h]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Test Case ID} & I8T1 \\ \hline
+\textbf{Test Item} & Ride Manager $\rightarrow$ Notification Manager \\ \hline
+\textbf{Input Specification} & \begin{tabular}[c]{@{}c@{}}Create a Ride Manager and Ride object along \\ with a Client message to be send to the\\ Notification Messanger\end{tabular} \\ \hline
+\textbf{Output Specification} & \begin{tabular}[c]{@{}c@{}}Check that the message is sent to the \\ correct Client\end{tabular} \\ \hline
+\textbf{Environmental Needs} & A running server and client application \\ \hline
+\end{tabular}%
+}
+\end{table}
 
 \subsection{Integration test case I9}
 \label{sub:IT9}
 
+\begin{table}[h]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Test Case ID} & I9T1 \\ \hline
+\textbf{Test Item} & Search Manager $\rightarrow$ Notification Manager \\ \hline
+\textbf{Input Specification} & \begin{tabular}[c]{@{}c@{}}Create a Search Manager that handles\\ some search data along \\ with a Client message to be send to the\\ Notification Messanger\end{tabular} \\ \hline
+\textbf{Output Specification} & \begin{tabular}[c]{@{}c@{}}Check that the message is sent to the \\ correct Client\end{tabular} \\ \hline
+\textbf{Environmental Needs} & A running server and client application \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+
 \subsection{Integration test case I10}
 \label{sub:IT10}
+\begin{table}[h]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Test Case ID} & I10T1 \\ \hline
+\textbf{Test Item} & Notification Manager $\rightarrow$ Client-side application \\ \hline
+\textbf{Input Specification} & \begin{tabular}[c]{@{}c@{}}Create a Notification manager object that sends \\ a message to the client\end{tabular} \\ \hline
+\textbf{Output Specification} & \begin{tabular}[c]{@{}c@{}}Check that the notification is received by the \\ client application\end{tabular} \\ \hline
+\textbf{Environmental Needs} & A running server and client application \\ \hline
+\end{tabular}%
+}
+\end{table}
 
+\clearpage
 \subsection{Integration test case I11}
 \label{sub:IT11}
+
+
+\begin{table}[h]
+\centering
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Test Case ID} & I11T1 \\ \hline
+\textbf{Test Item} & Client-side application $\rightarrow$ RESTFul API \\ \hline
+\textbf{Input Specification} & \begin{tabular}[c]{@{}c@{}}Create a Mock Client Application that sends \\ information and request through RESTful API\\ (Sign in ,Sign up,  Manage user data)\end{tabular} \\ \hline
+\textbf{Output Specification} & \begin{tabular}[c]{@{}c@{}}Check that the correct methods are called\\ and unexpected behavior is handled correctly\end{tabular} \\ \hline
+\textbf{Environmental Needs} & Mock client application and test data \\ \hline
+\end{tabular}%
+}
+\end{table}
