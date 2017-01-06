@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {2}Integration Strategy}{6}{section.2}
 \contentsline {subsection}{\numberline {2.1}Entry Criteria}{6}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Elements to be Integrated}{6}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Integration Testing Strategy}{8}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Integration Testing Strategy}{7}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Integration Sequence}{8}{subsection.2.4}
 \contentsline {subsubsection}{\numberline {2.4.1}Back-End Tests}{10}{subsubsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.2}Client-Server Tests}{10}{subsubsection.2.4.2}
