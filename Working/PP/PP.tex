@@ -1,0 +1,141 @@
+\documentclass[12pt]{article}
+\usepackage{mathpazo}
+\usepackage{graphicx}
+\usepackage[explicit]{titlesec}
+\usepackage{hyperref}
+\usepackage[export]{adjustbox}
+\usepackage{placeins}
+\usepackage{subcaption}
+\usepackage{import}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listings}
+\usepackage{lscape}
+\usepackage{rotating}
+\graphicspath {{Images/}}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=darkgray
+}
+
+\usepackage{color}
+
+
+\titleformat{\section}[display]
+  {\normalfont\scshape\Huge}
+  {\hspace*{-70pt}\thesection.~#1}
+  {-15pt}
+  {\hspace*{-110pt}\rule{\dimexpr\textwidth+80pt\relax}{3pt}\Huge}
+
+\titleformat{name=\section,numberless}[display]
+  {\normalfont\scshape\Huge}
+  {\hspace*{-70pt}#1}
+  {-15pt}
+  {\hspace*{-110pt}\rule{\dimexpr\textwidth+80pt\relax}{3pt}\Huge}
+\titlespacing*{\section}{0pt}{0pt}{30pt}	
+
+
+\begin{document}
+
+	%----------------
+    %   TITLE PAGE
+    %----------------
+   
+	\begin{center}
+ 	 	\includegraphics[scale=1.5]{Images/PolimiLogo.png}
+	\end{center}
+
+	\begin{center}
+	 	{\Huge Politecnico di Milano}\\
+	 	\vspace{5mm}
+		{\Large A.A 2016-2017} 
+		\vspace{5mm}\\
+		{\huge Project Planning Document}   
+		\vspace{5mm}\\
+		{\large Version 1.0}  
+    \end{center}
+     
+    \begin{center}
+		\noindent\rule{8cm}{0.8pt}
+		 \vspace{5mm}\\
+ 	 	 \includegraphics[scale=1]{Images/logoPowerEnjoy2.png}\\
+		\noindent\rule{8cm}{0.8pt}
+	\end{center}
+	 	\vspace{5mm}
+	 		
+	\begin{center}
+	 	{\Large Instructor : Prof. Di Nitto}
+	 	 \vspace{5mm}\\	 
+	 	{\Large Authors:}\\
+	 	{\Large Amico Simone}\\
+	 	{\Large Chianella Claudia Beatrice}\\
+	 	{\Large Giovanakis Yannick}
+	\end{center}
+	 
+	\newpage
+	
+	%------------------
+	%  CONTENTS TABLE
+	%------------------
+	
+	\tableofcontents{}
+	 
+	\newpage
+		
+	%------------------
+	%  1.INTRODUCTION
+	%------------------
+	
+	\section{Introduction}
+	\import{SubModules/}{Introduction.tex}
+	
+	\newpage
+
+	%------------------
+	%  2.ESTIMATION
+	%------------------
+	
+	\section{Size, effort and cost estimation}
+	\import{SubModules/}{Estimation.tex}
+	
+	\newpage
+	
+	%--------------------------
+	%  3. SCHEDULE AND RESOURCE 
+	%--------------------------
+	\section{Schedule and resource allocation}
+	
+	
+	\newpage
+	
+	%------------------
+	%  4.RISCK
+	%------------------
+	\section{Project risck}
+	\import{SubModules/}{Risk.tex}
+	\newpage
+	
+	%------------------
+	%  5.APPENDICES
+	%------------------
+			
+	\section{Appendices}
+		\subsection{References}
+		The following tools where used in the creation of this document:
+		\begin{itemize}
+		\item \emph{TexMaker 4.5} as Editor
+	
+		\end{itemize}
+		
+		
+		\subsection{Effort Spent}
+		\begin{itemize}
+		\item Simone Amico ~  h
+		\item Chianella Claudia Beatrice ~  h
+		\item Giovanakis Yannick ~  h
+		\end{itemize}
+
+	 
+	
+\end{document}
