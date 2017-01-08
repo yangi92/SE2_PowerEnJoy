@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 DEC 2016 00:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  6 JAN 2017 20:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -407,14 +407,14 @@ Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count120
- <Images/PolimiLogo.png, id=176, 100.4553pt x 100.6962pt>
+ <Images/PolimiLogo.png, id=184, 100.4553pt x 100.6962pt>
 File: Images/PolimiLogo.png Graphic file (type png)
 
 <use Images/PolimiLogo.png>
 Package pdftex.def Info: Images/PolimiLogo.png used on input line 67.
 (pdftex.def)             Requested size: 150.68257pt x 151.0439pt.
 
-<Images/logoPowerEnjoy2.png, id=178, 192.2382pt x 45.2892pt>
+<Images/logoPowerEnjoy2.png, id=186, 192.2382pt x 45.2892pt>
 File: Images/logoPowerEnjoy2.png Graphic file (type png)
 
 <use Images/logoPowerEnjoy2.png>
@@ -448,9 +448,18 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 \openout4 = `DD.toc'.
 
  [3]
-(./SubModules/Introduction.tex
+(./SubModules/Revision.tex
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 2.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 5.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
+) [4]
+(./SubModules/Introduction.tex
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ô in font pplr7t!
@@ -460,15 +469,7 @@ Missing character: There is no ú in font pplr7t!
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ù in font pplr7t!
- [4]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 25.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
- [5]
+ [5] [6]
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ú in font pplr7t!
@@ -489,24 +490,24 @@ a . net / docs / 4 . 0 / quick-[]start-[]guide .
  []
 
 
-LaTeX Warning: Hyper reference `sec:sec2' on page 6 undefined on input line 76.
+LaTeX Warning: Hyper reference `sec:sec2' on page 7 undefined on input line 76.
 
 
 
-LaTeX Warning: Hyper reference `sec:sec3' on page 6 undefined on input line 79.
+LaTeX Warning: Hyper reference `sec:sec3' on page 7 undefined on input line 79.
 
 
 
-LaTeX Warning: Hyper reference `sec:sec4' on page 6 undefined on input line 81.
+LaTeX Warning: Hyper reference `sec:sec4' on page 7 undefined on input line 81.
 
 
-[6]
+[7]
 
-LaTeX Warning: Hyper reference `sec:sec5' on page 7 undefined on input line 83.
+LaTeX Warning: Hyper reference `sec:sec5' on page 8 undefined on input line 83.
 
 
 
-LaTeX Warning: Hyper reference `sec:sec6' on page 7 undefined on input line 85.
+LaTeX Warning: Hyper reference `sec:sec6' on page 8 undefined on input line 85.
 
 
 ) (./SubModules/ArchDesign.tex
@@ -515,11 +516,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
  []
 
 
-LaTeX Warning: Hyper reference `sec:Server' on page 7 undefined on input line 1
+LaTeX Warning: Hyper reference `sec:Server' on page 8 undefined on input line 1
 2.
 
 
-LaTeX Warning: Hyper reference `sec:UserClient' on page 7 undefined on input li
+LaTeX Warning: Hyper reference `sec:UserClient' on page 8 undefined on input li
 ne 13.
 
 
@@ -528,9 +529,9 @@ Overfull \hbox (9.12656pt too wide) in paragraph at lines 13--14
 -ta-tion of the real user clients.
  []
 
-[7]
+[8]
 
-LaTeX Warning: Hyper reference `sec:OnBClient' on page 8 undefined on input lin
+LaTeX Warning: Hyper reference `sec:OnBClient' on page 9 undefined on input lin
 e 14.
 
 
@@ -556,7 +557,7 @@ Overfull \hbox (10.0025pt too wide) in paragraph at lines 30--32
 n-ti-ca-tion.The
  []
 
-[8]
+[9]
 Overfull \hbox (11.82669pt too wide) in paragraph at lines 41--44
 \OT1/ppl/m/n/12 The car man-ager com-po-nent's job is to man-age all the ve-hi-
 cles through-
@@ -573,27 +574,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-[9] [10] <Images/ClassDiagram/User.png, id=288, 1384.17125pt x 1122.1925pt>
+[10] [11] <Images/ClassDiagram/User.png, id=302, 1384.17125pt x 1150.2975pt>
 File: Images/ClassDiagram/User.png Graphic file (type png)
 
 <use Images/ClassDiagram/User.png>
 Package pdftex.def Info: Images/ClassDiagram/User.png used on input line 84.
-(pdftex.def)             Requested size: 484.46721pt x 392.77327pt.
+(pdftex.def)             Requested size: 484.46721pt x 402.61017pt.
 
 Overfull \hbox (94.46721pt too wide) in paragraph at lines 84--85
 [] 
  []
 
-[11 <./Images/ClassDiagram/User.png>]
-<Images/ClassDiagram/Display.png, id=295, 1130.2225pt x 1493.58pt>
+[12 <./Images/ClassDiagram/User.png>]
+<Images/ClassDiagram/Display.png, id=310, 1267.73625pt x 1506.62875pt>
 File: Images/ClassDiagram/Display.png Graphic file (type png)
 
 <use Images/ClassDiagram/Display.png>
 Package pdftex.def Info: Images/ClassDiagram/Display.png used on input line 92.
 
-(pdftex.def)             Requested size: 395.5838pt x 522.76083pt.
- [12 <./Images/ClassDiagram/Display.png>]
-<Images/ClassDiagram/BackEnd2.png, id=302, 1761.58125pt x 1190.4475pt>
+(pdftex.def)             Requested size: 443.71434pt x 527.32797pt.
+
+Overfull \hbox (13.31525pt too wide) in paragraph at lines 91--93
+[]  [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 3.32796pt on input line 94.
+
+[13 <./Images/ClassDiagram/Display.png>]
+<Images/ClassDiagram/BackEnd2.png, id=318, 1761.58125pt x 1190.4475pt>
 File: Images/ClassDiagram/BackEnd2.png Graphic file (type png)
 
 <use Images/ClassDiagram/BackEnd2.png>
@@ -605,7 +614,7 @@ Overfull \hbox (68.06268pt too wide) in paragraph at lines 100--101
 [][] 
  []
 
-[13 <./Images/ClassDiagram/BackEnd2.png>]
+[14 <./Images/ClassDiagram/BackEnd2.png>]
 Overfull \hbox (5.55089pt too wide) in paragraph at lines 115--117
 \OT1/ppl/m/n/12 ware and man-age the backup re-quests from the pri-mary DBMS se
 rver.
@@ -616,24 +625,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
 
-<Images/DeployDiagram/Deploy3.png, id=311, 845.1575pt x 925.4575pt>
+<Images/DeployDiagram/Deploy3.png, id=325, 845.1575pt x 925.4575pt>
 File: Images/DeployDiagram/Deploy3.png Graphic file (type png)
 
 <use Images/DeployDiagram/Deploy3.png>
 Package pdftex.def Info: Images/DeployDiagram/Deploy3.png used on input line 12
 5.
 (pdftex.def)             Requested size: 321.1632pt x 351.6775pt.
- [14
+ [15
 
 
 
 
-] [15 <./Images/DeployDiagram/Deploy3.png>]
+] [16 <./Images/DeployDiagram/Deploy3.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 143--146
 
  []
 
-[16] <Images/Sequence/seq1.png, id=330, 1005.7575pt x 877.2775pt>
+[17] <Images/Sequence/seq1.png, id=344, 1005.7575pt x 877.2775pt>
 File: Images/Sequence/seq1.png Graphic file (type png)
 
 <use Images/Sequence/seq1.png>
@@ -644,8 +653,8 @@ Overfull \hbox (12.29587pt too wide) in paragraph at lines 151--152
  [] 
  []
 
-[17 <./Images/Sequence/seq1.png>]
-<Images/Sequence/seq2.png, id=337, 1130.2225pt x 652.4375pt>
+[18 <./Images/Sequence/seq1.png>]
+<Images/Sequence/seq2.png, id=351, 1130.2225pt x 652.4375pt>
 File: Images/Sequence/seq2.png Graphic file (type png)
 
 <use Images/Sequence/seq2.png>
@@ -656,8 +665,8 @@ Overfull \hbox (62.081pt too wide) in paragraph at lines 159--160
  [][] 
  []
 
-[18 <./Images/Sequence/seq2.png>]
-<Images/Sequence/seq3.png, id=344, 1591.9475pt x 1005.7575pt>
+[19 <./Images/Sequence/seq2.png>]
+<Images/Sequence/seq3.png, id=359, 1591.9475pt x 1005.7575pt>
 File: Images/Sequence/seq3.png Graphic file (type png)
 
 <use Images/Sequence/seq3.png>
@@ -668,8 +677,8 @@ Overfull \hbox (88.26773pt too wide) in paragraph at lines 167--168
  [][] 
  []
 
-[19 <./Images/Sequence/seq3.png>]
-<Images/Sequence/Seq4.png, id=352, 1720.4275pt x 968.61874pt>
+[20 <./Images/Sequence/seq3.png>]
+<Images/Sequence/Seq4.png, id=366, 1720.4275pt x 968.61874pt>
 File: Images/Sequence/Seq4.png Graphic file (type png)
 
 <use Images/Sequence/Seq4.png>
@@ -680,7 +689,7 @@ Overfull \hbox (139.65883pt too wide) in paragraph at lines 174--175
  [][] 
  []
 
-[20 <./Images/Sequence/Seq4.png>]
+[21 <./Images/Sequence/Seq4.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 192--196
 
  []
@@ -696,7 +705,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--207
 
  []
 
-[21
+[22
 
 
 
@@ -711,32 +720,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--215
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ô in font pplr7t!
-[22]
+[23]
 Overfull \hbox (12.41467pt too wide) in paragraph at lines 246--250
 \OT1/ppl/m/n/12 also data pro-vided by the data store layer) to the pre-sen-ta-
 tion layer.This
  []
 
-[23]
+[24]
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ô in font pplr7t!
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ô in font pplr7t!
- <Images/ER/ER.png, id=377, 759.83875pt x 896.34875pt>
+ <Images/ER/ER.png, id=391, 759.83875pt x 896.34875pt>
 File: Images/ER/ER.png Graphic file (type png)
 
 <use Images/ER/ER.png>
 Package pdftex.def Info: Images/ER/ER.png used on input line 271.
 (pdftex.def)             Requested size: 265.94754pt x 313.72676pt.
- [24 <./Images/ER/ER.png>] [25] [26])
+ [25 <./Images/ER/ER.png>] [26] [27])
 (./SubModules/AlgorithmDesignCode.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[27]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
@@ -747,13 +756,13 @@ Overfull \hbox (10.43564pt too wide) in paragraph at lines 26--27
 OT1/ppl/m/it/12 On-Board ap-pli-ca-tion\OT1/ppl/m/n/12 requires
  []
 
-[28] [29]
+[29] [30]
 Overfull \hbox (26.77968pt too wide) in paragraph at lines 115--116
 [][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-[30] [31] [32]) [33] (./SubModules/UID.tex
-<Images/UID/u1.png, id=570, 689.57625pt x 366.36874pt>
+[31] [32] [33]) [34] (./SubModules/UID.tex
+<Images/UID/u1.png, id=584, 689.57625pt x 366.36874pt>
 File: Images/UID/u1.png Graphic file (type png)
  <use Images/UID/u1.png>
 Package pdftex.def Info: Images/UID/u1.png used on input line 9.
@@ -763,7 +772,7 @@ Overfull \hbox (23.74893pt too wide) in paragraph at lines 9--10
  [][] 
  []
 
-[34] <Images/UID/u2.png, id=575, 823.075pt x 545.03625pt>
+[35] <Images/UID/u2.png, id=589, 823.075pt x 545.03625pt>
 File: Images/UID/u2.png Graphic file (type png)
 
 <use Images/UID/u2.png>
@@ -774,8 +783,8 @@ Overfull \hbox (103.8488pt too wide) in paragraph at lines 17--18
  [][] 
  []
 
-[35 <./Images/UID/u1.png>] [36 <./Images/UID/u2.png>]
-<Images/UID/u3.png, id=588, 690.58pt x 530.98375pt>
+[36 <./Images/UID/u1.png>] [37 <./Images/UID/u2.png>]
+<Images/UID/u3.png, id=603, 690.58pt x 530.98375pt>
 File: Images/UID/u3.png Graphic file (type png)
  <use Images/UID/u3.png>
 Package pdftex.def Info: Images/UID/u3.png used on input line 25.
@@ -785,12 +794,12 @@ Overfull \hbox (24.3512pt too wide) in paragraph at lines 25--26
  [][] 
  []
 
-[37 <./Images/UID/u3.png>]) (./SubModules/RequirementsTraceability.tex
+[38 <./Images/UID/u3.png>]) (./SubModules/RequirementsTraceability.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
-[38
+[39
 
 
 ]
@@ -803,7 +812,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-[39]
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
@@ -831,31 +840,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-[40]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-) [41]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
- [42]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
+) [42]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
+ [43]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
  (./DD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
-Package rerunfilecheck Info: File `DD.out' has not changed.
-(rerunfilecheck)             Checksum: 8BC70F9AF784B9C83C136855AAF1E0DE;2888.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
 
+
+Package rerunfilecheck Warning: File `DD.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `DD.out':
+(rerunfilecheck)             Before: A2FCF5C003C7264754ED74094C74B3F5;3014
+(rerunfilecheck)             After:  9690840B8C35A216A56AA8C7D3960B3D;3024.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 9818 strings out of 493014
- 149168 string characters out of 6133351
+ 9826 strings out of 493014
+ 149281 string characters out of 6133351
  286025 words of memory out of 5000000
- 12922 multiletter control sequences out of 15000+600000
+ 12924 multiletter control sequences out of 15000+600000
  28668 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,9n,94p,631b,1693s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -866,10 +881,10 @@ live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on DD.pdf (42 pages, 955639 bytes).
+Output written on DD.pdf (43 pages, 970531 bytes).
 PDF statistics:
- 698 PDF objects out of 1000 (max. 8388607)
- 613 compressed objects within 7 object streams
- 255 named destinations out of 1000 (max. 500000)
- 415 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 713 PDF objects out of 1000 (max. 8388607)
+ 627 compressed objects within 7 object streams
+ 258 named destinations out of 1000 (max. 500000)
+ 431 words of extra memory for PDF output out of 10000 (max. 10000000)
 

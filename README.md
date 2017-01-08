@@ -16,14 +16,18 @@ Accademic Year: 2016/2017 </br>
 Topic of the project : Software system development for the car-sharing service PowerEnjoy</br>
 More detail about the project [here](https://github.com/yangi92/SE2_PowerEnJoy/blob/master/Assignments%20AA%202016-2017.pdf)
 
-## RASD Document
+## RASD
 The **Requirements And Specifications Document** gives an overview about the main goals of this project focusing on what the costumer wants, how he wants it to be done and how we intend to develop this project highlighting its functionalities and limits. </br>
 * [RASD File](https://github.com/yangi92/SE2_PowerEnJoy/blob/master/Releases/RASD.pdf)
 * [IEEE Recommended Practice for Software Requirements Specifications](http://www.math.uaa.alaska.edu/~afkjm/cs401/IEEE830.pdf)
 
-## DD Document
+## DD
 The **Design Document** gives an overview about the architectural choices made to satisfy all functional and non functional requirements along with a high level description of some of the main algorithms.</br>
 * [DD File](https://github.com/yangi92/SE2_PowerEnJoy/blob/master/Releases/DD.pdf)
+
+## ITPD
+The **Integration Test Plan Document** lists a series of strategies and test cases scenarios that are meant to be used to followed to test the integrity of the system in terms of correct communication between different modules.</br>
+* ITPD FILE TO BE UPLOADED
 
 
 

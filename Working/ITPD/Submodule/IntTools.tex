@@ -1,0 +1,19 @@
+This section addresses the tools that the testing team should make use of to execute the integrations tests mentioned in section \ref{sec:IndSteps}.
+
+\subsection{Test Equipment}
+The final deployment of the platform will happen on separate physical machines , as different client-devices need to communicate with the back-end application as stated in DD section 2.4.\\
+In order to correctly test this scenario , during \emph{integration testing} the team must use at least a dedicated \textbf{server} running the \textbf{back-end application}.
+
+\subsection{Test Tools}
+\subsubsection{Mockito}
+\textbf{Mockito} is a \textbf{test framework} usually used to cut out the dependencies during unit testing.\\
+It can nevertheless be used to aid the developers during integration , especially during the early stages of development when it may become useful to mock some \textbf{not-yet developed} components in order to perform some initial integration testing.
+\subsubsection{Arquillian}
+\textbf{Arquillian} is a \textbf{test framework} used to perform testing inside a remote or embedded container, or deploy an archive to a container so the test can interact as a remote client.\\
+Arquillian integrates with other testing frameworks, like \textbf{JUnit}, allowing the use of \textbf{IDE} and \textbf{Maven} \textbf{plugins} and facilitating the developers work.\\
+The use of Arquillian is especially recommended during the testing of \textbf{Client-Server} interaction.
+
+\subsubsection{Manual Testing}
+Manual tests should always be kept as a viable alternative,especially when testing \textbf{non-standard} implementations of algorithms and interfaces.
+The testing team should resort to manual testing whenever the aforementioned tools should not be expressive enough to test \emph{specific} aspects of the integrations.
+
