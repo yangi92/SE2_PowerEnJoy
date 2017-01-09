@@ -20,8 +20,53 @@ The following table show the weight assigned to each function points:\\
 \subsubsection{External Logic Files}
 \import{Tables/}{ELF.tex}
 
-\subsubsection{Total number of FPs}
+\subsubsection{Total number of UFPs}
 \import{Tables/}{TotalFPs.tex}
 
 \subsection{Effort and cost estimantion}
+\subsubsection{COCOMO II}
+The \emph{COCOMO II} model is an evolution from the \emph{COCOMO 81} and is used to express \textbf{effort} as \emph{PERSON-MONTHS}.\\
+In particular it uses the following formula to estimate the total \textbf{effort} :
+\begin{equation}
+    \textrm{Effort} = A \times SIZE^E \times \prod_i EM_i
+    \label{eq:effort}
+\end{equation}
+where :
+\begin{itemize}
+	\item $A$ is given statistically and is equal to $2.94$
+	\item $SIZE$ is the size of the software expressed in KLOC
+	\item $E$ is an aggregation of five scale factors (SF) 
+	\item $EM$ are the \emph{effort multipliers} of the \emph{cost drivers} 
+\end{itemize}
+In the follwing sections we will calculate all the parameters mentioned above, in order to generate the final result of the formula.
 
+\subsubsection{Scale factors estimation}
+\label{sub:scale_factors}
+This section provides the estimation for the scale factors.
+
+\import{Tables/}{ScaleDriversExt.tex}
+
+
+
+\subsubsection{Cost drivers effort multipliers estimation}
+\label{sub:cost_drivers}
+This section provides the estimation for the effort multipliers of the cost drivers.
+
+\import{Tables/}{EMext.tex}
+
+\subsubsection{Final effort estimation}
+\label{sub:effort_estimation}
+Now that we have all the parameters of the formula, we can calculate the final result:
+\begin{itemize}
+	\item $A = 2.94$
+	\item $SIZE = 81UFP  \times  53  = 4.293  KLOC$ ($53$ is the JAVA multiplier)
+	\item $\prod_i EM_i = 0.624$
+	\item $E = 1.038$
+\end{itemize}
+
+\begin{equation}
+    \textrm{Effort} = A \times SIZE^E \times \prod_i EM_i = 8.32 PM
+    \label{eq:effort}
+\end{equation}
+So the effort to develop the project is 8.32 person-months.\\
+We are 3 people, so this means less than 3 months development. 

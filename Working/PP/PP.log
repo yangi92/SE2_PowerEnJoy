@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.12)  8 JAN 2017 11:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.6)  9 JAN 2017 16:17
 entering extended mode
 **./PP.tex
 (PP.tex
@@ -326,7 +326,11 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 20.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\ttlkeys.def"
 File: ttlkeys.def 2016/03/15
-) (PP.aux)
+) (PP.aux
+
+LaTeX Warning: Label `eq:effort' multiply defined.
+
+)
 \openout1 = `PP.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -344,8 +348,7 @@ LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 39.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 \big@size=\dimen135
@@ -400,14 +403,14 @@ Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count120
- <Images/PolimiLogo.png, id=107, 100.4553pt x 100.6962pt>
+ <Images/PolimiLogo.png, id=123, 100.4553pt x 100.6962pt>
 File: Images/PolimiLogo.png Graphic file (type png)
 
 <use Images/PolimiLogo.png>
 Package pdftex.def Info: Images/PolimiLogo.png used on input line 46.
 (pdftex.def)             Requested size: 150.68257pt x 151.0439pt.
 
-<Images/logoPowerEnjoy2.png, id=109, 192.2382pt x 45.2892pt>
+<Images/logoPowerEnjoy2.png, id=125, 192.2382pt x 45.2892pt>
 File: Images/logoPowerEnjoy2.png Graphic file (type png)
 
 <use Images/logoPowerEnjoy2.png>
@@ -438,11 +441,11 @@ LaTeX Font Info:    Try loading font information for OT1+zplm on input line 2.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-))
+) [2])
 \tf@toc=\write4
 \openout4 = `PP.toc'.
 
- [2]
+ [3]
 (SubModules/Introduction.tex
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
@@ -463,20 +466,21 @@ Missing character: There is no ú in font pplr7t!
 Missing character: There is no ‚ in font pplr7t!
 Missing character: There is no Ä in font pplr7t!
 Missing character: There is no ù in font pplr7t!
-) [3]
+) [4]
 (SubModules/Estimation.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
 (Tables/WeightFunctionPoints.tex) (Tables/Input.tex) (Tables/Output.tex)
-(Tables/Inquiries.tex [4]) (Tables/ILF.tex) (Tables/ELF.tex)
-(Tables/TotalFPs.tex)) [5]
+(Tables/Inquiries.tex [5]) (Tables/ILF.tex) (Tables/ELF.tex)
+(Tables/TotalFPs.tex) [6] (Tables/ScaleDriversExt.tex) (Tables/EMext.tex)
+[7] [8]) [9]
 Overfull \hbox (15.5758pt too wide) in paragraph at lines 107--107
 || \OT1/ppl/m/sc/24.88 3. Sched-ule and re-source allocation| 
  []
 
-[6] (SubModules/Risk.tex
+[10] (SubModules/Risk.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -506,38 +510,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--23
 
  []
 
-[7]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-) [8]
+) [12]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
- [9]
+ [13]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
  (PP.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
 Package rerunfilecheck Info: File `PP.out' has not changed.
-(rerunfilecheck)             Checksum: AD3AAF7EC41C66BDC7E38BB47E8BA702;1896.
+(rerunfilecheck)             Checksum: B946534B462B58294B27AC6BF920F282;2239.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
  ) 
 Here is how much of TeX's memory you used:
- 9283 strings out of 493334
- 140107 string characters out of 3139239
- 240709 words of memory out of 3000000
- 12610 multiletter control sequences out of 15000+200000
- 18478 words of font info for 47 fonts, out of 3000000 for 9000
+ 9328 strings out of 493334
+ 140698 string characters out of 3139249
+ 244111 words of memory out of 3000000
+ 12624 multiletter control sequences out of 15000+200000
+ 22778 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,7n,94p,267b,377s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,10n,94p,267b,388s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatin
-o/uplri8a.pfb>
-Output written on PP.pdf (9 pages, 314850 bytes).
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/mathpazo/fplmr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
+palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8
+a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on PP.pdf (13 pages, 344965 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
 
