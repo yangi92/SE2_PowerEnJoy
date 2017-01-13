@@ -63,7 +63,7 @@ modules
 \begin{figure}
 \centering
 \caption{Integration Test Diagram}
-\includegraphics[scale=0.45]{Images/Diagram2.png}
+\includegraphics[scale=0.45]{Images/Diagram3.png}
 \end{figure}
 \FloatBarrier
 \newpage
@@ -81,9 +81,13 @@ The following tables show the needed integration tests,highlighting their ID use
 1 & Request Manager $\rightarrow$ Search Manager & \ref{sub:IT1} \\ \hline
 2 & Request Manager $\rightarrow$ Ride Manager & \ref{sub:IT2} \\ \hline
 3 & Request Manager $\rightarrow$ User Manager & \ref{sub:IT3} \\ \hline
-4 & Search Manager $\rightarrow$ Position Manager & \ref{sub:IT4} \\ \hline
-5 & Position Manager $\rightarrow$ Vehicle Manager & \ref{sub:IT5} \\ \hline
-6 & Database Interface $\rightarrow$ DBMS & \ref{sub:IT6} \\ \hline
+4 & Request Manager $\rightarrow$ Charging Manager & \ref{sub:IT4} \\ \hline
+5 & Search Manager $\rightarrow$ Position Manager & \ref{sub:IT5} \\ \hline
+6 & Position Manager $\rightarrow$ Vehicle Manager & \ref{sub:IT6} \\ \hline
+7 & Charging Manager $\rightarrow$ Station Manager & \ref{sub:IT7} \\ \hline
+8 & Charging Manager $\rightarrow$ Vehicle Manager & \ref{sub:IT8} \\ \hline
+9 & Ride Manager $\rightarrow$ Vehicle Manager & \ref{sub:IT9} \\ \hline
+10 & Database Interface $\rightarrow$ DBMS & \ref{sub:IT10} \\ \hline
 \end{tabular}%
 }
 \caption{Back-End Tests Table}
@@ -98,11 +102,11 @@ The following tables show the needed integration tests,highlighting their ID use
 \begin{tabular}{|l|l|c|}
 \hline
 \multicolumn{1}{|c|}{{\color[HTML]{333333} \textbf{ID}}} & \multicolumn{1}{c|}{{\color[HTML]{333333} \textbf{Integration Test}}} & {\color[HTML]{333333} \textbf{Paragraphs}} \\ \hline
-7 & RESTful API $\rightarrow$ Request Manager & \ref{sub:IT7} \\ \hline
-8 & Ride Manager $\rightarrow$ Notification Manager & \ref{sub:IT8} \\ \hline
-9 & Search Manager $\rightarrow$ Notification Manager & \ref{sub:IT9} \\ \hline
-10 & Notification Manager $\rightarrow$ Client-side components & \ref{sub:IT10} \\ \hline
-11 & Client-side components $\rightarrow$ RESTful API & \ref{sub:IT11} \\ \hline
+11 & RESTful API $\rightarrow$ Request Manager & \ref{sub:IT11} \\ \hline
+12 & Ride Manager $\rightarrow$ Notification Manager & \ref{sub:IT12} \\ \hline
+13 & Search Manager $\rightarrow$ Notification Manager & \ref{sub:IT13} \\ \hline
+14 & Notification Manager $\rightarrow$ Client-side components & \ref{sub:IT14} \\ \hline
+15 & Client-side components $\rightarrow$ RESTful API & \ref{sub:IT15} \\ \hline
 \end{tabular}%
 }
 \caption{Client-Server Tests Table}
