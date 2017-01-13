@@ -3,43 +3,47 @@ Interaction between client-server requires always the notification messenger whi
 \begin{itemize}
 	\item{\textbf{[R1.1]}}: Allow a guest to register entering all relevant personal data and a valid driving license whose validity will be check on the spot.
 	\begin{itemize}
-	\item SignUpAction()
+	\item SignUpAction
 	\end{itemize}
 	\item{\textbf{[R1.2]}}: Allow a registered user to log-in.
 	\begin{itemize}
-	\item SignInAction()
+	\item SignInAction
 	\end{itemize}
 	\item{\textbf{[R1.3]}}: Allow a registered user to update his personal information.
 	\begin{itemize}
-	\item SettingAction()
+	\item SettingAction
 	\end{itemize}
 	\item{\textbf{[R1.4]}}: Allow a registered user to search for an available vehicle given his position within a selected distance.
 	\begin{itemize}
-	\item SearchAction()
+	\item SearchAction
 	\end{itemize}
 	\item{\textbf{[R1.5]}}: Allow a registered user to search for an available vehicle given an input position within a selected distance.
 	\begin{itemize}
-	\item SearchAction()
+	\item SearchAction
 	\end{itemize}
 	\item{\textbf{[R1.6]}}: Allow a registered user to reserve a selected vehicle.
 	\begin{itemize}
-	\item ReserveAction()
+	\item ReserveAction
 	\end{itemize}
 	\item{\textbf{[R1.7]}}: Allow a registered user to check his payment history.
 	\begin{itemize}
-	\item SettingAction()
+	\item SettingAction
 	\end{itemize}
 	\item{\textbf{[R1.8]}}: Allow a registered user to recover his account log-in information in a secure way.
 	\begin{itemize}
-	\item SettingAction()
+	\item SettingAction
 	\end{itemize}
 	\item{\textbf{[R1.9]}}: Allow a registered user to search for an available vehicle given an input position and a radius.
 	\begin{itemize}
-	\item SettingAction()
+	\item SettingAction
 	\end{itemize}
 	\item{\textbf{[R1.10]}}: Allow a registered user to unlock \emph{his/her} reserved car if the user is nearby.
 	\begin{itemize}
-	\item UnLockAction()
+	\item UnLockAction
+	\end{itemize}
+	\item \textbf{[R1.11]}: Allow a registered user to report an issue.
+	\begin{itemize}
+	\item ReportAction
 	\end{itemize}
 \end{itemize}
 
@@ -48,7 +52,7 @@ Interaction between client-server requires always the notification messenger whi
 \begin{itemize}
 	\item{\textbf{[R2.1]}}: Enable a registered user to keep track of the distance covered, time spent using the car ,the current owed fee and the remaining battery charge.
 	\begin{itemize}
-	\item MainAction -> showStats()
+	\item MainAction
 	\end{itemize}
 	\item{\textbf{[R2.3]}}: Provide a method to enable the money saving option.
 	\begin{itemize}
@@ -57,7 +61,11 @@ Interaction between client-server requires always the notification messenger whi
 	\end{itemize}
 	\item{\textbf{[R2.3]}}: Enable the driver to end the ride if the car is parked in a safe area.
 	\begin{itemize}
-	\item EndAction()
+	\item EndAction
+	\end{itemize}
+	\item \textbf{[R2.4]}: Enable the driver to charge the car.
+	\begin{itemize}
+	\item ChargingCarAction
 	\end{itemize}
  \end{itemize}
 
@@ -77,6 +85,7 @@ All client-side request are filtered by the \emph{request manager} which dispatc
 	
 	\item {\textbf{[R3.3]}}: The back-end must provide a password 			recovery system.
 	\begin{itemize}
+	\item Request Manager
 	\item User Manager\\
 	\end{itemize}
 	
@@ -100,13 +109,27 @@ All client-side request are filtered by the \emph{request manager} which dispatc
 
 	\item {\textbf{[R3.7]}}: The back-end must handle car status changes.
 	\begin{itemize}
+	\item Ride Manager
 	\item Position Manager
 	\item Vehicle Manager
 	\end{itemize}
 	
 	\item {\textbf{[R3.8]}}: The back-end must provide an interface to allow a support operator to perform all basics CRUD operations.
 	\begin{itemize}
+	\item Request Manager
 	\item User Manager\\
+	\end{itemize}
+	
+	\item \textbf{[R3.9]}: The back-end must handle all ride requests.
+	\begin{itemize}
+	\item Request Manager
+	\item Ride Manager
+	\end{itemize}
+	
+	\item \textbf{[R3.10]}: The back-end must handle all charging requests.
+	\begin{itemize}
+	\item Request Manager
+	\item Charging Manager
 	\end{itemize}
 
 \end{itemize}

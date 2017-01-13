@@ -51,7 +51,7 @@
 		\vspace{5mm}\\
 		{\huge Requirements Analysis and Specifications Document}   
 		\vspace{5mm}\\
-		{\large Version 1.0}  
+		{\large Version 1.1}  
     \end{center}
      
     \begin{center}
@@ -80,7 +80,19 @@
 	\tableofcontents{}
 	 
 	\newpage
-	 
+	%-----------------
+	%  0.Revision History
+	%-----------------
+	\section{\Large Revision History}
+	\subsection{Version 1.1 -Updated on 07/01/2017}
+	The following changes were made to the previous version 1.0:
+\begin{itemize}
+\item Class diagram was removed as it is not considered essential in this stage of development.
+\item Specific requirements were improved and report action added.
+\item New mockups added
+
+\end{itemize}
+	 \newpage
 	%-----------------
 	%  1.INTRODUCTION
 	%-----------------
@@ -93,7 +105,7 @@
 		The aim of this document	is to give an overview of the requirements and 			
 		specifications of the system to be developed. 
 		The goal of the document is to describe in detail all functional and non-functional 
-		requirements of the system, analyzing the needs of the customer and explaining common 
+		requirements of the system, analysing the needs of the customer and explaining common 
 		use case scenarios.
 		It will set a baseline for project planning and cost estimation, giving a detailed 
 		insight to all stakeholders which include the PowerEnjoy Board , Investors and finally
@@ -636,7 +648,22 @@
 		 \caption{Destination input screen}
 		\centering
  	 	\includegraphics[scale=0.6]{Images/onBoard/Main.png}
-		  \caption{Main screen}
+		  \caption{Main screen with disabled park car button}
+ 	 	\end{figure}
+ 	 	\clearpage
+ 	 	 	\begin{figure}
+		 \centering	
+		\includegraphics[scale=0.6]{Images/onBoard/Main2.png}
+		 \caption{Main screen with enabled park car button}
+		\centering
+ 	 	\includegraphics[scale=0.6]{Images/onBoard/Park.png}
+		  \caption{Car parked main screen}
+ 	 	\end{figure}
+ 	 	\clearpage
+ 	 	 \begin{figure}
+		 \centering	
+		\includegraphics[scale=0.6]{Images/onBoard/Park2.png}
+		 \caption{Charging option screen}
  	 	\end{figure}
  	 	\clearpage
  	 	
@@ -662,6 +689,7 @@
 	 			 given an input position and a radius.
 	 		\item{\textbf{[R1.10]}}: Allow a registered user to unlock \emph{his/her} reserved 	
 	 			 car if the user is nearby.
+	 	    \item \textbf{[R1.11]}: Allow a registered user to report an issue.
 	 	\end{itemize}
 
 		\textbf{2.On-Board Application}
@@ -672,6 +700,7 @@
 			\item{\textbf{[R2.3]}}: Provide a method to enable the money saving option.
  	 		\item{\textbf{[R2.3]}}: Enable the driver to end the ride if the car is parked in 
  	 			a safe area.
+ 	 		\item{\textbf{[R2.4]}}: Enable the driver to charge the car.
  	 	\end{itemize}
  	 	\newpage
  	 	\textbf{3.Back-End System}
@@ -685,6 +714,9 @@
  	 		\item{\textbf{[R3.7]}}:The back-end must handle car status changes.
  	 		\item{\textbf{[R3.8]}}:The back-end must provide an interface to allow a support operator to perform
 all basics CRUD operations
+			\item{\textbf{[R3.9]}}:The back-end must handle all ride requests.
+			\item{\textbf{[R3.10]}}:The back-end must handle all charging requests.
+
  	 	\end{itemize}
  	 	%------------------
  	 	% 3.2 SCENARIO
@@ -861,21 +893,7 @@ all basics CRUD operations
 		\end{center} 	 	
  	 	\end{figure}
  	 	\clearpage
- 	 	
- 	 	
- 	 	%--------------------
- 	 	% CLASS DIAGRAM
- 	 	%--------------------
- 	 	 \FloatBarrier
- 	 	\subsection{Class Diagram}
- 	 	This class diagram gives an general and not detailed overview on how the system is intended to be implemented. Extensibility is an important facotr as future growth must be taken in account.
- 	 	\begin{figure}
-		\vspace{-16cm}		
-		\begin{center}
-		\includegraphics[scale=0.49]{Images/ClassDiagram/General.png}
-		\end{center} 	 	
- 	 	\end{figure}
- 	 	\clearpage
+
  	 	\newpage
  	 	%--------------------
  	 	% STATE CHARTS 

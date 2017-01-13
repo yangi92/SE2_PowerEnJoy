@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  6 JAN 2017 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 JAN 2017 08:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -507,7 +507,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
  []
 
 
-Overfull \hbox (16.76768pt too wide) in paragraph at lines 25--26
+Overfull \hbox (16.76768pt too wide) in paragraph at lines 27--28
 []\OT1/ppl/m/n/12 The client-side ap-pli-ca-tions com-mu-ni-cate with the \OT1/
 ppl/m/it/12 back-end sys-tem \OT1/ppl/m/n/12 through
  []
@@ -516,18 +516,18 @@ ppl/m/it/12 back-end sys-tem \OT1/ppl/m/n/12 through
 File: Images/Diagram2.png Graphic file (type png)
 
 <use Images/Diagram2.png>
-Package pdftex.def Info: Images/Diagram2.png used on input line 63.
+Package pdftex.def Info: Images/Diagram2.png used on input line 66.
 (pdftex.def)             Requested size: 456.20016pt x 524.40434pt.
 
-Overfull \hbox (66.20016pt too wide) in paragraph at lines 63--64
+Overfull \hbox (66.20016pt too wide) in paragraph at lines 66--67
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 0.40433pt on input line 64.
+LaTeX Warning: Float too large for page by 0.40433pt on input line 67.
 
 [9 <./Images/Diagram2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
@@ -586,18 +586,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
 Here is how much of TeX's memory you used:
  9335 strings out of 493014
  141805 string characters out of 6133351
- 240432 words of memory out of 5000000
+ 240431 words of memory out of 5000000
  12637 multiletter control sequences out of 15000+600000
  21121 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,15n,94p,491b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,15n,94p,491b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on ITPD.pdf (20 pages, 363806 bytes).
+Output written on ITPD.pdf (20 pages, 363571 bytes).
 PDF statistics:
  362 PDF objects out of 1000 (max. 8388607)
  325 compressed objects within 4 object streams

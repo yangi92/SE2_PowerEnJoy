@@ -43,23 +43,30 @@ The car manager component's job is to manage all the vehicles throughout the cit
 are managed through the Position manager.
 
 \item \textbf{Position manager}\\
-Keeps track of car positions around the city. When the Search manager gets triggered it forwards requests to the Position manager to get all available cars in compliance to the user input. It updates car positions through the vehicle manager at the end of each ride through the Vehicle manager. Moreover it handles the fair car distribution scenario when triggered by the on-board display. 
+Keeps track of car positions around the city. When the Search manager gets triggered it queries the Position manager to get all available cars in compliance to the user input. It updates car positions through the vehicle manager at the end of each ride through the Vehicle manager. Moreover it handles the fair car distribution scenario when triggered by the on-board display. 
 
 \item \textbf{Search manager}\\
-The search manager component handles all incoming search requests forwarded by the user applications and interfaced through the RESTful API. The main functionality is to handle the user input and query the vehicle manager accordingly, returning the desired output to the user.\\In the event of a booking request the search manager forwards the demand to the Ride Manager.
+The search manager component handles all incoming search requests forwarded by the user applications and interfaced through the RESTful API. The main functionality is to handle the user input and query the vehicle manager accordingly, returning the desired output to the user.After a search request the User device will receive a notification through the NotificationManager stating the number of compatible vehicles found and then showing the result on the User device's displayed map.
 
 \item \textbf{Ride manager}\\
-The Ride manager component examines all incoming reservation request and creates \textit{Ride objects} according to the user selection and user data.The ride manager
-is connected to the following components:
+The Ride manager component examines all incoming reservation request and creates \textit{Ride objects} according to the user selection and user data.The ride manager is connected to the following components:
 \begin{itemize}
 \item \textit{Vehicle manager}: need to communicate and receive communications about car status changes in terms of availability, battery level and location.
 \item \textit{Notification manager}: need to inform the user about remaining time to unlock the car or send the user 'ready to unlock ' notifications. Moreover it sends messages to the on-board display to inform the user about the response to a \textit{end ride request}.\\[0.4in] 
 \end{itemize}
  
+\item \textbf{Charging manager}\\
+The Charging manager receives all request concerning car charging. It checks if the car's position is inside the area of a charging station and checks if a charging event can start. It keeps track of a car's charging time and updates data in both the station manager and the vehicle manager.
+
+\item \textbf{Station manager}\\
+This component handles all the current vehicles in the station and checks for empty slots if queried.
+
 \end{itemize}
 
+
+
 \textbf{Data Base}\\[0.1in]
-The MySQL database fulfills the task of storing and granting access to all
+The MySQL database fulfils the task of storing and granting access to all
 the data generated and used by the service.\\
 The connection between the Java EE application and the Data Base is supported
 by the \emph{JDBC connector} \footnote{\url{http://dev.mysql.com/downloads/connector/j/}}.For more information about the data base see \hyperref[sec:DMV]{\emph{section 2.7}}.

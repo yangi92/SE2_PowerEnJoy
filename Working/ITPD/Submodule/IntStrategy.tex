@@ -14,11 +14,13 @@ The following components described in \emph{section 2} of the \emph{Design Docum
 \item User Manager
 \item Search Manager
 \item Position Manager
+\item Charging Manager
+\item Station Manager
 \item Database Interface
 \end{itemize}
 \item \textbf{Client-side Components}
 \begin{itemize}
-\item All main actions
+\item All main actions performed by the client side application
 \end{itemize}
 \end{itemize}
 
@@ -27,15 +29,16 @@ The client-side applications communicate with the \emph{back-end system} through
 \item Request Manager $\rightarrow$ Search Manager
 \item Request Manager $\rightarrow$ Ride Manager
 \item Request Manager $\rightarrow$ User Manager
+\item Request Manager $\rightarrow$ Charging Manager
 \item Search Manager $\rightarrow$ Position Manager
 \item Position Manager $\rightarrow$ Vehicle Manager
+\item Charging Manager $\rightarrow$ Station Manager
 \item Database Interface $\rightarrow$ DBMS
 \item RESTful API $\rightarrow$ Request Manager
 \item Ride Manager $\rightarrow$ Notification Manager
 \item Search Manager $\rightarrow$ Notification Manager
 \item Notification Manager $\rightarrow$ Client-side components
 \item Client-side components $\rightarrow$ RESTful API
-\item \textbf{STATION MANAGER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}
 \end{itemize}
 
 \subsection{Integration Testing Strategy}

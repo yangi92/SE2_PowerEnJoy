@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  6 JAN 2017 20:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  8 JAN 2017 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -570,142 +570,143 @@ re-quests
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-[10] [11] <Images/ClassDiagram/User.png, id=302, 1384.17125pt x 1150.2975pt>
+[10] [11] [12]
+<Images/ClassDiagram/User.png, id=307, 1387.1825pt x 1158.3275pt>
 File: Images/ClassDiagram/User.png Graphic file (type png)
 
 <use Images/ClassDiagram/User.png>
-Package pdftex.def Info: Images/ClassDiagram/User.png used on input line 84.
-(pdftex.def)             Requested size: 484.46721pt x 402.61017pt.
+Package pdftex.def Info: Images/ClassDiagram/User.png used on input line 91.
+(pdftex.def)             Requested size: 485.52115pt x 405.4207pt.
 
-Overfull \hbox (94.46721pt too wide) in paragraph at lines 84--85
+Overfull \hbox (95.52115pt too wide) in paragraph at lines 91--92
 [] 
  []
 
-[12 <./Images/ClassDiagram/User.png>]
-<Images/ClassDiagram/Display.png, id=310, 1267.73625pt x 1506.62875pt>
+[13 <./Images/ClassDiagram/User.png>]
+<Images/ClassDiagram/Display.png, id=315, 1267.73625pt x 1506.62875pt>
 File: Images/ClassDiagram/Display.png Graphic file (type png)
 
 <use Images/ClassDiagram/Display.png>
-Package pdftex.def Info: Images/ClassDiagram/Display.png used on input line 92.
+Package pdftex.def Info: Images/ClassDiagram/Display.png used on input line 99.
 
 (pdftex.def)             Requested size: 443.71434pt x 527.32797pt.
 
-Overfull \hbox (13.31525pt too wide) in paragraph at lines 91--93
+Overfull \hbox (13.31525pt too wide) in paragraph at lines 98--100
 []  [] 
  []
 
 
-LaTeX Warning: Float too large for page by 3.32796pt on input line 94.
+LaTeX Warning: Float too large for page by 3.32796pt on input line 101.
 
-[13 <./Images/ClassDiagram/Display.png>]
-<Images/ClassDiagram/BackEnd2.png, id=318, 1761.58125pt x 1190.4475pt>
+[14 <./Images/ClassDiagram/Display.png>]
+<Images/ClassDiagram/BackEnd2.png, id=322, 1786.675pt x 1166.3575pt>
 File: Images/ClassDiagram/BackEnd2.png Graphic file (type png)
 
 <use Images/ClassDiagram/BackEnd2.png>
 Package pdftex.def Info: Images/ClassDiagram/BackEnd2.png used on input line 10
-0.
-(pdftex.def)             Requested size: 616.56268pt x 416.66287pt.
+7.
+(pdftex.def)             Requested size: 625.34563pt x 408.23125pt.
 
-Overfull \hbox (68.06268pt too wide) in paragraph at lines 100--101
+Overfull \hbox (76.84563pt too wide) in paragraph at lines 107--108
 [][] 
  []
 
-[14 <./Images/ClassDiagram/BackEnd2.png>]
-Overfull \hbox (5.55089pt too wide) in paragraph at lines 115--117
+[15 <./Images/ClassDiagram/BackEnd2.png>]
+Overfull \hbox (5.55089pt too wide) in paragraph at lines 122--124
 \OT1/ppl/m/n/12 ware and man-age the backup re-quests from the pri-mary DBMS se
 rver.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
-<Images/DeployDiagram/Deploy3.png, id=325, 845.1575pt x 925.4575pt>
+<Images/DeployDiagram/Deploy3.png, id=329, 845.1575pt x 925.4575pt>
 File: Images/DeployDiagram/Deploy3.png Graphic file (type png)
 
 <use Images/DeployDiagram/Deploy3.png>
-Package pdftex.def Info: Images/DeployDiagram/Deploy3.png used on input line 12
-5.
+Package pdftex.def Info: Images/DeployDiagram/Deploy3.png used on input line 13
+2.
 (pdftex.def)             Requested size: 321.1632pt x 351.6775pt.
- [15
+ [16
 
 
 
 
-] [16 <./Images/DeployDiagram/Deploy3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 143--146
+] [17 <./Images/DeployDiagram/Deploy3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
 
  []
 
-[17] <Images/Sequence/seq1.png, id=344, 1005.7575pt x 877.2775pt>
+[18] <Images/Sequence/seq1.png, id=348, 1005.7575pt x 877.2775pt>
 File: Images/Sequence/seq1.png Graphic file (type png)
 
 <use Images/Sequence/seq1.png>
-Package pdftex.def Info: Images/Sequence/seq1.png used on input line 151.
+Package pdftex.def Info: Images/Sequence/seq1.png used on input line 158.
 (pdftex.def)             Requested size: 402.29587pt x 350.90479pt.
 
-Overfull \hbox (12.29587pt too wide) in paragraph at lines 151--152
+Overfull \hbox (12.29587pt too wide) in paragraph at lines 158--159
  [] 
  []
 
-[18 <./Images/Sequence/seq1.png>]
-<Images/Sequence/seq2.png, id=351, 1130.2225pt x 652.4375pt>
+[19 <./Images/Sequence/seq1.png>]
+<Images/Sequence/seq2.png, id=356, 1130.2225pt x 652.4375pt>
 File: Images/Sequence/seq2.png Graphic file (type png)
 
 <use Images/Sequence/seq2.png>
-Package pdftex.def Info: Images/Sequence/seq2.png used on input line 159.
+Package pdftex.def Info: Images/Sequence/seq2.png used on input line 166.
 (pdftex.def)             Requested size: 452.081pt x 260.97037pt.
 
-Overfull \hbox (62.081pt too wide) in paragraph at lines 159--160
+Overfull \hbox (62.081pt too wide) in paragraph at lines 166--167
  [][] 
  []
 
-[19 <./Images/Sequence/seq2.png>]
-<Images/Sequence/seq3.png, id=359, 1591.9475pt x 1005.7575pt>
+[20 <./Images/Sequence/seq2.png>]
+<Images/Sequence/seq3.png, id=363, 1591.9475pt x 1005.7575pt>
 File: Images/Sequence/seq3.png Graphic file (type png)
 
 <use Images/Sequence/seq3.png>
-Package pdftex.def Info: Images/Sequence/seq3.png used on input line 167.
+Package pdftex.def Info: Images/Sequence/seq3.png used on input line 174.
 (pdftex.def)             Requested size: 636.76773pt x 402.29587pt.
 
-Overfull \hbox (88.26773pt too wide) in paragraph at lines 167--168
+Overfull \hbox (88.26773pt too wide) in paragraph at lines 174--175
  [][] 
  []
 
-[20 <./Images/Sequence/seq3.png>]
-<Images/Sequence/Seq4.png, id=366, 1720.4275pt x 968.61874pt>
+[21 <./Images/Sequence/seq3.png>]
+<Images/Sequence/Seq4.png, id=370, 1720.4275pt x 968.61874pt>
 File: Images/Sequence/Seq4.png Graphic file (type png)
 
 <use Images/Sequence/Seq4.png>
-Package pdftex.def Info: Images/Sequence/Seq4.png used on input line 174.
+Package pdftex.def Info: Images/Sequence/Seq4.png used on input line 181.
 (pdftex.def)             Requested size: 688.15883pt x 387.44063pt.
 
-Overfull \hbox (139.65883pt too wide) in paragraph at lines 174--175
+Overfull \hbox (139.65883pt too wide) in paragraph at lines 181--182
  [][] 
  []
 
-[21 <./Images/Sequence/Seq4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 192--196
+[22 <./Images/Sequence/Seq4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 199--203
 
  []
 
 
-Overfull \hbox (0.84709pt too wide) in paragraph at lines 205--207
+Overfull \hbox (0.84709pt too wide) in paragraph at lines 212--214
 \OT1/ppl/m/n/12 The REST-ful API is a gate-way com-mu-ni-ca-tor be-tween client
 s and the back-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--207
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
 
  []
 
-[22
+[23
 
 
 
@@ -713,39 +714,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--207
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 220--222
 
  []
 
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
-[23]
-Overfull \hbox (12.41467pt too wide) in paragraph at lines 246--250
+[24]
+Overfull \hbox (12.41467pt too wide) in paragraph at lines 253--257
 \OT1/ppl/m/n/12 also data pro-vided by the data store layer) to the pre-sen-ta-
 tion layer.This
  []
 
-[24]
+[25]
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
- <Images/ER/ER.png, id=391, 759.83875pt x 896.34875pt>
+ <Images/ER/ER.png, id=396, 759.83875pt x 896.34875pt>
 File: Images/ER/ER.png Graphic file (type png)
 
 <use Images/ER/ER.png>
-Package pdftex.def Info: Images/ER/ER.png used on input line 271.
+Package pdftex.def Info: Images/ER/ER.png used on input line 278.
 (pdftex.def)             Requested size: 265.94754pt x 313.72676pt.
- [25 <./Images/ER/ER.png>] [26] [27])
+ [26 <./Images/ER/ER.png>] [27] [28])
 (./SubModules/AlgorithmDesignCode.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[28]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
@@ -756,13 +757,13 @@ Overfull \hbox (10.43564pt too wide) in paragraph at lines 26--27
 OT1/ppl/m/it/12 On-Board ap-pli-ca-tion\OT1/ppl/m/n/12 requires
  []
 
-[29] [30]
+[30] [31]
 Overfull \hbox (26.77968pt too wide) in paragraph at lines 115--116
 [][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-[31] [32] [33]) [34] (./SubModules/UID.tex
-<Images/UID/u1.png, id=584, 689.57625pt x 366.36874pt>
+[32] [33] [34]) [35] (./SubModules/UID.tex
+<Images/UID/u1.png, id=588, 689.57625pt x 366.36874pt>
 File: Images/UID/u1.png Graphic file (type png)
  <use Images/UID/u1.png>
 Package pdftex.def Info: Images/UID/u1.png used on input line 9.
@@ -772,7 +773,7 @@ Overfull \hbox (23.74893pt too wide) in paragraph at lines 9--10
  [][] 
  []
 
-[35] <Images/UID/u2.png, id=589, 823.075pt x 545.03625pt>
+[36] <Images/UID/u2.png, id=593, 823.075pt x 545.03625pt>
 File: Images/UID/u2.png Graphic file (type png)
 
 <use Images/UID/u2.png>
@@ -783,8 +784,8 @@ Overfull \hbox (103.8488pt too wide) in paragraph at lines 17--18
  [][] 
  []
 
-[36 <./Images/UID/u1.png>] [37 <./Images/UID/u2.png>]
-<Images/UID/u3.png, id=603, 690.58pt x 530.98375pt>
+[37 <./Images/UID/u1.png>] [38 <./Images/UID/u2.png>]
+<Images/UID/u3.png, id=607, 690.58pt x 530.98375pt>
 File: Images/UID/u3.png Graphic file (type png)
  <use Images/UID/u3.png>
 Package pdftex.def Info: Images/UID/u3.png used on input line 25.
@@ -794,26 +795,26 @@ Overfull \hbox (24.3512pt too wide) in paragraph at lines 25--26
  [][] 
  []
 
-[38 <./Images/UID/u3.png>]) (./SubModules/RequirementsTraceability.tex
+[39 <./Images/UID/u3.png>]) (./SubModules/RequirementsTraceability.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
-[39
+[40
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
-[40]
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
@@ -821,54 +822,48 @@ Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-) [42]
+) [43]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
- [43]
+ [44]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
  (./DD.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
+Package rerunfilecheck Info: File `DD.out' has not changed.
+(rerunfilecheck)             Checksum: D1A8B9426FC87217A852B85EEC82AD65;3024.
 
-
-Package rerunfilecheck Warning: File `DD.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `DD.out':
-(rerunfilecheck)             Before: A2FCF5C003C7264754ED74094C74B3F5;3014
-(rerunfilecheck)             After:  9690840B8C35A216A56AA8C7D3960B3D;3024.
 
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 9826 strings out of 493014
- 149281 string characters out of 6133351
+ 9827 strings out of 493014
+ 149288 string characters out of 6133351
  286025 words of memory out of 5000000
  12924 multiletter control sequences out of 15000+600000
  28668 words of font info for 73 fonts, out of 8000000 for 9000
@@ -881,10 +876,10 @@ live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on DD.pdf (43 pages, 970531 bytes).
+Output written on DD.pdf (44 pages, 984670 bytes).
 PDF statistics:
- 713 PDF objects out of 1000 (max. 8388607)
- 627 compressed objects within 7 object streams
- 258 named destinations out of 1000 (max. 500000)
+ 718 PDF objects out of 1000 (max. 8388607)
+ 631 compressed objects within 7 object streams
+ 259 named destinations out of 1000 (max. 500000)
  431 words of extra memory for PDF output out of 10000 (max. 10000000)
 

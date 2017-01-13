@@ -1,50 +1,51 @@
-\contentsline {section}{\numberline {1}\relax \fontsize {17.28}{22}\selectfont Introduction}{4}{section.1}
-\contentsline {subsection}{\numberline {1.1}Purpose}{4}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}System}{4}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Scope}{4}{subsection.1.3}
-\contentsline {subsubsection}{\numberline {1.3.1}Goals}{6}{subsubsection.1.3.1}
-\contentsline {subsubsection}{\numberline {1.3.2}Applications}{6}{subsubsection.1.3.2}
-\contentsline {subsection}{\numberline {1.4}Reference Documents}{7}{subsection.1.4}
-\contentsline {subsection}{\numberline {1.5}Glossary}{7}{subsection.1.5}
-\contentsline {subsubsection}{\numberline {1.5.1}Actors}{7}{subsubsection.1.5.1}
-\contentsline {subsubsection}{\numberline {1.5.2}Other definitions}{8}{subsubsection.1.5.2}
-\contentsline {subsection}{\numberline {1.6}Document overview}{9}{subsection.1.6}
-\contentsline {section}{\numberline {2}\relax \fontsize {17.28}{22}\selectfont Overall Description}{10}{section.2}
-\contentsline {subsection}{\numberline {2.1}Software overview}{10}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}User characteristics}{10}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Domain assumptions}{11}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}General Domain Assumptions}{11}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}User Assumptions}{11}{subsubsection.2.3.2}
-\contentsline {subsection}{\numberline {2.4}Constraints}{12}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Software Limitations}{12}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}Hardware limitations}{12}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Concurrency}{13}{subsubsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.4}Regulatory Policies}{13}{subsubsection.2.4.4}
-\contentsline {subsection}{\numberline {2.5}Main functions}{13}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Future implementation}{14}{subsection.2.6}
-\contentsline {section}{\numberline {3}\relax \fontsize {17.28}{22}\selectfont Specific Requirements}{15}{section.3}
-\contentsline {subsection}{\numberline {3.1}External Interface Requirements}{15}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Mobile Application}{15}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Web Application}{20}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}On-Board Application (Touch)}{22}{subsubsection.3.1.3}
-\contentsline {subsection}{\numberline {3.2}Specific Requirements}{24}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Scenarios}{26}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Scenario 1:User sign-up}{27}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Scenario 2: Log in}{29}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}Scenario 3: Reserve a car}{31}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Scenario 4: Unable to reach car in time}{33}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}Scenario 5: Report a problem}{35}{subsubsection.3.3.5}
-\contentsline {subsubsection}{\numberline {3.3.6}Scenario 6: Share ride with passengers}{37}{subsubsection.3.3.6}
-\contentsline {subsubsection}{\numberline {3.3.7}Scenario 7: Drive with Money Saving Option}{39}{subsubsection.3.3.7}
-\contentsline {subsubsection}{\numberline {3.3.8}Scenario 8: Leaving a car with battery level at \textgreater 50\%}{41}{subsubsection.3.3.8}
-\contentsline {subsubsection}{\numberline {3.3.9}Scenario 9: Charge car}{43}{subsubsection.3.3.9}
-\contentsline {subsubsection}{\numberline {3.3.10}Scenario 10: Out of safe area parking}{45}{subsubsection.3.3.10}
-\contentsline {subsubsection}{\numberline {3.3.11}Scenario 11: Additional fee charged}{47}{subsubsection.3.3.11}
-\contentsline {subsubsection}{\numberline {3.3.12}Scenario 12: User information update}{49}{subsubsection.3.3.12}
-\contentsline {subsection}{\numberline {3.4}Class Diagram}{51}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}State charts}{52}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Alloy}{54}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Non functional Requirements}{60}{subsection.3.7}
-\contentsline {section}{\numberline {4}Appendices}{61}{section.4}
-\contentsline {subsection}{\numberline {4.1}Tools}{61}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Hours of work}{61}{subsection.4.2}
+\contentsline {section}{\numberline {1}\relax \fontsize {17.28}{22}\selectfont Revision History}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Version 1.1 -Updated on 07/01/2017}{4}{subsection.1.1}
+\contentsline {section}{\numberline {2}\relax \fontsize {17.28}{22}\selectfont Introduction}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Purpose}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}System}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Scope}{5}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Goals}{7}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Applications}{7}{subsubsection.2.3.2}
+\contentsline {subsection}{\numberline {2.4}Reference Documents}{8}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Glossary}{8}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Actors}{8}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Other definitions}{9}{subsubsection.2.5.2}
+\contentsline {subsection}{\numberline {2.6}Document overview}{10}{subsection.2.6}
+\contentsline {section}{\numberline {3}\relax \fontsize {17.28}{22}\selectfont Overall Description}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Software overview}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}User characteristics}{11}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Domain assumptions}{12}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}General Domain Assumptions}{12}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}User Assumptions}{12}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Constraints}{13}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Software Limitations}{13}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Hardware limitations}{13}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}Concurrency}{14}{subsubsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.4}Regulatory Policies}{14}{subsubsection.3.4.4}
+\contentsline {subsection}{\numberline {3.5}Main functions}{14}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Future implementation}{15}{subsection.3.6}
+\contentsline {section}{\numberline {4}\relax \fontsize {17.28}{22}\selectfont Specific Requirements}{16}{section.4}
+\contentsline {subsection}{\numberline {4.1}External Interface Requirements}{16}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Mobile Application}{16}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Web Application}{21}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}On-Board Application (Touch)}{23}{subsubsection.4.1.3}
+\contentsline {subsection}{\numberline {4.2}Specific Requirements}{27}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Scenarios}{29}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Scenario 1:User sign-up}{30}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Scenario 2: Log in}{32}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Scenario 3: Reserve a car}{34}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Scenario 4: Unable to reach car in time}{36}{subsubsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.5}Scenario 5: Report a problem}{38}{subsubsection.4.3.5}
+\contentsline {subsubsection}{\numberline {4.3.6}Scenario 6: Share ride with passengers}{40}{subsubsection.4.3.6}
+\contentsline {subsubsection}{\numberline {4.3.7}Scenario 7: Drive with Money Saving Option}{42}{subsubsection.4.3.7}
+\contentsline {subsubsection}{\numberline {4.3.8}Scenario 8: Leaving a car with battery level at \textgreater 50\%}{44}{subsubsection.4.3.8}
+\contentsline {subsubsection}{\numberline {4.3.9}Scenario 9: Charge car}{46}{subsubsection.4.3.9}
+\contentsline {subsubsection}{\numberline {4.3.10}Scenario 10: Out of safe area parking}{48}{subsubsection.4.3.10}
+\contentsline {subsubsection}{\numberline {4.3.11}Scenario 11: Additional fee charged}{50}{subsubsection.4.3.11}
+\contentsline {subsubsection}{\numberline {4.3.12}Scenario 12: User information update}{52}{subsubsection.4.3.12}
+\contentsline {subsection}{\numberline {4.4}State charts}{54}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Alloy}{56}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Non functional Requirements}{62}{subsection.4.6}
+\contentsline {section}{\numberline {5}Appendices}{63}{section.5}
+\contentsline {subsection}{\numberline {5.1}Tools}{63}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Hours of work}{63}{subsection.5.2}
