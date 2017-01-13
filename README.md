@@ -29,7 +29,7 @@ The **Design Document** gives an overview about the architectural choices made t
 
 ## ITPD
 The **Integration Test Plan Document** lists a series of strategies and test cases scenarios that are meant to be used to followed to test the integrity of the system in terms of correct communication between different modules.</br>
-* [ITDP v.1.0 File](https://github.com/yangi92/SE2_PowerEnJoy/blob/master/Releases/ITDP.pdf)
+* [ITPD v.1.0 File](https://github.com/yangi92/SE2_PowerEnJoy/blob/master/Releases/ITPD.pdf)
 
 
 
