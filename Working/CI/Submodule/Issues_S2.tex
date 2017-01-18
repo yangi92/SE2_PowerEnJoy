@@ -1,10 +1,9 @@
 % Issues list for simone
-
 \subsubsection{Naming conventions}
 \begin{itemize}
 \item All class names, interface names, method names, class variables, method
 variables, and constants used have meaningful names and do
-what the name suggests. (setCurrencyUomIfNone che cazzo vor dì?) \\
+what the name suggests. (nqdbl, nqint, curpcms, curpcm che cazzo vor dì?) \\
 
 \item The only one-character variable (Exception e) is a temporary
 “throwaway” variable.\\
@@ -19,7 +18,7 @@ word capitalized.\\
 
 \item All attributes, are mixed case, no one begin
 with an underscore. All the
-remaining words in the variable name have their first letter capitalized.
+remaining words in the variable name have their first letter capitalized, except one (cartiter, which should have been cartIter).
  \\
  
  \item There are no constant.\\
@@ -31,21 +30,22 @@ remaining words in the variable name have their first letter capitalized.
 \item No tabs are used to indent.\\
 \end{itemize}
 
+
 \subsubsection{Braces}
 \begin{itemize}
 \item In all the class is used the “Kernighan and
 Ritchie” style (first brace is on the same line of the instruction that
 opens the new block).\\
 
-\item All if, while, do-while, try-catch, and for statements that have
-only one statement to execute are surrounded by curly braces. \\
+\item All while, do-while, try-catch, and for statements that have
+only one statement to execute are surrounded by curly braces. There are 10 if statements which contain onlu one statement and are written in one line without braces.\\
 
 \end{itemize}
 
 \subsubsection{File Organisation}
 \begin{itemize}
 \item Either blank lines or comments are used to separate sections.\\
-\item Line length exceeds 80 characters many times. Six times it exceeds also 120 characters (3 of them are comments).\\ 
+\item Line length exceeds 80 characters many times. 10 times it exceeds also 120 characters One of them it's over 200.\\ 
 \end{itemize}
 
 \subsubsection{Wrapping Lines}
