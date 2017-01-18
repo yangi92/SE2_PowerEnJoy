@@ -1,24 +1,27 @@
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Class overview}{3}{subsection.1.1}
 \contentsline {section}{\numberline {2}Functional Role of Classes}{4}{section.2}
-\contentsline {section}{\numberline {3}List of Issues}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Naming conventions}{5}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Indention}{5}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Braces}{5}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}File Organisation}{5}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Comments}{5}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Java Source Files}{5}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Package and Import Statements}{5}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}Class and Interface Declarations}{5}{subsection.3.8}
-\contentsline {subsection}{\numberline {3.9}Initialisation and Declaration}{5}{subsection.3.9}
-\contentsline {subsection}{\numberline {3.10}Method Calls}{5}{subsection.3.10}
-\contentsline {subsection}{\numberline {3.11}Arrays}{5}{subsection.3.11}
-\contentsline {subsection}{\numberline {3.12}Object Comparison}{5}{subsection.3.12}
-\contentsline {subsection}{\numberline {3.13}Output Format}{5}{subsection.3.13}
-\contentsline {subsection}{\numberline {3.14}Computation , Comparisons and Assignments}{5}{subsection.3.14}
-\contentsline {subsection}{\numberline {3.15}Exceptions}{5}{subsection.3.15}
-\contentsline {subsection}{\numberline {3.16}Flow Control}{5}{subsection.3.16}
-\contentsline {subsection}{\numberline {3.17}Files}{5}{subsection.3.17}
-\contentsline {section}{\numberline {4}Other issues}{6}{section.4}
-\contentsline {section}{\numberline {5}Appendices}{7}{section.5}
-\contentsline {subsection}{\numberline {5.1}References}{7}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Effort Spent}{7}{subsection.5.2}
+\contentsline {subsection}{\numberline {2.1}ProductStoreCartAwareEvents.java}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}ProductDisplayWorker.java}{5}{subsection.2.2}
+\contentsline {section}{\numberline {3}List of Issues}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Naming conventions}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Indention}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Braces}{6}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}File Organisation}{6}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Comments}{6}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Java Source Files}{6}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Package and Import Statements}{6}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Class and Interface Declarations}{6}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}Initialisation and Declaration}{6}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}Method Calls}{6}{subsection.3.10}
+\contentsline {subsection}{\numberline {3.11}Arrays}{6}{subsection.3.11}
+\contentsline {subsection}{\numberline {3.12}Object Comparison}{6}{subsection.3.12}
+\contentsline {subsection}{\numberline {3.13}Output Format}{6}{subsection.3.13}
+\contentsline {subsection}{\numberline {3.14}Computation , Comparisons and Assignments}{6}{subsection.3.14}
+\contentsline {subsection}{\numberline {3.15}Exceptions}{6}{subsection.3.15}
+\contentsline {subsection}{\numberline {3.16}Flow Control}{6}{subsection.3.16}
+\contentsline {subsection}{\numberline {3.17}Files}{6}{subsection.3.17}
+\contentsline {section}{\numberline {4}Other issues}{7}{section.4}
+\contentsline {section}{\numberline {5}Appendices}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}References}{8}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Effort Spent}{8}{subsection.5.2}

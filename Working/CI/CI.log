@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 JAN 2017 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  18 JAN 2017 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -404,14 +404,14 @@ Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count120
- <Images/PolimiLogo.png, id=96, 100.4553pt x 100.6962pt>
+ <Images/PolimiLogo.png, id=112, 100.4553pt x 100.6962pt>
 File: Images/PolimiLogo.png Graphic file (type png)
 
 <use Images/PolimiLogo.png>
 Package pdftex.def Info: Images/PolimiLogo.png used on input line 46.
 (pdftex.def)             Requested size: 150.68257pt x 151.0439pt.
 
-<Images/logoPowerEnjoy2.png, id=98, 192.2382pt x 45.2892pt>
+<Images/logoPowerEnjoy2.png, id=114, 192.2382pt x 45.2892pt>
 File: Images/logoPowerEnjoy2.png Graphic file (type png)
 
 <use Images/logoPowerEnjoy2.png>
@@ -423,20 +423,20 @@ Package pdftex.def Info: Images/logoPowerEnjoy2.png used on input line 62.
 s/PolimiLogo.png> <./Images/logoPowerEnjoy2.png>] (./CI.toc
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 4.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 2.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 4.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 2.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 4.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 2.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 4.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 2.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -445,60 +445,68 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 \openout4 = `CI.toc'.
 
  [2]
-(./Submodule/Intro.tex) [3] (./Submodule/Role.tex) [4]
-(./Submodule/Issues_S.tex
+(./Submodule/Intro.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+
+ []
+
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 3.
-) (./Submodule/Issues_C.tex) (./Submodule/Issues_Y.tex) [5] (./Submodule/Other.
-tex) [6]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 127.
-
-
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 8.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 127.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+) [3]
+(./Submodule/Role.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+
+Overfull \hbox (15.78557pt too wide) in paragraph at lines 4--7
+\OT1/ppl/m/n/12 takes a \OT1/cmtt/m/n/12 HttpServletRequest \OT1/ppl/m/n/12 and
+ \OT1/cmtt/m/n/12 HttpServletResponse \OT1/ppl/m/n/12 as in-put. The method
+ []
+
+[4]) [5
+
+] (./Submodule/Issues_S.tex) (./Submodule/Issues_C.tex)
+(./Submodule/Issues_Y.tex) [6] (./Submodule/Other.tex) [7]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
- [7]
+ [8]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
  (./CI.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+Package rerunfilecheck Info: File `CI.out' has not changed.
+(rerunfilecheck)             Checksum: 3BBA6F347D4D798306A080A39A4FEE1D;1728.
 
 
-Package rerunfilecheck Warning: File `CI.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `CI.out':
-(rerunfilecheck)             Before: FDC4DA4CDC4CC502259508FC1EEDDDAC;1459
-(rerunfilecheck)             After:  509747EDAAF56D409A0E03E523A61CDA;1507.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
  ) 
 Here is how much of TeX's memory you used:
- 9240 strings out of 493014
- 140523 string characters out of 6133351
- 236433 words of memory out of 5000000
- 12591 multiletter control sequences out of 15000+600000
- 18478 words of font info for 47 fonts, out of 8000000 for 9000
+ 9272 strings out of 493014
+ 140930 string characters out of 6133351
+ 237594 words of memory out of 5000000
+ 12615 multiletter control sequences out of 15000+600000
+ 26510 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,5n,94p,265b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.4.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ 59i,8n,94p,454b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on CI.pdf (7 pages, 291154 bytes).
+Output written on CI.pdf (8 pages, 317352 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 195 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 227 PDF objects out of 1000 (max. 8388607)
+ 204 compressed objects within 3 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 227 words of extra memory for PDF output out of 10000 (max. 10000000)
 

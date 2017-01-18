@@ -1,1 +1,14 @@
-The role of the assigned classes....
+This section analyses the meaning and functionality for each of the inspected classes.\\ 
+\subsection{ProductStoreCartAwareEvents.java}
+\label{sub:PSCAE}
+This java class is composed of two static methods.
+The first static method takes a \texttt{HttpServletRequest} and \texttt{HttpServletResponse} as input. The method extracts the \texttt{productStoreId} String parameter from the request and tries to invoke the second static method. Depending on the success or failure of the second method ,	the the first method return either the string "success" or "error"\\
+The second static method takes extracted \texttt{productStoreID} String and the \texttt{HttpServletRequest} as input. The method than :
+\begin{itemize}
+\item returns immediately  if the \texttt{productStoreID} is \texttt{null} or if it equals the \texttt{HttpSession}'s old \texttt{productStoreID}.
+\item throws an exception if \texttt{productStoreID} is not related to a valid productStore , if the \texttt{webSite} cannot be found in relation to the request or if \texttt{webSite} exists but does not allow changing of the \texttt{productStoreID}.
+\item if the points above are not matched , sets the \texttt{productStoreID} of the \texttt{session} to the one passed as parameter ,clears the old product catalogue and  eventually sets the session's \texttt{currency}, \texttt{locale} and \texttt{time-zone} depending on the \texttt{productStore}. Finally the method creates a new \texttt{shoppingCart} for the session without erasing the old one.
+\end{itemize} 
+\clearpage
+\subsection{ProductDisplayWorker.java}
+\label{sub:PDW}
