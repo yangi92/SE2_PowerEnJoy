@@ -9,8 +9,8 @@ Here is the a table that summirises the main tasks to be completed:
 	1 & RASD \\ \hline
 	2 & DD \\ \hline
 	3 & ITPD \\ \hline
-	4 & PPD \\ \hline
-	5 & Code Inspection \\ \hline
+	4 & PP \\ \hline
+	5 & CI \\ \hline
 \end{tabular}
 \end{center}
 
@@ -20,7 +20,7 @@ Here we explain what each task is for:
 	\item Prepare a document that specifies the goals of the system, the assumptions that had been made, and the requirements of the \emph{system-to-be}, namely the RASD.
 	\item Prepare a document that specifies the design and architecture of the \emph{system-to-be}, namely the DD.
 	\item Prepare a document that specifies the plan to follow in order to perform the integration testing, namely the ITPD.
-	\item Prepare a document that specifies the plan of the project, namely the PPD.
+	\item Prepare a document that specifies the plan of the project, namely the PP.
 	\item Perform the Code inspection from the material that professors gave us.
 \end{enumerate}
 
@@ -29,10 +29,10 @@ Here we explain what each task is for:
 
 In this subsection we present a schedule that must followed, however, as always, small changes can always be made.
 
-We explain the schedule through the Gantt chart that follows:
+
 
 % ZAN ZAN ZANNNNNNNNNNNNNNNNNN
-%
+% We explain the schedule through the Gantt chart that follows:
 %
 %
 %
@@ -46,10 +46,10 @@ We explain the schedule through the Gantt chart that follows:
 %
 %
 % DA FARE (FORSE) (SE GIANNI VUOLE) 
-
+%Since the precise deadlines are not legible from the Gantt chart, we give also a table summarising the main deadlines.
 % subsection schedule (end)
 
-Since the precise deadlines are not legible from the Gantt chart, we give also a table summarising the main deadlines.
+The following table summarizing the main deadlines.
 
 \begin{center}
 \begin{tabular}{ |c|c|l|c| } \hline
@@ -57,19 +57,14 @@ Since the precise deadlines are not legible from the Gantt chart, we give also a
 	1 & 20-10-2016 & RASD & 13-11-2016 \\ \hline
 	2 & 16-11-2015 & DD & 11-12-2016 \\ \hline
 	3 & 18-12-2016 & ITPD & 15-01-2017 \\ \hline
-	4 & 27-12-2016 & PPD & 22-01-2017 \\ \hline
-	5 & 16-01-2017 & Code inspection  & 05-02-2017 \\ \hline
+	4 & 27-12-2016 & PP & 22-01-2017 \\ \hline
+	5 & 16-01-2017 & CI & 05-02-2017 \\ \hline
 \end{tabular}
 \end{center}
 
-
-\newpage
-
-
-
-
+\subsection{Resource allocation}
 In this section we specifiy the resource allocation, that is, for each task we specify to whom its subtasks are allocated. The timetables have already been defined in section \ref{sub:schedule}.
-We choose to represent this data by means of tables. As far as the documents are concerned, we specify the resources for each section of the document, whereas, for what concerns the \emph{Implementation + Unit Testing} we provide a resource for each of the three main applications that will have to be developed. Of course also this allocation can be subject to small changes in the future.
+We choose to represent this data by means of tables. As far as the documents are concerned, we specify the resources for each section of the document.  
 
 \begin{center}
 \begin{tabular}{ |l|l| }
@@ -142,7 +137,7 @@ We choose to represent this data by means of tables. As far as the documents are
 
 \begin{center}
 \begin{tabular}{ |l|l| }
-	\multicolumn{2}{c}{\textbf{PPD}} \\ \hline
+	\multicolumn{2}{c}{\textbf{PP}} \\ \hline
 	\textbf{Subtask} & \textbf{Resource} \\ \hline
 	\multirow{3}{*}{Introduction} & Simone \\ 
 				& Claudia \\
@@ -165,11 +160,17 @@ We choose to represent this data by means of tables. As far as the documents are
 
 \begin{center}
 \begin{tabular}{ |l|l| }
-	\multicolumn{2}{c}{\textbf{Code Inspection}} \\ \hline
+	\multicolumn{2}{c}{\textbf{CI}} \\ \hline
 	\textbf{Subtask} & \textbf{Resource} \\ \hline
-	\multirow{1}{*}{...} & Simone \\ \hline
-	\multirow{1}{*}{...} & Claudia \\ \hline
-	\multirow{1}{*}{...} & Yannick \\ \hline
+	\multirow{1}{*}{Introduction} & Claudia \\ \hline
+	\multirow{2}{*}{Functional role of classes} & Simone \\
+												& Yannick\\ \hline
+	\multirow{3}{*}{List of issues} & Simone\\
+									& Claudia\\
+									& Yannick \\ \hline
+	\multirow{3}{*}{Appendices} & Simone\\
+								& Claudia\\
+								& Yannick \\ \hline
 
 
 \end{tabular}
