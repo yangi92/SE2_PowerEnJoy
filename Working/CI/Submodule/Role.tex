@@ -12,3 +12,7 @@ The second static method takes extracted \texttt{productStoreID} String and the 
 \clearpage
 \subsection{ProductDisplayWorker.java}
 \label{sub:PDW}
+This class is composed of three static methods and a private inner class.
+The first method , \texttt{getRandomCartProductAssoc} , receives a \textbf{ServletRequest} and a boolean as input. The methods than extracts the \textbf{ShoppingCart} object from the request and for each item in the cart looks for products that are associated with that product.The associated products found are memorized in a \texttt{cartAssocs} object .From this object all items but three are eliminated randomly. The \texttt{cartAssocs} is then returned.\\
+The \texttt{getQuickReorderProducts}   generates \texttt{Map<String, Object>} object containing ordered products. \\The method calls the third static method ,\texttt{prodcutOrderByMao} whose function is to order the products according to the \texttt{Map} passed as parameter. The sorting process uses the static \texttt{sort} method of the Java \texttt{Collections} .\\The private inner class \texttt{ProductByMapComparator} implements \texttt{Comparator<Object>} and is used by the \texttt{Collections.sort} to sort the list.
+         
