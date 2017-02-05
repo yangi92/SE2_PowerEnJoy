@@ -3,8 +3,8 @@
 \begin{itemize}
 \item The file contsins  a single public class\\
 \item The public class is the first class in the file\\
-\item ??
-\item ??
+\item javadoc is not used
+\item javadoc is not used
 \end{itemize}
 
 
@@ -20,46 +20,59 @@
 \begin{itemize}
 \item Class or interface declarations order:\\
 \begin{enumerate}
-\item The file start with a class comment\\
+\item There is no class documentation comment\\
 \item Class statement\\
-\item There is no class implementatio comment\\
+\item There is class implementation comment\\
 
+\item class (static) variables:
 \item class (static) variables:
 \begin{itemize}
 \item First we have class variable
 \item There are no protected variables
-\item 
-\item There are no private classe variable
+\item No package level 
+\item There are no private class variables
 \end{itemize}
 \item istance variables:
 \begin{itemize}
-\item
-\item
-\item 
-\item 
+\item public instance variable is the first
+\item There are no protected instance variable
+\item No package level 
+\item There are no private instance variable 
 \end{itemize}
-\item There is the constructor
+\item There is no constructor
 \item Methods declaration
 \end{enumerate}
-\item ??????
-\item 
+\item Methods are grouped by functionality then by scope or accessability
+\item The code is free of duplicates, the method "public static void setSessionProductStore(String productStoreId, HttpServletRequest request) is too long method, the class is not big. 
 \end{itemize}
+
+
+
 
 
 \subsubsection{Initialisation and Declaration}
 \begin{itemize}
-\item
-\item 
-\item
-\item
-\item
-\item
+\item Variables and class members are of the correct type and they have the right visibility
+\item Variables are declared in the proper scope
+\item Constructor is not used
+\item Object references are initialized before use
+\item Variables are initialized where they are declared
+\item Declarations:
+\begin{itemize}
+\item Line 65
+\item Line 66
+\item Line 73
+\item Line 76
+\item Line 82
+\item Line 86
+\item Line 107
+\end{itemize}
 \end{itemize}
 
 
 \subsubsection{Method Calls}
 \begin{itemize}
-\item 
+\item Parameters are presented in the correct order
 \item All methods have different name
 \item Returned values are used properly
 \end{itemize}
