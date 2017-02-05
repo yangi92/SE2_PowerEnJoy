@@ -12,13 +12,13 @@
 \contentsline {subsubsection}{\numberline {3.1.5}Wrapping Lines}{9}{subsubsection.3.1.5}
 \contentsline {subsubsection}{\numberline {3.1.6}Comments}{9}{subsubsection.3.1.6}
 \contentsline {subsubsection}{\numberline {3.1.7}Java Source Files}{9}{subsubsection.3.1.7}
-\contentsline {subsubsection}{\numberline {3.1.8}Package and Import Statements}{10}{subsubsection.3.1.8}
+\contentsline {subsubsection}{\numberline {3.1.8}Package and Import Statements}{9}{subsubsection.3.1.8}
 \contentsline {subsubsection}{\numberline {3.1.9}Class and Interface Declarations}{10}{subsubsection.3.1.9}
-\contentsline {subsubsection}{\numberline {3.1.10}Initialisation and Declaration}{11}{subsubsection.3.1.10}
+\contentsline {subsubsection}{\numberline {3.1.10}Initialisation and Declaration}{10}{subsubsection.3.1.10}
 \contentsline {subsubsection}{\numberline {3.1.11}Method Calls}{11}{subsubsection.3.1.11}
 \contentsline {subsubsection}{\numberline {3.1.12}Arrays}{11}{subsubsection.3.1.12}
 \contentsline {subsubsection}{\numberline {3.1.13}Object Comparison}{11}{subsubsection.3.1.13}
-\contentsline {subsubsection}{\numberline {3.1.14}Output Format}{12}{subsubsection.3.1.14}
+\contentsline {subsubsection}{\numberline {3.1.14}Output Format}{11}{subsubsection.3.1.14}
 \contentsline {subsubsection}{\numberline {3.1.15}Computation , Comparisons and Assignments}{12}{subsubsection.3.1.15}
 \contentsline {subsubsection}{\numberline {3.1.16}Exceptions}{12}{subsubsection.3.1.16}
 \contentsline {subsubsection}{\numberline {3.1.17}Flow Control}{12}{subsubsection.3.1.17}
@@ -26,21 +26,21 @@
 \contentsline {subsection}{\numberline {3.2}ProductDisplayWorker.java}{13}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Naming conventions}{13}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Indention}{13}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}Braces}{14}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.3}Braces}{13}{subsubsection.3.2.3}
 \contentsline {subsubsection}{\numberline {3.2.4}File Organisation}{14}{subsubsection.3.2.4}
 \contentsline {subsubsection}{\numberline {3.2.5}Wrapping Lines}{17}{subsubsection.3.2.5}
 \contentsline {subsubsection}{\numberline {3.2.6}Comments}{17}{subsubsection.3.2.6}
 \contentsline {subsubsection}{\numberline {3.2.7}Java Source Files}{17}{subsubsection.3.2.7}
-\contentsline {subsubsection}{\numberline {3.2.8}Package and Import Statements}{18}{subsubsection.3.2.8}
-\contentsline {subsubsection}{\numberline {3.2.9}Class and Interface Declarations}{18}{subsubsection.3.2.9}
-\contentsline {subsubsection}{\numberline {3.2.10}Initialisation and Declaration}{19}{subsubsection.3.2.10}
+\contentsline {subsubsection}{\numberline {3.2.8}Package and Import Statements}{17}{subsubsection.3.2.8}
+\contentsline {subsubsection}{\numberline {3.2.9}Class and Interface Declarations}{17}{subsubsection.3.2.9}
+\contentsline {subsubsection}{\numberline {3.2.10}Initialisation and Declaration}{18}{subsubsection.3.2.10}
 \contentsline {subsubsection}{\numberline {3.2.11}Method Calls}{19}{subsubsection.3.2.11}
-\contentsline {subsubsection}{\numberline {3.2.12}Arrays}{20}{subsubsection.3.2.12}
-\contentsline {subsubsection}{\numberline {3.2.13}Object Comparison}{20}{subsubsection.3.2.13}
-\contentsline {subsubsection}{\numberline {3.2.14}Output Format}{21}{subsubsection.3.2.14}
-\contentsline {subsubsection}{\numberline {3.2.15}Computation , Comparisons and Assignments}{21}{subsubsection.3.2.15}
-\contentsline {subsubsection}{\numberline {3.2.16}Exceptions}{21}{subsubsection.3.2.16}
-\contentsline {subsubsection}{\numberline {3.2.17}Flow Control}{21}{subsubsection.3.2.17}
+\contentsline {subsubsection}{\numberline {3.2.12}Arrays}{19}{subsubsection.3.2.12}
+\contentsline {subsubsection}{\numberline {3.2.13}Object Comparison}{19}{subsubsection.3.2.13}
+\contentsline {subsubsection}{\numberline {3.2.14}Output Format}{20}{subsubsection.3.2.14}
+\contentsline {subsubsection}{\numberline {3.2.15}Computation , Comparisons and Assignments}{20}{subsubsection.3.2.15}
+\contentsline {subsubsection}{\numberline {3.2.16}Exceptions}{20}{subsubsection.3.2.16}
+\contentsline {subsubsection}{\numberline {3.2.17}Flow Control}{20}{subsubsection.3.2.17}
 \contentsline {subsubsection}{\numberline {3.2.18}Files}{21}{subsubsection.3.2.18}
 \contentsline {section}{\numberline {4}Other issues}{22}{section.4}
 \contentsline {section}{\numberline {5}Appendices}{23}{section.5}
