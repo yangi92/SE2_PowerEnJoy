@@ -32,5 +32,11 @@ The **Integration Test Plan Document** lists a series of strategies and test cas
 * [ITPD v.1.0 File](https://github.com/yangi92/SE2_PowerEnJoy/blob/master/Releases/ITPD.pdf)
 
 
+## PPD
+The **Project Planning Document** gives an overview about the project planning. An estimation about effort and costs will be done using the lastest standards. Tasks will be listed and risk will be analysed</br>
+* [PPD v.1.0 File](https://github.com/yangi92/SE2_PowerEnJoy/blob/master/Releases/PP.pdf)
 
+## CID
+The **Code Inspection Document** lists all errors and flaws found in the assigned Ofbiz Java classes</br>
+* [CID v.1.0 File](https://github.com/yangi92/SE2_PowerEnJoy/blob/master/Releases/CI.pdf)
 
