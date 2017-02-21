@@ -39,4 +39,5 @@ The **Project Planning Document** gives an overview about the project planning. 
 ## CID
 The **Code Inspection Document** lists all errors and flaws found in the assigned Ofbiz Java classes</br>
 * [CID v.1.0 File](https://github.com/yangi92/SE2_PowerEnJoy/blob/master/Releases/CI.pdf)
+* [Ofbiz Documentation](https://ofbiz.apache.org/documentation.html)
 
